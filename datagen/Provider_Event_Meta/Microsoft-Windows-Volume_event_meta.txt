@@ -1,0 +1,39 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Volume</Name>
+        <Metadata>
+            <Guid>{9F7B5DF4-B902-48BC-BC94-95068C6C7D26}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Operation started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ControlCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Operation completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ControlCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

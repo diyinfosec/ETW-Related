@@ -1,0 +1,16 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WlanPref</Name>
+        <Metadata>
+            <Guid>{CA5BA219-C0D4-4EFA-9CEB-72AFF92672B0}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

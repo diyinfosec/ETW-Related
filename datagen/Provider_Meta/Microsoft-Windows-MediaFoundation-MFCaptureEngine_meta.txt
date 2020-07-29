@@ -1,0 +1,233 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MediaFoundation-MFCaptureEngine</Name>
+        <Metadata>
+            <Guid>{B8197C10-845F-40CA-82AB-9341E98CFC2B}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\MFCaptureEngine.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\MFCaptureEngine.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=MFCaptureEngine.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft Windows MediaFoundation MFCaptureEngine ETW Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Media Foundation Capture Engine ETW Channel</Message>
+                    <Path>Microsoft-Windows-MediaFoundation-MFCaptureEngine/MFCaptureEngine</Path>
+                    <Index>0</Index>
+                    <Id>100</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>MFCaptureEngine Initialization Task</Message>
+                    <Name>MFCaptureEngine-Initialization-Task</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Shutdown Task</Message>
+                    <Name>MFCaptureEngine-Shutdown-Task</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine TakePhoto Task</Message>
+                    <Name>MFCaptureEngine-TakePhoto-Task</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Start Preview Task</Message>
+                    <Name>MFCaptureEngine-StartPreview-Task</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Start Record Task</Message>
+                    <Name>MFCaptureEngine-StartRecord-Task</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Source Message</Message>
+                    <Name>MFCaptureEngine-Source-Task</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Streaming Message</Message>
+                    <Name>MFCaptureEngine-Streaming-Task</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Sink Task</Message>
+                    <Name>MFCaptureEngine-Sink-Task</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine sample probe</Message>
+                    <Name>MFCaptureEngine-SampleProbe-Task</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Stop Preview Task</Message>
+                    <Name>MFCaptureEngine-StopPreview-Task</Name>
+                    <Value>109</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Stop Record Task</Message>
+                    <Name>MFCaptureEngine-StopRecord-Task</Name>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Photo Encode</Message>
+                    <Name>MFCaptureEngine-Photo-Encode-Task</Name>
+                    <Value>111</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Photo Format Convert</Message>
+                    <Name>MFCaptureEngine-Photo-FormatConvert-Task</Name>
+                    <Value>112</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Photo Flip</Message>
+                    <Name>MFCaptureEngine-Photo-Flip-Task</Name>
+                    <Value>113</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine Photo XVP</Message>
+                    <Name>MFCaptureEngine-Photo-XVP-Task</Name>
+                    <Value>114</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine PhotoSink Configure</Message>
+                    <Name>MFCaptureEngine-PhotoSink-Configure-Task</Name>
+                    <Value>115</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine FlushRequiredStreams Task</Message>
+                    <Name>MFCaptureEngine-FlushRequiredStreams-Task</Name>
+                    <Value>116</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine SetCurrentDeviceMediaType Task</Message>
+                    <Name>MFCaptureEngine-SetCurrentDeviceMediaType-Task</Name>
+                    <Value>117</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine FlushAllStreams Task</Message>
+                    <Name>MFCaptureEngine-FlushAllStreams-Task</Name>
+                    <Value>118</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine OnFlushForAllStreams Task</Message>
+                    <Name>MFCaptureEngine-OnFlushForAllStreams-Task</Name>
+                    <Value>119</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine SetExtendedPropertyAsync Task</Message>
+                    <Name>MFCaptureEngine-SetExtendedPropertyAsync-Task</Name>
+                    <Value>120</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine KSAsynPropertySet Task</Message>
+                    <Name>MFCaptureEngine-KSAsynPropertySet-Task</Name>
+                    <Value>121</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine PhotoSink Prepare Task</Message>
+                    <Name>MFCaptureEngine-PhotoSink-Prepare-Task</Name>
+                    <Value>122</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine StartCapturePhotoSequence Task</Message>
+                    <Name>MFCaptureEngine-StartCapturePhotoSequence-Task</Name>
+                    <Value>123</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine StopCapturePhotoSequence Task</Message>
+                    <Name>MFCaptureEngine-StopCapturePhotoSequence-Task</Name>
+                    <Value>124</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine CaptureSinkAddStream Task</Message>
+                    <Name>MFCaptureEngine-CaptureSinkAddStream-Task</Name>
+                    <Value>125</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine-OnEvent-Task</Message>
+                    <Name>MFCaptureEngine-OnEvent-Task</Name>
+                    <Value>126</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine GetAvailableDeviceMediaType</Message>
+                    <Name>MFCaptureEngine-GetAvailableDeviceMediaType</Name>
+                    <Value>127</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine_BridgeSourceSink</Message>
+                    <Name>MFCaptureEngine-BridgeSourceSink</Name>
+                    <Value>128</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine_SourceInfo Task</Message>
+                    <Name>MFCaptureEngine-SourceInfo-Task</Name>
+                    <Value>129</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine_Camera_Sound_Init Task</Message>
+                    <Name>MFCaptureEngine-Camera-Sound-Init-Task</Name>
+                    <Value>130</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine_Camera_Sound_QueuePlayback Task</Message>
+                    <Name>MFCaptureEngine-Camera-Sound-QueuePlayback-Task</Name>
+                    <Value>131</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine_Camera_Sound_Playback Task</Message>
+                    <Name>MFCaptureEngine-Camera-Sound-Playback-Task</Name>
+                    <Value>132</Value>
+                </Task>
+                <Task>
+                    <Message>MFCaptureEngine_DiskFull_Condition.TaskMessage</Message>
+                    <Name>MFCaptureEngine-DiskFull-Condition-Task</Name>
+                    <Value>133</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

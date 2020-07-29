@@ -1,0 +1,81 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SoftwareRestrictionPolicies</Name>
+        <Metadata>
+            <Guid>{7D29D58A-931A-40AC-8743-48C733045548}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Access to %1 is monitored by policy rule %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AttemptedPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SrpRuleGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>865</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Access to %1 has been restricted by your Administrator by the default software restriction policy level.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AttemptedPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>866</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Access to %1 has been restricted by your Administrator by location with policy rule %2 placed on path %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AttemptedPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SrpRuleGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RulePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>867</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Access to %1 has been restricted by your Administrator by software publisher policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AttemptedPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>868</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Access to %1 has been restricted by your Administrator by policy rule %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AttemptedPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SrpRuleGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>882</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Access to %1 has been restricted by your Administrator by policy rule %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AttemptedPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SrpRuleGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

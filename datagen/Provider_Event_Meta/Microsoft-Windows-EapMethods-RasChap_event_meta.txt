@@ -1,0 +1,107 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EapMethods-RasChap</Name>
+        <Metadata>
+            <Guid>{58980F4B-BD39-4A3E-B344-492ED2254A4E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Authentication succeeded for user %1, in domain %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2, with error %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+  <data name="int1" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2 because it was attempted outside permitted log-on hours.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2 because the user account is disabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2 because the user's password has expired.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Authentication failed for user %1, in domain %2 because the user does not have dial-in permissions.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The user's attempt to change their password failed. Username: %1. Domain: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sending creds to server for Username: %1. Domain: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Domain" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Username" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

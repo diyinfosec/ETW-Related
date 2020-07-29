@@ -1,0 +1,969 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Runtime-Networking</Name>
+        <Metadata>
+            <Guid>{6EB875EB-8F4A-4800-A00B-E484C97D7561}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 failed to start. The error code is %3: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 completed successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 failed with error code %3: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 was cancelled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 was closed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to parse URI '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uri" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to create URI with base URI '%1' and relative URI '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="str1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="str2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Add HTTP header '%1: %2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="str1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="str2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start connect request to '%1' with credential of '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="str1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="str2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start connect request to '%1' with default credential.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uri" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed connect request to '%1' at port %2. The last error is %3: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Opening request to '%1' to '%2' with flags %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="str1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="str2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="flags" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed open request to '%1'. The last error is %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="port" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request context %1 has request handle %2 to '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="obj2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="uri" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Set HTTP send and receive timeout to %2ms on request handle %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start send to request handle %1 with content length %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request handle %1 completed synchronously.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request context %1 completed send asynchronously.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Writing %2 bytes to request handle %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to send entity body to request handle %1. The last error is %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sent HTTP request at request handle %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="statusDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start to receive response from request handle %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Received HTTP response from request handle %1 with status code %2 and status description '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="statusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="statusDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Receive HTTP response from request handle %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="statusDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to receive HTTP response from request handle %1. The last error is %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request context %1 received HTTP response of %2 bytes, which is over the %3 limit.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="limit" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request context %1 resubmitting the request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Reusing the request handle %1 for server '%2'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="statusDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request context %1 was aborted.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Progress to '%1': %2 bytes sent; %3 total bytes to send; %4 bytes received; %5 total bytes to receive.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="statusDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="int1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="int2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="int3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="int4" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+HTTP request to '%1' completed. The error code is %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hresult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 failed to process HTTP response '%3'. The error code is %4: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="response" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1::%2 is called.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="runtimeClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="api" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1::%2 returned successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="runtimeClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="api" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1::%2 failed with HRESULT %3: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="runtimeClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="api" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hresult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Win32 API %1 failed with error code %2: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="win32Api" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to cancel GetAddrInfoEx with handle %1. The error code was %2: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to cancel DnsQueryEx with handle %1. The error code was %2: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DatagramSocket %1 failed to deliver event and stopped receiving due to error %2: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hresult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DatagramSocket %1 is raising event with %2 bytes received from sender '%4'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bytesRead" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="address" inType="win:Binary" outType="win:SocketAddress" length="size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DatagramSocket %1 started receiving message at socket %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="handle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DatagramSocket %1 failed to start receiving. The HRESULT was %2: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hresult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 is trying to receive %3 bytes at socket %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="handle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 has received %3 bytes and continues to receive the remaining %4 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="read" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 received %3 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCP socket %1 is connected: local port = %2; remote IP address: %3; remote port = %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="port1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ip" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="port2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UDP socket %1 is connected to remote address: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="address" inType="win:Binary" outType="win:SocketAddress" length="size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The datagram received by socket %1 from sender '%3' does not contain IP packet information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="address" inType="win:Binary" outType="win:SocketAddress" length="size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 sent %3 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 at %2 is trying to send %3 bytes at socket %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="handle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MessageWebSocket %1 received the close frame from the server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MessageWebSocket %1 is raising event with %2 bytes received.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MessageWebSocket %1 failed to start receiving. The HRESULT was %2: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hresult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MessageWebSocket %1 failed to deliver event and stopped receiving due to error %2: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hresult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WebSocket %1 is sending the close frame.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WebSocket %1 is receiving the close frame. Code: %2; Reason: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="statusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="statusDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WebSocket %1 I/O operation completed with error. The HRESULT was %2: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hresult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WebSocket %1 at %2 sent %3 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WebSocket %1 at %2 is trying to send %3 bytes at WebSocket %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="handle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 is already closed and CompleteDelivery is pending with: outstanding read operations: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="runtimeClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pendingOperations" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1.CompleteDelivery is pending with: outstanding read operations: %2, pending Winsock requests: %3, data available: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="runtimeClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pendingOperations" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="winsockPendingOperations" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="winsockDataAvailable" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1.Flush is pending with: outstanding write operations: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="runtimeClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pendingOperations" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1.CompleteDelivery is pending with: outstanding read operations: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="runtimeClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pendingOperations" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket connection established: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="connectorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Proxy lookup for socket connection to '%1' completed successfully: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="resolutionResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Proxy lookup for socket connection to '%1' completed with error %2: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="errorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ignored server certificate error count: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="errorCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorList" inType="win:UInt32" outType="xs:unsignedInt" count="errorCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Server certificate thumbprint: '%1', certificate error count: %3, contains fatal certificate errors: %2, intermediate certificate count: %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="certificateThumbprint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hasFatalError" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="errorCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errorList" inType="win:UInt32" outType="xs:unsignedInt" count="errorCount"/>
+  <data name="intermediateCertificatesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="intermediateCertificatesList" inType="win:UnicodeString" outType="xs:string" count="intermediateCertificatesCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to flush reads and wait for pending I/O to complete with context %1. Error was %2: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hresult" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="errorMessage" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Handle %1: HTTP/2 enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="obj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 - Line: %2 Status: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="functionName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="lineNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="status" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Async operation %1 at %2 started server custom validation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Async operation %1 at %2 waiting for completion of server custom validation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Async operation %1 at %2 failed server custom validation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Async operation %1 at %2 successfully completed server custom validation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="asyncOperation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="asyncObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

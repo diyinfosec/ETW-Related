@@ -1,0 +1,35 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CoreSystem-NetProvision-JoinProviderOnline</Name>
+        <Metadata>
+            <Guid>{3629DD4D-D6F1-4302-A623-0768B51501C7}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4098</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The machine %2 successfully completed an offline domain join to the domain %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4099</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The machine %2 attempted to join the domain %1 while offline but failed. The computer name was set to %2. A common cause of failure is the SKU does not support domain join, see the error code for more information. The error code was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComputerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NetStatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

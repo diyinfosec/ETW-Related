@@ -1,0 +1,122 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-TCCORE</Name>
+        <Metadata>
+            <Guid>{F67B2345-47FA-4721-A6FB-FE08110EECF7}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_EM_CandStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_EM_CandEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_EM_PromptCandStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_EM_PromptCandEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_EM_ConvStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_EM_ConvEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_EM_TypingStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_EM_TypingEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_Decoding1Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_Decoding1End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_LexSearchStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_LexSearchEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_SearchStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_SearchEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

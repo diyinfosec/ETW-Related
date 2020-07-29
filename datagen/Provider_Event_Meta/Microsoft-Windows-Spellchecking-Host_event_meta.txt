@@ -1,0 +1,69 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Spellchecking-Host</Name>
+        <Metadata>
+            <Guid>{1BDA2AB1-BBC1-4ACB-A849-C0EF2B249672}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed instantiating third-party spellchecking provider: CLSID %1, HRESULT %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clsid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="hresult" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed instantiating third-party spellchecker: Language tag %1, HRESULT %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="string" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hresult" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed initializing wordlist %1 in third-party spellchecker with Language tag %2, HRESULT %3. The spellchecker will remain available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Wordlist" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hresult" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Host started initializing third-party provider with wordlist %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Wordlist" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Host finished initializing third-party provider with wordlist %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Wordlist" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

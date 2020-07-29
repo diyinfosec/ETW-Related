@@ -1,0 +1,42 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-UserConsentVerifier</Name>
+        <Metadata>
+            <Guid>{40783728-8921-45D0-B231-919037B4B4FD}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A user consent verification request using a biometric fingerprint succeeded.
+
+Application: %1
+Purpose for consent: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A user consent verification request using a biometric fingerprint failed.
+
+Application: %1
+Purpose for consent: %2
+Reason for consent failure: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VerificationResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

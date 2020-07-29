@@ -1,0 +1,171 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Serial-ClassExtension-V2</Name>
+        <Metadata>
+            <Guid>{EEE173EF-7ED2-45DE-9877-01C70A852FBD}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\SerCx2.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\SerCx2.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=SerCx2.sys&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Serial-ClassExtension-V2</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-Serial-ClassExtension-V2/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Rundown events.</Message>
+                    <Name>Rundown</Name>
+                    <Guid>{42B4EBCF-144E-4AB4-8159-9287E50FB667}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>IOCTL request.</Message>
+                    <Name>IOCTL</Name>
+                    <Guid>{87FFF104-E7DA-47D8-AFC5-2D4066D34F51}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>I/O request.</Message>
+                    <Name>IO</Name>
+                    <Guid>{C48FB460-799F-48E5-A948-C508977D0F1D}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Power state transitions.</Message>
+                    <Name>Power</Name>
+                    <Guid>{929CD881-AB61-4C4B-8CAF-C0A07042E993}</Guid>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>I/O StateMachine operation.</Message>
+                    <Name>StateMachine</Name>
+                    <Value>11</Value>
+                    <Task>3</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>I/O payload operation.</Message>
+                    <Name>Payload</Name>
+                    <Value>12</Value>
+                    <Task>3</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Rundown events that list all devices when the provider is enabled.</Message>
+                    <Name>Rundown</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Plug &amp; Play events.</Message>
+                    <Name>PNP</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>TransferStateMachine events.</Message>
+                    <Name>TransferStateMachine</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Transmit TransferStateMachine events.</Message>
+                    <Name>TransmitTransferStateMachine</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Receive TransferStateMachine events.</Message>
+                    <Name>ReceiveTransferStateMachine</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>I/O request events.</Message>
+                    <Name>IO</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Transmit I/O request events.</Message>
+                    <Name>TransmitIO</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Receive I/O request events.</Message>
+                    <Name>ReceiveIO</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>I/O request payloads.</Message>
+                    <Name>IOPayload</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Transmit I/O request payloads.</Message>
+                    <Name>TransmitIOPayload</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Receive I/O request payloads.</Message>
+                    <Name>ReceiveIOPayload</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>IOCTL request events.</Message>
+                    <Name>IOCTL</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Power state transition events.</Message>
+                    <Name>PowerStateTransition</Name>
+                    <Value>4096</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

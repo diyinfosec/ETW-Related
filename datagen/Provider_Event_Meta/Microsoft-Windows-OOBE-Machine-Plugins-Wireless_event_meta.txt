@@ -1,0 +1,19 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-OOBE-Machine-Plugins-Wireless</Name>
+        <Metadata>
+            <Guid>{0F352580-E9E2-46C2-8336-6AC66E986416}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5111</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

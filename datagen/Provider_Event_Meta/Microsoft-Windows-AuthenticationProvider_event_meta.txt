@@ -1,0 +1,54 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AuthenticationProvider</Name>
+        <Metadata>
+            <Guid>{DDDC1D91-51A1-4A8D-95B5-350C4EE3D809}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The security package does not cache the credentials needed to authenticate to the server.
+
+Package Name:	%1
+User Name:	%2
+Domain Name:	%3
+Server Name:	%4
+Protected User:	%5
+Error Code:	%6
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectedUser" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The security package does not cache the user's sign on credentials.
+
+Package Name:	%1
+User Name:	%2
+Domain Name:	%3
+Protected User:	%4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProtectedUser" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

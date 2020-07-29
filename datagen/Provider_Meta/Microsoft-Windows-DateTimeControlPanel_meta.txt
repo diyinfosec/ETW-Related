@@ -1,0 +1,126 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DateTimeControlPanel</Name>
+        <Metadata>
+            <Guid>{741FC222-44ED-4BA7-98E3-F405B2D2C4B4}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\timedate.cpl</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\timedate.cpl</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=timedate.cpl&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DateTimeControlPanel</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-DateTimeControlPanel/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytical</Message>
+                    <Path>Microsoft-Windows-DateTimeControlPanel/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-DateTimeControlPanel/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Date/Time Control Panel Applet date/time functionality</Message>
+                    <Name>DateTime</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>Date/Time Control Panel Applet time zone functionality</Message>
+                    <Name>TimeZone</Name>
+                    <Value>31</Value>
+                </Task>
+                <Task>
+                    <Message>Date/Time Control Panel Applet extra clocks functionality</Message>
+                    <Name>AdditionalClocks</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrack_DisplayClockFlyout</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PerfTrack_DisplayClockTooltip</Name>
+                    <Value>34</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet data table operations</Message>
+                    <Name>DataTable</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet initialisation</Message>
+                    <Name>Initialize</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet configuration changes</Message>
+                    <Name>ConfigurationChange</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet operations</Message>
+                    <Name>Operation</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Date/Time Control Panel Applet clean-up operations</Message>
+                    <Name>Cleanup</Name>
+                    <Value>34</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

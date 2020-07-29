@@ -1,0 +1,184 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Schannel-Events</Name>
+        <Metadata>
+            <Guid>{91CC1150-71AA-47E2-AE18-C96E61736B6F}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>257</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>258</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReturnValue" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CredHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReturnValue" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>769</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AllocationSize" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>770</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1028</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1031</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1034</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1281</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1282</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1283</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1284</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1537</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CredHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1538</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1793</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A TLS Security Context handle is being deleted.
+
+   Context handle: %1
+   Target name: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContextHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1794</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

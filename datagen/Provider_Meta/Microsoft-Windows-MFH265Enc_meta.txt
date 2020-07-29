@@ -1,0 +1,12 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MFH265Enc</Name>
+        <Metadata>
+            <Guid>{9BB9B4D9-3DB8-4246-B479-97A3D391DEDA}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\MFH265Enc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\MFH265Enc.dll</MessageFilePath>
+            <HelpLink></HelpLink>
+        </Metadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,42 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-Broker</Name>
+        <Metadata>
+            <Guid>{E2C15FD7-8924-4C8C-8CFE-DA0BE539CE27}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IMJP Enter Learning]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IMJP Leave Learning]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IMJP Learning Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IMJP Learning End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

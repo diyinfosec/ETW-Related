@@ -1,0 +1,109 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Bluetooth-MTPEnum</Name>
+        <Metadata>
+            <Guid>{04268430-D489-424D-B914-0CFF741D6684}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MTP Bluetooth enumerator driver is operational with status code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MTP Bluetooth enumerator driver has failed to operate with error code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MTP Bluetooth enumerator driver has created a device object with status code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MTP Bluetooth enumerator driver has failed to create a device object with error code (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An MTP Bluetooth Link between PC and an MTP Bluetooth device has been established (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An MTP Bluetooth Link between PC and an MTP Bluetooth device has been disassociated (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An MTP Bluetooth Link connection is being initiated by (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An MTP Bluetooth Link connection is being disassociated by (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An MTP Bluetooth Link between PC and an MTP Bluetooth device has been disassociated (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

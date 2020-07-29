@@ -1,0 +1,118 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Firewall-CPL</Name>
+        <Metadata>
+            <Guid>{546549BE-9D63-46AA-9154-4F6EB9526378}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

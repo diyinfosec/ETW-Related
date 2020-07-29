@@ -1,0 +1,89 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Globalization</Name>
+        <Metadata>
+            <Guid>{12E3DA5B-14E4-4F76-8E35-C540763EF300}</Guid>
+            <ResourceFilePath>C:\WINDOWS\System32\Windows.Globalization.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\System32\Windows.Globalization.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=Windows.Globalization.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft Windows.Globalization API Analytic Channel</Message>
+                    <Path>Windows.Globalization/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Date/Time formatting task</Message>
+                    <Name>DateTimeFormatting</Name>
+                    <Guid>{7A6AC7BE-42D5-4BC9-B54F-0393F506B56D}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Number formatting task</Message>
+                    <Name>NumberFormatting</Name>
+                    <Guid>{4DA3EB59-8266-4A02-BB9E-12B82FA0C583}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Number Parsing task</Message>
+                    <Name>NumberParsing</Name>
+                    <Guid>{7F81D8C9-B180-4C66-A16A-70A1AA31951C}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Word Segmenting Task</Message>
+                    <Name>WordSegmenting</Name>
+                    <Guid>{D1F85B2F-604F-49B3-BDF1-5E4FB94ED9F9}</Guid>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Selectable Word Segmenting Task</Message>
+                    <Name>SelectableWordSegmenting</Name>
+                    <Guid>{135E5859-44E4-46AB-B8F9-92EACEBDDE89}</Guid>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Send</Message>
+                    <Name>win:Send</Name>
+                    <Value>9</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Receive</Message>
+                    <Name>win:Receive</Name>
+                    <Value>240</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

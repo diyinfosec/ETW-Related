@@ -1,0 +1,28 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkManagerTriggerProvider</Name>
+        <Metadata>
+            <Guid>{9B307223-4E4D-4BF5-9BE8-995CD8E7420B}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkChangeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkChangeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

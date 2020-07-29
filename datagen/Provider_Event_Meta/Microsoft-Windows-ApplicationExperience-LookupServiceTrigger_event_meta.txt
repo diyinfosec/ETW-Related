@@ -1,0 +1,19 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ApplicationExperience-LookupServiceTrigger</Name>
+        <Metadata>
+            <Guid>{18F4A5FD-FD3B-40A5-8FC2-E5D261C5D02E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AeLookupServieTrigger" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

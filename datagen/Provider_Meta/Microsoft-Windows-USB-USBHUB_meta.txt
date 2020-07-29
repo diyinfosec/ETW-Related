@@ -1,0 +1,214 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-USB-USBHUB</Name>
+        <Metadata>
+            <Guid>{7426A56B-E2D5-4B30-BDEF-B31815C1A74A}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\usbhub.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\usbhub.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=usbhub.sys&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-USB-USBHUB/Diagnostic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>USB Hub</Message>
+                    <Name>USBHUB_HUB</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Enumerate</Message>
+                    <Name>USBHUB_HUB_ENUMERATE</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Suspend</Message>
+                    <Name>USBHUB_HUB_SUSPEND</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Resume</Message>
+                    <Name>USBHUB_HUB_RESUME</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Reset Recovery</Message>
+                    <Name>USBHUB_HUB_HARD_RESET</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Query Device Relations IRP - BusRelations</Message>
+                    <Name>USBHUB_HUB_QUERY_BUSRELATIONS</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Wait Wake</Message>
+                    <Name>USBHUB_HUB_WAIT_WAKE</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Power</Message>
+                    <Name>USBHUB_HUB_POWER</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Port Information</Message>
+                    <Name>USBHUB_PORT_INFORMATION</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>USB Device</Message>
+                    <Name>USBHUB_DEVICE</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>USB Device Start</Message>
+                    <Name>USBHUB_DEVICE_START</Name>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>USB Device Set Power</Message>
+                    <Name>USBHUB_DEVICE_POWER</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message>USB Device Idle Notification</Message>
+                    <Name>USBHUB_DEVICE_IDLE_NOTIFICATION</Name>
+                    <Value>23</Value>
+                </Task>
+                <Task>
+                    <Message>USB Device WaitWake</Message>
+                    <Name>USBHUB_DEVICE_WAIT_WAKE</Name>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Exception</Message>
+                    <Name>USBHUB_HUB_EXCEPTION</Name>
+                    <Value>25</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Port Status</Message>
+                    <Name>USBHUB_HUB_PORT_STATUS</Name>
+                    <Value>26</Value>
+                </Task>
+                <Task>
+                    <Message>USB Device Internal Reset</Message>
+                    <Name>USBHUB_DEVICE_SYNC_RESET_DEVICE_INTERNAL</Name>
+                    <Value>27</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Past Exception</Message>
+                    <Name>USBHUB_HUB_PAST_EXCEPTION</Name>
+                    <Value>28</Value>
+                </Task>
+                <Task>
+                    <Message>USB Device IOCTL_INTERNAL_USB_RESET_PORT</Message>
+                    <Name>USBHUB_DEVICE_IOCTL_INTERNAL_USB_RESET_PORT</Name>
+                    <Value>29</Value>
+                </Task>
+                <Task>
+                    <Message>USB Hub Timer</Message>
+                    <Name>USBHUB_HUB_TIMER</Name>
+                    <Value>30</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>START</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Error</Message>
+                    <Name>ERROR</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Complete</Message>
+                    <Name>COMPLETE</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dispatch</Message>
+                    <Name>DISPATCH</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Add</Message>
+                    <Name>ADD</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Remove</Message>
+                    <Name>REMOVE</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Information</Message>
+                    <Name>INFORMATION</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Exception</Message>
+                    <Name>EXCEPTION</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Queue</Message>
+                    <Name>QUEUE</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Diagnostics</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

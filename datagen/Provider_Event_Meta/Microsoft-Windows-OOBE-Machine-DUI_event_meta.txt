@@ -1,0 +1,263 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-OOBE-Machine-DUI</Name>
+        <Metadata>
+            <Guid>{F5DBAA02-15D6-4644-A784-7032D508BF64}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5100</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5105</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5106</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PluginName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5107</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PluginName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5108</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PluginName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5112</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5113</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5114</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5115</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5116</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="val" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5117</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5118</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5119</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5120</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5121</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Bool" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5122</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Text" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5123</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Text" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5124</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PluginName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5125</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PluginName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5126</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5127</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5128</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Text" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5129</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Text" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5130</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5131</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5132</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5133</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5134</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5135</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5136</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5137</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5138</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5139</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5500</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

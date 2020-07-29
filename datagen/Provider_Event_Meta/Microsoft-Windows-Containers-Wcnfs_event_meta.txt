@@ -1,0 +1,50 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Containers-Wcnfs</Name>
+        <Metadata>
+            <Guid>{B99317E5-89B7-4C0D-ABD1-6E705F7912DC}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCNFS filter registratiion failed with error message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCNFS filter registration succeeded]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCNFS filter failed to attach to volume '%3' with error message: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCNFS filter unload succeeded]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

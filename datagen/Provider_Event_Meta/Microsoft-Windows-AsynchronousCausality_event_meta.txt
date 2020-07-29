@@ -1,0 +1,784 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AsynchronousCausality</Name>
+        <Metadata>
+            <Guid>{19A4C69A-28EB-4D4B-8D94-5F19055A1B5C}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4112</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4113</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4114</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4144</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4145</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4146</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4176</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4177</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4178</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OperationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelatedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8208</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8209</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8210</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8240</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8241</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8242</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8272</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8273</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8274</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when an asynchronous operation is completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CompletionStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12304</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12305</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12306</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12336</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12337</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12338</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12368</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12369</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12370</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired relating a synchronous work items to  an asynchronous operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Relation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16400</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16401</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16402</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16432</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16433</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16434</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16464</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16465</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16466</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16656</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16657</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16658</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16688</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16689</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16690</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16720</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16721</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16722</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item starts.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="WorkItemType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20496</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20497</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20498</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20528</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20529</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20530</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20560</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20561</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20562</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20752</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20753</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20754</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20784</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20785</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20786</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20816</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20817</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20818</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event fired when a synchronous work item completes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

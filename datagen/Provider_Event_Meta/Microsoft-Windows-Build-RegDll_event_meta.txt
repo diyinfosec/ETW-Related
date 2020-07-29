@@ -1,0 +1,18 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Build-RegDll</Name>
+        <Metadata>
+            <Guid>{D39B6336-CFCB-483B-8C76-7C3E7D02BCB8}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to register DLL.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

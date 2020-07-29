@@ -1,0 +1,2172 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CodeIntegrity</Name>
+        <Metadata>
+            <Guid>{4EE76BD8-3CF4-44A0-A0AC-3937643E37A3}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined an unsigned kernel module %2 is loaded into the system. Check with the publisher to see if a signed version of the kernel module is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity is unable to verify the image integrity of the file %2 because the set of per-page image hashes could not be found on the system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity is unable to verify the image integrity of the file %2 because the set of per-page image hashes could not be found on the system. The image is allowed to load because kernel mode debugger is attached.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows is unable to verify the image integrity of the file %2 because file hash could not be found on the system. A recent hardware or software change might have installed a file that is signed incorrectly or damaged, or that might be malicious software from an unknown source.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity is unable to verify the image integrity of the file %2 because a file hash could not be found on the system. The image is allowed to load because kernel mode debugger is attached.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity found a set of per-page image hashes for the file %2 in a catalog %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="CatalogNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CatalogNameBuffer" inType="win:UnicodeString" outType="xs:string" length="CatalogNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity found a set of per-page image hashes for the file %2 in the image embedded certificate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity found a file hash for the file %2 in a catalog %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="CatalogNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CatalogNameBuffer" inType="win:UnicodeString" outType="xs:string" length="CatalogNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity found a file hash for the file %2 in the image embedded certificate.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3010</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3010</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity was unable to load the %2 catalog. Status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity successfully loaded the %2 catalog.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started loading the %2 catalog.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started reloading catalogs.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3014</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3014</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity completed reloading catalogs. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3015</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started validating file hash of %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3016</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3016</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity completed validating file hash. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started validating page hashes of %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3018</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3018</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity completed validating page hashes. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3019</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started loading catalog cache from %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3020</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3020</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity completed loading catalog cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined a revoked kernel module %2 is loaded into the system.  Check with the publisher to see if a new signed version of the kernel module is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3022</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined a revoked kernel module %2 is loaded into the system. The image is allowed to load because kernel mode debugger is attached.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3023</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows is unable to verify the integrity of the file %2 because the signing certificate has been revoked.  Check with the publisher to see if a new signed version of the kernel module is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3024</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows was unable to update the boot catalog cache file.  Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3025</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined kernel module %2 is loaded into the system which does not have a valid embedded digital signature. Check with the publisher to see if an embedded signed version of the kernel module is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3026</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity was unable to load the %2 catalog because the signing certificate for this catalog has been revoked.  This can result in images failing to load because a valid signature cannot be found.  Check with the publisher to see if a new signed version of the catalog and images are available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3027</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started loading catalog %2 from the cache file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3028</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started saving catalog cache to %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3029</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity completed saving catalog cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3030</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity saved catalog %2 to the cache file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3032</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined a revoked image %2 is loaded into the system.  Check with the publisher to see if a new signed version of the image is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3033</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequestedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ValidatedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3034</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequestedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ValidatedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3035</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined a revoked image %2 is loaded into the system. The image is allowed to load because kernel mode debugger is attached.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3036</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows is unable to verify the integrity of the file %2 because the signing certificate has been revoked.  Check with the publisher to see if a new signed version of the kernel module is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3037</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined an unsigned image %2 is loaded into the system. Check with the publisher to see if a signed version of the image is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3038</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started validating image header of %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3038</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity started validating image header of %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="SecureRequired" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="RequestedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3039</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity completed validating image header. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3040</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started retrieving the cached data of %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3041</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+Code Integrity completed retrieval of file cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CachedFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CacheSource" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CachedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3042</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started setting the cache of %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3043</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity completed setting the file cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CachedFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="CacheSource" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CachedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3050</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity completed retrieval of file cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3051</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity completed retrieval of file cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3052</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity completed retrieval of file cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3054</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity started setting the cache of %2 file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3055</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity completed setting the file cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3057</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity completed retrieval of file cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3058</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity completed retrieval of file cache. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3059</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity found a set of per-page image hashes for the file %2 in a catalog %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="CatalogNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CatalogNameBuffer" inType="win:UnicodeString" outType="xs:string" length="CatalogNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3060</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity found a set of per-page image hashes for the file %2 in a catalog %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="CatalogNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CatalogNameBuffer" inType="win:UnicodeString" outType="xs:string" length="CatalogNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3061</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity found a file hash for the file %2 in a catalog %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="CatalogNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CatalogNameBuffer" inType="win:UnicodeString" outType="xs:string" length="CatalogNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3062</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity found a file hash for the file %2 in a catalog %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="CatalogNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CatalogNameBuffer" inType="win:UnicodeString" outType="xs:string" length="CatalogNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3063</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the security requirements for %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequirementType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3064</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the security requirements for %5. However, due to system policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequirementType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3065</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the security requirements for %5. However, due to system policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequirementType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3066</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequestedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ValidatedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3067</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequestedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ValidatedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3068</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequestedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ValidatedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3069</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity was unable to load the weak crypto policy value from registry. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3070</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity was unable to load the weak crypto policy from registry store. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3071</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity was unable to load the weak crypto policies. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3072</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that the kernel module %2 is not compatible with hypervisor enforcement due to it having non-page aligned sections.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3073</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that the kernel module %2 is not compatible with strict mode hypervisor enforcement due to it having an executable section that is also writable.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3074</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity was unable to verify a page for a module verified using hypervisor enforcement. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3075</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that process (%4) spent %7 and %8 microseconds for Code Integrity check and policy check to load %2 with validated %6 signing level. For all components without EA cache, Code Integrity spent about %9‰ more time when policy enforced.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequestedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ValidatedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ElapsedTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PolicyElapsedTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PercentageTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3076</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3076</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3076</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3076</Id>
+                <Version>3</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+  <data name="SHA1 Flat Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Flat Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Flat Hash Size"/>
+  <data name="SHA256 Flat Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Flat Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Flat Hash Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3077</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3077</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3077</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3077</Id>
+                <Version>3</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+  <data name="SHA1 Flat Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Flat Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Flat Hash Size"/>
+  <data name="SHA256 Flat Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Flat Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Flat Hash Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3078</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3078</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3078</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3079</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3079</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3079</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>3</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated Advanced Threat Protection policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>4</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated Enterprise Revocation policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>5</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>6</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>7</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated Advanced Threat Protection policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3080</Id>
+                <Version>8</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated Enterprise Revocation policy. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>3</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated Advanced Threat Protection policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>4</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated Enterprise Revocation policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>5</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>6</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated code integrity policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>7</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated Advanced Threat Protection policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3081</Id>
+                <Version>8</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the %5 signing level requirements or violated Enterprise Revocation policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="File Name" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="Requested Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Validated Signing Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA1 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA1 Hash Size"/>
+  <data name="SHA256 Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SHA256 Hash" inType="win:Binary" outType="xs:hexBinary" length="SHA256 Hash Size"/>
+  <data name="USN" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SI Signing Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3082</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined kernel module %2 that did not meet the WHQL requirements is loaded into the system. However, due to code integrity auditing policy, the image was allowed to load.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3083</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined kernel module %2 that did not meet the WHQL requirements is loaded into the system. Check with the publisher to see if a WHQL compliant kernel module is available.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3084</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity will enable WHQL driver enforcement for this boot session.  Settings %1. Exemption %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Settings" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Exemption" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3085</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity will disable WHQL driver enforcement for this boot session.  Settings %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Settings" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Exemption" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3086</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that a process (%4) attempted to load %2 that did not meet the signing requirements for Isolated User Mode.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="ProcessNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProcessNameBuffer" inType="win:UnicodeString" outType="xs:string" length="ProcessNameLength"/>
+  <data name="RequestedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ValidatedPolicy" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3087</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity determined that the kernel module %2 is not compatible with hypervisor enforcement. Status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3088</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity testing module %2 against policy %11. Status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="StatusCode" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="ManagedInstallerEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PassesManagedInstaller" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SmartlockerEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PassesSmartlocker" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DefenderTrust" inType="win:Int32" outType="xs:int"/>
+  <data name="AuditEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3089</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalSignatureCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Signature" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Hash Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Hash" inType="win:Binary" outType="xs:hexBinary" length="Hash Size"/>
+  <data name="SignatureType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ValidatedSigningLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="VerificationError" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PolicyBits" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NotValidBefore" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="NotValidAfter" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PublisherNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PublisherName" inType="win:UnicodeString" outType="xs:string" length="PublisherNameLength"/>
+  <data name="IssuerNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="IssuerName" inType="win:UnicodeString" outType="xs:string" length="IssuerNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3090</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity testing module %2 against policy %11. Status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="StatusCode" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="ManagedInstallerEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PassesManagedInstaller" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SmartlockerEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PassesSmartlocker" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DefenderTrust" inType="win:Int32" outType="xs:int"/>
+  <data name="AuditEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3091</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity testing module %2 against policy %11. Status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="StatusCode" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="ManagedInstallerEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PassesManagedInstaller" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SmartlockerEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PassesSmartlocker" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DefenderTrust" inType="win:Int32" outType="xs:int"/>
+  <data name="AuditEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3092</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Code Integrity testing module %2 against policy %11. Status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+  <data name="StatusCode" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="ManagedInstallerEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PassesManagedInstaller" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SmartlockerEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PassesSmartlocker" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="DefenderTrust" inType="win:Int32" outType="xs:int"/>
+  <data name="AuditEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyName" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIDLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyID" inType="win:UnicodeString" outType="xs:string" length="PolicyIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3093</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength"/>
+  <data name="TypeOfPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Options" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3094</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength"/>
+  <data name="TypeOfPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Options" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3095</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength"/>
+  <data name="TypeOfPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Options" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3096</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength"/>
+  <data name="TypeOfPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Options" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3097</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength"/>
+  <data name="TypeOfPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Options" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3098</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength"/>
+  <data name="TypeOfPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Options" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3099</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength"/>
+  <data name="TypeOfPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Options" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyNameLength"/>
+  <data name="PolicyIdLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PolicyIdBuffer" inType="win:UnicodeString" outType="xs:string" length="PolicyIdLength"/>
+  <data name="TypeOfPolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Options" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PolicyHashSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PolicyHash" inType="win:Binary" outType="xs:hexBinary" length="PolicyHashSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NumberOfPolicies" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NumberOfPolicies" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+other (see event data)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PolicyType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows blocked file %2 which has been disallowed for protected processes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileNameBuffer" inType="win:UnicodeString" outType="xs:string" length="FileNameLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

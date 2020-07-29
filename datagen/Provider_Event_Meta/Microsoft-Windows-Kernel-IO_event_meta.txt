@@ -1,0 +1,108 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-IO</Name>
+        <Metadata>
+            <Guid>{ABF1F586-2E50-4BA8-928D-49044E6F0DB7}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows has started processing the volume mount request.
+
+           Volume GUID: %1
+           Volume Name: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The volume has been successfully mounted.
+
+           Volume GUID: %1
+           Volume Name: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows failed to mount the volume.
+
+           Status: %4
+           Volume GUID: %1
+           Volume Name: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VolumeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+  <data name="Error" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1205</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows is configured to block legacy file system filters.
+
+           Filter name: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilterNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilterName" inType="win:UnicodeString" outType="xs:string" length="FilterNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1206</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Legacy file system filters cannot attach to byte addressable volumes.
+
+           Filter name: %2
+           Volume name: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilterNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilterName" inType="win:UnicodeString" outType="xs:string" length="FilterNameLength"/>
+  <data name="VolumeNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VolumeName" inType="win:UnicodeString" outType="xs:string" length="VolumeNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1207</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dumps are disabled on the machine since there was an error enabling dump encryption: %1.                  
+See http://go.microsoft.com/fwlink/?LinkId=824149 for more information on dump encryption]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DumpEncryptionFailureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

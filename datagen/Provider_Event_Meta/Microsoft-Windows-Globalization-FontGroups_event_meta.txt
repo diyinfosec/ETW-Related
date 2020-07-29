@@ -1,0 +1,22 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Globalization-FontGroups</Name>
+        <Metadata>
+            <Guid>{E1168941-8333-497F-98D9-67BEE05A6034}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

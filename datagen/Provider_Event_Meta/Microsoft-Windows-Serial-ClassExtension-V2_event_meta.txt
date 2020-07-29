@@ -1,0 +1,412 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Serial-ClassExtension-V2</Name>
+        <Metadata>
+            <Guid>{EEE173EF-7ED2-45DE-9877-01C70A852FBD}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+SerCx2 loaded (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlDeviceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+SerCx2 failed to load (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlDeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+SerCx2 unloading.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Starting rundown.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Device rundown (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransmitTransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReceiveTransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceInstanceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Rundown complete.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Device created (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransmitTransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReceiveTransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceInstanceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Device destroyed (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TransmitSM (%1) Event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TransmitSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Invalid Transition TransmitSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ReceiveSM (%1) Event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ReceiveSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Invalid Transition ReceiveSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Processing %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IOCTL" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IOCTLInputBufferLength" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IOCTLInputBuffer" inType="win:Binary" outType="xs:hexBinary" length="IOCTLInputBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Completed %2 with %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IOCTL" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="IOCTLOutputBufferLength" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="IOCTLOutputBuffer" inType="win:Binary" outType="xs:hexBinary" length="IOCTLOutputBufferLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Transmit I/O request for %2 bytes started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Transmit I/O request completed (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="Information" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Transmit I/O chunk of %3 bytes using %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransferModeEvent" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Payload" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Receive I/O request for %2 bytes started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Receive I/O request completed (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="Information" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Receive I/O chunk of %3 bytes using %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Offset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransferModeEvent" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Payload" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Saved %2 bytes before exiting D0. Total %3 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BytesSaved" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Transitioning to system power state %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Transitioning to device power state %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+System power state transition %2 complete (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Device power state transition %2 complete (%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Device" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TransmitSM (%1) Event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TransmitSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ReceiveSM (%1) Event: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ReceiveSM (%1) Transition: %2[%3] -> %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferSmContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FromState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Event" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ToState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

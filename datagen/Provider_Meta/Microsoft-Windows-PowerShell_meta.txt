@@ -1,0 +1,339 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PowerShell</Name>
+        <Metadata>
+            <Guid>{A0C1853B-5C40-4B15-8766-3CF1C58F985A}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\WindowsPowerShell\v1.0\PSEvents.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\WindowsPowerShell\v1.0\PSEvents.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=PSEvents.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-PowerShell/Operational</Message>
+                    <Path>Microsoft-Windows-PowerShell/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-PowerShell/Analytic</Message>
+                    <Path>Microsoft-Windows-PowerShell/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-PowerShell/Debug</Message>
+                    <Path>Microsoft-Windows-PowerShell/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-PowerShell/Admin</Message>
+                    <Path>Microsoft-Windows-PowerShell/Admin</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+                <Level>
+                    <Message>Debug level defined by PowerShell (which is above Informational defined by system)</Message>
+                    <Name>Debug</Name>
+                    <Value>20</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Connect</Message>
+                    <Name>CreateRunspace</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Execute a Remote Command</Message>
+                    <Name>ExecuteCommand</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Serialize or deserialize remoting payload</Message>
+                    <Name>Serialization</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>PowerShell Console Startup</Message>
+                    <Name>Powershell-Console-Startup</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Workflow Hosting</Message>
+                    <Name>WorkflowHosting</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Workflow Execution</Message>
+                    <Name>WorkflowExecution</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Workflow Persistence</Message>
+                    <Name>WorkflowPersistence</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Workflow Validation</Message>
+                    <Name>WorkflowValidation</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Configuration</Message>
+                    <Name>Configuration</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Starting Engine</Message>
+                    <Name>EngineStart</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>Stopping Engine</Message>
+                    <Name>EngineStop</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Starting Command</Message>
+                    <Name>CommandStart</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>Stopping Command</Message>
+                    <Name>CommandStop</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>Starting Provider</Message>
+                    <Name>ProviderStart</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>Stopping Provider</Message>
+                    <Name>ProviderStop</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>Executing Pipeline</Message>
+                    <Name>ExecutePipeline</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>PowerShell Scheduled Jobs</Message>
+                    <Name>ScheduledJob</Name>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message>PowerShell Named Pipe IPC</Message>
+                    <Name>NamedPipe</Name>
+                    <Value>111</Value>
+                </Task>
+                <Task>
+                    <Message>PowerShell ISE Operation</Message>
+                    <Name>ISEOperation</Name>
+                    <Value>120</Value>
+                </Task>
+                <Task>
+                    <Message>None</Message>
+                    <Name>win:None</Name>
+                    <Value>0</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Open (async)</Message>
+                    <Name>Open</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Close (Async)</Message>
+                    <Name>Close</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>connect</Message>
+                    <Name>Connect</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Disconnect</Message>
+                    <Name>Disconnect</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Negotiate</Message>
+                    <Name>Negotiate</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>On create calls</Message>
+                    <Name>Create</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>to be used when an object is constructed</Message>
+                    <Name>Constructor</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>To be used when an object is disposed</Message>
+                    <Name>Dispose</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>To be used when an event handler is raised</Message>
+                    <Name>EventHandler</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>To be used when an exception is raised</Message>
+                    <Name>Exception</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>To be used when operation is just executing a method</Message>
+                    <Name>Method</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Send (Async)</Message>
+                    <Name>Send</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Receive (Async)</Message>
+                    <Name>Receive</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Rehydration</Message>
+                    <Name>Rehydration</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Serialization settings</Message>
+                    <Name>SerializationSettings</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Shutting down</Message>
+                    <Name>ShuttingDown</Name>
+                    <Value>25</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>PowerShell Runspace</Message>
+                    <Name>Runspace</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Pipeline of Commands</Message>
+                    <Name>Pipeline</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>PowerShell remoting protocol</Message>
+                    <Name>Protocol</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>PowerShell remoting transport</Message>
+                    <Name>Transport</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>PowerShell remoting host proxy calls</Message>
+                    <Name>Host</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>All remoting cmdlets</Message>
+                    <Name>Cmdlets</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>The serialization layer</Message>
+                    <Name>Serializer</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>All session layer</Message>
+                    <Name>Session</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>The managed PowerShell plugin worker</Message>
+                    <Name>Plugin</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>PSWorkflow Hosting And Execution Layer</Message>
+                    <Name>PSWorkflow</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

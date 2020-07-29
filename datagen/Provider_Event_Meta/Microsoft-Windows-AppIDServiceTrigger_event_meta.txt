@@ -1,0 +1,16 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AppIDServiceTrigger</Name>
+        <Metadata>
+            <Guid>{D02A9C27-79B8-40D6-9B97-CF3F8B7B5D60}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

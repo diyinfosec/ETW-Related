@@ -1,0 +1,329 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-LinkLayerDiscoveryProtocol</Name>
+        <Metadata>
+            <Guid>{DCBFB8F0-CD19-4F1C-A27D-23AC706DED72}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Link Layer Discovery Protocol driver (LLDP) is starting]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Link Layer Discovery Protocol driver (LLDP) is stopping]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The interface %1 is enabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The interface %1 is disabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The local MIB on interface %1 has been updated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An update to the local MIB on interface %1 was rejected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RejectReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10030</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The parameter %2 on interface %1 has been changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdminParameter" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10040</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An LLDP frame was transmitted on interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketPayloadLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketPayload" inType="win:Binary" outType="xs:hexBinary" length="PacketPayloadLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10041</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An LLDP frame was received on interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketPayloadLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketPayload" inType="win:Binary" outType="xs:hexBinary" length="PacketPayloadLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10042</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An LLDP frame received on interface %1 was rejected.
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PacketDiscardReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10043</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An LLDP frame was successfully validated on interface %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SequenceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10050</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A new neighbor was discovered on interface %1
+Neighbor ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsapIdLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsapId" inType="win:Binary" outType="xs:hexBinary" length="MsapIdLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10051</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The neighbor on interface %1 has updated its MIB
+Neighbor ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsapIdLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsapId" inType="win:Binary" outType="xs:hexBinary" length="MsapIdLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10052</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The neighbor on interface %1 was removed because no message has been received within the timeout interval
+Neighbor ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsapIdLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsapId" inType="win:Binary" outType="xs:hexBinary" length="MsapIdLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10053</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The neighbor on interface %1 was removed because a shutdown message was received
+Neighbor ID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsapIdLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MsapId" inType="win:Binary" outType="xs:hexBinary" length="MsapIdLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10060</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The system has detected that there are multiple neighbors sending LLDP packets to the network interface %1.  A "tooManyNeighbors" state has been declared.  This may inhibit some network operations.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10061</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The "tooManyNeighbors" state has been cleared]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10062</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A message was received on interface %1 from an unknown neighbor, while the previously-detected neighbor is still active.  This will prolong the "tooManyNeighbors" state.
+Existing Neighbor ID: %3
+Recived Neighbor ID: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExistingMsapIdLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExistingMsapId" inType="win:Binary" outType="xs:hexBinary" length="ExistingMsapIdLength"/>
+  <data name="ReceivedMsapIdLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceivedMsapId" inType="win:Binary" outType="xs:hexBinary" length="ReceivedMsapIdLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error: %1 Location: %2 Context: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Warning: %1 Location: %2 Context: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WarningCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Transitioned to State: %1 Context: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Updated Context: %1 Update Reason: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UpdateReasonCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="SourcePort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestinationAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="DestinationPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SourceAddress: %1 SourcePort: %2 DestinationAddress: %3 DestinationPort: %4 Protocol: %5 ReferenceContext: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="SourcePort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestinationAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="DestinationPort" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Interface Guid: %1 IfIndex: %2 Interface Luid: %3 ReferenceContext: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IfLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

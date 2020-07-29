@@ -1,0 +1,474 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-EventTracing</Name>
+        <Metadata>
+            <Guid>{B675EC37-BDB6-4648-BC92-F3FDC74D3CA2}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Session "%1" failed to write to log file "%2" with the following error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LoggingMode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The backing-file for the real-time session "%1" has reached its maximum size. As a result, new events will not be logged to this session until space becomes available. This error is often caused by starting a trace session in real-time mode without having any real-time consumers.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LoggingMode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Session "%1" failed to start with the following error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LoggingMode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Session "%1" stopped due to the following error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LoggingMode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Session "%1" stopped due to the following error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LoggingMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FailureReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The maximum file size for session "%1" has been reached. As a result, events might be lost (not logged) to file "%2". The maximum files size is currently set to %5 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LoggingMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaxFileSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error was encountered while tracing session "%2" was switching to the "%1" event log file. Error: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LoggingMode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Provider %1 was registered with Event Tracing for Windows.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderName" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Provider %1 was unregistered from Event Tracing for Windows.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderName" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Session "%3" was started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Session "%3" was started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MinimumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaximumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BufferSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PeakBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CurrentBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FlushThreshold" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Session "%3" was stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Session "%3" was stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MinimumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaximumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BufferSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PeakBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CurrentBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FlushThreshold" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+Session "%3" was stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MinimumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaximumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BufferSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PeakBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CurrentBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FlushThreshold" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EventsLost" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BuffersLost" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="RealTimeBuffersLost" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LoggerId" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The configuration of session "%3" has been modified.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The events from session "%3" have been flushed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Provider %1 has been enabled to session "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderName" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Provider %1 has been enabled to session "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderName" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MatchAnyKeyword" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MatchAllKeyword" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="EnableProperty" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Provider %1 is no longer enabled to session "%2".]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderName" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The security descriptor for session "%3" has been updated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stack correlation event. This event contains a call stack which is associated with a prior event which is correlated by the MatchId.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EventId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MinimumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaximumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BufferSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PeakBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CurrentBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FlushThreshold" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="LoggerMode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SessionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LogFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MinimumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MaximumBuffers" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BufferSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PeakBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CurrentBuffersCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FlushThreshold" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EventsLost" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BuffersLost" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="RealTimeBuffersLost" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LoggerId" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BuffersPersisted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuffersWritten" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error saving soft restart persisted log "%1" Error: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BufferSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BuffersPersisted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BuffersWritten" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FilterFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LastEnableLoggerId" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FilterFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LastEnableLoggerId" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Index" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LoggerId" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="MatchAnyKeyword" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MatchAllKeyword" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Level" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="EnableProperty" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="GroupGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="EnableMask" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="GroupEnableMask" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error setting traits on Provider %1. Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A registration for Provider %1 has joined Provider Group %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProviderGroupGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

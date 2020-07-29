@@ -1,0 +1,58 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DeviceConfidence</Name>
+        <Metadata>
+            <Guid>{1D5990C1-EC62-49F0-9E37-1F4DB12DB41E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to get active window for app package %1 and capability name %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="packageSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="capabilityName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to show consent prompt for app package %1 with error %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="packageSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to create consent window for app package %1 with error %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="packageSid" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

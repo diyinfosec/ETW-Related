@@ -1,0 +1,292 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WiFiHotspotService</Name>
+        <Metadata>
+            <Guid>{814182FE-58F7-11E1-853C-78E7D1CA7337}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: Launched]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: Exiting]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ServicePlug-in: Initialised]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: Init: %1 FAILed, Error=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: LaunchHostProcess - %1 FAILed, Error=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: LaunchHostProcess SUCCEEDed - hProcess=%1, hThread=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ptr1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Ptr2" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: RpcClient: %1 FAILed, Error=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: Notification Event - %1, Value=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: Notification Error - %1 FAILed, Error=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: Plug-in Event - %1, Value=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: Plug-in Error - %1 FAILed, Error=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: Connection Event - %1, Value=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service: Connection Error - %1 FAILed, Error=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Test: S1=%1, S2=%2, D1=%3, D2=%4, D3=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="uString2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Dword2" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Dword3" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Utils: Allocate Memory FAILed: Error=%1, ByteCount=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Dword1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Dword2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Utils: Allocated Memory: 0x%1 ByteCount=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Utils: Freeing Memory: 0x%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Utils: UuidVector: 0x%1, ByteCount=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Utils: %1 FAILed, Error=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+:: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="aString" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+++ %1: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+-- %1: [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+    [%1]: SSID=%2:%3, Auth:Ciph=%4:%5, Flags=%6, CmName=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Dword1" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Dword2" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="aString1" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Dword3" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Dword4" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Dword5" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="uString1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+HotspotConnectionStateChanged: CmName=%1, NewState=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="uString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

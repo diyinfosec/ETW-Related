@@ -1,0 +1,305 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NFC-ClassExtension</Name>
+        <Metadata>
+            <Guid>{85C070E6-F9AE-481F-AACB-BC550BFD35A1}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Write NCI packet payload (MessageType: %1, PacketBoundaryFlag: %2, Size: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PacketBoundaryFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PacketSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RawPacket" inType="win:UInt8" outType="win:HexInt8" count="PacketSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Received NCI packet payload (MessageType: %1, PacketBoundaryFlag: %2, Size: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PacketBoundaryFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PacketSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RawPacket" inType="win:UInt8" outType="win:HexInt8" count="PacketSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Write NCI packet (MessageType: %1, PacketBoundaryFlag: %2, Size: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PacketBoundaryFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PacketSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Received NCI packet (MessageType: %1, PacketBoundaryFlag: %2, Size: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PacketBoundaryFlag" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PacketSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+NFP client created (FileObject: %1, Role: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Role" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TranslationType" inType="win:Int32" outType="xs:int"/>
+  <data name="TNF" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+NFP client destroyed (FileObject: %1, Role: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Role" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:AnsiString" outType="xs:string"/>
+  <data name="TranslationType" inType="win:Int32" outType="xs:int"/>
+  <data name="TNF" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+NFP set payload (FileObject: %1, PayloadSize: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PayloadSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+NFP get next subscribed message start (FileObject: %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+NFP get next subscribed message completed (FileObject: %1, Status: %2, Information: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Information" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+NFP get next transmitted message start (FileObject: %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+NFP get next transmitted message completed (FileObject: %1, Status: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Power set radio state (RadioIsOn: %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RadioIsOn" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF interface initialization started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF interface initialization completed (Status: %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF firmware version is: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Version" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF firmware download started (File: %1, ForceDownload: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FirmwareFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Force" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF firmware download completed (Status: %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF event: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RfArrivalDepartureEvent" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF NDEF tag read start.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>308</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF NDEF tag read stop (Status: %1, Length: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>309</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF NDEF tag write start (Length: %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+RF NDEF tag write stop (Status: %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Device registry settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdleTimeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PollDevInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NfcIp_Mode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LLCP_MIU" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LLCP_LTO" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LLCP_RecvWindowSize" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>402</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Device persisted registry settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NfcRadioTurnedOff" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="NfcRadioFlightMode" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SERadioTurnedOff" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SERadioFlightMode" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

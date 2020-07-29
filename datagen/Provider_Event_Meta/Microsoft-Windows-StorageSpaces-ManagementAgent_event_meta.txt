@@ -1,0 +1,21 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StorageSpaces-ManagementAgent</Name>
+        <Metadata>
+            <Guid>{AA4C798D-D91B-4B07-A013-787F5803D6FC}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Storage Spaces status has changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

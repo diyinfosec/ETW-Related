@@ -1,0 +1,16 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PCI</Name>
+        <Metadata>
+            <Guid>{1A9443D4-B099-44D6-8EB1-829B9C2FE290}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

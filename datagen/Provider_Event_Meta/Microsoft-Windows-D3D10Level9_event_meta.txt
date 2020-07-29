@@ -1,0 +1,79 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-D3D10Level9</Name>
+        <Metadata>
+            <Guid>{7E7D3382-023C-43CB-95D2-6F0CA6D70381}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="D3D10Level9Resource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_hDX9Resource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Usage" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="D3D10Level9Resource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_hDX9Resource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Usage" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="D3D10Level9Resource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_hDX9Resource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Usage" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

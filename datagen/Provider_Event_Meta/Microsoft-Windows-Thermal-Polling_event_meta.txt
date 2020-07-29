@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Thermal-Polling</Name>
+        <Metadata>
+            <Guid>{E8A7C168-81EE-465C-8E8E-D39A2AC1CA41}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,136 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Resource-Exhaustion-Detector</Name>
+        <Metadata>
+            <Guid>{9988748E-C2E8-4054-85F6-0C3E1CAD2470}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\radardt.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\radardt.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=radardt.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Resource-Exhaustion-Detector</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Message>
+                    <Path>Microsoft-Windows-Resource-Exhaustion-Detector/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Lifecycle Events</Message>
+                    <Name>RDR_DET_TASK_LIFECYCLE</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Resource Exhaustion Detection Events</Message>
+                    <Name>RDR_DET_TASK_DETECTION</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Resource Exhaustion Diagnosis Events</Message>
+                    <Name>RDR_DET_TASK_DIAGNOSIS</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Events logged when the resource exhaustion detector is started.</Message>
+                    <Name>RDR_DET_OPCODE_LIFECYCLE_START</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when the resource exhaustion detector is stopped.</Message>
+                    <Name>RDR_DET_OPCODE_LIFECYCLE_STOP</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after a memory allocation.</Message>
+                    <Name>RDR_DET_OPCODE_LIFECYCLE_ALLOC</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when exhaustion of a resource is detected.</Message>
+                    <Name>RDR_DET_OPCODE_DETECTION_START</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when a problem is detected.</Message>
+                    <Name>RDR_DET_OPCODE_DETECTION_RESULT</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when diagnosis is started.</Message>
+                    <Name>RDR_DET_OPCODE_DIAGNOSIS_START</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when diagnosis is stopped.</Message>
+                    <Name>RDR_DET_OPCODE_DIAGNOSIS_STOP</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged during diagnosis.</Message>
+                    <Name>RDR_DET_OPCODE_DIAGNOSIS_PROCESSING</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Contains the results of the diagnosis.</Message>
+                    <Name>RDR_DET_OPCODE_DIAGNOSIS_RESULT</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Events related to lifecycle of resource exhaustion detector.</Message>
+                    <Name>RDR_DET_KEYWORD_LIFECYCLE</Name>
+                    <Value>268435456</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Events related to exhaustion of system commit limit (virtual memory).</Message>
+                    <Name>RDR_DET_KEYWORD_MEMORY_EXHAUSTION</Name>
+                    <Value>536870912</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Event generated when heap leak detection is about to be started on a process.</Message>
+                    <Name>RDR_DET_KEYWORD_HEAP_LEAK_DETECTION</Name>
+                    <Value>1073741824</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

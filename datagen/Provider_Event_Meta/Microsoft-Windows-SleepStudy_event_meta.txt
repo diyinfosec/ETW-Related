@@ -1,0 +1,69 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SleepStudy</Name>
+        <Metadata>
+            <Guid>{D37687E7-8BF0-4D11-B589-A7ABE080756A}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioInstanceId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ParentGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="BlockerNameLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BlockerName" inType="win:UnicodeString" outType="xs:string" length="BlockerNameLength"/>
+  <data name="BlockerGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ActiveTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioInstanceId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DataCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <struct name="Data" count="DataCount">
+    <data name="BlockerGuid" inType="win:GUID" outType="xs:GUID"/>
+    <data name="KeyLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="Key" inType="win:UnicodeString" outType="xs:string" length="KeyLength"/>
+    <data name="ValueLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="Value" inType="win:UnicodeString" outType="xs:string" length="ValueLength"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActiveTimeAndCommonData" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="TopLevelActiveTime" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="BlockerHierarchyLevel1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BlockerHierarchyLevel2" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BlockerHierarchyLevel3" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <struct name="Data" count="DataCount">
+    <data name="KeyLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="Key" inType="win:UnicodeString" outType="xs:string" length="KeyLength"/>
+    <data name="ValueLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="Value" inType="win:UnicodeString" outType="xs:string" length="ValueLength"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

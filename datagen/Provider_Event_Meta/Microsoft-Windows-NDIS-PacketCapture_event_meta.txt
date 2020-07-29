@@ -1,0 +1,280 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NDIS-PacketCapture</Name>
+        <Metadata>
+            <Guid>{2ED6006E-4729-4609-B423-3EE7BCD678EF}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Packet Fragment (%3 bytes)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowerIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FragmentSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Fragment" inType="win:Binary" outType="xs:hexBinary" length="FragmentSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Packet Metadata (%3 bytes)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowerIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MetadataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Metadata" inType="win:Binary" outType="xs:hexBinary" length="MetadataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+VMSwitch Packet Fragment (%9 bytes)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowerIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourcePortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourcePortName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceNicName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceNicType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DestinationCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Destination" count="DestinationCount">
+    <data name="DestinationPortId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="DestinationPortName" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="DestinationNicName" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="DestinationNicType" inType="win:UnicodeString" outType="xs:string"/>
+  </struct>
+  <data name="FragmentSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Fragment" inType="win:Binary" outType="xs:hexBinary" length="FragmentSize"/>
+  <data name="OOBDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OOBData" inType="win:Binary" outType="xs:hexBinary" length="OOBDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Capture Rules Count=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RulesCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Loaded (FriendlyName=%1 UniqueName=%2 ServiceName=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UniqueName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Unloaded (FriendlyName=%1 UniqueName=%2 ServiceName=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UniqueName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Version" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attached to miniport interface %1 above layer interface %2 with media type %3 (context=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowerIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Detached from miniport interface %1 above layer interface %2 with media type %3 (context=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MiniportIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowerIfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MediaType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReferenceContext" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Capture Rule: Id=%1 Directive=%2 ValueLength=%3 Value=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Directive" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Value" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver load failed with status=%1 at location %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FilterAttach failed with status=%1 at location %2 (context=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Received Invalid Capture Rule: Id=%1 Directive=%2 ValueLength=%3 Value=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Directive" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Value" inType="win:Binary" outType="xs:hexBinary" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Entering state '%2' from state '%1' (location=%3, context=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PreviousState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="NextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Entering state '%2' from state '%1' (location=%3, context=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PreviousState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="NextState" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rx Packet Processing Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rx Packet Processing Complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Tx Packet Processing Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Tx Packet Processing Complete]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rundown: %1: %2 - %3, %4, %5. %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RundownId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Param1" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ParamStr" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Event source: %1: %2, IfIndex: %3, LayerCount: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="SourceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IfIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LayerCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <struct name="LayerInfo" count="LayerCount">
+    <data name="LayerId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="LayerName" inType="win:UnicodeString" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

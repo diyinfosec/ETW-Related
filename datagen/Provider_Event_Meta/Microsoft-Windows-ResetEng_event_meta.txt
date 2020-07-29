@@ -1,0 +1,40 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ResetEng</Name>
+        <Metadata>
+            <Guid>{A4445C76-ED85-C8A3-02C1-532A38614A9E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The system has been successfully reset.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempt to reset the system has failed. Changes to the system have been undone.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempt to watch for errors while resetting the system has failed. Failures to reset the system may not be reported.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

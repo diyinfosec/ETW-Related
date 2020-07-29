@@ -1,0 +1,84 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Tethering-Manager</Name>
+        <Metadata>
+            <Guid>{CC311F1F-623C-4CA4-BA44-A458016555E8}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TetheringStartResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntitlementCheckCompletionTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MbConnectCompletionTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ApStartCompletionTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IcsStartCompletionTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompletedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompletedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompletedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CompletedTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,111 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Sdstor</Name>
+        <Metadata>
+            <Guid>{AFE654EB-0A83-4EB4-948F-D4510EC39C30}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request servicing time taken by SD stack.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Port" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Bus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Target" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LUN" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RequestDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CDBLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CDB" inType="win:Binary" outType="xs:hexBinary" length="CDBLength"/>
+  <data name="SrbStatus" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Packed Command Read Received.
+Total Count: %1
+Number of Packed Irps: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackedCommandCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumIrpsPacked" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Packed Command Write Received.
+Total Count: %1
+Number of Packed Irps: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackedCommandCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumIrpsPacked" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+HPI Timer Queued]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+HPI Irp Sent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+HPI Irp Completed (0x%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Flush received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Discard received (LBA %1 Length %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LBA" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

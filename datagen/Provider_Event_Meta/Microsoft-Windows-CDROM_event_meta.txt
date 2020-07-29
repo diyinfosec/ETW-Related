@@ -1,0 +1,35 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CDROM</Name>
+        <Metadata>
+            <Guid>{9B6123DC-9AF6-4430-80D7-7D36F054FB9F}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Zero Power ODD power on start.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Zero Power ODD power on stop.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,134 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-OfflineFiles</Name>
+        <Metadata>
+            <Guid>{95353826-4FBE-41D4-9C42-F521C6E86360}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\cscsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\cscsvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=cscsvc.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-OfflineFiles</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-OfflineFiles/Operational</Message>
+                    <Path>Microsoft-Windows-OfflineFiles/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-OfflineFiles/Analytic</Message>
+                    <Path>Microsoft-Windows-OfflineFiles/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-OfflineFiles/Debug</Message>
+                    <Path>Microsoft-Windows-OfflineFiles/Debug</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-OfflineFiles/SyncLog</Message>
+                    <Path>Microsoft-Windows-OfflineFiles/SyncLog</Path>
+                    <Index>4</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Background agent</Message>
+                    <Name>CscEvtKeywd_Agent</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Online/offline transitions</Message>
+                    <Name>CscEvtKeywd_Transition</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Cached item state changes</Message>
+                    <Name>CscEvtKeywd_ItemStateChange</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>User logon/logoff</Message>
+                    <Name>CscEvtKeywd_UserSessionChange</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Service startup/shutdown</Message>
+                    <Name>CscEvtKeywd_StartupShutdown</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Settings activity</Message>
+                    <Name>CscEvtKeywd_Setting</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Cache item sync</Message>
+                    <Name>CscEvtKeywd_Sync</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Cache item sync conflicts</Message>
+                    <Name>CscEvtKeywd_SyncConflict</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Encryption/unencryption of cache</Message>
+                    <Name>CscEvtKeywd_Encrypt</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Background sync</Message>
+                    <Name>CscEvtKeywd_BGSync</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Blocked excluded file extensions</Message>
+                    <Name>CscEvtKeywd_ExcludedFileType</Name>
+                    <Value>1024</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

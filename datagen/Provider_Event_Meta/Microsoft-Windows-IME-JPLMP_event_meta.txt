@@ -1,0 +1,154 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-JPLMP</Name>
+        <Metadata>
+            <Guid>{DBC388BC-89C2-4FE0-B71F-6E4881FB575C}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_Decoding1Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_Decoding1End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_Decoding2Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_Decoding2End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_ConvStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_ConvEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_CandStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_CandEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_DetermineStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_DetermineEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_TypingStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_TypingEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_LearningStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_LearningEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_API_InitStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_API_InitEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_API_Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_LM_API_End]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,333 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SettingSync-Desktop</Name>
+        <Metadata>
+            <Guid>{579402A2-883C-45D8-B70A-9BC856407751}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The system failed to request a sync for collection %1 (operation: %2, Result: %3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The setting unit %1 for collection %2 is invalid. (operation: %3, Result: %4).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SettingUnitId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Starting or stopping setting change publisher for %1 failed. (Result: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to create process "%1" (Result: %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Starting the setting monitor SSO failed.  (Message: %1, Result: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Starting the WNF listener failed.  (Message: %1, Result: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The sync provider requested that %1 not upload now.  It will retry the upload later.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Starting or stopping setting change publisher for %1 failed. (Result: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Wnf event callback failure. State Name: %1. HRESULT: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+StartLayoutSync - Load layout data from stream. (HRESULT: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PicturePasswordPicture image validation failed (HRESULT: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6504</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+StartLayoutSync - GetUnit() is returning pending remote payload because system is in cloud priority mode.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6505</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+StartLayoutSync - No download happened during sync session. Switching back to normal mode from cloud priority mode.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6506</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Monitor SSO Started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6507</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Monitor SSO Status Changed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6508</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Monitor SSO Collection Status Changed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6509</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6510</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6511</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7003</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7004</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7005</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7006</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7007</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7008</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Quality" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7009</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7010</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OrigSizeX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OrigSizeY" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7011</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7012</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CollectionId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

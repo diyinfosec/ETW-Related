@@ -1,0 +1,21 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-SPP-UX-Notifications</Name>
+        <Metadata>
+            <Guid>{C4EFC9BB-2570-4821-8923-1BAD317D2D4B}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SLUI event written to notify Security and Maintenance of change in activation state]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

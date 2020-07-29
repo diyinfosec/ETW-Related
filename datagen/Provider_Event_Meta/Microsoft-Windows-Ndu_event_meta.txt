@@ -1,0 +1,217 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Ndu</Name>
+        <Metadata>
+            <Guid>{DF271536-4298-45E1-B0F2-E88F78619C5D}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_DebugString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Failed with %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Interface (Luid:%1) added to per-interface list for proc %2 at active index %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_IfLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="_ProcNum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_ListIndex" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Flow (Id:%2) established. ExePath: %3 SvcTag:%4 PkgName:%5 UserId:%6 Pid: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_Direction" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_FlowHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="_ExePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_SvcTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_PkgName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_UserId" inType="win:SID" outType="xs:string"/>
+  <data name="_Pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Flow Context (Flow Id:%1) Refcount%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_FlowHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="_RefDeref" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Updated Interface Stats IfLuid:%1 ProfileId:%2 BytesSent:%3 BytesRecvd:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_IfLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="_ProfileId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="_BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_BytesRecvd" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Updated Flow Stats (Flow Id:%2) IfLuid:%1 BytesSent:%3 BytesRecvd:%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_IfLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="_FlowHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="_BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_BytesRecvd" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Registration for quota exceeded notification. ExePath: %1 SvcTag:%2 PkgName:%3 UserId:%4 Cookie: %5 Quota: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ExePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_SvcTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="_PkgName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_UserId" inType="win:SID" outType="xs:string"/>
+  <data name="_Cookie" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="_Quota" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unregistered from quota exceeded notification. Cookie: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_Cookie" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Registration for byte count limit. Luid: %1 ProfileId:%2 Limit: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_IfLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="_ProfileId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="_BytesLimit" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unregistered from byte count limit notification. Luid: %1 ProfileId:%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_IfLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="_ProfileId" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_DebugString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_DebugString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2014</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IfLuid:%1 ProfileId:%2 BytesSent:%3 BytesRecvd:%4 IsCosted: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_IfLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="_ProfileId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="_BytesSent" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="_BytesRecvd" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="_IsCosted" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2015</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_IfLuid" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="TimeSinceLast" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Energy" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CurrentProc" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesTxRx" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Pid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IfMediaType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2016</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

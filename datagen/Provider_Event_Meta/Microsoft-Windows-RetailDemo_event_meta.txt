@@ -1,0 +1,39 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RetailDemo</Name>
+        <Metadata>
+            <Guid>{D3F29EDA-805D-428A-9902-B259B937F84B}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Retail Demo service has started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Retail Demo service has stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Retail Demo service has caught an exception %3 (State: %1 Phase: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorState" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorPhase" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

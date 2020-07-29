@@ -1,0 +1,19 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IdleTriggerProvider</Name>
+        <Metadata>
+            <Guid>{9E03F75A-BCBE-428A-8F3C-D46F2A444935}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdleStatusGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,88 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Setup</Name>
+        <Metadata>
+            <Guid>{75EBC33E-997F-49CF-B49F-ECC50184B75D}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Setup phase %1 started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SetupPhase" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Setup phase completed with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sysprep specialise started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sysprep specialise completed with status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully logged Setup information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HostOSName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Installwasanupgrade" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HostOSwasWindowsPE" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HostOSmajorversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HostOSminorversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HostOSbuildversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HostOSservicepackName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HostOSservicepackmajorversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HostOSservicepackminorversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully logged OS information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OSName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OSEditionID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OSmajorversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OSminorversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OSbuildversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OSservicepackName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OSservicepackmajorversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OSservicepackminorversion" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

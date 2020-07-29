@@ -1,0 +1,1267 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-WindowsPhone-CoreMessaging</Name>
+        <Metadata>
+            <Guid>{922CDCF3-6123-42DA-A877-1A24F23E39C5}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI ETW - Initialized (pid=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI ETW - Uninitialized (pid=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1050</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI System - Out of Memory!]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2900</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI Service server-thread started (serviceType=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="coreUIServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2901</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI Service server-thread exiting (serviceType=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="coreUIServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2902</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI InitializeService called (serviceType=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="coreUIServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2903</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI UninitializeService called (serviceType=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="coreUIServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2904</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI ServiceObjectCreated called (serviceType=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="coreUIServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2905</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI ServiceObjectDestroyed called (serviceType=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="coreUIServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2906</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI UpdateServiceStatus called (serviceType=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="coreUIServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2907</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI ServiceObjectServiceMain called (serviceType=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="coreUIServiceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2908</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI CoreUI ServiceMain called with unknown service name %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Session - CoreUICreate - Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Session - CoreUICreate - Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3102</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3103</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3106</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3107</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3110</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3111</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3210</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3211</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3214</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatcher - DispatchItem - Start (internalPriority=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InternalPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3215</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatcher - DispatchItem - Stop (internalPriority=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InternalPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3216</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatcher - WakeLevel - UpdateWakeLevel (bits=%1 old=%2 new=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InternalPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InternalPriority2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3220</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatcher - DoWait - Start (timeout=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatcher - DoWait - Stop (status=%1 handle=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3222</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatcher - CallDispatchCallback - Start (awake=%1 reference=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fBool" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="unParam" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3223</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatcher - CallDispatchCallback - Stop            (timeout=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3224</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter - ScheduleDispatch (threadid=%1 userPriority=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3225</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter - HostModeRun - Start (runMode=%1 stopping=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RunMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fBool" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3226</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter - HostModeRun - Stop (stopCookie=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3227</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter - OnUserDispatch - Start (priority=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3228</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter - OnUserDispatch - Stop (discarded? %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fBool" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3229</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter - IntegratedLoopWait - Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3230</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter - IntegratedLoopWait - Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3231</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter - PostMessage - Failed due to post message queue full]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3232</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter - PostMessage - User failed to schedule an asynchronous DISPATCHNOTIFY_COMPLETION]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3300</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RegistrarClient - Initialize - Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3301</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RegistrarClient - Initialize - Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3310</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3311</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3400</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3401</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3402</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3403</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3404</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3405</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3406</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3407</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3408</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3409</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3410</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3411</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3412</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3413</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3414</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3415</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3418</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3419</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3420</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3421</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3424</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3425</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3426</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3427</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3428</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3429</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3430</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3431</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3432</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3433</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3434</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3435</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3436</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3437</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3438</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3439</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3440</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3441</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3442</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3443</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3444</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3445</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3446</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3447</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3450</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3451</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3452</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3453</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3454</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3455</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - CreateConnection - Start (destProcessId=%1; destThreadId=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - CreateConnection - Stop (destProcessId=%1; destThreadId=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - AllocatedMessage (externalPriority=%1; size=%2; destProcessId=%3; destThreadId=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExternalPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - Message stream dirty (processId=%1 threadId=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4022</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - FlushPendingStreams - Start (externalPriority=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExternalPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4023</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - FlushPendingStreams - Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4030</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4031</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - LocalReceive - Statistics (messages=%1; size=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4041</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - InterconnectSend - Statistics (buffers=%1; size=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4042</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - InterconnectFlush - Start (externalPriority=%1; destProcessId=%2; destThreadId=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExternalPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4043</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - InterconnectFlush - Stop (externalPriority=%1; destProcessId=%2; destThreadId=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExternalPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4044</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4045</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - InterconnectReceive - Statistics (senderTid=%1; messages=%2; size=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4051</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - AlpcSend - Statistics (buffers=%1; size=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4052</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - AlpcFlush - Start (externalPriority=%1; destProcessId=%2; destThreadId=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExternalPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4053</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - AlpcFlush - Stop (externalPriority=%1; destProcessId=%2; destThreadId=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExternalPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4054</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4055</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Messaging - AlpcReceive - Statistics (senderPid=%1; senderTid=%2; messages=%3; size=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="unParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="unParam4" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5050</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Formatting - Message Method (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5051</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreMessagingRegistrar ObjectRegistered '%1' (type %2 scope %3 session %4 pid %5 tid %6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RegisteredObjectType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegistrarScope" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex3" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreMessagingRegistrar ObjectRevoked '%1' (type %2 scope %3 session %4 pid %5 tid %6 Orphaned=%7)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RegisteredObjectType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegistrarScope" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex3" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fBool" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI server disconnected pid %1 tid %2 id %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Conversation %1 has run out of PeerID handles to allocate]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Client connection to conversation '%1' failed, max clients already connected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IdentityTable uniqueness bits protected us: index %1  requestedUniq %2  currentUniq %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex3" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IdentityTable uniqueness bits reached max for slot index %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IdentityTable slot %1 passed over (diff: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IdentityTable grown to max index %1 (after %2 times through the loop).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+NtAssociateWaitCompletionPacket succeeded: packet %1 target %2 context %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptr1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ptr2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ptr3" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+NtAssociateWaitCompletionPacket failed, packet %1 port %2 handle %3 status %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptr1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ptr2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ptr3" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+NtCancelWaitCompletionPacket results: packet %1 status %2 signaled %3 canceled %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fBool1" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fBool2" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Created RegisteredWait: packet %1 target %2 cloned %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptr1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ptr2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fBool" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UserAdapter HandleCompletion: packet %1 target %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptr1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ptr2" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Calling completion handler: ApcContext %1 KeyContext %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptr1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ptr2" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Removed end of batch completion.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Removed completion: ApcContext %1 KeyContext %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptr1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ptr2" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI SelfHostError - ThrownException (type=%1; hr=%2; message=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="pwsz2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreMessagingRegistrar Object '%1' not found (type=%2; scope=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RegisteredObjectType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegistrarScope" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI Connection failed to pid %1 tid %2 id %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="guid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI forcibly disconnecting client pid %1 tid %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hex2" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreUI NtAlpcConnectPort '%1' failed with hr=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CoreMessagingRegistrar Conversation '%1' not found]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pwsz" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

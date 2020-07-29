@@ -1,0 +1,318 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-TIP</Name>
+        <Metadata>
+            <Guid>{BDD4B92E-19EF-4497-9C4A-E10E7FD2E227}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_ActivateStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_ActivateEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_DeactivateStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_DeactivateEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_CandOpenStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_CandOpenEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_CandCloseStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_CandCloseEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SetTextStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SetTextEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_OnKeyDownStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_OnKeyDownEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_APISVCStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_APISVCEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_APIConvStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>123</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_APIConvEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>124</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_APIPHConvStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>125</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_APIPHConvEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>126</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_APINxWordStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>127</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_APINxWordEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_ModeUIUpdateRequestStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_ModeUIUpdateRequestEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>132</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_SystrayModeIconUpdateStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>133</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_SystrayModeIconUpdateEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>134</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_FloatingModeIconUpdateStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>135</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_FloatingModeIconUpdateEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>136</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_ModeSwitchRequestStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>137</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_ModeSwitchRequestEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>138</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_MenuOpenRequestStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>139</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_MenuOpenRequestEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>140</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_MenuOpenStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>141</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_MI_MenuOpenEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>142</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_IME_CHS_HWKBD_KeyProcess_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousKey" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentKey" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>143</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_IME_CHT_HWKBD_KeyProcess_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousKey" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentKey" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>144</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_IME_JPN_HWKBD_KeyProcess_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousKey" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentKey" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>145</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_IME_KOR_HWKBD_KeyProcess_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousKey" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentKey" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,166 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WCN-Config-Registrar</Name>
+        <Metadata>
+            <Guid>{C100BECF-D33A-4A4B-BF23-BBEF4663D017}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN has started a new session.
+Peer UUID: %2
+Connect reason: %3
+Session GUID: %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PeerUuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Trigger" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN has established a connection.
+Session GUID: %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN is preparing to parse a message.
+Session GUID: %1
+Message: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageBlobLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MessageBlob" inType="win:Binary" outType="xs:hexBinary" length="MessageBlobLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN has generated a message.
+Session GUID: %1
+Message: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageBlobLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MessageBlob" inType="win:Binary" outType="xs:hexBinary" length="MessageBlobLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN has completed a session successfully.
+Session GUID: %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN failed to complete a session.
+Session GUID: %1
+Error code: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN received a message.
+Transport: %1
+Message: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Transport" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TransportSubType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageBlobLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MessageBlob" inType="win:Binary" outType="xs:hexBinary" length="MessageBlobLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN is sending a message.
+Transport: %1
+Message: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Transport" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TransportSubType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageBlobLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MessageBlob" inType="win:Binary" outType="xs:hexBinary" length="MessageBlobLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8030</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN has changed its beacons on transport %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Transport" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageBlobLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MessageBlob" inType="win:Binary" outType="xs:hexBinary" length="MessageBlobLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8031</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN has changed its probe response on transport %1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Transport" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MessageBlobLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MessageBlob" inType="win:Binary" outType="xs:hexBinary" length="MessageBlobLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

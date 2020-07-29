@@ -1,0 +1,2172 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-USB-UCX</Name>
+        <Metadata>
+            <Guid>{36DA592D-E43A-4E28-AF6F-4BC57C5A11E8}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start Rundown]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete Rundown]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Controller Information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_ParentBusType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_PciBus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciDevice" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciFunction" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciVendorId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciDeviceId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciRevisionId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_AcpiVendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="fid_AcpiDeviceId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="fid_AcpiRevisionId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="fid_DeviceInterfacePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX RootHub Information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_DeviceInterfacePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Device Information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_HubDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceSpeed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PortPathDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PortPath" inType="win:UInt32" outType="xs:unsignedInt" count="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Endpoint Information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_Endpoint_Descriptor">
+    <data name="fid_bLength" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_bDescriptorType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_bEndpointAddress" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_bmAttributes" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_wMaxPacketSize" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_bInterval" inType="win:UInt8" outType="win:HexInt8"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Static Stream Information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_EndpointPipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_StreamPipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Controller Create]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_ParentBusType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_PciBus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciDevice" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciFunction" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciVendorId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciDeviceId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciRevisionId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_AcpiVendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="fid_AcpiDeviceId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="fid_AcpiRevisionId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="fid_DeviceInterfacePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Controller Delete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_ParentBusType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_PciBus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciDevice" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciFunction" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciVendorId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciDeviceId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_PciRevisionId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_AcpiVendorId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="fid_AcpiDeviceId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="fid_AcpiRevisionId" inType="win:AnsiString" outType="xs:string"/>
+  <data name="fid_DeviceInterfacePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX RootHub Create]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_DeviceInterfacePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX RootHub Delete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_DeviceInterfacePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX RootHub Prepare Hardware]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_DeviceInterfacePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX RootHub Release Hardware]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_DeviceInterfacePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Device Create]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_HubDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceSpeed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PortPathDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PortPath" inType="win:UInt32" outType="xs:unsignedInt" count="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Device Delete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_HubDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceSpeed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PortPathDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PortPath" inType="win:UInt32" outType="xs:unsignedInt" count="6"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Endpoint Create]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_Endpoint_Descriptor">
+    <data name="fid_bLength" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_bDescriptorType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_bEndpointAddress" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_bmAttributes" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_wMaxPacketSize" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_bInterval" inType="win:UInt8" outType="win:HexInt8"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Endpoint Delete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_Endpoint_Descriptor">
+    <data name="fid_bLength" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_bDescriptorType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_bEndpointAddress" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_bmAttributes" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_wMaxPacketSize" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_bInterval" inType="win:UInt8" outType="win:HexInt8"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Static Stream Create]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_EndpointPipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_StreamPipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX Static Stream Delete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_EndpointPipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fid_StreamPipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CONTROL_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_CONTROL_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_CONTROL_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_CONTROL_TRANSFER with data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_URB_TransferDataLength" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="fid_URB_TransferData" inType="win:UInt8" outType="win:HexInt8" count="fid_URB_TransferDataLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CONTROL_TRANSFER_EX]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER_EX">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Timeout" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_CONTROL_TRANSFER_EX]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER_EX">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Timeout" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_CONTROL_TRANSFER_EX]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER_EX">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Timeout" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_CONTROL_TRANSFER_EX with data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER_EX">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Timeout" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_URB_TransferDataLength" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="fid_URB_TransferData" inType="win:UInt8" outType="win:HexInt8" count="fid_URB_TransferDataLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_BULK_OR_INTERRUPT_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_BULK_OR_INTERRUPT_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_BULK_OR_INTERRUPT_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with partial data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_BULK_OR_INTERRUPT_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_URB_TransferDataLength" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="fid_URB_TransferData" inType="win:UInt8" outType="win:HexInt8" count="fid_URB_TransferDataLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_BULK_OR_INTERRUPT_TRANSFER with full data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_BULK_OR_INTERRUPT_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_URB_TransferDataLength" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="fid_URB_TransferData" inType="win:UInt8" outType="win:HexInt8" count="fid_URB_TransferDataLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_ISOCH_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UCX_URB_NumberOfPackets" inType="win:UInt16" outType="win:HexInt16"/>
+  <struct name="fid_UCX_URB_ISOCH_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_StartFrame" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_NumberOfPackets" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ErrorCount" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <struct name="fid_UCX_URB_ISO_PACKETS" count="fid_UCX_URB_NumberOfPackets">
+    <data name="fid_URB_Packet_Offset" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Length" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Status" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_ISOCH_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UCX_URB_NumberOfPackets" inType="win:UInt16" outType="win:HexInt16"/>
+  <struct name="fid_UCX_URB_ISOCH_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_StartFrame" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_NumberOfPackets" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ErrorCount" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <struct name="fid_UCX_URB_ISO_PACKETS" count="fid_UCX_URB_NumberOfPackets">
+    <data name="fid_URB_Packet_Offset" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Length" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Status" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_ISOCH_TRANSFER with partial data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UCX_URB_NumberOfPackets" inType="win:UInt16" outType="win:HexInt16"/>
+  <struct name="fid_UCX_URB_ISOCH_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_StartFrame" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_NumberOfPackets" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ErrorCount" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <struct name="fid_UCX_URB_ISO_PACKETS" count="fid_UCX_URB_NumberOfPackets">
+    <data name="fid_URB_Packet_Offset" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Length" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Status" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_URB_TransferDataLength" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="fid_URB_TransferData" inType="win:UInt8" outType="win:HexInt8" count="fid_URB_TransferDataLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_ISOCH_TRANSFER with full data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UCX_URB_NumberOfPackets" inType="win:UInt16" outType="win:HexInt16"/>
+  <struct name="fid_UCX_URB_ISOCH_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_StartFrame" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_NumberOfPackets" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ErrorCount" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <struct name="fid_UCX_URB_ISO_PACKETS" count="fid_UCX_URB_NumberOfPackets">
+    <data name="fid_URB_Packet_Offset" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Length" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Status" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_URB_TransferDataLength" inType="win:UInt16" outType="win:HexInt16"/>
+  <data name="fid_URB_TransferData" inType="win:UInt8" outType="win:HexInt8" count="fid_URB_TransferDataLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_DEVICE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_INTERFACE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_DESCRIPTOR_FROM_ENDPOINT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_DEVICE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_INTERFACE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_SET_DESCRIPTOR_TO_ENDPOINT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_SET_FEATURE_TO_DEVICE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_SET_FEATURE_TO_INTERFACE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_SET_FEATURE_TO_ENDPOINT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_SET_FEATURE_TO_OTHER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_DEVICE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_INTERFACE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_ENDPOINT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CLEAR_FEATURE_TO_OTHER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_STATUS_FROM_DEVICE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_STATUS_FROM_INTERFACE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_STATUS_FROM_ENDPOINT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_STATUS_FROM_OTHER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CLASS_DEVICE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CLASS_INTERFACE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CLASS_ENDPOINT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_CLASS_OTHER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_VENDOR_DEVICE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_VENDOR_INTERFACE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_VENDOR_ENDPOINT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_VENDOR_OTHER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_CONFIGURATION]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_INTERFACE]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_GET_MS_FEATURE_DESCRIPTOR]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_CONTROL_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_TransferBuffer" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferBufferMDL" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_Setup_bmRequestType" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_bRequest" inType="win:UInt8" outType="win:HexInt8"/>
+    <data name="fid_URB_Setup_wValue" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wIndex" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Setup_wLength" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Endpoint State Machine Transition]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_State" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Endpoint State Machine Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rundown Endpoint State Machine Transition]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_State" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rundown Endpoint State Machine Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Controller State Machine Transition]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_SmEngineContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_State" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Controller State Machine Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_SmEngineContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rundown Controller State Machine Transition]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_SmEngineContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_State" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rundown Controller State Machine Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_SmEngineContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_Event" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UCX RootHub Initiating Wake]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_DeviceInterfacePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_SECURE_BULK_OR_INTERRUPT_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_SECURE_BULK_OR_INTERRUPT_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_SecureTransferBufferGuid" inType="win:GUID" outType="xs:GUID"/>
+    <data name="fid_URB_SecureTransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_SECURE_BULK_OR_INTERRUPT_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_SECURE_BULK_OR_INTERRUPT_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_SecureTransferBufferGuid" inType="win:GUID" outType="xs:GUID"/>
+    <data name="fid_URB_SecureTransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_SECURE_BULK_OR_INTERRUPT_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <struct name="fid_UCX_URB_SECURE_BULK_OR_INTERRUPT_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_SecureTransferBufferGuid" inType="win:GUID" outType="xs:GUID"/>
+    <data name="fid_URB_SecureTransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dispatch URB_FUNCTION_SECURE_ISOCH_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UCX_URB_NumberOfPackets" inType="win:UInt16" outType="win:HexInt16"/>
+  <struct name="fid_UCX_URB_SECURE_ISOCH_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_SecureTransferBufferGuid" inType="win:GUID" outType="xs:GUID"/>
+    <data name="fid_URB_SecureTransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_StartFrame" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_NumberOfPackets" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ErrorCount" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <struct name="fid_UCX_URB_ISO_PACKETS" count="fid_UCX_URB_NumberOfPackets">
+    <data name="fid_URB_Packet_Offset" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Length" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Status" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Complete URB_FUNCTION_SECURE_ISOCH_TRANSFER]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fid_UcxController" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UsbDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_IRP_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_URB_Ptr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fid_UCX_URB_NumberOfPackets" inType="win:UInt16" outType="win:HexInt16"/>
+  <struct name="fid_UCX_URB_SECURE_ISOCH_TRANSFER">
+    <data name="fid_URB_Hdr_Length" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Function" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="fid_URB_Hdr_Status" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Hdr_UsbdDeviceHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_Hdr_UsbdFlags" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_PipeHandle" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_TransferFlags" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_SecureTransferBufferGuid" inType="win:GUID" outType="xs:GUID"/>
+    <data name="fid_URB_SecureTransferBufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ReservedMBZ" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="fid_URB_ReservedHcd" inType="win:Pointer" outType="win:HexInt64" count="8"/>
+    <data name="fid_URB_StartFrame" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_NumberOfPackets" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_ErrorCount" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <struct name="fid_UCX_URB_ISO_PACKETS" count="fid_UCX_URB_NumberOfPackets">
+    <data name="fid_URB_Packet_Offset" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Length" inType="win:UInt32" outType="win:HexInt32"/>
+    <data name="fid_URB_Packet_Status" inType="win:UInt32" outType="win:HexInt32"/>
+  </struct>
+  <data name="fid_IRP_NtStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

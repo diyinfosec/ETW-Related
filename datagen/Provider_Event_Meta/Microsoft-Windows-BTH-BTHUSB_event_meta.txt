@@ -1,0 +1,56 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BTH-BTHUSB</Name>
+        <Metadata>
+            <Guid>{33693E1D-246A-471B-83BE-3E75F47A832D}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Radio Host Controller Information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <struct name="fid_BTHUSB_HC">
+    <data name="USBVendorId" inType="win:UInt16" outType="win:HexInt16"/>
+    <data name="USBDeviceId" inType="win:UInt16" outType="win:HexInt16"/>
+  </struct>
+  <struct name="fid_BTHUSB_HC_SELECTIVE_SUSPEND">
+    <data name="RemoteWakeCapable" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="SelfPoweredCapable" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="SelfPoweredStatus" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="SelectiveSuspendDisabledViaRegistry" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="SelectiveSuspendEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  </struct>
+  <data name="fid_BTHUSB_HC_Pdo_Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+BTHUSB Sending BIP to USB]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BIP_Type" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="BIP_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+BTHUSB Receiving BIP from USB]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BIP_Type" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="BIP_Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

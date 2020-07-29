@@ -1,0 +1,120 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CertificateServicesClient-Lifecycle-User</Name>
+        <Metadata>
+            <Guid>{BEA18B89-126F-4155-9EE4-D36038B02680}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate has been replaced. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate has expired. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate is about to expire. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate has been deleted. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate has been archived. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A new certificate has been installed. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate has been exported. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate has been associated with its private key. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate could not be associated with its private key. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A certificate has been deleted from Active Directory. Please refer to the "Details" section for more information.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventWriteData" inType="win:UnicodeString" outType="win:Xml"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

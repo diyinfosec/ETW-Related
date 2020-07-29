@@ -1,0 +1,119 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AssignedAccessBroker</Name>
+        <Metadata>
+            <Guid>{F2311B48-32BE-4902-A22A-7240371DBB2C}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>30000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Activated above lock app %1 using interface %2 with return code %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AboveLockAppAUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not find any application running above lock]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Above lock app exited]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This is a custom event, see details for more information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CustomMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to get %1 with return code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Detected unlocking event (user pressed Ctrl+Alt+Del), terminating above lock app, and exiting lock app]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 failed with return code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Abovelock toast operation %1 failed with return code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Set PowerRequestActiveLockScreenInternal request action %1, returns code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestAction" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Close power request handle returns %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

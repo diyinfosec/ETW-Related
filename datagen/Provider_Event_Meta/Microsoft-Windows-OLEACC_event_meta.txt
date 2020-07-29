@@ -1,0 +1,45 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-OLEACC</Name>
+        <Metadata>
+            <Guid>{19D2C934-EE9B-49E5-AAEB-9CCE721D2C65}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Method" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Hresult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Details" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SourceHwnd" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Provider" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Parameter" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Parameter" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

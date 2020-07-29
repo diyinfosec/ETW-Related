@@ -1,0 +1,26 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-VDRVROOT</Name>
+        <Metadata>
+            <Guid>{E4480490-85B6-11DD-AD8B-0800200C9A66}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The VHD HBA driver is registered with the root enumerator.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The VHD HBA driver is unregistered with the root enumerator.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

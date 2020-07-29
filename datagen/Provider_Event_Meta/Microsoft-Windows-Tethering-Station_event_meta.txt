@@ -1,0 +1,39 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Tethering-Station</Name>
+        <Metadata>
+            <Guid>{585CAB4F-9351-436E-9D99-DC4B41A20DE0}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WlanInterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WlanInterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WlanInterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

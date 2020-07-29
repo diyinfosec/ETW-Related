@@ -1,0 +1,20 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UAC</Name>
+        <Metadata>
+            <Guid>{E7558269-3FA5-46ED-9F4D-3C6E282DDE55}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The process failed to handle ERROR_ELEVATION_REQUIRED during the creation of a child process.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,118 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RTWorkQueue-Extended</Name>
+        <Metadata>
+            <Guid>{83FAAA86-63C8-4DD8-A2DA-FBADDDFC0655}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\rtworkq.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\rtworkq.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.619&amp;FileName=rtworkq.dll&amp;FileVer=10.0.17134.619</HelpLink>
+            <PublisherMessage>Microsoft-Windows-RTWorkQueue-Extended</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>RTWorkQueue Extended</Message>
+                    <Path>RTWorkQueueExtended</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WorkQueue: Queue Extended</Message>
+                    <Name>WorkQueue_Queue_Extended</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Extended LongRunning</Message>
+                    <Name>WorkQueue_Extended_LongRunning</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Extended InvalidUsageAttempt</Message>
+                    <Name>WorkQueue_Extended_InvalidUsageAttempt</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Extended InvalidCallbackAttempt</Message>
+                    <Name>WorkQueue_Extended_InvalidCallbackAttempt</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: PlatformRef</Message>
+                    <Name>WorkQueue_Extended_PlatformRef</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: RTLock</Message>
+                    <Name>WorkQueue_Extended_RTLock</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: SetAVMode</Message>
+                    <Name>WorkQueue_Extended_SetAVMode</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: RTLockAcquire</Message>
+                    <Name>WorkQueue_Extended_RTLockAcquire</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: TimerCallback</Message>
+                    <Name>WorkQueue_Extended_TimerCallback</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: TimerMode</Message>
+                    <Name>WorkQueue_Extended_TimerMode</Name>
+                    <Value>109</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: TimerSet</Message>
+                    <Name>WorkQueue_Extended_TimerSet</Name>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: TimerResChange</Message>
+                    <Name>WorkQueue_Extended_TimerResChange</Name>
+                    <Value>111</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

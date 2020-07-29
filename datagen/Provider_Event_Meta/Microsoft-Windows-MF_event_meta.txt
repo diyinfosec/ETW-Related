@@ -1,0 +1,1454 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MF</Name>
+        <Metadata>
+            <Guid>{A7364E1A-894F-4B3D-A930-2ED9C8C4C811}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy QueueBuffersToDevice Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsStreaming" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy SendBuffersToDevice Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AsyncTaskPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PinPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ParentPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy SendBuffersToDevice Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AsyncTaskPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PinPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ParentPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy ProcessInput Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy HaveOutput Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReadySampleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy ProcessOutput Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OutputBufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutputSamplesPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy SetInputType Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy SetInputType Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy SetOutputType Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy SetOutputType Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaType" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy Flush Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StreamingState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy KSPinStateChange Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinHandle" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy VideoPlugin Load Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy VideoPlugin Load End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy VideoPlugin ProcessInput Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy VideoPlugin ProcessInput End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy VideoPlugin ProcessOutput Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy VideoPlugin ProcessOutput End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy D3DAllocatorCreated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="D3DManagerPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy D3DAllocatorReleased]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PinPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="D3DManagerPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy MFT Load]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy MFT UnLoad]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy MFT DynamicFormatChange Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsStreaming" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy MFT DynamicFormatChange Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <struct name="FormatInfoStruct">
+    <data name="MajorType" inType="win:GUID" outType="xs:GUID"/>
+    <data name="Subtype" inType="win:GUID" outType="xs:GUID"/>
+    <data name="FormatType" inType="win:GUID" outType="xs:GUID"/>
+    <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PAR_Numerator" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="PAR_Dinominator" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="InterlacedMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy MFT StreamState Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsStreaming" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy MFT StreamState Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsStreaming" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy OnPinBufferCompletion Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AsyncTaskPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PinPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ParentPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy OutoforderBufferCompletion Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceStreamName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceStreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MFTStreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="samplePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ExpectedSampleCompletionNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ActualSampleCompletionNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy_DriverQueueInfo Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceStreamName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceStreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MFTStreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DriverQueueDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy_DroppedZeroLenghtSampleFromDeviceInfo Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceStreamName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceStreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MFTStreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="samplePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriverTimeStamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SystemTimeStamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SampleCompletionNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FlagTimeStamp" inType="win:AnsiString" outType="xs:string"/>
+  <data name="StreamName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy PhotoConfirmation Notification]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy DMFT Notification Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy DMFT Notification Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Devproxy DMFT Notification is implemented]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IMFTopoLoader::Load start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+IMFTopoLoader::Load returned %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Creating Transform %1 returned %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CLSID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Fallback to default D3D Format %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="D3DFmt" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+New destination rect is { (%1), (%2), (%3), (%4)}]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="left" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="top" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="right" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bottom" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+New source rect is { (%1), (%2), (%3), (%4)}]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="left" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="top" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="right" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bottom" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1098</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OTA Failover to constricted video from protection scheme ID (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fromtype" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1099</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OPM Poll exit (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="exitPolling" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RequestAccess Stream Id (%1) Action (%2) EnablerObject Returned (%3) hr (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="stream" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="action" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="enablerReturned" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+GetDecrypter Stream Id (%1) hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="streamid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+GetPolicy Stream Id (%1) Action (%2) Policy Returned (%3) hr (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="streamid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="policyReturned" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Reset Stream Id (%1) hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+BindAccess Stream Id (%1) hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UpdateAccess Stream Id (%1) hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+GetInputTrustAuthority Stream Id (%1) hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="streamId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Decryptor ProcessOutput output (%1) bytes hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="bytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1108</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+GetInputProtectionVersion version (%1) hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1109</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+GetOutputProtectionVersion version (%1) hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+GetProtectionCertificate version (%1) hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="value" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+InitInputProtection version (%1) stream ID (%2) hr (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="streamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1112</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+InitOutputProtection version (%1) stream ID (%2) hr (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="streamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start MFPMP Protected (%1) hr (%2) ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="isProtected" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1114</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ContentEnablerEvent Event Type (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="type" inType="win:GUID" outType="xs:GUID"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1115</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CreateObjectByCLSID CLSID (%1) hr (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CLSID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1116</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+GenerateRequiredSchemas attributes (%1) Output Subtype (%2) Number of Schemas (%3) hr (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="attributes" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="outputSubtype" inType="win:GUID" outType="xs:GUID"/>
+  <data name="cSchemas" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1117</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RequiredSchema Context Data (%1) Schema ID (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="context" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="type" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1118</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PolicyEvent Event Type (%1) Stream ID (%2) hrStatus(%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="streamId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1119</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ActivateClassById Class (%1) hrStatus(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="classId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1120</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Validate Application Certificate Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1121</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Validate Application Certificate Finish]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1123</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OTA Apply Protection Scheme ID (%1) Level (%2) hr (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="type" inType="win:GUID" outType="xs:GUID"/>
+  <data name="level" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1124</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Need Input - Object (%1) Stream ID (%2) Input Requests (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InputRequestsCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1125</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ProcessInput - Object (%1) Stream ID (%2) Sample (%3) Input Queue Length (%4) Result (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="InputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1126</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT ProcessInput (Start) - Object (%1) Stream ID (%2) Sample (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1127</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT ProcessInput (End) - Object (%1) Stream ID (%2) Sample (%3) SampleTime (%4) Input Queue Length (%5) Result (%6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="InputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1128</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT ProcessOutput (Start) - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1129</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT ProcessOutput (End) - Object (%1) Sample (%2) SampleTime (%3) Result (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1130</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Have Output (End) - Object (%1) Output Queue Length (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OutputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1131</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ProcessOutput - Object (%1) Sample (%2) SampleTime (%3) Output Queue Length (%4) Result (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="OutputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1132</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT Running (Start) - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1133</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT Running (End) - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1134</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SetWorkQueue - Object (%1) WorkQueue (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1135</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AsyncWrapper (Start) - Object (%1) MFT(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MFTPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1136</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AsyncWrapper (End) - Object (%1) MFT(%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MFTPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1137</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT deadline (Start) - Object (%1) Deadline (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeadlineHNS" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1138</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT deadline (End) - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1150</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Video Frame Constriction to %1 kilopixels]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="bandwidthInPixels" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1151</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to establish OPM hr (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Low Latency was set on an MF component. Type (%1) Set Interface (%2) Result (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SettingType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Low Latency was unset on an MF component. Type (%1) Interface (%2) Result (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ComponentType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SettingType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MF Devproxy MFT ProcessMessage Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="eMessage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ulParam" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+D3DDeviceLost]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MF Devproxy sample_TimeStamp Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceStreamName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceStreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MFTStreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="samplePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DriverTimeStamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SystemTimeStamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SampleCompletionNumber" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FlagTimeStamp" inType="win:AnsiString" outType="xs:string"/>
+  <data name="StreamName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1205</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sync MFT Running (Start) - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1206</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sync MFT Running (End) - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1207</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sync MFT ProcessInput (Start) - Object (%1) Stream ID (%2) Sample (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1208</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sync MFT ProcessInput (End) - Object (%1) Stream ID (%2) Sample (%3) SampleTime (%4) Input Queue Length (%5) Result (%6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="InputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1209</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sync MFT ProcessOutput (Start) - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1210</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sync MFT ProcessOutput (End) - Object (%1) Sample (%2) SampleTime (%3) Result (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1211</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Async MFT ProcessInput (Start) - Object (%1) Stream ID (%2) Sample (%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1212</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Async MFT ProcessInput (End) - Object (%1) Stream ID (%2) Sample (%3) SampleTime (%4) Input Queue Length (%5) Result (%6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="InputQueueLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1213</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Async MFT ProcessOutput (Start) - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1214</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Async MFT ProcessOutput (End) - Object (%1) Sample (%2) SampleTime (%3) Result (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WrapperPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1215</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFTInfo SetWorkQueue - Object (%1) workq (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1300</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFDS ReceiveSampleCP - Object (%1) Sample(%2) TimeStamp(%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Timestamp" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1301</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFDS SendSampleEvent - Object (%1) StreamID(%2) Sample(%3) TimeStamp(%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:Int32" outType="xs:int"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Timestamp" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1302</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFDS SamplePoolPending - Object (%1) Sample(%2) PendingCount(%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PendingCount" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1303</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFDS QueueSample - Object (%1) Sample(%2) SampleQueueLen(%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:Int32" outType="xs:int"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TimeStamp" inType="win:Int64" outType="xs:long"/>
+  <data name="QueueLen" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1304</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFDS RequestSample - Object (%1) Token(%2) RequestQueueLen(%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:Int32" outType="xs:int"/>
+  <data name="Token" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="QueueLen" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1305</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFDS FillSampleRequest - Object (%1) Sample(%2) Token(%3) SampleQueueLen(%4) RequestQueueLen(%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:Int32" outType="xs:int"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Token" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleQueueLen" inType="win:Int32" outType="xs:int"/>
+  <data name="RequestQueueLen" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1306</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFDS_GetTime object=%1 tsOrig=%2 sysOrig=%3 tsFixed=%4 sysFixed=%5 qpcNow=%6 tsOut=%7 fixed=%8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="tsOrig" inType="win:Int64" outType="xs:long"/>
+  <data name="sysOrig" inType="win:Int64" outType="xs:long"/>
+  <data name="tsFixed" inType="win:Int64" outType="xs:long"/>
+  <data name="sysFixed" inType="win:Int64" outType="xs:long"/>
+  <data name="rtNow" inType="win:Int64" outType="xs:long"/>
+  <data name="tsOut" inType="win:Int64" outType="xs:long"/>
+  <data name="tsOut_ms" inType="win:Int64" outType="xs:long"/>
+  <data name="Diff_Now_LastSys_ms" inType="win:Int64" outType="xs:long"/>
+  <data name="Fixed" inType="win:Int32" outType="xs:int"/>
+  <data name="State" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1307</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFDS_StateStart  object=%1 state=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1308</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFDS_StateStop  object=%1 state=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1310</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SrcPrefetch FillBuffer Start - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1311</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SrcPrefetch FillBuffer Stop - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1312</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SrcStreamEOSState - Object (%1) ID (%2) old (%3) new (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamID" inType="win:Int32" outType="xs:int"/>
+  <data name="Old state" inType="win:Int32" outType="xs:int"/>
+  <data name="New state" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1313</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SrcStreamNeedMoreSamples - Object (%1) UseBuffering (%2) rate (%3) IsEOS(%4) UnprocessedSamples (%5) prerolled (%6)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UseSampleBasedBuffering" inType="win:Int32" outType="xs:int"/>
+  <data name="Rate" inType="win:Float" outType="xs:float"/>
+  <data name="IsEOS" inType="win:Int32" outType="xs:int"/>
+  <data name="UnprocessedSamples" inType="win:Int32" outType="xs:int"/>
+  <data name="Prerolled" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1314</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SrcPrefetch Timeout Start - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1315</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SrcPrefetch Timeout Stop - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1316</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SrcPrefetch Timeout Cancel - Object (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

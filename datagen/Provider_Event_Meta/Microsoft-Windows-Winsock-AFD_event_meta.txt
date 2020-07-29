@@ -1,0 +1,1459 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Winsock-AFD</Name>
+        <Metadata>
+            <Guid>{E53C6823-7BB8-44BB-90DC-3F86090D48A6}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket creation: %1 %2 %3 %4 %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserModePid" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket bind: %1 %2 %3 %4 %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket bind: %1 %2 %3 %4 %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket connect: %1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket connect: %1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connect completed: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AFD initiated abort: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Transport initiated abort: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed send request: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed WSASendMsg request: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed recv request: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed recvfrom request: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket close: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket cleanup (all references removed): %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket accept: %1 %2 %3 %4 %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket accept: %1 %2 %3 %4 %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Accept failed: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Send posted: %1 %2 %3 %4 %5 %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FastPath" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BufferCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Receive posted: %1 %2 %3 %4 %5 %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FastPath" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BufferCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RecvFrom posted: %1 %2 %3 %4 %5 %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FastPath" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BufferCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SendTo posted: %1 %2 %3 %4 %5 %6 %7 %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FastPath" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BufferCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SendTo posted: %1 %2 %3 %4 %5 %6 %7 %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FastPath" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BufferCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Recv completed: %1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Send completed: %1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SendMsg completed: %1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RecvFrom completed: %1 %2 %3 %4 %5 %6 %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RecvFrom completed: %1 %2 %3 %4 %5 %6 %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SendTo completed: %1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket option set: %1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Option" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Value" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Select/Poll posted: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HandleCount" inType="win:Int32" outType="xs:int"/>
+  <data name="Timeout" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Select/Poll completed: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WSAEventSelect: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventMask" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Datagram dropped: %1 %2 %3 %4 %5 %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PacketSize" inType="win:Int32" outType="xs:int"/>
+  <data name="Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+  <data name="Reason" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Datagram dropped: %1 %2 %3 %4 %5 %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PacketSize" inType="win:Int32" outType="xs:int"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+  <data name="Reason" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection indicated: %1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Listen Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection indicated: %1 %2 %3 %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Listen Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Data indicated from transport: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Bytes Indicated" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Data indicated from transport: %1 %2 %3 %4 %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+  <data name="Bytes Indicated" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Data indicated from transport: %1 %2 %3 %4 %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="Port" inType="win:UInt16" outType="win:Port"/>
+  <data name="Bytes Indicated" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed bind: %1 %2 %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Disconnect indicated from transport: %1 %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+socket: %1: Process %3 (%8), Endpoint %4, Family %5, Type %6, Protocol %7, Seq %2, Status %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AddressFamily" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SocketType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Protocol" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+closesocket: %1: Process %3, Endpoint %4, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+socket cleanup: %1: Process %3, Endpoint %4, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+send: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+recv: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+sendto: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+recvfrom: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+sendto: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Addr %10, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+recvfrom: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Addr %10, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+sendmsg: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+recvmsg: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+sendmsg: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Addr %10, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+recvmsg: %1: Process %3, Endpoint %4, Buffer Count %5, Buffer %6, Length %7, Addr %10, Seq %2, Status %8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+connect: %1: Process %3, Endpoint %4, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+connect: %1: Process %3, Endpoint %4, Address %9, Seq %2, Status %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ConnectEx: %1: Process %3, Endpoint %4, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ConnectEx: %1: Process %3, Endpoint %4, Buffer %5, Length %6, Address %9, Seq %2, Status %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+accept: %1: Process %3, Endpoint %4, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+accept: %1: Process %3, Endpoint %4, Address %9, Accept Endpoint %10, Current Backlog %11, Seq %2, Status %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+  <data name="AcceptEndpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CurrentBacklog" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1026</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AcceptEx: %1: Process %3, Endpoint %4, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1027</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AcceptEx: %1: Process %3, Endpoint %4, Buffer %5, Length %6, Address %9, Accept Endpoint %10, Current Backlog %11, Seq %2, Status %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+  <data name="AcceptEndpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CurrentBacklog" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1029</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+bind: %1: Process %3, Endpoint %4, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1030</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+bind: %1: Process %3, Endpoint %4, Address %7, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1032</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+connection aborted: %1: Process %3, Endpoint %4, Seq %2, Reason %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1033</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+datagram dropped: %1: Process %3, Endpoint %4, Buffer %5, Length %6, Address %8, Seq %2, Reason %9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1035</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Socket option: %1: Process %3, Endpoint %4, Option %5, Value %6, Seq %2, Status %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Option" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Value" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1036</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Wait for listen: %1: Process %3, Endpoint %4, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1037</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Listen: %1: Process %3, Endpoint %4, Backlog %5, Seq %2, Status %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Backlog" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connect indication: %1: Process %3, Endpoint %4, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connect indication: %1: Process %3, Endpoint %4, Address %7, Backlog Count %8, Seq %2, Status %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+  <data name="CurrentBacklog" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Data indication: %1: Process %3, Endpoint %4, Buffer %5, Length %6, Seq %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Data indication: %1: Process %3, Endpoint %4, Buffer %5, Length %6, Address %8, Seq %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AddressLen" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLen"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+disconnect indicated: %1: Process %3, Endpoint %4, Seq %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Transport send backlog: Process %1, Endpoint %2, Send Backlog %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EnterExit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SendBacklog" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Registration domain %1 create status %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistrationDomain" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Registration domain %1 closed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistrationDomain" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CQ %1 created with %3 entries, index %7 and notification type %8, status %13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Cq" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegistrationDomain" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SystemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CqIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NotificationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NotificationHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NotificationObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NotificationContext1" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NotificationContext2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CQ %1 closed with %2 commit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Cq" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Commit" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CQ %1 cleaned up]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Cq" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CQ %1 with %5 commit resized from %2 to %6, status %10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Cq" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OriginalEntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginalStart" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginalEnd" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Commit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestedEntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SystemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RQ %2 created on endpoint %1 with %8 receive and %4 send entries, using receive CQ %13 and send CQ %12, status %14]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Endpoint" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RioState" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegistrationDomain" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SendEntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendUserAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SendSystemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SendBufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceiveEntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceiveUserAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReceiveSystemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReceiveBufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendCqIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceiveCqIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RQ %1 closed, receive = (%2,%3) send = (%4,%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RioState" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReceiveQueueStart" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceiveQueueEnd" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendQueueStart" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendQueueEnd" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RQ %1 cleaned up]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RioState" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RQ %1 resized from (%9,%2) to (%12,%5), status = %16]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RioState" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OriginalSendEntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginalSendQueueStart" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginalSendQueueEnd" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestedSendEntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendUserAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SendSystemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SendBufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginalReceiveEntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginalReceiveQueueStart" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OriginalReceiveQueueEnd" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestedReceiveEntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReceiveUserAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReceiveSystemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ReceiveBufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Buffer %1 registered with address %3 and length %5, system address = %4, ID = %6, status = %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegistrationDomain" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UserAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SystemAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Buffer %1 deregistered with %2 references]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="References" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Buffer %1 cleaned up]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RQ %2 using invalid buffer ID %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistrationDomain" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RioState" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4014</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RQ %2 invalid use of buffer %3, offset = %4, length = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RegistrationDomain" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RioState" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Buffer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferOffset" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BufferLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4015</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+RQ %1 using invalid buffer size for %2, specified = %3, required = %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RioState" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SpecifiedLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequiredLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+NRT Create: Handle = %1 Process = %2 Status = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NameResolutionHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+NRT Close: Handle = %1 Process = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NameResolutionHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Process" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

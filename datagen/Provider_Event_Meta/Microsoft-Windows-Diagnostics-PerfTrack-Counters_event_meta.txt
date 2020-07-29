@@ -1,0 +1,97 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnostics-PerfTrack-Counters</Name>
+        <Metadata>
+            <Guid>{C06ED57A-A7BD-42D7-B5FF-77A9DEC5732D}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkingSetPrivateSize" inType="win:Int64" outType="xs:long"/>
+  <data name="QuotaNonPagedPoolUsage" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="QuotaPagedPoolUsage" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PrivatePageCount" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VirtualSize" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkingSetSize" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HandleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CurrentSize" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PeakSize" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinimumWorkingSet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MaximumWorkingSet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CurrentSizeIncludingTransitionInPages" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PeakSizeIncludingTransitionInPages" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PageFaultCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransitionRePurposeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PagedPoolPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NonPagedPoolPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PagedPoolPages" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NonPagedPoolPages" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PagedAllocs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PagedFrees" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PagedUsed" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NonPagedAllocs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NonPagedFrees" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NonPagedUsed" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Tag" inType="win:AnsiString" outType="xs:string" length="4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PagedAllocs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PagedFrees" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PagedUsed" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NonPagedAllocs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NonPagedFrees" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NonPagedUsed" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Tag" inType="win:AnsiString" outType="xs:string" length="4"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

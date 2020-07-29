@@ -1,0 +1,22 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-System-Profile-HardwareId</Name>
+        <Metadata>
+            <Guid>{3419DE6D-5D7F-4668-ACC8-F80566814D96}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

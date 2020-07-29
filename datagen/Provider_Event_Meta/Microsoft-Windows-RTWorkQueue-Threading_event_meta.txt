@@ -1,0 +1,756 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RTWorkQueue-Threading</Name>
+        <Metadata>
+            <Guid>{E18D0FC9-9515-4232-98E4-89E456D8551B}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4435</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Execute: Start workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LongRunning" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4436</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Execute: End workqueue_ptr=%1 workQueueID=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LongRunning" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4437</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Queue: WorkQueuePtr=%1 Start threads=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="QueueDepth" inType="win:Int32" outType="xs:int"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4438</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Queue: WorkQueuePtr=%1 End threads=%2 AsyncResult=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="QueueDepth" inType="win:Int32" outType="xs:int"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4439</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Thread: Start workqueue_ptr=%1 WorkQueueID=%2 ThreadCount=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WordQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThreadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4440</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Thread: End workqueue_ptr=%1 WorkQueueID=%2 ThreadCount=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WordQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThreadCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4454</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MMCSS Registration Enter Queue=%1 ThreadID=%2 Handle=%3 Error=%4 Class=%5 Pri=%6 TaskID=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Queue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4455</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MMCSS Registration Enter Queue=%1 ThreadID=%2 Handle=%3 Error=%4 Class=%5 Pri=%6 TaskID=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Queue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4472</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Queue: WorkQueuePtr=%1 WorkQueueID=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:Int32" outType="xs:int"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4473</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Queue: WorkQueuePtr=%1 WorkQueueID=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:Int32" outType="xs:int"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4474</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Execute Callback: Start workqueue_ptr=%1 workQueueID=%2 BaseWorkQueueID=%3 ThreadID=%4 AsyncResult=%5 AsyncResultPtr=%6 LongRunning=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BaseWorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncResultVTable" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LongRunning" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4475</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Execute Callback: End workqueue_ptr=%1 workQueueID=%2 BaseWorkQueueID=%3 ThreadID=%4 AsyncResult=%5 AsyncResultPtr=%6 LongRunning=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BaseWorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AsyncResult" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncResultVTable" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LongRunning" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4476</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue MMCSS: Start workqueue_ptr=%1 workQueueID=%2 Class=%3 Pri=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4477</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue MMCSS: End workqueue_ptr=%1 workQueueID=%2 Class=%3 Pri=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4478</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue UpdateDeadlines: Start workqueue_ptr=%1 workQueueID=%2 TaskId=%3 Previous=%4 Next=%5 Delay=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousDeadline" inType="win:Int64" outType="xs:long"/>
+  <data name="NextDeadline" inType="win:Int64" outType="xs:long"/>
+  <data name="lDelay_ms" inType="win:Int32" outType="xs:int"/>
+  <data name="lPreDelay_ms" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4479</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue UpdateDeadlines: End workqueue_ptr=%1 workQueueID=%2 TaskId=%3 Previous=%4 Next=%5 Delay=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousDeadline" inType="win:Int64" outType="xs:long"/>
+  <data name="NextDeadline" inType="win:Int64" outType="xs:long"/>
+  <data name="lDelay_ms" inType="win:Int32" outType="xs:int"/>
+  <data name="lPreDelay_ms" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4480</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue AddDeadline: Start workqueue_ptr=%1 workQueueID=%2 Item=%3 global=%4 delta=%5 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="GlobalDeadline" inType="win:Int64" outType="xs:long"/>
+  <data name="DeltaAhead_usec" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4481</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue AddDeadline: End workqueue_ptr=%1 workQueueID=%2 Item=%3 global=%4 delta=%5 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="GlobalDeadline" inType="win:Int64" outType="xs:long"/>
+  <data name="DeltaAhead_usec" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4482</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue AddImmediateDeadline: Start workqueue_ptr=%1 workQueueID=%2 Item=%3 global=%4 delta=%5 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="GlobalDeadline" inType="win:Int64" outType="xs:long"/>
+  <data name="DeltaAhead_usec" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4483</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue AddImmediateDeadline: End workqueue_ptr=%1 workQueueID=%2 Item=%3 global=%4 delta=%5 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ItemPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="GlobalDeadline" inType="win:Int64" outType="xs:long"/>
+  <data name="DeltaAhead_usec" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4484</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue DeadlineYield: Start workQueueID=%1 Delay=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Yield" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4485</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue DeadlineYield: End workQueueID=%1 Delay=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Yield" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4486</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue DeadlineQueue: WorkQueuePtr=%1 workQueueID=%2 count=%3 immediateCount=%4 nextDeadline=%5 nextItem=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ImmediateCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NextDeadline" inType="win:Int64" outType="xs:long"/>
+  <data name="ItemPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4487</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue LongRunning: Start workQueueID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskGroupID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4488</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue LongRunning: End workQueueID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskGroupID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4489</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue: StartTimer QueuePtr=%1 QueueID=%2 TimerPtr=%3 Timeout=%4 IsPeriodic=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimerPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Timeout" inType="win:Int64" outType="xs:long"/>
+  <data name="IsPeriodic" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4490</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue: ExecuteTimer QueuePtr=%1 QueueID=%2 TimerPtr=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimerPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsPeriodic" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4493</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UpdateSelectWorkQueuesCpuGroupMask Enter ProcessorGroup=%1 ProcessorMask=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4494</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UpdateSelectWorkQueuesCpuGroupMask Leave ProcessorGroup=%1 ProcessorMask=%2 hr=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4495</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SubscribeCpuGroupMaskChangeWNF queryStatus=%1 subscribeStatus=%2 changeStamp=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="queryStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="subscribeStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="changeStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4496</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UpdateWorkqueueCpuGroupMask workQueue=%1 Class=%2 ProcesssorGroup=%3 ProcesssorMask=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwWorkQueue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4497</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CpuGroupMaskChangeWnfCallback ChangeStamp=%1 CurChangeStamp=%2 ProcessorGroup=%3 ProcessorMask=%4 Length=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChangeStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurChangeStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4498</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SetThreadCpuGroupMask pWorkQueue=%1 Class=%2 Priority=%3 ThreadId=%4 CurProcessorGroup=%5 CurProcessorMask=%6 NewProcessorGroup=%7 NewProcessorMask=%8 status=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pWorkQueue" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Class" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Priority" inType="win:Int32" outType="xs:int"/>
+  <data name="ThreadId" inType="win:Int32" outType="xs:int"/>
+  <data name="CurProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="CurProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NewProcessorGroup" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NewProcessorMask" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Status" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4499</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Start Notification WorkQueuePtr=%1 WorkQueueID=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue End Notification WorkQueuePtr=%1 WorkQueueID=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Debounce: Start workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Debounce: Stop workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Buffering: Start workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4504</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue Buffering: Stop workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4505</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Platform AllocIndex start: Platform=%1 WorkQueueID=%2 Index=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:Int32" outType="xs:int"/>
+  <data name="Index" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4506</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Platform AllocIndex stop: Platform=%1 WorkQueueID=%2 Index=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:Int32" outType="xs:int"/>
+  <data name="Index" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4507</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Platform Init start: Platform=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4508</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Platform Init stop: Platform=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4509</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Platform Shutdown start: Platform=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4510</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Platform Shutdown stop: Platform=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4511</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Platform Shutdown timeout: Platform=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4512</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Platform Shutdown_WorkQueue start: Platform=%1 workqueue=%2 index=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueue" inType="win:Int32" outType="xs:int"/>
+  <data name="Index" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4513</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Platform Shutdown_WorkQueue stop: Platform=%1 workqueue=%2 index=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Platform" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueue" inType="win:Int32" outType="xs:int"/>
+  <data name="Index" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4514</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue RunLimit: Start workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4515</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue RunLimit: Stop workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4516</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WorkQueue RunLimit: Exceeded workqueue_ptr=%1 workQueueID=%2 TaskGroup=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkQueuePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TaskGroup" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4517</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TaskGroup: Start TaskGroup=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskGroup" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4518</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TaskGroup: End TaskGroup=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskGroup" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4519</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TaskGroup RefCount TaskGroup=%1 RefCount=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskGroup" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RefCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4520</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TaskGroup ObjectCount ObjectCount=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

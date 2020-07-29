@@ -1,0 +1,18 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Netshell</Name>
+        <Metadata>
+            <Guid>{AF2E340C-0743-4F5A-B2D3-2F7225D215DE}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+NetShell: folder displayed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

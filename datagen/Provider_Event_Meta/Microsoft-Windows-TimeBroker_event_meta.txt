@@ -1,0 +1,61 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TimeBroker</Name>
+        <Metadata>
+            <Guid>{0657ADC1-9AE8-4E18-932D-E6079CDA5AB3}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event ID %1 changed state from %2 to %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OldState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Event ID %1 is set to fire between %2 and %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="EndTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TimeBroker CreateEvent called for Event ID %1 with Event Type %2 returned %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TimeBroker DeleteEvent called for Event ID %1 and returned %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Status" inType="win:HexInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

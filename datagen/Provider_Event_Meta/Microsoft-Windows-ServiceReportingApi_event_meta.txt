@@ -1,0 +1,24 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ServiceReportingApi</Name>
+        <Metadata>
+            <Guid>{606A6A38-70EC-4309-B3A3-82FF86F73329}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Service Reporting API encountered an error in file %1, function %2, line %3: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,247 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-LanguagePackSetup</Name>
+        <Metadata>
+            <Guid>{7237FFF9-A08A-4804-9C79-4A8704B70B87}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\lpksetup.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\lpksetup.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=lpksetup.exe&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-LanguagePackSetup</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-LanguagePackSetup/Operational</Message>
+                    <Path>Microsoft-Windows-LanguagePackSetup/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-LanguagePackSetup/Analytic</Message>
+                    <Path>Microsoft-Windows-LanguagePackSetup/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-LanguagePackSetup/Debug</Message>
+                    <Path>Microsoft-Windows-LanguagePackSetup/Debug</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Running the lpksetup Wizard</Message>
+                    <Name>RunWizard</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>Language Pack clean-up functionality</Message>
+                    <Name>LanguagePackCleanup</Name>
+                    <Value>35</Value>
+                </Task>
+                <Task>
+                    <Message>Generating pre-installed PRI files.</Message>
+                    <Name>GeneratePreInstalledPriFiles</Name>
+                    <Value>40</Value>
+                </Task>
+                <Task>
+                    <Message>Task to test NotifyUILanguage call-back dll.</Message>
+                    <Name>TestTask</Name>
+                    <Value>36</Value>
+                </Task>
+                <Task>
+                    <Message>Processing lpksetup unattended execution from the command line</Message>
+                    <Name>ProcessCommandLine</Name>
+                    <Value>37</Value>
+                </Task>
+                <Task>
+                    <Message>Installing language pack</Message>
+                    <Name>LanguagePackInstallation</Name>
+                    <Value>38</Value>
+                </Task>
+                <Task>
+                    <Message>Removing language pack</Message>
+                    <Name>LanguagePackRemoval</Name>
+                    <Value>39</Value>
+                </Task>
+                <Task>
+                    <Message>Language Pack Setup WorkerClass functionality</Message>
+                    <Name>WorkerClass</Name>
+                    <Value>31</Value>
+                </Task>
+                <Task>
+                    <Message>Language Pack Setup LanguagePack related functionality</Message>
+                    <Name>LanguagePack</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>Language Pack Setup CbsClient functionality</Message>
+                    <Name>CbsClient</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message>Language Pack Setup Utility functionality</Message>
+                    <Name>Utility</Name>
+                    <Value>34</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Language Pack Setup initialisation operation</Message>
+                    <Name>Initialize</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Language Pack Setup standard operation</Message>
+                    <Name>Operation</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Validate unattended parameters</Message>
+                    <Name>ValidateParameters</Name>
+                    <Value>35</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Validate user's permissions</Message>
+                    <Name>ValidateUserPermission</Name>
+                    <Value>36</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Notify the system that a language has been installed or removed</Message>
+                    <Name>CallNotifyUILanguageChange</Name>
+                    <Value>37</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Change the User UI language setting to selected language</Message>
+                    <Name>ChangeUserUILanguage</Name>
+                    <Value>38</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Notify the system that the current User's User UI language setting has been changed by calling the NotifyUILanguage</Message>
+                    <Name>CallNotifyUILanguageChangeUserUILanguage</Name>
+                    <Value>39</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Change the System UI language setting to selected language</Message>
+                    <Name>ChangeSystemUILanguage</Name>
+                    <Value>40</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Notify the system that the system UI language setting has been changed by calling the NotifyUILanguage</Message>
+                    <Name>CallNotifyUILanguageChangeSystemUILanguage</Name>
+                    <Value>41</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Log off the current user</Message>
+                    <Name>Logoff</Name>
+                    <Value>42</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Validate specified path</Message>
+                    <Name>ValidatePath</Name>
+                    <Value>43</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Retrieve language packs in specified path</Message>
+                    <Name>GetLangPack</Name>
+                    <Value>44</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Validate that language pack can be installed</Message>
+                    <Name>ValidateLangPackForInstall</Name>
+                    <Value>45</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Verify if the machine has sufficient disk space for the installation</Message>
+                    <Name>VerifyDiskSpace</Name>
+                    <Value>46</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Pass control to CBS to install the language pack</Message>
+                    <Name>CallCBSInstallLangPack</Name>
+                    <Value>47</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Validate that language pack can be removed</Message>
+                    <Name>ValidateLangPackForRemoval</Name>
+                    <Value>48</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Pass control to CBS to remove the language pack</Message>
+                    <Name>CallCBSRemoveLangPack</Name>
+                    <Value>49</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Initialise the LpkSetup wizard</Message>
+                    <Name>InitWizard</Name>
+                    <Value>50</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

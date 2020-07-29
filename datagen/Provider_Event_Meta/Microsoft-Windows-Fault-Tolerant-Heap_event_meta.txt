@@ -1,0 +1,39 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Fault-Tolerant-Heap</Name>
+        <Metadata>
+            <Guid>{6B93BF66-A922-4C11-A617-CF60D95C133D}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Fault Tolerant Heap service started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Fault Tolerant Heap service stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+FaultTolerantHeap Enabled]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FthEnabledPID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FthEnabledProcessName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FthEnabledProcessStartup" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

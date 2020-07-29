@@ -1,0 +1,426 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Network</Name>
+        <Metadata>
+            <Guid>{7DD42A49-5329-4832-8DFD-43D979153A88}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv4: %2 bytes transmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="startime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="endtime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv4: %2 bytes received from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv4: Connection attempted between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="mss" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sackopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="tsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="rcvwin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="rcvwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sndwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv4: Connection closed between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv4: %2 bytes retransmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv4: Connection established between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="mss" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sackopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="tsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="rcvwin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="rcvwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sndwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv4: Reconnect attempt between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv4: Connection attempt failed with error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Proto" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FailureCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv4: %2 bytes copied in protocol on behalf of user for connection between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv6: %2 bytes transmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="startime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="endtime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv6: %2 bytes received from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv6: Connection attempted between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="mss" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sackopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="tsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="rcvwin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="rcvwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sndwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv6: Connection closed between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv6: %2 bytes retransmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv6: Connection established between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="mss" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sackopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="tsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wsopt" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="rcvwin" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="rcvwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="sndwinscale" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv6: Reconnect attempt between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TCPv6: %2 bytes copied in protocol on behalf of user for connection between %4:%6 and %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UDPv4: %2 bytes transmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UDPv4: %2 bytes received from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="saddr" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UDPv4: Connection attempt failed with error code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Proto" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FailureCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UDPv6: %2 bytes transmitted from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+UDPv6: %2 bytes received from %4:%6 to %3:%5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="daddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="saddr" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="dport" inType="win:UInt16" outType="win:Port"/>
+  <data name="sport" inType="win:UInt16" outType="win:Port"/>
+  <data name="seqnum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="connid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,93 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BranchCacheClientEventProvider</Name>
+        <Metadata>
+            <Guid>{E837619C-A2A8-4689-833F-47B48EBD2442}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClientOpenContent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClientCloseContent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClientAddData]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClientAddDataComplete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClientBlockRead]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClientBlockReadComplete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClientStreamRead]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClientStreamReadComplete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

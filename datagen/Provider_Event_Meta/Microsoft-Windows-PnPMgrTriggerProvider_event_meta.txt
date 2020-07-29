@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PnPMgrTriggerProvider</Name>
+        <Metadata>
+            <Guid>{84051B98-F508-4E54-82FA-8865C697C3B1}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

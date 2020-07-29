@@ -1,0 +1,55 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Search</Name>
+        <Metadata>
+            <Guid>{CA4E628D-8567-4896-AB6B-835B221F373F}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\tquery.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\tquery.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Windows%c2%ae%20Search&amp;ProdVer=7.0.17134.1246&amp;FileName=tquery.dll&amp;FileVer=7.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Search</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>4294967295</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Search service</Message>
+                    <Name>CATEGORY_SEARCH</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Collator</Message>
+                    <Name>CATEGORY_COLLATOR</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Gatherer</Message>
+                    <Name>CATEGORY_GATHERER</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Content index server</Message>
+                    <Name>CATEGORY_INDEXER</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,990 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MediaFoundation-MFCaptureEngine</Name>
+        <Metadata>
+            <Guid>{B8197C10-845F-40CA-82AB-9341E98CFC2B}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Initialization - Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Initialization - End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Shutdown - Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Shutdown - End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine TakePhoto - Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine TakePhoto - End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StartPreview - Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StartPreview - End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StopPreview - Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StopPreview - End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StartRecord - Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StartRecord - End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StopRecord - Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StopRecord - End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Source ReadSample Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Source ReadSample End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StreamFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Sample received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceOrSinkPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Record Sample received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceOrSinkPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Preview Sample received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceOrSinkPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>219</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Sink WriteSample Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SinkPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Sink WriteSample End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SinkPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Encode Started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>222</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Encode Ended]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>223</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Format Convertion Started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>224</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Format Covertion Ended]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>225</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Flipping Started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>226</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Flipping Ended]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>227</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Processing Started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>228</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Processing Ended]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>229</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Sink Configuration Started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>230</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Sink Configuration Ended]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>231</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine capture source and capture sinks]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Source" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RecordSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PreviewSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FrameReaderSink" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>232</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine sample probe]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>233</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine sample probe]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>234</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine sample probe]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>235</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine sample probe]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SampleTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>236</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Start Record Task]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecordSinkWriter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>237</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Start Preview Task]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PreviewSinkWriter" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>238</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Photo Sink XVP Creation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PhotoSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="XVP" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>239</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine Sink Sample Dropped]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SinkPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>240</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine FlushRequiredStreams Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>241</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine FlushRequiredStreams End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>242</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine SetCurrentDeviceMediaType Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pMediaType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>243</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine SetCurrentDeviceMediaType End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pMediaType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>244</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine FlushAllStreams Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>245</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine FlushAllStreams End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>246</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine OnFlushForAllStreams]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>247</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine SetExtendedPropertyAsync Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="guidPropertySet" inType="win:GUID" outType="xs:GUID"/>
+  <data name="propertyID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>248</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine SetExtendedPropertyAsync End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="guidPropertySet" inType="win:GUID" outType="xs:GUID"/>
+  <data name="propertyID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>249</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine KSAsynPropertySet Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="guidPropertySet" inType="win:GUID" outType="xs:GUID"/>
+  <data name="propertyID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>250</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine KSAsynPropertySet End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="guidPropertySet" inType="win:GUID" outType="xs:GUID"/>
+  <data name="propertyID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>251</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine PhotoSink Prepare Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>252</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine PhotoSink Prepare End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>253</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StartCapturePhotoSequence Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>254</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StartCapturePhotoSequence End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>255</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StopCapturePhotoSequence Begin]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>256</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine StopCapturePhotoSequence End]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEnginePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hrStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>257</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine CaptureSinkAddStream Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pMediaType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="dwSinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>258</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_OnEvent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="guidExtendedType" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HResult" inType="win:Int32" outType="win:Hresult"/>
+  <data name="StreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>259</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine GetAvailableDeviceMediaType]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwMediaTypeIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pMediaType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>260</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine GetAvailableDeviceMediaType]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwMediaTypeIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pMediaType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>261</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_BridgeSourceSink]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkWrapper" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bChangeStreamUsers" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bPrepare" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>262</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_BridgeSourceSink]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkWrapper" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bChangeStreamUsers" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bPrepare" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>263</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_Source_Stream_Infomation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourcePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SourceStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StreamType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>264</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_Camera_Sound_Init Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CameraSoundState" inType="win:AnsiString" outType="xs:string"/>
+  <data name="CameraSoundLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>265</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_Camera_Sound_Init Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CameraSoundObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InitResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>266</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_Camera_Sound_QueuePlayback Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEngineObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="QueuingResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>267</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_Camera_Sound_QueuePlayback Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEngineObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="QueuingResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>268</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_Camera_Sound_Playback Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEngineObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PlaybackResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>269</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_Camera_Sound_Playback Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CaptureEngineObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PlaybackResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>270</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_RecordSink_WriteFirstSample EventMessage]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SinkPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>271</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_PreviewSink_WriteFirstSample EventMessage]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SinkPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>272</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_DiskFull_Condition.EventMessage]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecordSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>273</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_DiskFull_Condition.EventMessage]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RecordSink" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CaptureEngineObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>274</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFCaptureEngine_FrameReaderSink_WriteFirstSample EventMessage]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SinkPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplePointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SinkStreamIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Timestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RefTimestamp" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

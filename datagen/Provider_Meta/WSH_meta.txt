@@ -1,0 +1,29 @@
+<Providers>
+    <Provider>
+        <Name>WSH</Name>
+        <Metadata>
+            <Guid>{00000000-0000-0000-0000-000000000000}</Guid>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\System32\wshext.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%20%c2%ae%20Windows%20Script%20Host&amp;ProdVer=5.812.10240.16384&amp;FileName=wshext.dll&amp;FileVer=5.812.10240.16384</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>4294967295</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

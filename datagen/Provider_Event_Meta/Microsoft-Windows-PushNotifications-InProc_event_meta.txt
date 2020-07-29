@@ -1,0 +1,125 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PushNotifications-InProc</Name>
+        <Metadata>
+            <Guid>{815A1F4A-3F8D-4B37-9B31-5142F9D724A5}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WpnInPrc has encountered an error in file %1, function %2, line %3: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WpnInPrc has been loaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WpnInPrc has been unloaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Setting Handler has been initalized with Package Family: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Setting Unit created with Package Family: %1, AppUserModelId: %2, SettingValue: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppUserModelId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SettingValue" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%2 Setting Units created for Package Family: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumApps" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Setting Units applied for Package Family: %1, AppUserModelId: %2, SettingValue: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppUserModelId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SettingValue" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Polling Setting Units applied for Package Family: %1, AppUserModelId: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppUserModelId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Polling Setting Unit Created for Package Family: %1, AppUserModelId: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppUserModelId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%2 Polling Setting Units created for Package Family: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageFamilyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumApps" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

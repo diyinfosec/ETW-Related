@@ -1,0 +1,24 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WCN-Config-Registrar-Secure</Name>
+        <Metadata>
+            <Guid>{C100BECC-D33A-4A4B-BF23-BBEF4663D017}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>9000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WCN successfully decoded a message
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MessageGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MessageBlobLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MessageBlob" inType="win:Binary" outType="xs:hexBinary" length="MessageBlobLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

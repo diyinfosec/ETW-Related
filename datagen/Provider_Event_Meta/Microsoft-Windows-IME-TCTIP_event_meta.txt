@@ -1,0 +1,38 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-TCTIP</Name>
+        <Metadata>
+            <Guid>{D5268C02-6F51-436F-983B-74F2EFBFAF3A}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_UI_InvokeCommandStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_UI_InvokeCommandEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_IME_CHT_HWKBD_CandUIProcess_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IMEType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

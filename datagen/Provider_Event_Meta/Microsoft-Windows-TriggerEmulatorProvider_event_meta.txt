@@ -1,0 +1,20 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TriggerEmulatorProvider</Name>
+        <Metadata>
+            <Guid>{F230D19A-5D93-47D9-A83F-53829EDFB8DF}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConsumerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NamedValues" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

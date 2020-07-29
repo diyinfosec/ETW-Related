@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>WMIxWDM</Name>
+        <Metadata>
+            <Guid>{00000000-0000-0000-0000-000000000000}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

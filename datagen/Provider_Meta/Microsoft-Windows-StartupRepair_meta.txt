@@ -1,0 +1,35 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StartupRepair</Name>
+        <Metadata>
+            <Guid>{C914F0DF-835A-4A22-8C70-732C9A80C634}</Guid>
+            <ResourceFilePath>C:\WINDOWS\System32\reagent.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\System32\reagent.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=reagent.dll&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-StartupRepair</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

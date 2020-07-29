@@ -1,0 +1,1667 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MediaFoundation-Performance</Name>
+        <Metadata>
+            <Guid>{F404B94E-27E0-4384-BFE8-1D8D390B0AA3}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\mfplat.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\mfplat.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=mfplat.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MediaFoundation-Performance</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Media Foundation Performance</Message>
+                    <Path>MediaFoundationPerformance</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-MediaFoundation-Performance/SARStreamResource</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Media Foundation Performance</Message>
+                    <Name>PerformanceTask</Name>
+                    <Value>200</Value>
+                </Task>
+                <Task>
+                    <Message>Object</Message>
+                    <Name>Object</Name>
+                    <Value>300</Value>
+                </Task>
+                <Task>
+                    <Message>Audio Starvation</Message>
+                    <Name>Audio_Starvation</Name>
+                    <Value>301</Value>
+                </Task>
+                <Task>
+                    <Message>Video Frame Glitch</Message>
+                    <Name>Video_Frame_Glitch</Name>
+                    <Value>302</Value>
+                </Task>
+                <Task>
+                    <Message>Evr Queue</Message>
+                    <Name>Evr_Queue</Name>
+                    <Value>303</Value>
+                </Task>
+                <Task>
+                    <Message>Evr DWMDequeue</Message>
+                    <Name>Evr_DWMDequeue</Name>
+                    <Value>304</Value>
+                </Task>
+                <Task>
+                    <Message>Evr Present</Message>
+                    <Name>Evr_Present</Name>
+                    <Value>305</Value>
+                </Task>
+                <Task>
+                    <Message>Evr Monitor Estimate</Message>
+                    <Name>Evr_Monitor_Estimate</Name>
+                    <Value>306</Value>
+                </Task>
+                <Task>
+                    <Message>Evr Sleep</Message>
+                    <Name>Evr_Sleep</Name>
+                    <Value>307</Value>
+                </Task>
+                <Task>
+                    <Message>Data Drop</Message>
+                    <Name>Data_Drop</Name>
+                    <Value>308</Value>
+                </Task>
+                <Task>
+                    <Message>Clock</Message>
+                    <Name>Clock</Name>
+                    <Value>309</Value>
+                </Task>
+                <Task>
+                    <Message>Predicted Video Sample Time</Message>
+                    <Name>Predicted_Video_Sample_Time</Name>
+                    <Value>310</Value>
+                </Task>
+                <Task>
+                    <Message>New Stream</Message>
+                    <Name>New_Stream</Name>
+                    <Value>311</Value>
+                </Task>
+                <Task>
+                    <Message>Media Type Change</Message>
+                    <Name>Media_Type_Change</Name>
+                    <Value>312</Value>
+                </Task>
+                <Task>
+                    <Message>Transform Create</Message>
+                    <Name>Transform_Create</Name>
+                    <Value>313</Value>
+                </Task>
+                <Task>
+                    <Message>Buffer</Message>
+                    <Name>Buffer</Name>
+                    <Value>314</Value>
+                </Task>
+                <Task>
+                    <Message>Process</Message>
+                    <Name>Process</Name>
+                    <Value>315</Value>
+                </Task>
+                <Task>
+                    <Message>APOProcess</Message>
+                    <Name>APOProcess</Name>
+                    <Value>316</Value>
+                </Task>
+                <Task>
+                    <Message>Unusual Streaming Event</Message>
+                    <Name>Unusual_Streaming_Event</Name>
+                    <Value>317</Value>
+                </Task>
+                <Task>
+                    <Message>File Open</Message>
+                    <Name>File_Open</Name>
+                    <Value>318</Value>
+                </Task>
+                <Task>
+                    <Message>IORead Request</Message>
+                    <Name>IORead_Request</Name>
+                    <Value>319</Value>
+                </Task>
+                <Task>
+                    <Message>IOWrite Request</Message>
+                    <Name>IOWrite_Request</Name>
+                    <Value>320</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample Allocate Sample</Message>
+                    <Name>Render_Sample_Allocate_Sample</Name>
+                    <Value>321</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample Receive Sample</Message>
+                    <Name>Render_Sample_Receive_Sample</Name>
+                    <Value>322</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample Render</Message>
+                    <Name>Render_Sample_Render</Name>
+                    <Value>323</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample Start Mix</Message>
+                    <Name>Render_Sample_Start_Mix</Name>
+                    <Value>324</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample Mix</Message>
+                    <Name>Render_Sample_Mix</Name>
+                    <Value>325</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample Decode</Message>
+                    <Name>Render_Sample_Decode</Name>
+                    <Value>326</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample Deinterlace</Message>
+                    <Name>Render_Sample_Deinterlace</Name>
+                    <Value>327</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample Procamp</Message>
+                    <Name>Render_Sample_Procamp</Name>
+                    <Value>328</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample FRC</Message>
+                    <Name>Render_Sample_FRC</Name>
+                    <Value>329</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample MID Render</Message>
+                    <Name>Render_Sample_MID_Render</Name>
+                    <Value>330</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample MAP Render</Message>
+                    <Name>Render_Sample_MAP_Render</Name>
+                    <Value>331</Value>
+                </Task>
+                <Task>
+                    <Message>Render Sample Actual Render</Message>
+                    <Name>Render_Sample_Actual_Render</Name>
+                    <Value>332</Value>
+                </Task>
+                <Task>
+                    <Message>Audio Renderer Buffer Fullness</Message>
+                    <Name>Audio_Renderer_Buffer_Fullness</Name>
+                    <Value>333</Value>
+                </Task>
+                <Task>
+                    <Message>State Change</Message>
+                    <Name>State_Change</Name>
+                    <Value>334</Value>
+                </Task>
+                <Task>
+                    <Message>Topo Loader Load</Message>
+                    <Name>Topo_Loader_Load</Name>
+                    <Value>335</Value>
+                </Task>
+                <Task>
+                    <Message>Topo Loader Create MFT</Message>
+                    <Name>Topo_Loader_Create_MFT</Name>
+                    <Value>336</Value>
+                </Task>
+                <Task>
+                    <Message>Packet Sink Lost Packet</Message>
+                    <Name>Packet_Sink_Lost_Packet</Name>
+                    <Value>337</Value>
+                </Task>
+                <Task>
+                    <Message>Packet Recover RTX</Message>
+                    <Name>Packet_Recover_RTX</Name>
+                    <Value>338</Value>
+                </Task>
+                <Task>
+                    <Message>Packet Recover FEC</Message>
+                    <Name>Packet_Recover_FEC</Name>
+                    <Value>339</Value>
+                </Task>
+                <Task>
+                    <Message>Media Cache Read Sample</Message>
+                    <Name>Media_Cache_Read_Sample</Name>
+                    <Value>340</Value>
+                </Task>
+                <Task>
+                    <Message>Media Cache Write Sample</Message>
+                    <Name>Media_Cache_Write_Sample</Name>
+                    <Value>341</Value>
+                </Task>
+                <Task>
+                    <Message>Media Cache Seek</Message>
+                    <Name>Media_Cache_Seek</Name>
+                    <Value>342</Value>
+                </Task>
+                <Task>
+                    <Message>Media Cache Trim</Message>
+                    <Name>Media_Cache_Trim</Name>
+                    <Value>343</Value>
+                </Task>
+                <Task>
+                    <Message>Network Platform Get Host By Name</Message>
+                    <Name>Network_Platform_Get_Host_By_Name</Name>
+                    <Value>344</Value>
+                </Task>
+                <Task>
+                    <Message>Network Channel Send Request</Message>
+                    <Name>Network_Channel_Send_Request</Name>
+                    <Value>345</Value>
+                </Task>
+                <Task>
+                    <Message>Network Channel Send Response</Message>
+                    <Name>Network_Channel_Send_Response</Name>
+                    <Value>346</Value>
+                </Task>
+                <Task>
+                    <Message>Network Channel Receive Request</Message>
+                    <Name>Network_Channel_Receive_Request</Name>
+                    <Value>347</Value>
+                </Task>
+                <Task>
+                    <Message>Network Channel Open</Message>
+                    <Name>Network_Channel_Open</Name>
+                    <Value>348</Value>
+                </Task>
+                <Task>
+                    <Message>Network Channel Connect</Message>
+                    <Name>Network_Channel_Connect</Name>
+                    <Value>349</Value>
+                </Task>
+                <Task>
+                    <Message>Network Channel Read</Message>
+                    <Name>Network_Channel_Read</Name>
+                    <Value>350</Value>
+                </Task>
+                <Task>
+                    <Message>Network Channel Write</Message>
+                    <Name>Network_Channel_Write</Name>
+                    <Value>351</Value>
+                </Task>
+                <Task>
+                    <Message>Network Session Send Request</Message>
+                    <Name>Network_Session_Send_Request</Name>
+                    <Value>352</Value>
+                </Task>
+                <Task>
+                    <Message>Network Session Send Response</Message>
+                    <Name>Network_Session_Send_Response</Name>
+                    <Value>353</Value>
+                </Task>
+                <Task>
+                    <Message>Network Session Receive Request</Message>
+                    <Name>Network_Session_Receive_Request</Name>
+                    <Value>354</Value>
+                </Task>
+                <Task>
+                    <Message>Network Session Open</Message>
+                    <Name>Network_Session_Open</Name>
+                    <Value>355</Value>
+                </Task>
+                <Task>
+                    <Message>Network Session Connect</Message>
+                    <Name>Network_Session_Connect</Name>
+                    <Value>356</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Open</Message>
+                    <Name>Network_Client_Open</Name>
+                    <Value>357</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Describe</Message>
+                    <Name>Network_Client_Describe</Name>
+                    <Value>358</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Select Streams</Message>
+                    <Name>Network_Client_Select_Streams</Name>
+                    <Value>359</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Play</Message>
+                    <Name>Network_Client_Play</Name>
+                    <Value>360</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Pause</Message>
+                    <Name>Network_Client_Pause</Name>
+                    <Value>361</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Stop</Message>
+                    <Name>Network_Client_Stop</Name>
+                    <Value>362</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Send Log</Message>
+                    <Name>Network_Client_Send_Log</Name>
+                    <Value>363</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Send Keep Alive</Message>
+                    <Name>Network_Client_Send_Keep_Alive</Name>
+                    <Value>364</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Received Announce</Message>
+                    <Name>Network_Client_Received_Announce</Name>
+                    <Value>365</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Packet Pair</Message>
+                    <Name>Network_Client_Packet_Pair</Name>
+                    <Value>366</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Tear Down</Message>
+                    <Name>Network_Client_Tear_Down</Name>
+                    <Value>367</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Received EOS</Message>
+                    <Name>Network_Client_Received_EOS</Name>
+                    <Value>368</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client Begin Close</Message>
+                    <Name>Network_Client_Begin_Close</Name>
+                    <Value>369</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client End Close</Message>
+                    <Name>Network_Client_End_Close</Name>
+                    <Value>370</Value>
+                </Task>
+                <Task>
+                    <Message>Network Client GUID</Message>
+                    <Name>Network_Client_GUID</Name>
+                    <Value>371</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source Disconnect</Message>
+                    <Name>Network_Source_Disconnect</Name>
+                    <Value>372</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source Begin Reconnect</Message>
+                    <Name>Network_Source_Begin_Reconnect</Name>
+                    <Value>373</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source End Reconnect</Message>
+                    <Name>Network_Source_End_Reconnect</Name>
+                    <Value>374</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source Announce</Message>
+                    <Name>Network_Source_Announce</Name>
+                    <Value>375</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source EOS</Message>
+                    <Name>Network_Source_EOS</Name>
+                    <Value>376</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source Stream Switch</Message>
+                    <Name>Network_Source_Stream_Switch</Name>
+                    <Value>377</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source Buffering Start</Message>
+                    <Name>Network_Source_Buffering_Start</Name>
+                    <Value>378</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source Buffering Stop</Message>
+                    <Name>Network_Source_Buffering_Stop</Name>
+                    <Value>379</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source Connect</Message>
+                    <Name>Network_Source_Connect</Name>
+                    <Value>380</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source Open</Message>
+                    <Name>Network_Source_Open</Name>
+                    <Value>381</Value>
+                </Task>
+                <Task>
+                    <Message>Network Source MCast Join Done</Message>
+                    <Name>Network_Source_MCast_Join_Done</Name>
+                    <Value>382</Value>
+                </Task>
+                <Task>
+                    <Message>Http Byte Stream Create</Message>
+                    <Name>Http_Byte_Stream_Create</Name>
+                    <Value>383</Value>
+                </Task>
+                <Task>
+                    <Message>Http Byte Stream Delete</Message>
+                    <Name>Http_Byte_Stream_Delete</Name>
+                    <Value>384</Value>
+                </Task>
+                <Task>
+                    <Message>Http Byte Stream Begin Open</Message>
+                    <Name>Http_Byte_Stream_Begin_Open</Name>
+                    <Value>385</Value>
+                </Task>
+                <Task>
+                    <Message>Http Byte Stream End Open</Message>
+                    <Name>Http_Byte_Stream_End_Open</Name>
+                    <Value>386</Value>
+                </Task>
+                <Task>
+                    <Message>Http Byte Stream Time Seek</Message>
+                    <Name>Http_Byte_Stream_Time_Seek</Name>
+                    <Value>387</Value>
+                </Task>
+                <Task>
+                    <Message>Http Byte Stream Begin Drm Set License</Message>
+                    <Name>Http_Byte_Stream_Begin_Drm_Set_License</Name>
+                    <Value>388</Value>
+                </Task>
+                <Task>
+                    <Message>Http Byte Stream End Drm Set License</Message>
+                    <Name>Http_Byte_Stream_End_Drm_Set_License</Name>
+                    <Value>389</Value>
+                </Task>
+                <Task>
+                    <Message>Http Byte Stream Begin Throttle</Message>
+                    <Name>Http_Byte_Stream_Begin_Throttle</Name>
+                    <Value>390</Value>
+                </Task>
+                <Task>
+                    <Message>Http Byte Stream End Throttle</Message>
+                    <Name>Http_Byte_Stream_End_Throttle</Name>
+                    <Value>391</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Create</Message>
+                    <Name>Base_Remote_Byte_Stream_Create</Name>
+                    <Value>392</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Delete</Message>
+                    <Name>Base_Remote_Byte_Stream_Delete</Name>
+                    <Value>393</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Read</Message>
+                    <Name>Base_Remote_Byte_Stream_Read</Name>
+                    <Value>394</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Begin Read</Message>
+                    <Name>Base_Remote_Byte_Stream_Begin_Read</Name>
+                    <Value>395</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream End Read</Message>
+                    <Name>Base_Remote_Byte_Stream_End_Read</Name>
+                    <Value>396</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Seek</Message>
+                    <Name>Base_Remote_Byte_Stream_Seek</Name>
+                    <Value>397</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Close</Message>
+                    <Name>Base_Remote_Byte_Stream_Close</Name>
+                    <Value>398</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Configure Buffering</Message>
+                    <Name>Base_Remote_Byte_Stream_Configure_Buffering</Name>
+                    <Value>399</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Enable Buffering</Message>
+                    <Name>Base_Remote_Byte_Stream_Enable_Buffering</Name>
+                    <Value>400</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Begin Save</Message>
+                    <Name>Base_Remote_Byte_Stream_Begin_Save</Name>
+                    <Value>401</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream End Save</Message>
+                    <Name>Base_Remote_Byte_Stream_End_Save</Name>
+                    <Value>402</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Cancel Save</Message>
+                    <Name>Base_Remote_Byte_Stream_Cancel_Save</Name>
+                    <Value>403</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Fire Start Buffering</Message>
+                    <Name>Base_Remote_Byte_Stream_Fire_Start_Buffering</Name>
+                    <Value>404</Value>
+                </Task>
+                <Task>
+                    <Message>Base Remote Byte Stream Fire Stop Buffering</Message>
+                    <Name>Base_Remote_Byte_Stream_Fire_Stop_Buffering</Name>
+                    <Value>405</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Create</Message>
+                    <Name>Urlmon_Byte_Stream_Create</Name>
+                    <Value>406</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Delete</Message>
+                    <Name>Urlmon_Byte_Stream_Delete</Name>
+                    <Value>407</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Read</Message>
+                    <Name>Urlmon_Byte_Stream_Read</Name>
+                    <Value>408</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Begin Read</Message>
+                    <Name>Urlmon_Byte_Stream_Begin_Read</Name>
+                    <Value>409</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream End Read</Message>
+                    <Name>Urlmon_Byte_Stream_End_Read</Name>
+                    <Value>410</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Seek</Message>
+                    <Name>Urlmon_Byte_Stream_Seek</Name>
+                    <Value>411</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Close</Message>
+                    <Name>Urlmon_Byte_Stream_Close</Name>
+                    <Value>412</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Configure Buffering</Message>
+                    <Name>Urlmon_Byte_Stream_Configure_Buffering</Name>
+                    <Value>413</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Enable Buffering</Message>
+                    <Name>Urlmon_Byte_Stream_Enable_Buffering</Name>
+                    <Value>414</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Begin Save</Message>
+                    <Name>Urlmon_Byte_Stream_Begin_Save</Name>
+                    <Value>415</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream End Save</Message>
+                    <Name>Urlmon_Byte_Stream_End_Save</Name>
+                    <Value>416</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Fire Start Buffering</Message>
+                    <Name>Urlmon_Byte_Stream_Fire_Start_Buffering</Name>
+                    <Value>417</Value>
+                </Task>
+                <Task>
+                    <Message>Urlmon Byte Stream Fire Stop Buffering</Message>
+                    <Name>Urlmon_Byte_Stream_Fire_Stop_Buffering</Name>
+                    <Value>418</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request Begin Send Request</Message>
+                    <Name>Http_Web_Request_Begin_Send_Request</Name>
+                    <Value>419</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request End Send Request</Message>
+                    <Name>Http_Web_Request_End_Send_Request</Name>
+                    <Value>420</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request Begin Receive Response</Message>
+                    <Name>Http_Web_Request_Begin_Receive_Response</Name>
+                    <Value>421</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request End Receive Response</Message>
+                    <Name>Http_Web_Request_End_Receive_Response</Name>
+                    <Value>422</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request Begin Read Payload</Message>
+                    <Name>Http_Web_Request_Begin_Read_Payload</Name>
+                    <Value>423</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request End Read Payload</Message>
+                    <Name>Http_Web_Request_End_Read_Payload</Name>
+                    <Value>424</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request Close</Message>
+                    <Name>Http_Web_Request_Close</Name>
+                    <Value>425</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request Status Callback</Message>
+                    <Name>Http_Web_Request_Status_Callback</Name>
+                    <Value>426</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request Create Cache Entry</Message>
+                    <Name>Http_Web_Request_Create_Cache_Entry</Name>
+                    <Value>427</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request Load Cache Entry</Message>
+                    <Name>Http_Web_Request_Load_Cache_Entry</Name>
+                    <Value>428</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request Delete Cache Entry</Message>
+                    <Name>Http_Web_Request_Delete_Cache_Entry</Name>
+                    <Value>429</Value>
+                </Task>
+                <Task>
+                    <Message>Http Web Request Save Cache Entry</Message>
+                    <Name>Http_Web_Request_Save_Cache_Entry</Name>
+                    <Value>430</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Begin Create</Message>
+                    <Name>Source_Resolution_Begin_Create</Name>
+                    <Value>431</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution End Create</Message>
+                    <Name>Source_Resolution_End_Create</Name>
+                    <Value>432</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Begin Create Object From URL</Message>
+                    <Name>Source_Resolution_Begin_Create_Object_From_URL</Name>
+                    <Value>433</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution End Create Object From URL</Message>
+                    <Name>Source_Resolution_End_Create_Object_From_URL</Name>
+                    <Value>434</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Begin Create Object From Byte Stream</Message>
+                    <Name>Source_Resolution_Begin_Create_Object_From_Byte_Stream</Name>
+                    <Value>435</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution End Create Object From Byte Stream</Message>
+                    <Name>Source_Resolution_End_Create_Object_From_Byte_Stream</Name>
+                    <Value>436</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Lookup Scheme Handler</Message>
+                    <Name>Source_Resolution_Lookup_Scheme_Handler</Name>
+                    <Value>437</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Lookup Byte Stream Handler</Message>
+                    <Name>Source_Resolution_Lookup_Byte_Stream_Handler</Name>
+                    <Value>438</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Scheme Handler Begin Create Object</Message>
+                    <Name>Source_Resolution_Scheme_Handler_Begin_Create_Object</Name>
+                    <Value>439</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Scheme Handler End Create Object</Message>
+                    <Name>Source_Resolution_Scheme_Handler_End_Create_Object</Name>
+                    <Value>440</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution End Scheme Handler End Create Object</Message>
+                    <Name>Source_Resolution_End_Scheme_Handler_End_Create_Object</Name>
+                    <Value>441</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Byte Stream Created</Message>
+                    <Name>Source_Resolution_Byte_Stream_Created</Name>
+                    <Value>442</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Byte Stream Handler Begin Create Object</Message>
+                    <Name>Source_Resolution_Byte_Stream_Handler_Begin_Create_Object</Name>
+                    <Value>443</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Byte Stream Handler End Create Object</Message>
+                    <Name>Source_Resolution_Byte_Stream_Handler_End_Create_Object</Name>
+                    <Value>444</Value>
+                </Task>
+                <Task>
+                    <Message>Source Resolution Media Source Created</Message>
+                    <Name>Source_Resolution_Media_Source_Created</Name>
+                    <Value>445</Value>
+                </Task>
+                <Task>
+                    <Message>Session Bitpump Start Async Call</Message>
+                    <Name>Session_Bitpump_Start_Async_Call</Name>
+                    <Value>446</Value>
+                </Task>
+                <Task>
+                    <Message>Session Bitpump End Async Call</Message>
+                    <Name>Session_Bitpump_End_Async_Call</Name>
+                    <Value>447</Value>
+                </Task>
+                <Task>
+                    <Message>Session Bitpump Receive Event</Message>
+                    <Name>Session_Bitpump_Receive_Event</Name>
+                    <Value>448</Value>
+                </Task>
+                <Task>
+                    <Message>Session Bitpump Error</Message>
+                    <Name>Session_Bitpump_Error</Name>
+                    <Value>449</Value>
+                </Task>
+                <Task>
+                    <Message>Session Bitpump Critical Error</Message>
+                    <Name>Session_Bitpump_Critical_Error</Name>
+                    <Value>450</Value>
+                </Task>
+                <Task>
+                    <Message>Session Bitpump Start Sync Call</Message>
+                    <Name>Session_Bitpump_Start_Sync_Call</Name>
+                    <Value>451</Value>
+                </Task>
+                <Task>
+                    <Message>Session Bitpump End Sync Call</Message>
+                    <Name>Session_Bitpump_End_Sync_Call</Name>
+                    <Value>452</Value>
+                </Task>
+                <Task>
+                    <Message>Session Bitpump Wait For Sample</Message>
+                    <Name>Session_Bitpump_Wait_For_Sample</Name>
+                    <Value>453</Value>
+                </Task>
+                <Task>
+                    <Message>Session Bitpump Details</Message>
+                    <Name>Session_Bitpump_Details</Name>
+                    <Value>454</Value>
+                </Task>
+                <Task>
+                    <Message>Session Set Topology</Message>
+                    <Name>Session_Set_Topology</Name>
+                    <Value>455</Value>
+                </Task>
+                <Task>
+                    <Message>Session Start</Message>
+                    <Name>Session_Start</Name>
+                    <Value>456</Value>
+                </Task>
+                <Task>
+                    <Message>Session Stop</Message>
+                    <Name>Session_Stop</Name>
+                    <Value>457</Value>
+                </Task>
+                <Task>
+                    <Message>Session Pause</Message>
+                    <Name>Session_Pause</Name>
+                    <Value>458</Value>
+                </Task>
+                <Task>
+                    <Message>Session Close</Message>
+                    <Name>Session_Close</Name>
+                    <Value>459</Value>
+                </Task>
+                <Task>
+                    <Message>Session Shutdown</Message>
+                    <Name>Session_Shutdown</Name>
+                    <Value>460</Value>
+                </Task>
+                <Task>
+                    <Message>Session Presentation Switch</Message>
+                    <Name>Session_Presentation_Switch</Name>
+                    <Value>461</Value>
+                </Task>
+                <Task>
+                    <Message>Sequencer Source Start</Message>
+                    <Name>Sequencer_Source_Start</Name>
+                    <Value>462</Value>
+                </Task>
+                <Task>
+                    <Message>Sequencer Source Stop</Message>
+                    <Name>Sequencer_Source_Stop</Name>
+                    <Value>463</Value>
+                </Task>
+                <Task>
+                    <Message>Sequencer Source On Context Event</Message>
+                    <Name>Sequencer_Source_On_Context_Event</Name>
+                    <Value>464</Value>
+                </Task>
+                <Task>
+                    <Message>Sequencer Source Process Sample</Message>
+                    <Name>Sequencer_Source_Process_Sample</Name>
+                    <Value>465</Value>
+                </Task>
+                <Task>
+                    <Message>Sequencer Source On Stream Event</Message>
+                    <Name>Sequencer_Source_On_Stream_Event</Name>
+                    <Value>466</Value>
+                </Task>
+                <Task>
+                    <Message>Sequencer Source Create Object From Node</Message>
+                    <Name>Sequencer_Source_Create_Object_From_Node</Name>
+                    <Value>467</Value>
+                </Task>
+                <Task>
+                    <Message>Quality Manager Set Quality Level</Message>
+                    <Name>Quality_Manager_Set_Quality_Level</Name>
+                    <Value>468</Value>
+                </Task>
+                <Task>
+                    <Message>Quality Manager Set Drop Mode</Message>
+                    <Name>Quality_Manager_Set_Drop_Mode</Name>
+                    <Value>469</Value>
+                </Task>
+                <Task>
+                    <Message>Quality Manager Set Drop Time</Message>
+                    <Name>Quality_Manager_Set_Drop_Time</Name>
+                    <Value>470</Value>
+                </Task>
+                <Task>
+                    <Message>Media Processor Source Start</Message>
+                    <Name>Media_Processor_Source_Start</Name>
+                    <Value>471</Value>
+                </Task>
+                <Task>
+                    <Message>Media Processor Source Create Topology</Message>
+                    <Name>Media_Processor_Source_Create_Topology</Name>
+                    <Value>472</Value>
+                </Task>
+                <Task>
+                    <Message>Media Processor Source Open</Message>
+                    <Name>Media_Processor_Source_Open</Name>
+                    <Value>473</Value>
+                </Task>
+                <Task>
+                    <Message>Media Processor Source Process Sample</Message>
+                    <Name>Media_Processor_Source_Process_Sample</Name>
+                    <Value>474</Value>
+                </Task>
+                <Task>
+                    <Message>Media Processor Source Send Event</Message>
+                    <Name>Media_Processor_Source_Send_Event</Name>
+                    <Value>475</Value>
+                </Task>
+                <Task>
+                    <Message>Frame Grabber Open Source</Message>
+                    <Name>Frame_Grabber_Open_Source</Name>
+                    <Value>476</Value>
+                </Task>
+                <Task>
+                    <Message>Frame Grabber Get Frame</Message>
+                    <Name>Frame_Grabber_Get_Frame</Name>
+                    <Value>477</Value>
+                </Task>
+                <Task>
+                    <Message>Frame Grabber Invoke</Message>
+                    <Name>Frame_Grabber_Invoke</Name>
+                    <Value>478</Value>
+                </Task>
+                <Task>
+                    <Message>Buffer Adjust Sample Time One Shot</Message>
+                    <Name>Buffer_Adjust_Sample_Time_One_Shot</Name>
+                    <Value>479</Value>
+                </Task>
+                <Task>
+                    <Message>Buffer Adjust Sample Time Repeat</Message>
+                    <Name>Buffer_Adjust_Sample_Time_Repeat</Name>
+                    <Value>480</Value>
+                </Task>
+                <Task>
+                    <Message>Video Render</Message>
+                    <Name>Video_Render</Name>
+                    <Value>481</Value>
+                </Task>
+                <Task>
+                    <Message>Audio Render</Message>
+                    <Name>Audio_Render</Name>
+                    <Value>482</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata Created</Message>
+                    <Name>Metadata_Created</Name>
+                    <Value>483</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata Loaded</Message>
+                    <Name>Metadata_Loaded</Name>
+                    <Value>484</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata Get Count</Message>
+                    <Name>Metadata_Get_Count</Name>
+                    <Value>485</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata Get At</Message>
+                    <Name>Metadata_Get_At</Name>
+                    <Value>486</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata Get Value</Message>
+                    <Name>Metadata_Get_Value</Name>
+                    <Value>487</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata Set Value</Message>
+                    <Name>Metadata_Set_Value</Name>
+                    <Value>488</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata Flush</Message>
+                    <Name>Metadata_Flush</Name>
+                    <Value>489</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata On Get Count</Message>
+                    <Name>Metadata_On_Get_Count</Name>
+                    <Value>490</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata On Get At</Message>
+                    <Name>Metadata_On_Get_At</Name>
+                    <Value>491</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata On Get Value</Message>
+                    <Name>Metadata_On_Get_Value</Name>
+                    <Value>492</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata On Set Value</Message>
+                    <Name>Metadata_On_Set_Value</Name>
+                    <Value>493</Value>
+                </Task>
+                <Task>
+                    <Message>Metadata On Flush</Message>
+                    <Name>Metadata_On_Flush</Name>
+                    <Value>494</Value>
+                </Task>
+                <Task>
+                    <Message>Muxer Process Sample</Message>
+                    <Name>Muxer_Process_Sample</Name>
+                    <Value>495</Value>
+                </Task>
+                <Task>
+                    <Message>Muxer Add Payload</Message>
+                    <Name>Muxer_Add_Payload</Name>
+                    <Value>496</Value>
+                </Task>
+                <Task>
+                    <Message>Muxer On Completed Packet</Message>
+                    <Name>Muxer_On_Completed_Packet</Name>
+                    <Value>497</Value>
+                </Task>
+                <Task>
+                    <Message>Timer Late</Message>
+                    <Name>Timer_Late</Name>
+                    <Value>498</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Play</Message>
+                    <Name>MFGraph_Play</Name>
+                    <Value>499</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Stop</Message>
+                    <Name>MFGraph_Stop</Name>
+                    <Value>500</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Pause</Message>
+                    <Name>MFGraph_Pause</Name>
+                    <Value>501</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Render</Message>
+                    <Name>MFGraph_Render</Name>
+                    <Value>502</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Find Interface On Filter</Message>
+                    <Name>MFGraph_Find_Interface_On_Filter</Name>
+                    <Value>503</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Scan</Message>
+                    <Name>MFGraph_Scan</Name>
+                    <Value>504</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Set Rate</Message>
+                    <Name>MFGraph_Set_Rate</Name>
+                    <Value>505</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Insert Node</Message>
+                    <Name>MFGraph_Insert_Node</Name>
+                    <Value>506</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Batch Insert</Message>
+                    <Name>MFGraph_Batch_Insert</Name>
+                    <Value>507</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Close</Message>
+                    <Name>MFGraph_Close</Name>
+                    <Value>508</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Set Volume</Message>
+                    <Name>MFGraph_Set_Volume</Name>
+                    <Value>509</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Set Stop Position</Message>
+                    <Name>MFGraph_Set_Stop_Position</Name>
+                    <Value>510</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Set Current Position</Message>
+                    <Name>MFGraph_Set_Current_Position</Name>
+                    <Value>511</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Set Context</Message>
+                    <Name>MFGraph_Set_Context</Name>
+                    <Value>512</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Queue</Message>
+                    <Name>MFGraph_Queue</Name>
+                    <Value>513</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Init</Message>
+                    <Name>MFGraph_Init</Name>
+                    <Value>514</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Init Ex</Message>
+                    <Name>MFGraph_Init_Ex</Name>
+                    <Value>515</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Type</Message>
+                    <Name>MFGraph_Get_Type</Name>
+                    <Value>516</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Is Reused</Message>
+                    <Name>MFGraph_Is_Reused</Name>
+                    <Value>517</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get URL</Message>
+                    <Name>MFGraph_Get_URL</Name>
+                    <Value>518</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Context</Message>
+                    <Name>MFGraph_Get_Context</Name>
+                    <Value>519</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Cookie</Message>
+                    <Name>MFGraph_Get_Cookie</Name>
+                    <Value>520</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Set Cookie</Message>
+                    <Name>MFGraph_Set_Cookie</Name>
+                    <Value>521</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Open State</Message>
+                    <Name>MFGraph_Get_Open_State</Name>
+                    <Value>522</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Rate</Message>
+                    <Name>MFGraph_Get_Rate</Name>
+                    <Value>523</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Current Position</Message>
+                    <Name>MFGraph_Get_Current_Position</Name>
+                    <Value>524</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Stop Position</Message>
+                    <Name>MFGraph_Get_Stop_Position</Name>
+                    <Value>525</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Volume</Message>
+                    <Name>MFGraph_Get_Volume</Name>
+                    <Value>526</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Media Caps</Message>
+                    <Name>MFGraph_Get_Media_Caps</Name>
+                    <Value>527</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Control Caps</Message>
+                    <Name>MFGraph_Get_Control_Caps</Name>
+                    <Value>528</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Seek Caps</Message>
+                    <Name>MFGraph_Get_Seek_Caps</Name>
+                    <Value>529</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Get Jump Caps</Message>
+                    <Name>MFGraph_Get_Jump_Caps</Name>
+                    <Value>530</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Set Auto Rewind</Message>
+                    <Name>MFGraph_Set_Auto_Rewind</Name>
+                    <Value>531</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Find Plugin</Message>
+                    <Name>MFGraph_Find_Plugin</Name>
+                    <Value>532</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Handle Presentation Switch</Message>
+                    <Name>MFGraph_Handle_Presentation_Switch</Name>
+                    <Value>533</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify State Change</Message>
+                    <Name>MFGraph_Notify_State_Change</Name>
+                    <Value>534</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify Playback</Message>
+                    <Name>MFGraph_Notify_Playback</Name>
+                    <Value>535</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify Rate Change</Message>
+                    <Name>MFGraph_Notify_Rate_Change</Name>
+                    <Value>536</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify Error</Message>
+                    <Name>MFGraph_Notify_Error</Name>
+                    <Value>537</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify License</Message>
+                    <Name>MFGraph_Notify_License</Name>
+                    <Value>538</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify Cred</Message>
+                    <Name>MFGraph_Notify_Cred</Name>
+                    <Value>539</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify Individualization</Message>
+                    <Name>MFGraph_Notify_Individualization</Name>
+                    <Value>540</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify Revocation</Message>
+                    <Name>MFGraph_Notify_Revocation</Name>
+                    <Value>541</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify Fullscreen</Message>
+                    <Name>MFGraph_Notify_Fullscreen</Name>
+                    <Value>542</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify Custom License</Message>
+                    <Name>MFGraph_Notify_Custom_License</Name>
+                    <Value>543</Value>
+                </Task>
+                <Task>
+                    <Message>MFGraph Notify User Event</Message>
+                    <Name>MFGraph_Notify_User_Event</Name>
+                    <Value>544</Value>
+                </Task>
+                <Task>
+                    <Message>WMPPlayback Open</Message>
+                    <Name>WMPPlayback_Open</Name>
+                    <Value>545</Value>
+                </Task>
+                <Task>
+                    <Message>WMPPlayback Queue</Message>
+                    <Name>WMPPlayback_Queue</Name>
+                    <Value>546</Value>
+                </Task>
+                <Task>
+                    <Message>WMPPlayback Start</Message>
+                    <Name>WMPPlayback_Start</Name>
+                    <Value>547</Value>
+                </Task>
+                <Task>
+                    <Message>WMPPlayback Error Open</Message>
+                    <Name>WMPPlayback_Error_Open</Name>
+                    <Value>548</Value>
+                </Task>
+                <Task>
+                    <Message>WMPPlayback Error Queue</Message>
+                    <Name>WMPPlayback_Error_Queue</Name>
+                    <Value>549</Value>
+                </Task>
+                <Task>
+                    <Message>PEAuth Comm Acquire Session Key</Message>
+                    <Name>PEAuth_Comm_Acquire_Session_Key</Name>
+                    <Value>550</Value>
+                </Task>
+                <Task>
+                    <Message>PEAuth Comm Kernel State Inquiry</Message>
+                    <Name>PEAuth_Comm_Kernel_State_Inquiry</Name>
+                    <Value>551</Value>
+                </Task>
+                <Task>
+                    <Message>PEAuth Comm Reload GRL</Message>
+                    <Name>PEAuth_Comm_Reload_GRL</Name>
+                    <Value>552</Value>
+                </Task>
+                <Task>
+                    <Message>PEAuth Comm Renew Session Key</Message>
+                    <Name>PEAuth_Comm_Renew_Session_Key</Name>
+                    <Value>553</Value>
+                </Task>
+                <Task>
+                    <Message>PEAuth Comm Get Comp List</Message>
+                    <Name>PEAuth_Comm_Get_Comp_List</Name>
+                    <Value>554</Value>
+                </Task>
+                <Task>
+                    <Message>Cache Reader</Message>
+                    <Name>Cache_Reader</Name>
+                    <Value>555</Value>
+                </Task>
+                <Task>
+                    <Message>Codec DXVACPUDecode</Message>
+                    <Name>Codec_DXVACPUDecode</Name>
+                    <Value>556</Value>
+                </Task>
+                <Task>
+                    <Message>Codec DXVAGPUDecode</Message>
+                    <Name>Codec_DXVAGPUDecode</Name>
+                    <Value>557</Value>
+                </Task>
+                <Task>
+                    <Message>Codec DXVADisplay</Message>
+                    <Name>Codec_DXVADisplay</Name>
+                    <Value>558</Value>
+                </Task>
+                <Task>
+                    <Message>ASFSource Start</Message>
+                    <Name>ASFSource_Start</Name>
+                    <Value>559</Value>
+                </Task>
+                <Task>
+                    <Message>Op Queue Operation</Message>
+                    <Name>Op_Queue_Operation</Name>
+                    <Value>560</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler Init</Message>
+                    <Name>Property_Handler_Init</Name>
+                    <Value>561</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler Get Value</Message>
+                    <Name>Property_Handler_Get_Value</Name>
+                    <Value>562</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler Set Value</Message>
+                    <Name>Property_Handler_Set_Value</Name>
+                    <Value>563</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler Commit</Message>
+                    <Name>Property_Handler_Commit</Name>
+                    <Value>564</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler With Key Init</Message>
+                    <Name>Property_Handler_With_Key_Init</Name>
+                    <Value>565</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler With Key Get Value</Message>
+                    <Name>Property_Handler_With_Key_Get_Value</Name>
+                    <Value>566</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler With Key Set Value</Message>
+                    <Name>Property_Handler_With_Key_Set_Value</Name>
+                    <Value>567</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler With Key Commit</Message>
+                    <Name>Property_Handler_With_Key_Commit</Name>
+                    <Value>568</Value>
+                </Task>
+                <Task>
+                    <Message>Transcode Create Transcode Topology</Message>
+                    <Name>Transcode_Create_Transcode_Topology</Name>
+                    <Value>569</Value>
+                </Task>
+                <Task>
+                    <Message>Field Of Use Validate</Message>
+                    <Name>Field_Of_Use_Validate</Name>
+                    <Value>570</Value>
+                </Task>
+                <Task>
+                    <Message>Capture Source Start</Message>
+                    <Name>Capture_Source_Start</Name>
+                    <Value>571</Value>
+                </Task>
+                <Task>
+                    <Message>Capture Source Ready Queue Empty</Message>
+                    <Name>Capture_Source_Ready_Queue_Empty</Name>
+                    <Value>572</Value>
+                </Task>
+                <Task>
+                    <Message>Capture Source Ready Queue Full</Message>
+                    <Name>Capture_Source_Ready_Queue_Full</Name>
+                    <Value>573</Value>
+                </Task>
+                <Task>
+                    <Message>Cascaded Scaling</Message>
+                    <Name>CascadedScalingTask</Name>
+                    <Value>574</Value>
+                </Task>
+                <Task>
+                    <Message>Optimization Flags</Message>
+                    <Name>OptimizationFlags_PerformanceTask</Name>
+                    <Value>575</Value>
+                </Task>
+                <Task>
+                    <Message>PerfTrack: Audio Capture Start Request</Message>
+                    <Name>PerfTrack_Audio_Capture_Start_Request</Name>
+                    <Value>579</Value>
+                </Task>
+                <Task>
+                    <Message>PerfTrack: Audio Capture First Sample Received</Message>
+                    <Name>PerfTrack_Audio_Capture_First_Sample_Received</Name>
+                    <Value>580</Value>
+                </Task>
+                <Task>
+                    <Message>PerfTrack: Video Capture Start Request</Message>
+                    <Name>PerfTrack_Video_Capture_Start_Request</Name>
+                    <Value>581</Value>
+                </Task>
+                <Task>
+                    <Message>PerfTrack: Video Capture First Sample Received</Message>
+                    <Name>PerfTrack_Video_Capture_First_Sample_Received</Name>
+                    <Value>582</Value>
+                </Task>
+                <Task>
+                    <Message>MediaProc: Dynamic Topology Change</Message>
+                    <Name>MediaProc_Dynamic_Topology_Change</Name>
+                    <Value>585</Value>
+                </Task>
+                <Task>
+                    <Message>MediaProc: Dynamic Transform Removal</Message>
+                    <Name>MediaProc_Dynamic_Transform_Removal</Name>
+                    <Value>586</Value>
+                </Task>
+                <Task>
+                    <Message>MediaProc: Dynamic Transform Insertion</Message>
+                    <Name>MediaProc_Dynamic_Transform_Insertion</Name>
+                    <Value>587</Value>
+                </Task>
+                <Task>
+                    <Message>2D: Create</Message>
+                    <Name>Mem2DAlloc_Create</Name>
+                    <Value>589</Value>
+                </Task>
+                <Task>
+                    <Message>2D: Allocate buffer</Message>
+                    <Name>Mem2DAlloc_Buffer</Name>
+                    <Value>590</Value>
+                </Task>
+                <Task>
+                    <Message>2D: Copy</Message>
+                    <Name>Mem2DAlloc_Copy</Name>
+                    <Value>591</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler Thumbnail Generation</Message>
+                    <Name>Property_Handler_ThumbnailGeneration</Name>
+                    <Value>592</Value>
+                </Task>
+                <Task>
+                    <Message>Property Handler Thumbnail Generation Best Frame</Message>
+                    <Name>Property_Handler_ThumbnailGeneration_BestFrame</Name>
+                    <Value>593</Value>
+                </Task>
+                <Task>
+                    <Message>MFMediaSource sample received</Message>
+                    <Name>MFMediaSource_Sample_Received_Task</Name>
+                    <Value>594</Value>
+                </Task>
+                <Task>
+                    <Message>Audio Low Latency</Message>
+                    <Name>Audio_Low_Latency</Name>
+                    <Value>596</Value>
+                </Task>
+                <Task>
+                    <Message>DXGI Map Surface</Message>
+                    <Name>DXGI_Map</Name>
+                    <Value>597</Value>
+                </Task>
+                <Task>
+                    <Message>MFCopyImage</Message>
+                    <Name>CopyImage</Name>
+                    <Value>598</Value>
+                </Task>
+                <Task>
+                    <Message>MediaProc: Sink-triggered format change</Message>
+                    <Name>MediaProc_SinkTriggered_Format_Change</Name>
+                    <Value>599</Value>
+                </Task>
+                <Task>
+                    <Message>MFMediaDeviceSource Start Task</Message>
+                    <Name>MFMediaDeviceSource-Start</Name>
+                    <Value>600</Value>
+                </Task>
+                <Task>
+                    <Message>MFMediaDeviceStream SendSinglePhotoTriggerToKS Task</Message>
+                    <Name>MFMediaDeviceStream-SendSinglePhotoTriggerToKS-Task</Name>
+                    <Value>601</Value>
+                </Task>
+                <Task>
+                    <Message>2D: Flush</Message>
+                    <Name>Mem2DAlloc_Flush</Name>
+                    <Value>602</Value>
+                </Task>
+                <Task>
+                    <Message>MFMediaSink wrote a packet to storage</Message>
+                    <Name>MFMediaSink_Sample_Write_To_Disk_Task</Name>
+                    <Value>603</Value>
+                </Task>
+                <Task>
+                    <Message>NetworkRIO_PendingSends</Message>
+                    <Name>NetworkRIO_PendingSends</Name>
+                    <Value>610</Value>
+                </Task>
+                <Task>
+                    <Message>NetworkRIO_PendingReceives</Message>
+                    <Name>NetworkRIO_PendingReceives</Name>
+                    <Value>611</Value>
+                </Task>
+                <Task>
+                    <Message>DXGIBuffer</Message>
+                    <Name>DXGIBuffer</Name>
+                    <Value>612</Value>
+                </Task>
+                <Task>
+                    <Message>DXGIBufferUnknown</Message>
+                    <Name>DXGIBufferUnknown</Name>
+                    <Value>613</Value>
+                </Task>
+                <Task>
+                    <Message>Attributes_CopyAllItems</Message>
+                    <Name>Attributes_CopyAllItems</Name>
+                    <Value>614</Value>
+                </Task>
+                <Task>
+                    <Message>MFContentProtectionDeviceCreate Start task</Message>
+                    <Name>MFContentProtectionDeviceCreate</Name>
+                    <Value>700</Value>
+                </Task>
+                <Task>
+                    <Message>MFIsContentProtectionDeviceSupported Start task</Message>
+                    <Name>MFIsContentProtectionDeviceSupported</Name>
+                    <Value>701</Value>
+                </Task>
+                <Task>
+                    <Message>MFContentProtectionDeviceCall task</Message>
+                    <Name>MFContentProtectionDeviceCall</Name>
+                    <Value>702</Value>
+                </Task>
+                <Task>
+                    <Message>MFContentDecryptorContextCreate task</Message>
+                    <Name>MFContentDecryptorContextCreate</Name>
+                    <Value>703</Value>
+                </Task>
+                <Task>
+                    <Message>MFContentDecryptorContextInitializeKey task</Message>
+                    <Name>MFContentDecryptorContextInitializeKey</Name>
+                    <Value>704</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>EnsureTrust</Name>
+                    <Value>705</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>AddDecryptor</Name>
+                    <Value>706</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>PreparePresentation</Name>
+                    <Value>707</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Input</Message>
+                    <Name>op_mfperf_Input</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Output</Message>
+                    <Name>op_mfperf_Output</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Queued</Message>
+                    <Name>op_mfperf_Queued</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dropped</Message>
+                    <Name>op_mfperf_Dropped</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>op_mfperf_Start</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>op_mfperf_Stop</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Pause</Message>
+                    <Name>op_mfperf_Pause</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,21 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkStatus</Name>
+        <Metadata>
+            <Guid>{7868B0D4-1423-4681-AFDF-27913575441E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Status Changed (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

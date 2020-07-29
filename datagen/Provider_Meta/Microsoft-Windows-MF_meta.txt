@@ -1,0 +1,534 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MF</Name>
+        <Metadata>
+            <Guid>{A7364E1A-894F-4B3D-A930-2ED9C8C4C811}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\mf.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\mf.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=mf.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MediaFoundation</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Media Foundation DeviceProxy</Message>
+                    <Path>MF_MediaFoundationDeviceProxy</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Media Foundation Pipeline</Message>
+                    <Path>MediaFoundationPipeline</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Media Foundation ContentProtection</Message>
+                    <Path>MediaFoundationContentProtection</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Media Foundation AsyncWrapper</Message>
+                    <Path>MediaFoundationAsyncWrapper</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>MFDS</Message>
+                    <Path>MediaFoundationDS</Path>
+                    <Index>4</Index>
+                    <Id>20</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>SrcPrefetch</Message>
+                    <Path>MediaFoundationSrcPrefetch</Path>
+                    <Index>5</Index>
+                    <Id>21</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Media Foundation Devproxy QueueBuffersToDevice</Message>
+                    <Name>MF_Devproxy_QueueBuffersToDevice</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy SendBuffersToDevice</Message>
+                    <Name>MF_Devproxy_SendBuffersToDevice</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy ProcessInput</Message>
+                    <Name>MF_Devproxy_ProcessInput</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy Output</Message>
+                    <Name>MF_Devproxy_Output</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy SetInputType</Message>
+                    <Name>MF_Devproxy_SetInputType</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy SetOutputType</Message>
+                    <Name>MF_Devproxy_SetOutputType</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy Flush</Message>
+                    <Name>MF_Devproxy_Flush</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy KSPinStateChange</Message>
+                    <Name>MF_Devproxy_KSPinStateChange</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy VideoPlugin Load</Message>
+                    <Name>MF_Devproxy_VideoPlugin_Load</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy VideoPlugin ProcessInput</Message>
+                    <Name>MF_Devproxy_VideoPlugin_ProcessInput</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy VideoPlugin ProcessOnput</Message>
+                    <Name>MF_Devproxy_VideoPlugin_ProcessOutput</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy D3DAllocator</Message>
+                    <Name>MF_Devproxy_D3DAllocator</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy MFT</Message>
+                    <Name>MF_Devproxy_MFT</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy MFT DynamicFormatChange</Message>
+                    <Name>MF_Devproxy_MFT_DynamicFormatChange</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy MFT StreamState</Message>
+                    <Name>MF_Devproxy_MFT_StreamState</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy OnPinBufferCompletion</Message>
+                    <Name>MF_Devproxy_OnPinBufferCompletion</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy PhotoConfirmation</Message>
+                    <Name>MF_Devproxy_PhotoConfirmation</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy DMFT Notification</Message>
+                    <Name>MF_Devproxy_DMFT_Notification</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Devproxy DMFT Notification Init</Message>
+                    <Name>MF_Devproxy_DMFT_Notification_Init</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation LoadTopology</Message>
+                    <Name>LoadTopologyTask</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation FallBackToDefaultD3DFmt</Message>
+                    <Name>FallBackToDefaultD3DFmt</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>Destination rect changed</Message>
+                    <Name>DestRectChanged</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>Source rect changed</Message>
+                    <Name>SrcRectChanged</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation OPM Poll</Message>
+                    <Name>OTAFailoverToConstricted</Name>
+                    <Value>1098</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation OPM Poll</Message>
+                    <Name>OPMPoll</Name>
+                    <Value>1099</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFInputTrustAuthority_RequestAccess</Message>
+                    <Name>IMFInputTrustAuthority_RequestAccess</Name>
+                    <Value>1100</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFInputTrustAuthority_GetDecrypter</Message>
+                    <Name>IMFInputTrustAuthority_GetDecrypter</Name>
+                    <Value>1101</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFInputTrustAuthority_GetPolicy</Message>
+                    <Name>IMFInputTrustAuthority_GetPolicy</Name>
+                    <Value>1102</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFInputTrustAuthority_Reset</Message>
+                    <Name>IMFInputTrustAuthority_Reset</Name>
+                    <Value>1103</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFInputTrustAuthority_BindAccess</Message>
+                    <Name>IMFInputTrustAuthority_BindAccess</Name>
+                    <Value>1104</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFInputTrustAuthority_UpdateAccess</Message>
+                    <Name>IMFInputTrustAuthority_UpdateAccess</Name>
+                    <Value>1105</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFTrustedInput_GetInputTrustAuthority</Message>
+                    <Name>IMFTrustedInput_GetInputTrustAuthority</Name>
+                    <Value>1106</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Decrypt</Message>
+                    <Name>Decrypt</Name>
+                    <Value>1107</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFSampleProtection_GetInputProtectionVersion</Message>
+                    <Name>IMFSampleProtection_GetInputProtectionVersion</Name>
+                    <Value>1108</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFSampleProtection_GetOutputProtectionVersion</Message>
+                    <Name>IMFSampleProtection_GetOutputProtectionVersion</Name>
+                    <Value>1109</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFSampleProtection_GetProtectionCertificate</Message>
+                    <Name>IMFSampleProtection_GetProtectionCertificate</Name>
+                    <Value>1110</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFSampleProtection_InitInputProtection</Message>
+                    <Name>IMFSampleProtection_InitInputProtection</Name>
+                    <Value>1111</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFSampleProtection_InitOutputProtection</Message>
+                    <Name>IMFSampleProtection_InitOutputProtection</Name>
+                    <Value>1112</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation CreateMFPMP</Message>
+                    <Name>CreateMFPMP</Name>
+                    <Value>1113</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation ContentEnablerEvent</Message>
+                    <Name>ContentEnablerEvent</Name>
+                    <Value>1114</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFPMPHost_CreateObjectByCLSID</Message>
+                    <Name>IMFPMPHost_CreateObjectByCLSID</Name>
+                    <Value>1115</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFOutputPolicy_GenerateRequiredSchemas</Message>
+                    <Name>IMFOutputPolicy_GenerateRequiredSchemas</Name>
+                    <Value>1116</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation RequiredSchema</Message>
+                    <Name>RequiredSchema</Name>
+                    <Value>1117</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation PolicyEvent</Message>
+                    <Name>PolicyEvent</Name>
+                    <Value>1118</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation IMFPMPHostApp_ActivateClassById</Message>
+                    <Name>IMFPMPHostApp_ActivateClassById</Name>
+                    <Value>1119</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Validate Application Certificate</Message>
+                    <Name>AppCert</Name>
+                    <Value>1120</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation OTAApplyProtection</Message>
+                    <Name>OTAApplyProtection</Name>
+                    <Value>1122</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation VideoFrameConstrict</Message>
+                    <Name>VideoFrameConstrict</Name>
+                    <Value>1150</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation OPMFail</Message>
+                    <Name>OPMFail</Name>
+                    <Value>1151</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper Need Input</Message>
+                    <Name>AsyncWrapperNeedInput</Name>
+                    <Value>1123</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper Process Input</Message>
+                    <Name>AsyncWrapperProcessInput</Name>
+                    <Value>1124</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper Process Input (MFT)</Message>
+                    <Name>AsyncWrapperMFTProcessInput</Name>
+                    <Value>1125</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper Process Output (MFT)</Message>
+                    <Name>AsyncWrapperMFTProcessOutput</Name>
+                    <Value>1126</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper Have Output</Message>
+                    <Name>AsyncWrapperHaveOutput</Name>
+                    <Value>1127</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper Process Output</Message>
+                    <Name>AsyncWrapperProcessOutput</Name>
+                    <Value>1128</Value>
+                </Task>
+                <Task>
+                    <Message>MF Devproxy MFT ProcessMessage Task</Message>
+                    <Name>MF_Devproxy-MFT-ProcessMessage-Task</Name>
+                    <Value>1129</Value>
+                </Task>
+                <Task>
+                    <Message>D3DDeviceLost</Message>
+                    <Name>MF_D3DDeviceLost</Name>
+                    <Value>1130</Value>
+                </Task>
+                <Task>
+                    <Message>MF Devproxy sample_TimeStamp Task</Message>
+                    <Name>MF-Devproxy-sample-TimeStamp-Task</Name>
+                    <Value>1131</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper Running</Message>
+                    <Name>AsyncWrapperMFTRunning</Name>
+                    <Value>1132</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper SetWorkQueue</Message>
+                    <Name>AsyncWrapperSetWorkQueue</Name>
+                    <Value>1133</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper</Message>
+                    <Name>AsyncWrapper</Name>
+                    <Value>1134</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Wrapper Deadline</Message>
+                    <Name>AsyncWrapperDeadline</Name>
+                    <Value>1135</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Sync MFT Running</Message>
+                    <Name>MFTLongRunning</Name>
+                    <Value>1140</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Sync Process Input (MFT)</Message>
+                    <Name>SyncMFTProcessInput</Name>
+                    <Value>1141</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Sync Process Output (MFT)</Message>
+                    <Name>SyncMFTProcessOutput</Name>
+                    <Value>1142</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Process Input (MFT)</Message>
+                    <Name>AsyncMFTProcessInput</Name>
+                    <Value>1143</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Async Process Output (MFT)</Message>
+                    <Name>AsyncMFTProcessOutput</Name>
+                    <Value>1144</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Node Info SetWorkQueue</Message>
+                    <Name>MFTInfoSetWorkQueue</Name>
+                    <Value>1145</Value>
+                </Task>
+                <Task>
+                    <Message>MFDS ReceiveSampleCP</Message>
+                    <Name>MFDS_ReceiveSampleCP</Name>
+                    <Value>1200</Value>
+                </Task>
+                <Task>
+                    <Message>MFDS SendSampleEvent</Message>
+                    <Name>MFDS_SendSampleEvent</Name>
+                    <Value>1201</Value>
+                </Task>
+                <Task>
+                    <Message>MFDS SamplePoolPending</Message>
+                    <Name>MFDS_SamplePoolPending</Name>
+                    <Value>1202</Value>
+                </Task>
+                <Task>
+                    <Message>MFDS FillSampleRequest</Message>
+                    <Name>MFDS_FillSampleRequest</Name>
+                    <Value>1203</Value>
+                </Task>
+                <Task>
+                    <Message>MFDS QueueSample</Message>
+                    <Name>MFDS_QueueSample</Name>
+                    <Value>1204</Value>
+                </Task>
+                <Task>
+                    <Message>MFDS RequestSample</Message>
+                    <Name>MFDS_RequestSample</Name>
+                    <Value>1205</Value>
+                </Task>
+                <Task>
+                    <Message>MFDS_GetTime</Message>
+                    <Name>MFDS_GetTime</Name>
+                    <Value>1206</Value>
+                </Task>
+                <Task>
+                    <Message>MFDS_State</Message>
+                    <Name>MFDS_State</Name>
+                    <Value>1207</Value>
+                </Task>
+                <Task>
+                    <Message>SrcPrefetch Fill Buffer</Message>
+                    <Name>SrcPrefetch_FillBuffer</Name>
+                    <Value>1210</Value>
+                </Task>
+                <Task>
+                    <Message>SrcStreamEOSState</Message>
+                    <Name>SrcStreamEOSState</Name>
+                    <Value>1211</Value>
+                </Task>
+                <Task>
+                    <Message>SrcStreamNeedMoreSamples</Message>
+                    <Name>SrcStreamNeedMoreSamples</Name>
+                    <Value>1212</Value>
+                </Task>
+                <Task>
+                    <Message>SrcPrefetch Timeout</Message>
+                    <Name>SrcPrefetch_Timeout</Name>
+                    <Value>1213</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>ME TransformHave Output</Message>
+                    <Name>METransformHaveOutput</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Devproxy ProcessOutput</Message>
+                    <Name>ProcessOutput</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>D3D Allocator Created</Message>
+                    <Name>D3DAllocatorCreated</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>D3D Allocator Released</Message>
+                    <Name>D3DAllocatorReleased</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Devproxy loaded</Message>
+                    <Name>Load</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Devproxy MFT unloaded</Message>
+                    <Name>Unload</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

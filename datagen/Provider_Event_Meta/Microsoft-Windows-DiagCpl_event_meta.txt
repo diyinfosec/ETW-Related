@@ -1,0 +1,98 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DiagCpl</Name>
+        <Metadata>
+            <Guid>{1A396961-5F3C-4C71-8310-44C653C0BF8A}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Begin search.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SearchOnline" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SearchType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+End search.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SearchOnline" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SearchType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExitCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

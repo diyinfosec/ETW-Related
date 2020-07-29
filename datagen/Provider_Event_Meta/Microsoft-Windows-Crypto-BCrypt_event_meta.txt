@@ -1,0 +1,33 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Crypto-BCrypt</Name>
+        <Metadata>
+            <Guid>{C7E089AC-BA2A-11E0-9AF7-68384824019B}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Open Provider Failure. 
+
+ Cryptographic Parameters:
+ 	Provider Name:	%1
+ 	Algorithm Name:	%2
+ 	Flags:	%3
+ Failure Information:
+ 	Return Code:	%4
+ 	Failure Type:	%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AlgorithmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="dwFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

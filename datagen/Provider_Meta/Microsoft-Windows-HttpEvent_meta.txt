@@ -1,0 +1,35 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-HttpEvent</Name>
+        <Metadata>
+            <Guid>{7B6BC78C-898B-4170-BBF8-1A469EA43FC5}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\http.sys</ResourceFilePath>
+            <ParameterFilePath>C:\WINDOWS\system32\drivers\http.sys</ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\http.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=http.sys&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-HttpEvent</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

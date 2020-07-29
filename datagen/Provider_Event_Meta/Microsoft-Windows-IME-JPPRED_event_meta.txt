@@ -1,0 +1,26 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-JPPRED</Name>
+        <Metadata>
+            <Guid>{3AD571F3-BDAE-4942-8733-4D1B85870A1E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_FWKGetCandStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_SG_FWKGetCandEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

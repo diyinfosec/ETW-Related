@@ -1,0 +1,88 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WWAN-MM-EVENTS</Name>
+        <Metadata>
+            <Guid>{7839BB2A-2EA3-4ECA-A00F-B558BA678BEC}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM module started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM module stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WWAN MM Event : Error occurred in WWAN MM Module]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Location" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WWAN MM Event : New WWAN Interface is arrived to the WWAN MM]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM got notification of Interface initialization of a new interface]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WWAN MM Event : Connect request issued by the WWAN MM module]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WWAN MM Event : Connect completion response received by the WWAN MM Module]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM Module writing start into UCM namepspace]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10022</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WWAN MM Event : WWAN MM Module writing complete into UCM namepspace]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

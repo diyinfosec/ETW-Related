@@ -1,0 +1,557 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-File</Name>
+        <Metadata>
+            <Guid>{EDD08927-9CC4-4E65-B970-C2560FB5C289}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CreateOptions" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CreateAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ShareAccess" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CreateOptions" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CreateAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ShareAccess" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ByteOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IOSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IOFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ByteOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IOSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IOFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ExtraFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ByteOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IOSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IOFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ByteOffset" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IOSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IOFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ExtraFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExtraInformation" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThreadId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CreateOptions" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CreateAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ShareAccess" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FileObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IssuingThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CreateOptions" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CreateAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ShareAccess" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

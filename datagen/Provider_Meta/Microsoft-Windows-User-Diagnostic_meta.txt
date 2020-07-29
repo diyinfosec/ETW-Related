@@ -1,0 +1,28 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-User-Diagnostic</Name>
+        <Metadata>
+            <Guid>{305FC87B-002A-5E26-D297-60223012CA9C}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-User-Diagnostic</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

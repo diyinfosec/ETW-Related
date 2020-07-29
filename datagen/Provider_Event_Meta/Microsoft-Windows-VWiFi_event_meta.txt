@@ -1,0 +1,72 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-VWiFi</Name>
+        <Metadata>
+            <Guid>{314B2B0D-81EE-4474-B6E0-C2AAEC0DDBDE}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>25001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Received request to enable virtualization. 
+
+	Network Adapter: %2
+	Interface GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Received request to disable virtualization. 
+
+	Network Adapter: %2
+	Interface GUID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Virtual Miniport Started. 
+
+	Network Adapter: %2
+	Interface GUID: %1 Virtual Interface GUID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VIfGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Virtual Miniport Stopped. 
+
+	Network Adapter: %2
+	Interface GUID: %1 Virtual Interface GUID: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IfGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VIfGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

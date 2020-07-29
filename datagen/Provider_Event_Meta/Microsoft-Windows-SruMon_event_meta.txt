@@ -1,0 +1,156 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SruMon</Name>
+        <Metadata>
+            <Guid>{C8DBF506-E3D3-4822-930D-84C557EB6247}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_DebugString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Failed with %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_Status" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Failed with %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_HR" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Accessing database table %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_TableName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 Failed with %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_HR" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Called at %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Called at %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_Status" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_Reset" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Called at %1 for Application %2 over InterfaceLuid %3 whose cost is %4 with %5 bytes sent and %6 bytes received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_InterfaceLuid" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="_Costed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="_BytesSent" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="_BytesReceived" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Called at %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+InterfaceGUID %1, InterfaceLuid %2, App %3, ProfileId %4, ProfileFlags %5, BytesSent %6, BytesReceived %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="_InterfaceLuid" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="_Application" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="_ProfileId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="_ProfileFlags" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="_BytesSent" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="_BytesReceived" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,80 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Base-Filtering-Engine-Resource-Flows</Name>
+        <Metadata>
+            <Guid>{92765247-03A9-4AE3-A575-B42264616E78}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+New Resource Flow]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionUsedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteIPAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="LocalIPAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="RemotePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LocalPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Resource Flow Closed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionUsedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteIPAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="LocalIPAddress" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="RemotePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LocalPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CloseTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+New Resource Flow]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionUsedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteIPAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="LocalIPAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="RemotePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LocalPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Resource Flow Closed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionUsedId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Protocol" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="RemoteIPAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="LocalIPAddress" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="RemotePort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LocalPort" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="CloseTime" inType="win:FILETIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

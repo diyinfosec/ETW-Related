@@ -1,0 +1,30 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PeerToPeerDrtEventProvider</Name>
+        <Metadata>
+            <Guid>{40AE003C-6F3D-4590-AE1C-0E8BE526B50F}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Create a DRT CMT instance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Delete a DRT CMT instance]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

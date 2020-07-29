@@ -1,0 +1,98 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AppLocker</Name>
+        <Metadata>
+            <Guid>{CBDA4DBF-8D5D-4F69-9578-BE14AA540D22}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\srpapi.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\srpapi.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.556&amp;FileName=srpapi.dll&amp;FileVer=10.0.17134.556</HelpLink>
+            <PublisherMessage>Microsoft-Windows-AppLocker</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-AppLocker/EXE and DLL</Message>
+                    <Path>Microsoft-Windows-AppLocker/EXE and DLL</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-AppLocker/MSI and Script</Message>
+                    <Path>Microsoft-Windows-AppLocker/MSI and Script</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-AppLocker/Packaged app-Execution</Message>
+                    <Path>Microsoft-Windows-AppLocker/Packaged app-Execution</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-AppLocker/Packaged app-Deployment</Message>
+                    <Path>Microsoft-Windows-AppLocker/Packaged app-Deployment</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message></Message>
+                    <Name>SrpPolicyConversion</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SrpPolicyRuleSort</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SrpPolicyHitCountJoin</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>SrpPolicyLoad</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

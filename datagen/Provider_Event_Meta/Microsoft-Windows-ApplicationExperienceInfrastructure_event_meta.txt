@@ -1,0 +1,64 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ApplicationExperienceInfrastructure</Name>
+        <Metadata>
+            <Guid>{5EC13D8E-4B3F-422E-A7E7-3121A1D90C7A}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The application (%3, from vendor %5) has the following problem: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DBType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppNameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string" length="AppNameCount"/>
+  <data name="VendorNameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorName" inType="win:UnicodeString" outType="xs:string" length="VendorNameCount"/>
+  <data name="SummaryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Summary" inType="win:UnicodeString" outType="xs:string" length="SummaryCount"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The application (%3, from vendor %5) was hard-blocked and raised the following: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DBType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppNameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string" length="AppNameCount"/>
+  <data name="VendorNameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorName" inType="win:UnicodeString" outType="xs:string" length="VendorNameCount"/>
+  <data name="SummaryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Summary" inType="win:UnicodeString" outType="xs:string" length="SummaryCount"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The application (%3, from vendor %5) was detected containing legacy redistributable software.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DBType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppNameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string" length="AppNameCount"/>
+  <data name="VendorNameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VendorName" inType="win:UnicodeString" outType="xs:string" length="VendorNameCount"/>
+  <data name="SummaryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Summary" inType="win:UnicodeString" outType="xs:string" length="SummaryCount"/>
+  <data name="SessionID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

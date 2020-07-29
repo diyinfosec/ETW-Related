@@ -1,0 +1,382 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TerminalServices-ClientActiveXCore</Name>
+        <Metadata>
+            <Guid>{28AA95BB-D444-4719-A36F-40462168127E}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\mstscax.dll</ResourceFilePath>
+            <ParameterFilePath>C:\WINDOWS\system32\mstscax.dll</ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\mstscax.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=mstscax.dll&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-TerminalServices-ClientActiveXCore</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-RDPClient/Operational</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-RDPClient/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-RDPClient/Debug</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>General</Message>
+                    <Name>General</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>Connection Sequence</Message>
+                    <Name>Connection</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Automatic Reconnection Sequence</Message>
+                    <Name>Autoreconnection</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>Gateway Connection Sequence</Message>
+                    <Name>GatewayConnection</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>RDP State Transition</Message>
+                    <Name>TransitionStates</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>RdClient RADC workspace</Message>
+                    <Name>RdClientRadc</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>RdClient Pipeline workspace</Message>
+                    <Name>RdpClientPipeline</Name>
+                    <Value>106</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during the connection process</Message>
+                    <Name>Connect</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during the disconnection process</Message>
+                    <Name>Disconnect</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during the authentication process</Message>
+                    <Name>Authenticate</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised while trying to automatically reconnect to the server</Message>
+                    <Name>Autoreconnect</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during resolving the server name</Message>
+                    <Name>ResolveName</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised while trying to get a valid licence</Message>
+                    <Name>License</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised in the gateway transport</Message>
+                    <Name>Gateway</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when data is received from the server</Message>
+                    <Name>RecvServerData</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when data is sent to the server</Message>
+                    <Name>SendClientData</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised during a state transition.</Message>
+                    <Name>StateTransition</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the client has not been shut down cleanly.</Message>
+                    <Name>RadcCancelDuringExit</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user tries to sign out from the OOB client.</Message>
+                    <Name>RadcUserSignOut</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user manually tries to do feed refresh.</Message>
+                    <Name>RadcWorkspaceRefresh</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user tries to log in to ADAL page using a different username.</Message>
+                    <Name>RadcAdalDifferentUserError</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when a workspace event like subscribe/update succeeded.</Message>
+                    <Name>RadcWorkspaceEventSuccess</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when a workspace event like subscribe/update failed!</Message>
+                    <Name>RadcWorkspaceEventFailure</Name>
+                    <Value>25</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when feed discovery succeeds</Message>
+                    <Name>RadcDiscoverySuccess</Name>
+                    <Value>26</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when feed discovery failed!</Message>
+                    <Name>RadcDiscoveryFailure</Name>
+                    <Value>27</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the feed cache on the client local machine is missing icons or Rdp files due to cache corruption!</Message>
+                    <Name>RadcCacheCorruption</Name>
+                    <Value>28</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when user has successfully updated the consent status on server side</Message>
+                    <Name>RadcConsentStatusUpdateSuccess</Name>
+                    <Value>29</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when user is unable to update the consent status on server!</Message>
+                    <Name>RadcConsentStatusUpdateFailure</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the client first launches.</Message>
+                    <Name>RadcClientVersion</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user manually clicks the view invitations button.</Message>
+                    <Name>RadcViewInvites</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when the user starts a new cycle of feed discovery. We log the hashed UPN and time zone information here</Message>
+                    <Name>RadcUserTimeZone</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when all the feeds of the user have been subscribed or updated completely. We log the overall time it took to download all feeds in parallel.</Message>
+                    <Name>RadcRefreshTime</Name>
+                    <Value>34</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when there is a close operation which will tear down the connection.</Message>
+                    <Name>CloseEvent</Name>
+                    <Value>35</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when protocol caps are received from the server. We log the version selected, and the client mode and AVC capability.</Message>
+                    <Name>ClientPipelineProtocolRevision</Name>
+                    <Value>36</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when protocol caps are received from the server. We log that hardware resources are being used.</Message>
+                    <Name>ClientPipelineFrameHWMemory</Name>
+                    <Value>37</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when protocol caps are received from the server. We log that hardware resources are not being used.</Message>
+                    <Name>ClientPipelineFrameSWMemory</Name>
+                    <Value>38</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when there is error in acquiring ADAL token.</Message>
+                    <Name>RadcDetailedAdalError</Name>
+                    <Value>39</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when ADAL authentication token is successfully created.</Message>
+                    <Name>RadcAdalTokenCollected</Name>
+                    <Value>40</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised when ADAL authentication is cancelled.</Message>
+                    <Name>RadcAdalCancelled</Name>
+                    <Value>41</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This event is raised if a pipeline error is encountered during execution. We log the faulting component, function and error code.</Message>
+                    <Name>ClientPipelineError</Name>
+                    <Value>44</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This is a generic event that may be raised by the client.</Message>
+                    <Name>GenericClientEvent</Name>
+                    <Value>47</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>This is a generic error that may be signalled by the client.</Message>
+                    <Name>GenericClientError</Name>
+                    <Value>48</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Access Denied</Message>
+                    <Name>AccessDenied</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Client has disconnected</Message>
+                    <Name>Disconnected</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Authentication Failure</Message>
+                    <Name>AuthFailed</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Failed to get a licence</Message>
+                    <Name>LicenseError</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Operation has timed out</Message>
+                    <Name>TimedOut</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Invalid State</Message>
+                    <Name>InvalidState</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Connection to gateway server failed</Message>
+                    <Name>GatewayConnectFailed</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Network Unavailable</Message>
+                    <Name>NetworkUnAvailable</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>DNS resolution failure</Message>
+                    <Name>DnsResolutionFailure</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Sign verification failed</Message>
+                    <Name>SignVerifFailed</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Resource check failed</Message>
+                    <Name>ResourceFailure</Name>
+                    <Value>262144</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Log-on failed</Message>
+                    <Name>LogonFailed</Name>
+                    <Value>524288</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

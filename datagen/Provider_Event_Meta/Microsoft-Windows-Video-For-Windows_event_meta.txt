@@ -1,0 +1,23 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Video-For-Windows</Name>
+        <Metadata>
+            <Guid>{712ABB2D-D806-4B42-9682-26DA01D8B307}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The file %2 could not be processed by the application %1 because it requires Indeo® Decoders of type %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApplicationName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ContentType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

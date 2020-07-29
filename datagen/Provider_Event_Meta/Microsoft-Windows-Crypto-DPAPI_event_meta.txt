@@ -1,0 +1,178 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Crypto-DPAPI</Name>
+        <Metadata>
+            <Guid>{89FE8F40-CDCE-464E-8217-15EF97D4C7C3}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DPAPI created Master key.
+
+ 	GUID:	%1
+ 	User Storage Area:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MasterKeyGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="UserStorage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DPAPI deleted Master key.
+
+ 	GUID:	%1
+ 	User Storage Area:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MasterKeyGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserStorage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Master key access failed.
+
+ 	GUID:			%1
+ 	Success:			%2
+ 	Last error:		%3
+ 	Master key disposition:	%3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MasterKeyGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Success" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="LastError" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MasterKeyDisposition" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Password Change triggered.
+
+ 	Status:	%1
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Synchronization of Master keys triggered.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4097</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DPAPI BackUp service started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4098</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DPAPI BackUp service stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8193</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+System credentials creation in LSASS failed. 
+
+ 	Status:	%1
+ ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8194</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DPAPI Master key file open failed.
+
+ 	FileName:	%1
+ 	Access:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Access" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8195</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Master key encryption in memory failed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8196</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Master key decryption in memory failed]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8197</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DPAPI Protect failed .
+
+ 	Status:	%1
+ 	ReasonForFailure:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="ReasonForFailure" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8198</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DPAPI Unprotect failed .
+
+ 	Status:	%1
+ 	ReasonForFailure:	%2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:ErrorCode"/>
+  <data name="ReasonForFailure" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

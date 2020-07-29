@@ -1,0 +1,95 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WPDClassInstaller</Name>
+        <Metadata>
+            <Guid>{AD5162D8-DAF0-4A25-88A7-01CBEB33902E}</Guid>
+            <ResourceFilePath>C:\WINDOWS\System32\wpd_ci.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\System32\wpd_ci.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=wpd_ci.dll&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WPD-ClassInstaller</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-WPD-ClassInstaller/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Analytic</Message>
+                    <Path>Microsoft-Windows-WPD-ClassInstaller/Analytic</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Driver Performance</Message>
+                    <Name>DriverPerformance</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Driver Installation</Message>
+                    <Name>DriverInitialization</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Driver Post-Install Configuration</Message>
+                    <Name>DriverSpecialOperation</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>Driver Migration</Message>
+                    <Name>DriverFailure</Name>
+                    <Value>48</Value>
+                </Task>
+                <Task>
+                    <Message>Device Metadata Retrieval</Message>
+                    <Name>DriverMetadataRetrieval</Name>
+                    <Value>64</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

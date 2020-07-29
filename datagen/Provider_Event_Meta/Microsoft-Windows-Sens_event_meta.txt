@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Sens</Name>
+        <Metadata>
+            <Guid>{BE69781C-B63B-41A1-8E24-A4FC7B3FC498}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

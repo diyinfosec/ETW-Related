@@ -1,0 +1,35 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TunnelDriver</Name>
+        <Metadata>
+            <Guid>{4EDBE902-9ED3-4CF0-93E8-B8B5FA920299}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\tunnel.sys</ResourceFilePath>
+            <ParameterFilePath>C:\WINDOWS\system32\drivers\tunnel.sys</ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\tunnel.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=tunnel.sys&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Tunnel</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Tunnel Driver Etw Channel</Message>
+                    <Path>Microsoft-Windows-TunnelDriver</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

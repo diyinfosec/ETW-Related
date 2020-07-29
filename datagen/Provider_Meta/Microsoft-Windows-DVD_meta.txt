@@ -1,0 +1,113 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DVD</Name>
+        <Metadata>
+            <Guid>{E18D0FCA-9515-4232-98E4-89E456D8551B}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\qdvd.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\qdvd.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=qdvd.dll&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DVD-Navigator</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>DVD Navigator</Message>
+                    <Path>Navigator</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Nav SendSample</Message>
+                    <Name>Nav_SendSample</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Nav Flush</Message>
+                    <Name>Nav_Flush</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Nav StillTimer</Message>
+                    <Name>Nav_StillTimer</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Nav ParsePCI</Message>
+                    <Name>Nav_ParsePCI</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Nav Throttle</Message>
+                    <Name>Nav_Throttle</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Nav PumpWait</Message>
+                    <Name>Nav_PumpWait</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Nav SendEventNotification</Message>
+                    <Name>Nav_SendEventNotification</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Nav DomainChange</Message>
+                    <Name>Nav_DomainChange</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Nav SendErrorNotification</Message>
+                    <Name>Nav_SendErrorNotification</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Nav StartStreaming</Message>
+                    <Name>Nav_StartStreaming</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Nav CreateFile</Message>
+                    <Name>Nav_CreateFile</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Nav MutexLock</Message>
+                    <Name>Nav_MutexLock</Name>
+                    <Value>13</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

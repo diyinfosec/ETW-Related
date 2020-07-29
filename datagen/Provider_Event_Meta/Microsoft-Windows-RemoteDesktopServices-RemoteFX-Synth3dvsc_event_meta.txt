@@ -1,0 +1,42 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RemoteDesktopServices-RemoteFX-Synth3dvsc</Name>
+        <Metadata>
+            <Guid>{3903D5B9-988D-4C31-9CCD-4022F96703F0}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft RemoteFX Synth3D Video VSC loaded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft RemoteFX Synth3D Video VSC unloaded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The RemoteFX-enabled virtual machine negotiated protcol version: %1.%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MajorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="MinorVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

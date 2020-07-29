@@ -1,0 +1,470 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Deduplication</Name>
+        <Metadata>
+            <Guid>{F9FE3908-44B8-48D9-9A32-5A763FF5ED79}</Guid>
+            <ResourceFilePath>C:\WINDOWS\System32\ddputils.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\System32\ddputils.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=ddputils.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Data Deduplication</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Deduplication/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Deduplication/Scrubbing</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Deduplication/Diagnostic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Deduplication/Performance</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>4</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Data Deduplication Optimization Task</Message>
+                    <Name>Optimization</Name>
+                    <Guid>{3B8B5836-3F25-42D4-8C21-15868ED561B7}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Data Deduplication Garbage Collection Task</Message>
+                    <Name>GarbageCollection</Name>
+                    <Guid>{93779560-849D-46CA-9282-8D9737AF21C1}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Data Deduplication Scrubbing Task</Message>
+                    <Name>Scrubbing</Name>
+                    <Guid>{42729C09-E413-44B6-A089-5FA929493A5C}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Data Deduplication Unoptimization Task</Message>
+                    <Name>Unoptimization</Name>
+                    <Guid>{F539AB35-330B-41B4-BEF4-50ED4DEEE0CC}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Open stream store stream</Message>
+                    <Name>StreamStoreOpenStream</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Prepare for paging IO</Message>
+                    <Name>StreamStorePrepareForPagingIO</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Read stream map</Message>
+                    <Name>StreamStoreReadStreamMap</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Read chunks</Message>
+                    <Name>StreamStoreReadChunks</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Compute checksum</Message>
+                    <Name>ChunkStoreComputeChecksum</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Get container entry</Message>
+                    <Name>ChunkStoreGetContainerEntry</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Get maximum generation for container</Message>
+                    <Name>ChunkStoreGetMaxGenerationForContainer</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Open chunk container</Message>
+                    <Name>ChunkContainerOpen</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Initialize chunk container redirection table</Message>
+                    <Name>ChunkContainerRedirectionTableInit</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>Validate chunk container redirection table</Message>
+                    <Name>ChunkContainerRedirectionTableValidate</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>Get chunk container valid data length</Message>
+                    <Name>ChunkContainerGetValidDataLength</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Get offset from chunk container redirection table</Message>
+                    <Name>ChunkContainerRedirectionTableGetOffset</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Read chunk container block</Message>
+                    <Name>ChunkContainerReadBlock</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>Clear chunk container block</Message>
+                    <Name>ChunkContainerClearBlock</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>Copy chunk</Message>
+                    <Name>ChunkContainerCopyChunk</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>Initialize file cache</Message>
+                    <Name>FileCacheInitialize</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>Map file cache data</Message>
+                    <Name>FileCacheMapData</Name>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>Unpin file cache data</Message>
+                    <Name>FileCacheUnpinData</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message>Copy file cache data</Message>
+                    <Name>FileCacheCopyData</Name>
+                    <Value>23</Value>
+                </Task>
+                <Task>
+                    <Message>Read underlying file cache data</Message>
+                    <Name>FileCacheIrpRead</Name>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message>Get chunk container file size</Message>
+                    <Name>ChunkContainerGetFileSize</Name>
+                    <Value>25</Value>
+                </Task>
+                <Task>
+                    <Message>Pin stream map</Message>
+                    <Name>StreamStorePinStreamMap</Name>
+                    <Value>26</Value>
+                </Task>
+                <Task>
+                    <Message>Pin chunk container</Message>
+                    <Name>ChunkContainerPin</Name>
+                    <Value>27</Value>
+                </Task>
+                <Task>
+                    <Message>Pin chunk</Message>
+                    <Name>ChunkContainerPinChunk</Name>
+                    <Value>28</Value>
+                </Task>
+                <Task>
+                    <Message>Allocate pool buffer</Message>
+                    <Name>ChunkContainerAllocatePoolBuffer</Name>
+                    <Value>29</Value>
+                </Task>
+                <Task>
+                    <Message>Unpin chunk container</Message>
+                    <Name>ChunkContainerUnpin</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>Unpin chunk</Message>
+                    <Name>ChunkContainerUnpinChunk</Name>
+                    <Value>31</Value>
+                </Task>
+                <Task>
+                    <Message>Dedup read processing</Message>
+                    <Name>FltDedupReadProcessing</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>Get first stream map entry</Message>
+                    <Name>FltGetFirstStreamMapEntry</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message>Read chunk metadata</Message>
+                    <Name>FltGetChunkRequest</Name>
+                    <Value>34</Value>
+                </Task>
+                <Task>
+                    <Message>Read chunk data</Message>
+                    <Name>FltReadChunks</Name>
+                    <Value>35</Value>
+                </Task>
+                <Task>
+                    <Message>Reference TlCache data</Message>
+                    <Name>FltRefTlCacheData</Name>
+                    <Value>36</Value>
+                </Task>
+                <Task>
+                    <Message>Read chunk data from stream store</Message>
+                    <Name>FltStrmStoreReadChunks</Name>
+                    <Value>37</Value>
+                </Task>
+                <Task>
+                    <Message>Assemble chunk data</Message>
+                    <Name>FltAssembleChunks</Name>
+                    <Value>38</Value>
+                </Task>
+                <Task>
+                    <Message>Decompress chunk data</Message>
+                    <Name>FltDecompressChunks</Name>
+                    <Value>39</Value>
+                </Task>
+                <Task>
+                    <Message>Copy chunk data in to user buffer</Message>
+                    <Name>FltCopyDataToUserBuffer</Name>
+                    <Value>40</Value>
+                </Task>
+                <Task>
+                    <Message>Insert chunk data in to tlcache</Message>
+                    <Name>FltInsertDataToTlCache</Name>
+                    <Value>41</Value>
+                </Task>
+                <Task>
+                    <Message>Read data from dedup reparse point file</Message>
+                    <Name>FltFsRead</Name>
+                    <Value>42</Value>
+                </Task>
+                <Task>
+                    <Message>Prepare stream map</Message>
+                    <Name>FltPrepareStreamMap</Name>
+                    <Value>43</Value>
+                </Task>
+                <Task>
+                    <Message>Patch clean ranges</Message>
+                    <Name>FltPatchCleanRanges</Name>
+                    <Value>44</Value>
+                </Task>
+                <Task>
+                    <Message>Writing data to dedup file</Message>
+                    <Name>FltWriteIrp</Name>
+                    <Value>45</Value>
+                </Task>
+                <Task>
+                    <Message>Queue write request on dedup file</Message>
+                    <Name>FltQueueWriteIrp</Name>
+                    <Value>46</Value>
+                </Task>
+                <Task>
+                    <Message>Do copy on write work on dedup file</Message>
+                    <Name>FltDoCowWork</Name>
+                    <Value>47</Value>
+                </Task>
+                <Task>
+                    <Message>Do full recall on dedup file</Message>
+                    <Name>FltDoFullRecall</Name>
+                    <Value>48</Value>
+                </Task>
+                <Task>
+                    <Message>Do partial recall on dedup file</Message>
+                    <Name>FltDoPartialRecall</Name>
+                    <Value>49</Value>
+                </Task>
+                <Task>
+                    <Message>Do dummy paging read on dedup file</Message>
+                    <Name>FltDoDummyPagingRead</Name>
+                    <Value>50</Value>
+                </Task>
+                <Task>
+                    <Message>Read clean data for recalling file</Message>
+                    <Name>FltReadCleanDedupFileForRecall</Name>
+                    <Value>51</Value>
+                </Task>
+                <Task>
+                    <Message>Write clean data to dedup file normally</Message>
+                    <Name>FltWriteCleanDataNormal</Name>
+                    <Value>52</Value>
+                </Task>
+                <Task>
+                    <Message>Write clean data to dedup file paged</Message>
+                    <Name>FltWriteCleanDataPaged</Name>
+                    <Value>53</Value>
+                </Task>
+                <Task>
+                    <Message>Recall dedup file using paging Io</Message>
+                    <Name>FltRecallUsingPagingIo</Name>
+                    <Value>54</Value>
+                </Task>
+                <Task>
+                    <Message>Flush dedup file after recall</Message>
+                    <Name>FltFlushAfterRecall</Name>
+                    <Value>55</Value>
+                </Task>
+                <Task>
+                    <Message>Update bitmap after recall on dedup file</Message>
+                    <Name>FltUpdateBitmap</Name>
+                    <Value>56</Value>
+                </Task>
+                <Task>
+                    <Message>Delete dedup reparse point</Message>
+                    <Name>FltDeleteReparsePoint</Name>
+                    <Value>57</Value>
+                </Task>
+                <Task>
+                    <Message>Open dedup file</Message>
+                    <Name>FltOpenFile</Name>
+                    <Value>58</Value>
+                </Task>
+                <Task>
+                    <Message>Locking user buffer for read</Message>
+                    <Name>FltLockBufferForRead</Name>
+                    <Value>59</Value>
+                </Task>
+                <Task>
+                    <Message>Get system address for MDL</Message>
+                    <Name>FltGetSystemAddressForMdl</Name>
+                    <Value>60</Value>
+                </Task>
+                <Task>
+                    <Message>Read clean dedup file</Message>
+                    <Name>FltReadCleanDedupFile</Name>
+                    <Value>61</Value>
+                </Task>
+                <Task>
+                    <Message>Get range state</Message>
+                    <Name>FltGetRangeState</Name>
+                    <Value>62</Value>
+                </Task>
+                <Task>
+                    <Message>Get chunk body</Message>
+                    <Name>StreamStoreGetChunkBody</Name>
+                    <Value>63</Value>
+                </Task>
+                <Task>
+                    <Message>Release chunk</Message>
+                    <Name>StreamStoreReleaseChunk</Name>
+                    <Value>64</Value>
+                </Task>
+                <Task>
+                    <Message>Release decompress chunk context</Message>
+                    <Name>FltReleaseDecompressChunkContext</Name>
+                    <Value>65</Value>
+                </Task>
+                <Task>
+                    <Message>Prepare decompress chunk context</Message>
+                    <Name>FltPrepareDecompressChunkContext</Name>
+                    <Value>66</Value>
+                </Task>
+                <Task>
+                    <Message>Copy data to compressed buffer</Message>
+                    <Name>FltCopyDataToCompressedBuffer</Name>
+                    <Value>67</Value>
+                </Task>
+                <Task>
+                    <Message>Release data from TL Cache</Message>
+                    <Name>FltReleaseDataFromTLCache</Name>
+                    <Value>68</Value>
+                </Task>
+                <Task>
+                    <Message>Queue async read request</Message>
+                    <Name>FltQueueReadIrp</Name>
+                    <Value>69</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Reporting</Message>
+                    <Name>Reporting</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Filter</Message>
+                    <Name>Filter</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Kernel mode stream store</Message>
+                    <Name>KmStreamStore</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Kernel mode chunk store</Message>
+                    <Name>KmChunkStore</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Kernel mode chunk container</Message>
+                    <Name>KmChunkContainer</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Kernel mode file cache</Message>
+                    <Name>KmFileCache</Name>
+                    <Value>32</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

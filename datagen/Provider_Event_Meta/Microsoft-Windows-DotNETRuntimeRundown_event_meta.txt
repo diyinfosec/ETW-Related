@@ -1,0 +1,913 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DotNETRuntimeRundown</Name>
+        <Metadata>
+            <Guid>{A669021C-C450-4609-A035-5AF59AF4DF18}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClrInstanceID=%1;
+Reserved1=%2;
+Reserved2=%3;
+FrameCount=%4;
+Stack=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Reserved1" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Reserved2" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="FrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Stack" inType="win:Pointer" outType="win:HexInt64" count="2"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>141</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodToken" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>141</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+ClrInstanceID=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>141</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+ClrInstanceID=%7;
+ReJITID=%8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ReJITID" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>142</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodToken" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>142</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+ClrInstanceID=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>142</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+ClrInstanceID=%7;
+ReJITID=%8]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ReJITID" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>143</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodSignature" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>143</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9;
+ClrInstanceID=%10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodSignature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>143</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9;
+ClrInstanceID=%10;
+ReJITID=%11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodSignature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ReJITID" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>144</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodSignature" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>144</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9;
+ClrInstanceID=%10]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodSignature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>144</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ModuleID=%2;
+MethodStartAddress=%3;
+MethodSize=%4;
+MethodToken=%5;
+MethodFlags=%6;
+MethodNamespace=%7;
+MethodName=%8;
+MethodSignature=%9;
+ClrInstanceID=%10;
+ReJITID=%11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodStartAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodToken" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MethodFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MethodNamespace" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MethodSignature" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ReJITID" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>145</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>145</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ClrInstanceID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>146</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>146</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ClrInstanceID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>147</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>147</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ClrInstanceID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>148</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>148</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ClrInstanceID=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>149</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ReJITID=%2;
+MethodExtent=%3;
+CountOfMapEntries=%4;
+ClrInstanceID=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ReJITID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodExtent" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CountOfMapEntries" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ILOffsets" inType="win:UInt32" outType="xs:unsignedInt" count="CountOfMapEntries"/>
+  <data name="NativeOffsets" inType="win:UInt32" outType="xs:unsignedInt" count="CountOfMapEntries"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MethodID=%1;
+ReJITID=%2;
+MethodExtent=%3;
+CountOfMapEntries=%4;
+ClrInstanceID=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MethodID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ReJITID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MethodExtent" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CountOfMapEntries" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ILOffsets" inType="win:UInt32" outType="xs:unsignedInt" count="CountOfMapEntries"/>
+  <data name="NativeOffsets" inType="win:UInt32" outType="xs:unsignedInt" count="CountOfMapEntries"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>151</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+AppDomainID=%3;
+ModuleFlags=%4;ModuleILPath=%5;ModuleNativePath=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>151</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+AppDomainID=%3;
+ModuleFlags=%4;ModuleILPath=%5;ModuleNativePath=%6;
+ClrInstanceID=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>152</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+AppDomainID=%3;
+ModuleFlags=%4;ModuleILPath=%5;ModuleNativePath=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>152</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+AppDomainID=%3;
+ModuleFlags=%4;ModuleILPath=%5;ModuleNativePath=%6;
+ClrInstanceID=%7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>153</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;ModuleILPath=%4;ModuleNativePath=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>153</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;ModuleILPath=%4;ModuleNativePath=%5;
+ClrInstanceID=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>153</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;
+ModuleILPath=%4;
+ModuleNativePath=%5;
+ClrInstanceID=%6;
+ManagedPdbSignature=%7;
+ManagedPdbAge=%8;
+ManagedPdbBuildPath=%9;
+NativePdbSignature=%10;
+NativePdbAge=%11;
+NativePdbBuildPath=%12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ManagedPdbSignature" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ManagedPdbAge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ManagedPdbBuildPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NativePdbSignature" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NativePdbAge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NativePdbBuildPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>154</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;ModuleILPath=%4;ModuleNativePath=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>154</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;ModuleILPath=%4;ModuleNativePath=%5;
+ClrInstanceID=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>154</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+ModuleID=%1;
+AssemblyID=%2;
+ModuleFlags=%3;
+ModuleILPath=%4;
+ModuleNativePath=%5;
+ClrInstanceID=%6;
+ManagedPdbSignature=%7;
+ManagedPdbAge=%8;
+ManagedPdbBuildPath=%9;
+NativePdbSignature=%10;
+NativePdbAge=%11;
+NativePdbBuildPath=%12]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ModuleFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reserved1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModuleILPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ModuleNativePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ManagedPdbSignature" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ManagedPdbAge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ManagedPdbBuildPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NativePdbSignature" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NativePdbAge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NativePdbBuildPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>155</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AssemblyID=%1;
+AppDomainID=%2;
+AssemblyFlags=%3;FullyQualifiedAssemblyName=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FullyQualifiedAssemblyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>155</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+AssemblyID=%1;
+AppDomainID=%2;
+AssemblyFlags=%3;FullyQualifiedAssemblyName=%4;
+ClrInstanceID=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="BindingID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FullyQualifiedAssemblyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>156</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AssemblyID=%1;
+AppDomainID=%2;
+AssemblyFlags=%3;FullyQualifiedAssemblyName=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FullyQualifiedAssemblyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>156</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+AssemblyID=%1;
+AppDomainID=%2;
+AssemblyFlags=%3;FullyQualifiedAssemblyName=%4;
+ClrInstanceID=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AssemblyID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="BindingID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AssemblyFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FullyQualifiedAssemblyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>157</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AppDomainID=%1;
+AppDomainFlags=%2;
+AppDomainName=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppDomainName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>157</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+AppDomainID=%1;
+AppDomainFlags=%2;
+AppDomainName=%3;
+AppDomainIndex=%4;
+ClrInstanceID=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppDomainIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>158</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AppDomainID=%1;
+AppDomainFlags=%2;
+AppDomainName=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppDomainName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>158</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+AppDomainID=%1;
+AppDomainFlags=%2;
+AppDomainName=%3;
+AppDomainIndex=%4;
+ClrInstanceID=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppDomainName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppDomainIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>159</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ManagedThreadID=%1;
+AppDomainID=%2;
+Flags=%3;
+ManagedThreadIndex=%4;
+OSThreadID=%5;
+ClrInstanceID=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ManagedThreadID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AppDomainID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ManagedThreadIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OSThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>160</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClrInstanceID=%1;%ModuleID=%2;
+RangeBegin=%3;
+RangeSize=%4;
+RangeType=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="RangeBegin" inType="win:UInt32" outType="win:HexInt32" count="1"/>
+  <data name="RangeSize" inType="win:UInt32" outType="win:HexInt32" count="1"/>
+  <data name="RangeType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>161</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClrInstanceID=%1;%ModuleID=%2;
+RangeBegin=%3;
+RangeSize=%4;
+RangeType=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ModuleID" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="RangeBegin" inType="win:UInt32" outType="win:HexInt32" count="1"/>
+  <data name="RangeSize" inType="win:UInt32" outType="win:HexInt32" count="1"/>
+  <data name="RangeType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>187</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ClrInstanceID=%1;
+SKU=%2;
+BclMajorVersion=%3;
+BclMinorVersion=%4;
+BclBuildNumber=%5;
+BclQfeNumber=%6;
+VMMajorVersion=%7;
+VMMinorVersion=%8;
+VMBuildNumber=%9;
+VMQfeNumber=%10;
+StartupFlags=%11;
+StartupMode=%12;
+CommandLine=%13;
+ComObjectGUID=%14;
+RuntimeDllPath=%15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ClrInstanceID" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Sku" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BclMajorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BclMinorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BclBuildNumber" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BclQfeNumber" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VMMajorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VMMinorVersion" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VMBuildNumber" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="VMQfeNumber" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartupFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartupMode" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CommandLine" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ComObjectGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RuntimeDllPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

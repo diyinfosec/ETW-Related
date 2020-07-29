@@ -1,0 +1,86 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Networking-Correlation</Name>
+        <Metadata>
+            <Guid>{83ED54F0-4D48-4E45-B16E-726FFD1FA4AF}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dummy event for standard level enumeration]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dummy event for standard level enumeration]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dummy event for standard level enumeration]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dummy event for standard level enumeration]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Dummy event for standard level enumeration]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Source Provider: %1 Context: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceProvider" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Source Provider: %1 Context: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceProvider" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Source Provider: %1 Context: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceProvider" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Context" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,122 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Mobile-Broadband-Experience-SmsRouter</Name>
+        <Metadata>
+            <Guid>{FA773482-F6ED-4895-8A7D-4F5850678E59}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The SMSRouter received a Text message.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The SMSRouter received a SMS Operator Notification message.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The SMSRouter received a USSD Operator Notification message.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The SMSRouter was loaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The SMSRouter was unloaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The SMSRouter received a class zero message.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error publishing background notification to system event broker.
+Error is %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+No WNF state name found for this device.
+Error is %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error getting network account details from device node.
+Error is %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error - Could not decode SMS message.
+Error is %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hresult" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

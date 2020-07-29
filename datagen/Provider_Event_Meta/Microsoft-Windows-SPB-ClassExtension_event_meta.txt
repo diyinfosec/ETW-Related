@@ -1,0 +1,193 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SPB-ClassExtension</Name>
+        <Metadata>
+            <Guid>{72CD9FF7-4AF8-4B89-AEDE-5F26FDA13567}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+The Simple Peripheral Bus WDF class extension has started.  The control object name is %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlDeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+The Simple Peripheral Bus WDF class extension failed to start (error %2).  The control object name is %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlDeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+The Simple Peripheral Bus WDF class extension has unloaded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Controller" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScopeTag" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Request" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RequestType" inType="win:Int8" outType="xs:byte"/>
+  <data name="Length" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Request" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CompletionStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Information" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Direction: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Data" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Target %2 has exceeded the locked IO watchdog period.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Controller" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TargetName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScopeTag" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="File" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Preprocessing %2 IRP in SPBCx for controller %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Controller" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DeviceState" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Payload begin: TotalByteCount = %1, TransferCount = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IoTotalByteCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TransferCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1022</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Transfer descriptor begin: Index = %1, Direction = %2, TotalByteCount = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransferIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransferDirection" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TransferTotalByteCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1023</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Transfer buffer: Index = %1, ByteCount = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BufferIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ByteCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Buffer" inType="win:Binary" outType="xs:hexBinary" length="ByteCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1024</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Transfer descriptor end.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1025</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Payload end.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

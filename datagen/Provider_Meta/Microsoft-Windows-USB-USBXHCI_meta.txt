@@ -1,0 +1,330 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-USB-USBXHCI</Name>
+        <Metadata>
+            <Guid>{30E1D284-5D88-459C-83FD-6345B39B19EC}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\usbxhci.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\usbxhci.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=usbxhci.sys&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>This is the Analytic channel to which internal Analytic events from the USBXHCI driver are sent.</Message>
+                    <Path>Microsoft-Windows-USB-USBXHCI-Analytic</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>This is the Analytic channel to which internal Analytic events from the USBXHCI trustlet are sent from VTL1.</Message>
+                    <Path>Microsoft-Windows-USB-USBXHCI-Trustlet-Analytic</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>USBXHCI Driver Rundown</Message>
+                    <Name>USBXHCI_RUNDOWN</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controler Rundown</Message>
+                    <Name>USBXHCI_CONTROLLER_RUNDOWN</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Device Rundown</Message>
+                    <Name>USBXHCI_DEVICE_RUNDOWN</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Endpoint Rundown</Message>
+                    <Name>USBXHCI_ENDPOINT_RUNDOWN</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller Create</Message>
+                    <Name>USBXHCI_CONTROLLER_CREATE</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller Delete</Message>
+                    <Name>USBXHCI_CONTROLLER_DELETE</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Device Create</Message>
+                    <Name>USBXHCI_DEVICE_CREATE</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Device Update</Message>
+                    <Name>USBXHCI_DEVICE_UPDATE</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Device Delete</Message>
+                    <Name>USBXHCI_DEVICE_DELETE</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Endpoint Create</Message>
+                    <Name>USBXHCI_ENDPOINT_CREATE</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Endpoint Update</Message>
+                    <Name>USBXHCI_ENDPOINT_UPDATE</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Endpoint Delete</Message>
+                    <Name>USBXHCI_ENDPOINT_DELETE</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller Firmware Version Update</Message>
+                    <Name>USBXHCI_CONTROLLER_FIRMWARE_VERSION_UPDATE</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller D0 Entry</Message>
+                    <Name>USBXHCI_CONTROLLER_D0_ENTRY</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller D0 Entry Post Interrupts Enabled</Message>
+                    <Name>USBXHCI_CONTROLLER_D0_ENTRY_POST_INTERRUPTS</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller D0 Exit Pre Interrupts Disabled</Message>
+                    <Name>USBXHCI_CONTROLLER_D0_EXIT_PRE_INTERRUPTS</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller D0 Exit</Message>
+                    <Name>USBXHCI_CONTROLLER_D0_EXIT</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller Save State</Message>
+                    <Name>USBXHCI_CONTROLLER_SAVE_STATE</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller Restore State</Message>
+                    <Name>USBXHCI_CONTROLLER_RESTORE_STATE</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller Internal Reset</Message>
+                    <Name>USBXHCI_CONTROLLER_INTERNAL_RESET</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Controller Error</Message>
+                    <Name>USBXHCI_ETW_EVENT_CONTROLLER_ERROR</Name>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>USBXHCI Command</Message>
+                    <Name>USBXHCI_ETW_COMMAND</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message>Request to VTL1 IUM trustlet</Message>
+                    <Name>USBXHCI_TRUSTLET_REQUEST</Name>
+                    <Value>23</Value>
+                </Task>
+                <Task>
+                    <Message>USB transfer</Message>
+                    <Name>USBXHCI_TRANSFER</Name>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message>Deferred work (DPC/WorkItem)</Message>
+                    <Name>USBXHCI_DEFERRED_WORK</Name>
+                    <Value>25</Value>
+                </Task>
+                <Task>
+                    <Message>Start Tracking For Time Sync</Message>
+                    <Name>USBXHCI_START_TRACKING_FOR_TIME_SYNC</Name>
+                    <Value>26</Value>
+                </Task>
+                <Task>
+                    <Message>Stop Tracking For Time Sync</Message>
+                    <Name>USBXHCI_STOP_TRACKING_FOR_TIME_SYNC</Name>
+                    <Value>27</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Information</Message>
+                    <Name>INFORMATION</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Request from VTL0 driver received in trustlet</Message>
+                    <Name>RECEIVED_IN_TRUSTLET</Name>
+                    <Value>10</Value>
+                    <Task>23</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>USB transfer initialized</Message>
+                    <Name>TRANSFER_INITIALIZED</Name>
+                    <Value>10</Value>
+                    <Task>24</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Request from VTL0 driver completed in trustlet</Message>
+                    <Name>COMPLETED_IN_TRUSTLET</Name>
+                    <Value>11</Value>
+                    <Task>23</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Default</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>USBError</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>IRP</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Power</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PnP</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Performance</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>HeadersBusTrace</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>PartialDataBusTrace</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>FullDataBusTrace</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>StateMachine</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Enumeration</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>VerifyDriver</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>HWVerifyHost</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>HWVerifyHub</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>HWVerifyDevice</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Rundown</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Device</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Hub</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Compat</Name>
+                    <Value>262144</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ControllerCommand</Name>
+                    <Value>524288</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ms:Measures</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,125 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-Guest-Drivers-Dynamic-Memory</Name>
+        <Metadata>
+            <Guid>{BA2FFB5C-E20A-4FB9-91B4-45F61B4B66A0}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The dynamic memory driver failed unexpectedly.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The dynamic memory driver failed because this version of Windows does not support this feature.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The dynamic memory driver failed because it is outdated and cannot communicate with the management operating system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The dynamic memory driver failed because the device was removed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The dynamic memory driver failed because a nested instance of Hyper-V was detected.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The dynamic memory driver operation [%1] failed with error: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The dynamic memory driver memory operation [%1] failed with error: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The dynamic memory driver memory operation [%1] succeeded. Page count processed: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OperationMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PageCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The following dynamic memory capability was exchanged - Highest hot add page: %1, Min page count: %2, IsHighestPageDetermined: %3, Supports hot add: %4, Supports hot remove: %5, Supports Contiguous Allocations: %6, Supports Fast Contiguous Allocations: %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HighestHotAddPage" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MinPageCount" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsHighestPageDetermined" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SupportsHotAdd" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SupportsHotRemove" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SupportsContiguousAllocations" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SupportsFastContiguousAllocations" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The dynamic memory driver successfully negotiated the protocol version %1.%2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MajorVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinorVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,26 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-JPSetting</Name>
+        <Metadata>
+            <Guid>{14371053-1813-471A-9510-1CF1D0A055A8}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_ShowSettingStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_ShowSettingEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

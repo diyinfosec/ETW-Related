@@ -1,0 +1,1091 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Runtime-Media</Name>
+        <Metadata>
+            <Guid>{8F0DB3A8-299B-4D64-A4ED-907B409D4584}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine Begin Initialization]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine End Initialization]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="AudioDeviceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VideoDeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine Begin Take Photo]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine End Take Photo]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine Begin StartRecord]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine End StartRecord]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine Begin StopRecord]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine End StopRecord]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine Begin StartPreview]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine End StartPreview]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine Begin StopPreview]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine End StopPreview]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Capture Engine Error Received]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Microsoft Windows Runtime Preview Source Dispatch Sample]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Source" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 PhotoSequence Prepare operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 PhotoSequence Prepare operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 PhotoSequence Start operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 PhotoSequence Start operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 PhotoSequence Stop operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>219</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 PhotoSequence Stop operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 PhotoSequence Finish operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 PhotoSequence Finish operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>222</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 PhotoSequence photo available (start time: %2, capture time: %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StartTime" inType="win:Int64" outType="xs:long"/>
+  <data name="CaptureTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>223</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 TrySetEncodingProperties operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>224</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 TrySetEncodingProperties operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>225</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagPhoto Prepare operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>226</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagPhoto Prepare operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>227</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagPhoto Capture operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>228</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagPhoto Capture operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>229</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagPhoto Finish operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>230</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagPhoto Finish operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>231</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 SetRegionsAsync operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>232</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 SetRegionsAsync operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>233</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 ClearRegionsAsync operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>234</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 ClearRegionsAsync operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>235</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagRecord Prepare operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>236</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagRecord Prepare operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>237</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagRecord Start operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>238</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagRecord Start operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>239</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagRecord Stop operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>240</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagRecord Stop operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>241</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagRecord Finish operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>242</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 LowLagRecord Finish operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>243</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 Lifetime started (Executable path: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ExecutablePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>244</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 Lifetime ended]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>245</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture PhotoConfirmation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>246</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture FocusChanged to focus state: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FocusState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Transcode operation %1{Transcode} used transcode engine type %2{EngineType}.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Transcode" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EngineType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Smart Remux %1{Object} Stage 1 started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>302</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Smart Remux %1{Object} Stage 1 ended.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>303</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Smart Remux %1{Object} Stage 2 started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>304</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Smart Remux %1{Object} Stage 2 ended.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>305</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Smart Remux %1{Object} Stage 3 started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>306</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Smart Remux %1{Object} Stage 3 ended.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>307</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Transcode operation %1{Object} started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>308</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Transcode operation %1{Object} ended. %2{ErrorCode}]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>309</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PrepareTranscode operation %1{Object} started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>310</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PrepareTranscode operation %1{Object} ended. %2{ErrorCode}]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>311</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+TranscodeEngine %1{Transcode} is remuxing audio and video: %2{Remuxing}]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="transcode" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="remuxing" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>312</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WinRTCaptureEngine Begin SetStreamMediaTypeAsync]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>313</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WinRTCaptureEngine End SetStreamMediaTypeAsync]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>314</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WindowsMediaCapture Device Thermal status changed event fired]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaCapture" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ThermalStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>315</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 AdvancedPhoto Prepare operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>316</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 AdvancedPhoto Prepare operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>317</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 AdvancedPhoto Capture operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>318</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 AdvancedPhoto Capture operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>319</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 AdvancedPhoto Finish operation %2 started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>320</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MediaCapture %1 AdvancedPhoto Finish operation %2 ended with status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WinRTCaptureEngine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AsyncOp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OpStatus" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WinRTMediaStreamSource Event Fired]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaStreamSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WinRTMediaStreamSource Event Deferred]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaStreamSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WinRTMediaStreamSource Event Completed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaStreamSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WinRTMediaStreamSource SampleRequest Fired]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaStreamSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>504</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WinRTMediaStreamSource SampleRequest Deferred]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaStreamSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>505</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WinRTMediaStreamSource SampleRequest Completed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MediaStreamSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EventObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StreamId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MediaStreamSample" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>600</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource started filling]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SourceBufferManager" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLevel" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>601</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource stopped filling]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SourceBufferManager" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLevel" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>602</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource started draining]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SourceBufferManager" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLevel" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>603</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource stopped draining]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SourceBufferManager" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLevel" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>604</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource buffer level changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SourceBufferManager" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferLevel" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>605</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource HTTP Request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>606</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource HTTP Request]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>607</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource HTTP Request Header]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>608</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource HTTP Request Header]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>609</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource Download]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>610</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource Download]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Stop Reason" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>611</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdaptiveMediaSource Download]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AdaptiveMediaSource" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BytesTransferred" inType="win:Int64" outType="xs:long"/>
+  <data name="BytesTotal" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

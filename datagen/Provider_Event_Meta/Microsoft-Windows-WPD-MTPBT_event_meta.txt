@@ -1,0 +1,109 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WPD-MTPBT</Name>
+        <Metadata>
+            <Guid>{92AB58D3-F351-4AF5-9C72-D52F36EE2C92}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Write MTP BT Packet to data channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPBTPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPBTPacketData" inType="win:Binary" outType="xs:hexBinary" length="MTPBTPacketLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Write MTP BT Packet to event channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPBTPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPBTPacketData" inType="win:Binary" outType="xs:hexBinary" length="MTPBTPacketLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Read MTP BT Packet from data channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPBTPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPBTPacketData" inType="win:Binary" outType="xs:hexBinary" length="MTPBTPacketLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Read MTP BT Packet from event channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPBTPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPBTPacketData" inType="win:Binary" outType="xs:hexBinary" length="MTPBTPacketLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Read MTP BT Data Packet]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPBTPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPBTPacketType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTPBTPacketSeqID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Received BT Device Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPBTEventLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPBTEventData" inType="win:Binary" outType="xs:hexBinary" length="MTPBTEventLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Received BT Unexpected header on data channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPBTPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPBTPacketType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTPBTPacketSeqID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Received BT Unexpected header on event channel]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MTPBTPacketLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MTPBTPacketType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MTPBTPacketSeqID" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

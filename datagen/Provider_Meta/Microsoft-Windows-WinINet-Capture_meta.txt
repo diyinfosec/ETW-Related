@@ -1,0 +1,55 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WinINet-Capture</Name>
+        <Metadata>
+            <Guid>{A70FF94F-570B-4979-BA5C-E59C9FEAB61B}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\wininet.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\wininet.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Internet%20Explorer&amp;ProdVer=11.0.17134.1246&amp;FileName=wininet.dll&amp;FileVer=11.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WinINet</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WinINet-Capture/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Flagged on all WinINet events dealing with sending packet capture </Message>
+                    <Name>WININET_KEYWORD_SEND</Name>
+                    <Value>4294967296</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Flagged on all WinINet events dealing with receiving packet capture</Message>
+                    <Name>WININET_KEYWORD_RECEIVE</Name>
+                    <Value>8589934592</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Flagged on all WinINet events dealing with potential personally identifiable information</Message>
+                    <Name>WININET_KEYWORD_PII_PRESENT</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Flagged on all WinINet events dealing with packet capture</Message>
+                    <Name>WININET_KEYWORD_PACKET</Name>
+                    <Value>4398046511104</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

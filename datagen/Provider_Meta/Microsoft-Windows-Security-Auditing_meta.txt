@@ -1,0 +1,341 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-Auditing</Name>
+        <Metadata>
+            <Guid>{54849625-5478-4994-A5BA-3E3B0328C30D}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\adtschema.dll</ResourceFilePath>
+            <ParameterFilePath>C:\WINDOWS\system32\msobjs.dll</ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\adtschema.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=adtschema.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft Windows security auditing.</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Security</Message>
+                    <Path>Security</Path>
+                    <Index>0</Index>
+                    <Id>10</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Security State Change</Message>
+                    <Name>SE_ADT_SYSTEM_SECURITYSTATECHANGE</Name>
+                    <Value>12288</Value>
+                </Task>
+                <Task>
+                    <Message>Security System Extension</Message>
+                    <Name>SE_ADT_SYSTEM_SECURITYSUBSYSTEMEXTENSION</Name>
+                    <Value>12289</Value>
+                </Task>
+                <Task>
+                    <Message>System Integrity</Message>
+                    <Name>SE_ADT_SYSTEM_INTEGRITY</Name>
+                    <Value>12290</Value>
+                </Task>
+                <Task>
+                    <Message>IPsec Driver</Message>
+                    <Name>SE_ADT_SYSTEM_IPSECDRIVEREVENTS</Name>
+                    <Value>12291</Value>
+                </Task>
+                <Task>
+                    <Message>Other System Events</Message>
+                    <Name>SE_ADT_SYSTEM_OTHERS</Name>
+                    <Value>12292</Value>
+                </Task>
+                <Task>
+                    <Message>Logon</Message>
+                    <Name>SE_ADT_LOGON_LOGON</Name>
+                    <Value>12544</Value>
+                </Task>
+                <Task>
+                    <Message>Logoff</Message>
+                    <Name>SE_ADT_LOGON_LOGOFF</Name>
+                    <Value>12545</Value>
+                </Task>
+                <Task>
+                    <Message>Account Lockout</Message>
+                    <Name>SE_ADT_LOGON_ACCOUNTLOCKOUT</Name>
+                    <Value>12546</Value>
+                </Task>
+                <Task>
+                    <Message>IPsec Main Mode</Message>
+                    <Name>SE_ADT_LOGON_IPSECMAINMODE</Name>
+                    <Value>12547</Value>
+                </Task>
+                <Task>
+                    <Message>Special Logon</Message>
+                    <Name>SE_ADT_LOGON_SPECIALLOGON</Name>
+                    <Value>12548</Value>
+                </Task>
+                <Task>
+                    <Message>IPsec Quick Mode</Message>
+                    <Name>SE_ADT_LOGON_IPSECQUICKMODE</Name>
+                    <Value>12549</Value>
+                </Task>
+                <Task>
+                    <Message>IPsec Extended Mode</Message>
+                    <Name>SE_ADT_LOGON_IPSECUSERMODE</Name>
+                    <Value>12550</Value>
+                </Task>
+                <Task>
+                    <Message>Other Logon/Logoff Events</Message>
+                    <Name>SE_ADT_LOGON_OTHERS</Name>
+                    <Value>12551</Value>
+                </Task>
+                <Task>
+                    <Message>Network Policy Server</Message>
+                    <Name>SE_ADT_LOGON_NPS</Name>
+                    <Value>12552</Value>
+                </Task>
+                <Task>
+                    <Message>User / Device Claims</Message>
+                    <Name>SE_ADT_LOGON_CLAIMS</Name>
+                    <Value>12553</Value>
+                </Task>
+                <Task>
+                    <Message>Group Membership</Message>
+                    <Name>SE_ADT_LOGON_GROUPS</Name>
+                    <Value>12554</Value>
+                </Task>
+                <Task>
+                    <Message>File System</Message>
+                    <Name>SE_ADT_OBJECTACCESS_FILESYSTEM</Name>
+                    <Value>12800</Value>
+                </Task>
+                <Task>
+                    <Message>Registry</Message>
+                    <Name>SE_ADT_OBJECTACCESS_REGISTRY</Name>
+                    <Value>12801</Value>
+                </Task>
+                <Task>
+                    <Message>Kernel Object</Message>
+                    <Name>SE_ADT_OBJECTACCESS_KERNEL</Name>
+                    <Value>12802</Value>
+                </Task>
+                <Task>
+                    <Message>SAM</Message>
+                    <Name>SE_ADT_OBJECTACCESS_SAM</Name>
+                    <Value>12803</Value>
+                </Task>
+                <Task>
+                    <Message>Other Object Access Events</Message>
+                    <Name>SE_ADT_OBJECTACCESS_OTHER</Name>
+                    <Value>12804</Value>
+                </Task>
+                <Task>
+                    <Message>Certification Services</Message>
+                    <Name>SE_ADT_OBJECTACCESS_CERTIFICATIONAUTHORITY</Name>
+                    <Value>12805</Value>
+                </Task>
+                <Task>
+                    <Message>Application Generated</Message>
+                    <Name>SE_ADT_OBJECTACCESS_APPLICATIONGENERATED</Name>
+                    <Value>12806</Value>
+                </Task>
+                <Task>
+                    <Message>Handle Manipulation</Message>
+                    <Name>SE_ADT_OBJECTACCESS_HANDLE</Name>
+                    <Value>12807</Value>
+                </Task>
+                <Task>
+                    <Message>File Share</Message>
+                    <Name>SE_ADT_OBJECTACCESS_SHARE</Name>
+                    <Value>12808</Value>
+                </Task>
+                <Task>
+                    <Message>Filtering Platform Packet Drop</Message>
+                    <Name>SE_ADT_OBJECTACCESS_FIREWALLPACKETDROPS</Name>
+                    <Value>12809</Value>
+                </Task>
+                <Task>
+                    <Message>Filtering Platform Connection</Message>
+                    <Name>SE_ADT_OBJECTACCESS_FIREWALLCONNECTION</Name>
+                    <Value>12810</Value>
+                </Task>
+                <Task>
+                    <Message>Detailed File Share</Message>
+                    <Name>SE_ADT_OBJECTACCESS_DETAILEDFILESHARE</Name>
+                    <Value>12811</Value>
+                </Task>
+                <Task>
+                    <Message>Removable Storage</Message>
+                    <Name>SE_ADT_OBJECTACCESS_REMOVABLESTORAGE</Name>
+                    <Value>12812</Value>
+                </Task>
+                <Task>
+                    <Message>Central Access Policy Staging</Message>
+                    <Name>SE_ADT_OBJECTACCESS_CBACSTAGING</Name>
+                    <Value>12813</Value>
+                </Task>
+                <Task>
+                    <Message>Sensitive Privilege Use</Message>
+                    <Name>SE_ADT_PRIVILEGEUSE_SENSITIVE</Name>
+                    <Value>13056</Value>
+                </Task>
+                <Task>
+                    <Message>Non Sensitive Privilege Use</Message>
+                    <Name>SE_ADT_PRIVILEGEUSE_NONSENSITIVE</Name>
+                    <Value>13057</Value>
+                </Task>
+                <Task>
+                    <Message>Other Privilege Use Events</Message>
+                    <Name>SE_ADT_PRIVILEGEUSE_OTHERS</Name>
+                    <Value>13058</Value>
+                </Task>
+                <Task>
+                    <Message>Process Creation</Message>
+                    <Name>SE_ADT_DETAILEDTRACKING_PROCESSCREATION</Name>
+                    <Value>13312</Value>
+                </Task>
+                <Task>
+                    <Message>Process Termination</Message>
+                    <Name>SE_ADT_DETAILEDTRACKING_PROCESSTERMINATION</Name>
+                    <Value>13313</Value>
+                </Task>
+                <Task>
+                    <Message>DPAPI Activity</Message>
+                    <Name>SE_ADT_DETAILEDTRACKING_DPAPIACTIVITY</Name>
+                    <Value>13314</Value>
+                </Task>
+                <Task>
+                    <Message>RPC Events</Message>
+                    <Name>SE_ADT_DETAILEDTRACKING_RPCCALL</Name>
+                    <Value>13315</Value>
+                </Task>
+                <Task>
+                    <Message>Plug and Play Events</Message>
+                    <Name>SE_ADT_DETAILEDTRACKING_PNPACTIVITY</Name>
+                    <Value>13316</Value>
+                </Task>
+                <Task>
+                    <Message>Token Right Adjusted Events</Message>
+                    <Name>SE_ADT_DETAILEDTRACKING_TOKENRIGHTADJ</Name>
+                    <Value>13317</Value>
+                </Task>
+                <Task>
+                    <Message>Audit Policy Change</Message>
+                    <Name>SE_ADT_POLICYCHANGE_AUDITPOLICY</Name>
+                    <Value>13568</Value>
+                </Task>
+                <Task>
+                    <Message>Authentication Policy Change</Message>
+                    <Name>SE_ADT_POLICYCHANGE_AUTHENTICATIONPOLICY</Name>
+                    <Value>13569</Value>
+                </Task>
+                <Task>
+                    <Message>Authorization Policy Change</Message>
+                    <Name>SE_ADT_POLICYCHANGE_AUTHORIZATIONPOLICY</Name>
+                    <Value>13570</Value>
+                </Task>
+                <Task>
+                    <Message>MPSSVC Rule-Level Policy Change</Message>
+                    <Name>SE_ADT_POLICYCHANGE_MPSSCVRULEPOLICY</Name>
+                    <Value>13571</Value>
+                </Task>
+                <Task>
+                    <Message>Filtering Platform Policy Change</Message>
+                    <Name>SE_ADT_POLICYCHANGE_WFPIPSECPOLICY</Name>
+                    <Value>13572</Value>
+                </Task>
+                <Task>
+                    <Message>Other Policy Change Events</Message>
+                    <Name>SE_ADT_POLICYCHANGE_OTHERS</Name>
+                    <Value>13573</Value>
+                </Task>
+                <Task>
+                    <Message>User Account Management</Message>
+                    <Name>SE_ADT_ACCOUNTMANAGEMENT_USERACCOUNT</Name>
+                    <Value>13824</Value>
+                </Task>
+                <Task>
+                    <Message>Computer Account Management</Message>
+                    <Name>SE_ADT_ACCOUNTMANAGEMENT_COMPUTERACCOUNT</Name>
+                    <Value>13825</Value>
+                </Task>
+                <Task>
+                    <Message>Security Group Management</Message>
+                    <Name>SE_ADT_ACCOUNTMANAGEMENT_SECURITYGROUP</Name>
+                    <Value>13826</Value>
+                </Task>
+                <Task>
+                    <Message>Distribution Group Management</Message>
+                    <Name>SE_ADT_ACCOUNTMANAGEMENT_DISTRIBUTIONGROUP</Name>
+                    <Value>13827</Value>
+                </Task>
+                <Task>
+                    <Message>Application Group Management</Message>
+                    <Name>SE_ADT_ACCOUNTMANAGEMENT_APPLICATIONGROUP</Name>
+                    <Value>13828</Value>
+                </Task>
+                <Task>
+                    <Message>Other Account Management Events</Message>
+                    <Name>SE_ADT_ACCOUNTMANAGEMENT_OTHERS</Name>
+                    <Value>13829</Value>
+                </Task>
+                <Task>
+                    <Message>Directory Service Access</Message>
+                    <Name>SE_ADT_DSACCESS_DSACCESS</Name>
+                    <Value>14080</Value>
+                </Task>
+                <Task>
+                    <Message>Directory Service Changes</Message>
+                    <Name>SE_ADT_DSACCESS_DSCHANGES</Name>
+                    <Value>14081</Value>
+                </Task>
+                <Task>
+                    <Message>Directory Service Replication</Message>
+                    <Name>SE_ADT_DS_REPLICATION</Name>
+                    <Value>14082</Value>
+                </Task>
+                <Task>
+                    <Message>Detailed Directory Service Replication</Message>
+                    <Name>SE_ADT_DS_DETAILED_REPLICATION</Name>
+                    <Value>14083</Value>
+                </Task>
+                <Task>
+                    <Message>Credential Validation</Message>
+                    <Name>SE_ADT_ACCOUNTLOGON_CREDENTIALVALIDATION</Name>
+                    <Value>14336</Value>
+                </Task>
+                <Task>
+                    <Message>Kerberos Service Ticket Operations</Message>
+                    <Name>SE_ADT_ACCOUNTLOGON_KERBEROS</Name>
+                    <Value>14337</Value>
+                </Task>
+                <Task>
+                    <Message>Other Account Logon Events</Message>
+                    <Name>SE_ADT_ACCOUNTLOGON_OTHERS</Name>
+                    <Value>14338</Value>
+                </Task>
+                <Task>
+                    <Message>Kerberos Authentication Service</Message>
+                    <Name>SE_ADT_ACCOUNTLOGON_KERBCREDENTIALVALIDATION</Name>
+                    <Value>14339</Value>
+                </Task>
+                <Task>
+                    <Message>Subcategory could not be determined</Message>
+                    <Name>SE_ADT_UNKNOWN_SUBCATEGORY</Name>
+                    <Value>65280</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

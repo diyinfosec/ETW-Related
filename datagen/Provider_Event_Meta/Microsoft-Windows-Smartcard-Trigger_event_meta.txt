@@ -1,0 +1,19 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Smartcard-Trigger</Name>
+        <Metadata>
+            <Guid>{AEDD909F-41C6-401A-9E41-DFC33006AF5D}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScDeviceEnumGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,44 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Audit-CVE</Name>
+        <Metadata>
+            <Guid>{85A62A0D-7E17-485F-9D4F-749A287193A6}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Possible detection of CVE: %1
+Additional Information: %2
+
+This Event is generated when an attempt to exploit a known vulnerability (%1) is detected.
+This Event is raised by a User mode process.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CVEID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalDetails" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Possible detection of CVE: %1
+Additional Information: %2
+
+This Event is generated when an attempt to exploit a known vulnerability (%1) is detected.
+This Event is raised by a kernel mode driver.
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CVEID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AdditionalDetails" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

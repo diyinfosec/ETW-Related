@@ -1,0 +1,1125 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DHCPv6-Client</Name>
+        <Metadata>
+            <Guid>{6A1F2B00-6A90-4C38-95A5-5CAB3B056778}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your computer has lost the lease to its IP address %1 on the Network Card with network address %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your computer was not able to renew its address from the network (from the DHCP Server) for the Network Card with network address %2.  The following error occurred: %3. Your computer will continue to try and obtain an address on its own from the network address (DHCP) server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error occurred in stopping the Dhcpv6 client service. ErrorCode is %1.ShutDown Flag value is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="DwordVal" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your computer has detected that the IP address %1 for the Network Card with network address %3 is already in use on the network. Your computer will automatically attempt to obtain a different address.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Router Advertisement settings have been changed on the network adapter %1. The current M - Managed Address Configuration flag is %2 and the O - Other Stateful Configuration flag is %3. User Action: If you are seeing this event frequently, then it could be due to frequent change in M and O flag settings on the router in the network. Please contact your network administrator to have it resolved.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flag1" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Flag2" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred in initializing the interface. The error code is: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MAC Address %2 in DUID %4 could not be found in the system. Generated new DUID %8 based on MAC address %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+  <data name="DUIDLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DUID" inType="win:Binary" outType="xs:hexBinary" length="DUIDLength"/>
+  <data name="NewHWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewHWAddress" inType="win:Binary" outType="xs:hexBinary" length="NewHWLength"/>
+  <data name="NewDUIDLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewDUID" inType="win:Binary" outType="xs:hexBinary" length="NewDUIDLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 has found SSID %1 in the cached networks for interface %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkHintString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NetworkHint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 found a valid IPv6 address %1 and options in the cache for network SSID %2 under interface %4. DHCPv6 will use this cached configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address1" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="NetworkHintString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NetworkHint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 found options in the cache for network %1 under interface %4. DHCPv6 will use this cached configuration.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkHintString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NetworkHint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 client found expired cached configuration for network %1 under interface %3. DHCPv6 client will discard the expired configuration and obtain new configuration from DHCPv6 server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NetworkHintString" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NetworkHint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50057</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A network error occurred when trying to send a message. The error code is: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50071</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempting to acquire a reference for interface %1. Error code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50072</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempting to release the reference for interface %1. Error code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Media Connect notification has been received on interface with interface id %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Media Disconnect notification has been received on interface with interface id %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Confirm-Reply is initiated on the interface with Interface Id %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Solicit-Advertise-Request-Reply is initiated on the interface with Interface Id %1. Managed Flag value %2 OtherConfig Flag value %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Solicit is sent from the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Advertise is received from the interface %1. Status code is %2. Offered Address is %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Advertise is discarded from the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request is sent from the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A valid reply is received for request from the interface %1. Status code is %2. Received address is %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Incorrect reply is received for request from the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Renew is sent on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A valid reply is received for renew from the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51014</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An invalid reply is received for renew from the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51015</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rebind is sent on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A valid reply is received for rebind from the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An invalid reply is received for rebind from the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51018</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Release is sent on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51019</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Decline is sent on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A valid reply is received for decline on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51021</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An invalid reply is received for decline on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51022</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Confirm is sent on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51023</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A valid reply is received for confirm on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51024</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An invalid reply is received for confirm on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51025</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Info-request is sent on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51026</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A valid reply is received for Info-request on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51027</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An invalid reply is received for Info-request on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51029</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred in creation of packet on the interface %1. Error code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51030</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred in extracting options from the message received on the interface %1. Status code is %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51031</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP is changed from stateful to stateless mode on the interface %1. Status Code is %2. Managed Flag value %3 OtherConfig Flag value %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Dword1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51032</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP is changed from stateless to stateful mode on the interface %1. Status Code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51033</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP is changed from nondhcp to stateful mode on the interface %1. Status Code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51034</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP is changed from nondhcp to stateless mode on the interface %1. Status Code is %2. Managed Flag value %3 OtherConfig Flag value %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Dword1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51035</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP is converted to static mode on the interface %1. Status Code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51036</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error occurred in parsing the DHCP message received on the interface id %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51037</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Information refresh time option is received in the interface %1 with a refresh time value of %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RefreshTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51038</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The information refresh time has expired, hence triggering a new inform packet on the interface %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51039</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Address %1 is plumbed on the interface %2. Status Code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51040</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Address %1 is unplumbed on the interface %2. Status Code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51043</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An interface is added whose interface index is %1. Status Code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51044</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred in initializing the interface %1. Status Code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51045</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred in plumbing the parameters into stack. Status Code is %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51046</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 client service is started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51047</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 client service is stopped. ShutDown Flag value is %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DwordVal" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51048</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error has occurred in opening the socket on the interface %1. Error Code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51049</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error has occurred in closing the socket on the interface %1. Error Code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51050</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DNS registration has happened for the interface %1. Status Code is %2.DNS Flag settings is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="Dword" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51051</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DNS deregistration has happened for the interface %1. Status Code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51057</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCPv6 client service stop is almost done.DHCP Context Ref count is %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DwordVal" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51058</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP is changed from stateful to stateful mode on the interface %1. Status Code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51059</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Message is Invalid and it is discarded.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51060</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Class ID %1 was set for the interface %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGUID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51061</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Address %1 being plumbed for adapter %2 already exists]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51062</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Your computer was not assigned an address from the network (by the DHCP Server) for the Network Card with network address %2.  The following error occurred: %3. Your computer will continue to try and obtain an address on its own from the network address (DHCP) server.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HWLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HWAddress" inType="win:Binary" outType="xs:hexBinary" length="HWLength"/>
+  <data name="StatusCode" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51063</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Firewall port %1 is exempted on interface %2. Error code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DwordVal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51064</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Firewall port %1 is closed on interface %2. Error code is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DwordVal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51065</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP is changing mode to %2 on the interface %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51066</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Regular address acquisition will be done on interface %1 because aggressive address acquisition is turned ON.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51067</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP has cancelled IPv6 address acquisition cycle after %1 SOLICIT transmissions on interface %2 because the machine is in Connected Standby state and the interface has the DHCP IPv4 address %3. Managed Flag value %4 OtherConfig Flag value %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address1" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="DwordVal2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51068</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP has cancelled IPv6 address acquisition cycle after %1 SOLICIT transmissions on interface %2 because the machine is in Connected Standby state and the interface has the static IPv4 address %3. Managed Flag value %4 OtherConfig Flag value %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address1" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="DwordVal2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51069</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP will not try regular IPv6 address acquisition on interface %1 since the machine is in Connected Standby state and the interface has the IPv4 address %2. Managed Flag value %3 OtherConfig Flag value %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address1" inType="win:UInt32" outType="win:IPv4"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51070</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP will try regular IPv6 address acquisition on interface %1 even though the machine is in Connected Standby state since the interface has no IPv4 or IPv6 address. Managed Flag value %2 OtherConfig Flag value %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51073</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Firewall port %2 exemption triggered on interface %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51074</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Firewall port %2 close triggered on interface %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51075</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCPv6 client received connected standby entry notification.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51076</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DHCPv6 client received connected standby exit notification.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51077</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP will try regular IPv6 address acquisition on interface %1 due to registry settings even though the machine is in Connected Standby state and the interface has an IPv4 address. Managed Flag value %2 OtherConfig Flag value %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51078</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP is enabled on the interface %1. Status code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51079</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP is disabled on the interface %1. Status code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51080</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP transaction will not be attempted on interface %1 because DHCP is disabled on it.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51081</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP has cancelled IPv6 address acquisition cycle after %1 SOLICIT transmissions on interface %2 because the machine is in Connected Standby state and the interface has the static IPv6 address %3. Managed Flag value %4 OtherConfig Flag value %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="DwordVal2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51082</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP has cancelled IPv6 address acquisition cycle after %1 SOLICIT transmissions on interface %2 because the machine is in Connected Standby state and the interface has the stateless IPv6 address %3. Managed Flag value %4 OtherConfig Flag value %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:IPv6" length="16"/>
+  <data name="DwordVal2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal3" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51083</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DHCP has cancelled IPv6 address acquisition on interface %1 because the interface is not multicast enabled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51084</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The values of flags received on interface %1 are: Managed Flag value %2 OtherConfig Flag value %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DwordVal2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PERFTRACK (DHCPSOLICIT): Offer is accepted on the IPv6 interface %2. Offered Address is %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address1" inType="win:Binary" outType="win:IPv6" length="16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PERFTRACK (DHCINFORMATIONREQUEST): Options received on the IPv6 interface %2. ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PERFTRACK (DHCPv6): Media Connect on interface %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PERFTRACK (DHCPv6): End of Media Connect on interface %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InterfaceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

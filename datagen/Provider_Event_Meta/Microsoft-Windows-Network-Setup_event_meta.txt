@@ -1,0 +1,275 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Network-Setup</Name>
+        <Metadata>
+            <Guid>{A111F1C2-5923-47C0-9A68-D0BAFB577901}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Setup service is starting]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Setup service has started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Setup service failed to start with error %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Setup service will stop due to inactivity]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Setup service will stop due to a user request]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Setup service is stopping]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Setup service has stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A new transaction has started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="EnvironmentType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A transaction has been closed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Setup has begun calculating new driver bindings]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Setup has finished calculating new driver bindings]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Setup has begun committing changes to the registry]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Setup has finished committing changes to the registry]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>300</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Begin API %2 on transaction %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Api" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>301</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+End API %2 on transaction %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Api" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Code" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>400</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Begin calling into plug-in %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PluginId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PluginName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Api" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>401</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+End calling into plug-in]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Output" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Code" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Begin operation %2 on %3 in transaction %1: %4 on %5:%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OperationType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ObjectType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ObjectId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="PropertyBufferSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PropertyBuffer" inType="win:Binary" outType="xs:hexBinary" length="PropertyBufferSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Operation %1 ended with code %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Code" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>600</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Begin API %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Api" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>601</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+End API with status code %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>700</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Invoking API %2 on Notify Object for %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TransactionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ComponentId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Api" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Parameter1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Parameter2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>701</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Notify Object returned with status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>702</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred while invoking the Notify Object. The call was aborted with status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Code" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

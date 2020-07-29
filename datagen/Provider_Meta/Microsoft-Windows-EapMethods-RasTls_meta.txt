@@ -1,0 +1,55 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EapMethods-RasTls</Name>
+        <Metadata>
+            <Guid>{9CC0413E-5717-4AF5-82EB-6103D8707B45}</Guid>
+            <ResourceFilePath>C:\WINDOWS\System32\RasTls.dll</ResourceFilePath>
+            <ParameterFilePath>C:\WINDOWS\system32\RasTls.dll</ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\System32\RasTls.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=RasTls.dll&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational Channel</Message>
+                    <Path>Microsoft-Windows-EapMethods-RasTls/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>RasTls authentication failed event</Message>
+                    <Name>AuthFailed</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>RasTls authentication succeeded event</Message>
+                    <Name>AuthSucceeded</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>RasTls authentication in-progress event</Message>
+                    <Name>AuthInProgress</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

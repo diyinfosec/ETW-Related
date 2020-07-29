@@ -1,0 +1,46 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-XWizards</Name>
+        <Metadata>
+            <Guid>{777BA8FE-2498-4875-933A-3067DE883070}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1-%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Caption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Text" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1-%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Caption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Text" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1-%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Caption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Text" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

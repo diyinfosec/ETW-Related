@@ -1,0 +1,33 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-SPP-UX-GenuineCenter-Logging</Name>
+        <Metadata>
+            <Guid>{FB829150-CD7D-44C3-AF5B-711A3C31CEDC}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Activation logged the following information:
+%1 ]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="shKernelCacheValues" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Activation logged the following error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="shErrorCode" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

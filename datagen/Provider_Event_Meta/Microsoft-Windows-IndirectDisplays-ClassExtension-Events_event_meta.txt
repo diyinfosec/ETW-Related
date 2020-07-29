@@ -1,0 +1,506 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IndirectDisplays-ClassExtension-Events</Name>
+        <Metadata>
+            <Guid>{966CD1C0-3F69-42AD-9877-517DCE8462B4}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdapterInitAsync]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdapterInitFinished]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdapterCommit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdapterUpdateMaxBandwidth]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="Bandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdapterDestroy]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorCreate]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DescriptorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorArrival]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorDeparture]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorGetDefaultDescriptionModes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InputModeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorQueryTargetModes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InputModeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorAssignSwapChain]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorUnassignSwapChain]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorI2CTransmit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SevenBitI2CAddress" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorI2CReceive]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SevenBitI2CAddress" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorSetGammaRamp]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorUpdateModes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorSetupHardwareCursor]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorQueryHardwareCursor]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastShapeId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SwapChainCreate]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SwapChainDestroy]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SwapChainSetDevice]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SwapChainReleaseAndAcquireBuffer]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SwapChainGetDirtyRects]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SwapChainGetMoveRegions]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SwapChainFinishProcessingFrame]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SwapChainReportFrameStatistics]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PresentationFrameNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FrameStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReencodeNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FrameSliceTotal" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentSlice" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FrameAcquireQpcTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FrameProcessingStepsCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SendStartQpcTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SendStopQpcTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SendCompleteQpcTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessedPixelCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FrameSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OPMGetCertificateSize]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OPMGetCertificate]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OPMCreateProtectedOutput]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OPMGetRandomNumber]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OPMSetSigningKeyAndSequenceNumbers]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OPMGetInformation]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OPMConfigureProtectedOutput]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+OPMDestroyProtectedOutput]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Return]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorTraceTargetModes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Valid" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetModeIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PixelRate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VSync" inType="win:Float" outType="xs:float"/>
+  <data name="ActiveWidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveHeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequiredBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorTraceMonitorModes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Valid" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MonitorModeIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PixelRate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="VSync" inType="win:Float" outType="xs:float"/>
+  <data name="ActiveWidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActiveHeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="VSyncDivider" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="RequiredBandwidth" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AdapterTraceCommitPaths]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="PathIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PathFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SwapChainReportFrameStatistics]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SwapChainPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PresentationFrameNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReencodeNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentSlice" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StepIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StepType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QpcTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Data1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data2" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MonitorOpmSetMftContext]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IddAdapterLuid" inType="win:Int64" outType="xs:long"/>
+  <data name="ConnectorIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MftContext" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

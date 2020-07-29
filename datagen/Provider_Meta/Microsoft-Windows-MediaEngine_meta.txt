@@ -1,0 +1,608 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MediaEngine</Name>
+        <Metadata>
+            <Guid>{8F2048E0-F260-4F57-A8D1-932376291682}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\mfmediaengine.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\mfmediaengine.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=mfmediaengine.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MediaEngine</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Media Foundation MediaEngine</Message>
+                    <Path>MediaFoundationMediaEngine</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Media Foundation TransferFrame</Message>
+                    <Name>TransferFrame</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation TransferFrameRemote</Message>
+                    <Name>TransferFrameRemote</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Initialize</Message>
+                    <Name>Initialize</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Lifetime</Message>
+                    <Name>Lifetime</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation PlaybackRateChange</Message>
+                    <Name>PlaybackRateChange</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Play</Message>
+                    <Name>Play</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Pause</Message>
+                    <Name>Pause</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Seek</Message>
+                    <Name>Seek</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation DroppedFrame</Message>
+                    <Name>DroppedFrame</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation PresentedFrame</Message>
+                    <Name>PresentedFrame</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_SubmittedFrame</Message>
+                    <Name>PresentSubmitted</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_QueuedFrame</Message>
+                    <Name>PresentQueued</Name>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_CompletedFrame</Message>
+                    <Name>PresentCompleted</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation VideoFrameGlitch</Message>
+                    <Name>VideoFrameGlitch</Name>
+                    <Value>23</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation PresentAt Sleep</Message>
+                    <Name>PresentSleep</Name>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message>PerfTrack: Media Foundation Play</Message>
+                    <Name>PerfTrackPlay</Name>
+                    <Value>25</Value>
+                </Task>
+                <Task>
+                    <Message>PerfTrack: Media Foundation Play Cancelled</Message>
+                    <Name>PerfTrackPlayCancelled</Name>
+                    <Value>27</Value>
+                </Task>
+                <Task>
+                    <Message>PerfTrack: First Frame After Play Presented</Message>
+                    <Name>PerfTrackFirstFrameAfterPlayPresented</Name>
+                    <Value>29</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_QueuedFrameStats</Message>
+                    <Name>PresentStats</Name>
+                    <Value>31</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Suspend</Message>
+                    <Name>Suspend</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Restore</Message>
+                    <Name>Restore</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Not Visible</Message>
+                    <Name>NotVisible</Name>
+                    <Value>34</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Not Visible Timer</Message>
+                    <Name>NotVisibleTimer</Name>
+                    <Value>35</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Visible</Message>
+                    <Name>Visible</Name>
+                    <Value>36</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Set GPU Priority</Message>
+                    <Name>SetGPUPriority</Name>
+                    <Value>37</Value>
+                </Task>
+                <Task>
+                    <Message>PerfTrack: Media Foundation Video Glitch</Message>
+                    <Name>PerfTrackVideoGlitch</Name>
+                    <Value>38</Value>
+                </Task>
+                <Task>
+                    <Message>Save image</Message>
+                    <Name>SaveImage</Name>
+                    <Value>39</Value>
+                </Task>
+                <Task>
+                    <Message>SetSource operation</Message>
+                    <Name>SetSourceOp</Name>
+                    <Value>40</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation VideoFrameEarly</Message>
+                    <Name>VideoFrameEarly</Name>
+                    <Value>41</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_ProcessVSync</Message>
+                    <Name>ProcessVSync</Name>
+                    <Value>42</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_GetCorrelatedTime</Message>
+                    <Name>GetCorrelatedTime</Name>
+                    <Value>43</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_IgnoreVSync</Message>
+                    <Name>IgnoreVSync</Name>
+                    <Value>44</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation RequestNetwork</Message>
+                    <Name>RequestNetwork</Name>
+                    <Value>45</Value>
+                </Task>
+                <Task>
+                    <Message>Batch operation</Message>
+                    <Name>Batch</Name>
+                    <Value>46</Value>
+                </Task>
+                <Task>
+                    <Message>Decode Swapchain Created</Message>
+                    <Name>DecodeSwapchainCreated</Name>
+                    <Value>47</Value>
+                </Task>
+                <Task>
+                    <Message>YUV Swapchain Configured</Message>
+                    <Name>YUVSwapchainConfig</Name>
+                    <Value>48</Value>
+                </Task>
+                <Task>
+                    <Message>Decode Swapchain Destroyed</Message>
+                    <Name>DecodeSwapchainDestroyed</Name>
+                    <Value>49</Value>
+                </Task>
+                <Task>
+                    <Message>Decode Swapchain Not Used</Message>
+                    <Name>DecodeSwapchainNotUsed</Name>
+                    <Value>50</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_QualityNotify</Message>
+                    <Name>QualityNotify</Name>
+                    <Value>51</Value>
+                </Task>
+                <Task>
+                    <Message>Content Framerate Detected</Message>
+                    <Name>ContentFrameRateDetected</Name>
+                    <Value>52</Value>
+                </Task>
+                <Task>
+                    <Message>Custom Refresh Rate Requested</Message>
+                    <Name>CustomRefreshRateRequested</Name>
+                    <Value>53</Value>
+                </Task>
+                <Task>
+                    <Message>Custom Refresh Rate Enabled</Message>
+                    <Name>CustomRefreshRateEnabled</Name>
+                    <Value>54</Value>
+                </Task>
+                <Task>
+                    <Message>Custom Refresh Rate Disabled</Message>
+                    <Name>CustomRefreshRateDisabled</Name>
+                    <Value>55</Value>
+                </Task>
+                <Task>
+                    <Message>Custom Refresh Rate State Change</Message>
+                    <Name>CustomRefreshRateStateChange</Name>
+                    <Value>56</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation UpdateVideo</Message>
+                    <Name>UpdateVideo</Name>
+                    <Value>57</Value>
+                </Task>
+                <Task>
+                    <Message>Normal (non-decode) Swapchain Created</Message>
+                    <Name>NormalSwapchainCreated</Name>
+                    <Value>58</Value>
+                </Task>
+                <Task>
+                    <Message>Media Engine SampleReceived</Message>
+                    <Name>SampleReceived</Name>
+                    <Value>59</Value>
+                </Task>
+                <Task>
+                    <Message>Media Engine PurgedFrames</Message>
+                    <Name>PurgedFrames</Name>
+                    <Value>60</Value>
+                </Task>
+                <Task>
+                    <Message>Media Engine YUVSwapchainQueue</Message>
+                    <Name>YUVSwapchainQueue</Name>
+                    <Value>61</Value>
+                </Task>
+                <Task>
+                    <Message>Media Engine GPUSwapchainWait</Message>
+                    <Name>GPUSwapchainWait</Name>
+                    <Value>62</Value>
+                </Task>
+                <Task>
+                    <Message>Media Engine GetPresentStats</Message>
+                    <Name>GetPresentStats</Name>
+                    <Value>63</Value>
+                </Task>
+                <Task>
+                    <Message>Media Engine PruneHistory</Message>
+                    <Name>PruneHistory</Name>
+                    <Value>64</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_InitVSyncRefreshRate</Message>
+                    <Name>InitVSyncRefreshRate</Name>
+                    <Value>65</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_ClockSmooth</Message>
+                    <Name>ClockSmooth</Name>
+                    <Value>66</Value>
+                </Task>
+                <Task>
+                    <Message>UpdateLongRunning operation</Message>
+                    <Name>UpdateLongRunning</Name>
+                    <Value>67</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_MapSample</Message>
+                    <Name>MapSample</Name>
+                    <Value>68</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_ProcessFlipMode</Message>
+                    <Name>ProcessFlipMode</Name>
+                    <Value>69</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_ShiftSample</Message>
+                    <Name>ShiftSample</Name>
+                    <Value>70</Value>
+                </Task>
+                <Task>
+                    <Message>MinLatencyDone operation</Message>
+                    <Name>MinLatencyDone</Name>
+                    <Value>71</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation MirrorVideo</Message>
+                    <Name>MirrorVideo</Name>
+                    <Value>72</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation PresentAt ProcessFrame</Message>
+                    <Name>ProcessFrame</Name>
+                    <Value>73</Value>
+                </Task>
+                <Task>
+                    <Message>UpdateDeadline operation</Message>
+                    <Name>UpdateDeadline</Name>
+                    <Value>74</Value>
+                </Task>
+                <Task>
+                    <Message>Media Engine GetEngineStatistics</Message>
+                    <Name>GetEngineStatistics</Name>
+                    <Value>75</Value>
+                </Task>
+                <Task>
+                    <Message>SVR RequestSample</Message>
+                    <Name>RequestSample</Name>
+                    <Value>76</Value>
+                </Task>
+                <Task>
+                    <Message>SVR GPUBoost</Message>
+                    <Name>GPUBoost</Name>
+                    <Value>77</Value>
+                </Task>
+                <Task>
+                    <Message>EME NeedKey</Message>
+                    <Name>NeedKey</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>EME MediaKeys</Message>
+                    <Name>MediaKeys</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>EME MediaKeySession</Message>
+                    <Name>MediaKeySession</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>EME KeyMessage</Message>
+                    <Name>KeyMessage</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>EME Keys Attribute</Message>
+                    <Name>KeysAttribute</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>Content Enabler</Message>
+                    <Name>ContentEnabler</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>BatchingReason</Message>
+                    <Name>BatchingReason</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation SubtitleQueued</Message>
+                    <Name>SubtitleQueued</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message>Engine Ended</Message>
+                    <Name>EngineEnded</Name>
+                    <Value>109</Value>
+                </Task>
+                <Task>
+                    <Message>Media Foundation Present_Delay</Message>
+                    <Name>PresentDelay</Name>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message>PresentTimer</Message>
+                    <Name>PresentTimer</Name>
+                    <Value>111</Value>
+                </Task>
+                <Task>
+                    <Message>PresentTimeCritical</Message>
+                    <Name>PresentTimeCritical</Name>
+                    <Value>112</Value>
+                </Task>
+                <Task>
+                    <Message>TimedTextDtvCCSample Decode Task</Message>
+                    <Name>TimedTextDtvCCSample</Name>
+                    <Value>113</Value>
+                </Task>
+                <Task>
+                    <Message>TimedTextSendCue Task</Message>
+                    <Name>TimedTextSendCue</Name>
+                    <Value>114</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>OPMOpen</Name>
+                    <Value>115</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>OPMExecuteCmd</Name>
+                    <Value>116</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>OPMExecuteQuery</Name>
+                    <Value>117</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>OPMProcessCertificate</Name>
+                    <Value>118</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>OPMGetPublicKey</Name>
+                    <Value>119</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>Teardown</Name>
+                    <Value>120</Value>
+                </Task>
+                <Task>
+                    <Message>Resized swapchain</Message>
+                    <Name>ResizedSwapchain</Name>
+                    <Value>121</Value>
+                </Task>
+                <Task>
+                    <Message>EME NeedKey</Message>
+                    <Name>Encrypted</Name>
+                    <Value>122</Value>
+                </Task>
+                <Task>
+                    <Message>EME KeyMessage2</Message>
+                    <Name>KeyMessage2</Name>
+                    <Value>123</Value>
+                </Task>
+                <Task>
+                    <Message>EME MediaKeySystemAccess</Message>
+                    <Name>MediaKeySystemAccess</Name>
+                    <Value>124</Value>
+                </Task>
+                <Task>
+                    <Message>Media Engine QuantizeFrame</Message>
+                    <Name>QuantizeFrame</Name>
+                    <Value>125</Value>
+                </Task>
+                <Task>
+                    <Message>PresentRestart</Message>
+                    <Name>PresentRestart</Name>
+                    <Value>126</Value>
+                </Task>
+                <Task>
+                    <Message>Display Rotation Task</Message>
+                    <Name>DisplayRotation</Name>
+                    <Value>127</Value>
+                </Task>
+                <Task>
+                    <Message>DecodeSwapchainState Task</Message>
+                    <Name>DecodeSwapchainState</Name>
+                    <Value>128</Value>
+                </Task>
+                <Task>
+                    <Message>ConfigureSwapchain Task</Message>
+                    <Name>ConfigureSwapchain</Name>
+                    <Value>129</Value>
+                </Task>
+                <Task>
+                    <Message>MMCSSRequest</Message>
+                    <Name>MMCSSRequest</Name>
+                    <Value>130</Value>
+                </Task>
+                <Task>
+                    <Message>ScrubbingState Task</Message>
+                    <Name>ScrubbingState</Name>
+                    <Value>131</Value>
+                </Task>
+                <Task>
+                    <Message>DXPresent</Message>
+                    <Name>DXPresent</Name>
+                    <Value>132</Value>
+                </Task>
+                <Task>
+                    <Message>EnumMonitors</Message>
+                    <Name>EnumMonitors</Name>
+                    <Value>133</Value>
+                </Task>
+                <Task>
+                    <Message>HandleMonitorChange</Message>
+                    <Name>HandleMonitorChange</Name>
+                    <Value>134</Value>
+                </Task>
+                <Task>
+                    <Message>ProcessIdleTasks</Message>
+                    <Name>ProcessIdleTasks</Name>
+                    <Value>135</Value>
+                </Task>
+                <Task>
+                    <Message>DXWorkComplete</Message>
+                    <Name>DXWorkComplete</Name>
+                    <Value>136</Value>
+                </Task>
+                <Task>
+                    <Message>SphericalVideoChanged Task</Message>
+                    <Name>SphericalVideoChanged</Name>
+                    <Value>137</Value>
+                </Task>
+                <Task>
+                    <Message>SphericalVideoPropertiesChanged Task</Message>
+                    <Name>SphericalVideoPropertiesChanged</Name>
+                    <Value>138</Value>
+                </Task>
+                <Task>
+                    <Message>Profile Check</Message>
+                    <Name>ProfileCheck</Name>
+                    <Value>139</Value>
+                </Task>
+                <Task>
+                    <Message>SetHDRMetadata Task</Message>
+                    <Name>SetHDRMetadata</Name>
+                    <Value>140</Value>
+                </Task>
+                <Task>
+                    <Message>EDRStateChanged Task</Message>
+                    <Name>EDRStateChanged</Name>
+                    <Value>141</Value>
+                </Task>
+                <Task>
+                    <Message>WindowResizeOptimization</Message>
+                    <Name>WindowResizeOptimization</Name>
+                    <Value>142</Value>
+                </Task>
+                <Task>
+                    <Message>ProcessIdleEDRTasks</Message>
+                    <Name>ProcessIdleEDRTasks</Name>
+                    <Value>143</Value>
+                </Task>
+                <Task>
+                    <Message>ProcessPolicyEvent</Message>
+                    <Name>ProcessPolicyEventTask</Name>
+                    <Value>144</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

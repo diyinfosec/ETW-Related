@@ -1,0 +1,30 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Winsock-WS2HELP</Name>
+        <Metadata>
+            <Guid>{D5C25F9A-4D47-493E-9184-40DD397A004D}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\ws2_32.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\ws2_32.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=ws2_32.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Winsock Catalog Change</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Winsock Catalog Change/Operational</Message>
+                    <Path>Microsoft-Windows-Winsock-WS2HELP/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,93 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-URLMon</Name>
+        <Metadata>
+            <Guid>{245F975D-909D-49ED-B8F9-9A75691D6B6B}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>801</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Msg" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Msg" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>803</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Msg" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Bytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>804</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Bytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>805</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>806</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>807</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CInet" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Binding" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>808</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Bytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CInet" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

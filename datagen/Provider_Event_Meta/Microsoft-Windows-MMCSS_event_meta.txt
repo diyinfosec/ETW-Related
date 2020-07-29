@@ -1,0 +1,188 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MMCSS</Name>
+        <Metadata>
+            <Guid>{36008301-E154-466C-ACEC-5F4CBD6B4694}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Thread priority of (%1.%2) in task %4 has changed to %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessID" inType="win:UInt32" outType="win:PID"/>
+  <data name="ThreadID" inType="win:UInt32" outType="win:TID"/>
+  <data name="Priority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Scheduler woke up for reason %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Scheduler thread slept.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+MMCSS Service started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+MMCSS Service stopped.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Thread joined MMCSS Task %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadID" inType="win:UInt32" outType="win:TID"/>
+  <data name="MediumPriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LowPriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="UberLowPriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="TaskName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Category" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Thread left MMCSS]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadID" inType="win:UInt32" outType="win:TID"/>
+  <data name="OriginalBasePriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TaskIndex %1 yielded for %2 hectons]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TaskIndex %1 canceled a registered yield]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TaskIndex %1 sets multimedia mode to %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ThreadTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TaskIndex %1 deadline Expired]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Notify Power Manger to engage turbo mode (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TurboEngaged" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Thread Buffering Start (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Thread Buffering Stop (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+TaskIndex %1 predeadline Expired]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TaskIndex" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

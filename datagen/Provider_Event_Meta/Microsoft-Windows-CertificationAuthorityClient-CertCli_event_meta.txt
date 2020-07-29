@@ -1,0 +1,22 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CertificationAuthorityClient-CertCli</Name>
+        <Metadata>
+            <Guid>{98BF1CD3-583E-4926-95EE-A61BF3F46470}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate Enrollment Server %1 was not able to process the request: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServerURL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FaultString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,887 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Sensors</Name>
+        <Metadata>
+            <Guid>{D8900E18-36CB-4548-966F-13F068D1F78E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+  <data name="NumSubscribers" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device is being powered up]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device is being powered down]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service received a data updated event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service set data and starting to process data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service periodic report on memory usage]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WorkingSet" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service periodic report on cpu usage]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CPUUsage" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service results from querying a sensor]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+  <data name="ReportPointer" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SensorStateThisSensor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SensorStateAccumulated" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service timer queue callback for orientation, about to write quadrant angle to aggregated sensor]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QuadrantAngle" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service processing sensor data for orientation, sensor state used in processing data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service processing sensor data for orientation, reading sensor data successful]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccelerationX" inType="win:Float" outType="xs:float"/>
+  <data name="AccelerationY" inType="win:Float" outType="xs:float"/>
+  <data name="AccelerationZ" inType="win:Float" outType="xs:float"/>
+  <data name="PitchCalibration" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1108</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service processing sensor data for orientation, pitch angle test result]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IsPitchGreaterThanThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PitchAngle" inType="win:Float" outType="xs:float"/>
+  <data name="PitchThreshold" inType="win:Float" outType="xs:float"/>
+  <data name="PitchCalibration" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1109</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service processing sensor data for orientation, screen orientation result]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Theta" inType="win:Float" outType="xs:float"/>
+  <data name="AngularCalibration" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service processing sensor data for orientation, theta negative so added 360]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Theta" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service processing sensor data for orientation, testing if there was a quadrant change]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GoodAngle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Quadrant" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastQuadrant" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1112</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service processing sensor data for orientation, status and action taken on timer queue]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimerQueueStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TimerQueueAction" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service timer queue callback for orientation, testing if there was a quadrant change]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GoodAngle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Quadrant" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastQuadrant" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Theta" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1114</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service timer queue callback for orientation, testing if the screen rotated past angular threshold into next quadrant]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GoodAngle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Quadrant" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AngularThreshold" inType="win:Float" outType="xs:float"/>
+  <data name="Theta" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1119</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service setting quadrant angle in aggregated sensor]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QuadrantAngle" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1120</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service setting quadrant angle in aggregated sensor]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QuadrantAngle" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1121</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service received a state changed event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1122</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service setting sensor state and starting to process data]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1123</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service setting sensor state in aggregated sensor]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1124</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Service setting sensor state in aggregated sensor]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Class Extension Initialization]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Class Extension Initialization]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Class Extension Uninitialization]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Class Extension Uninitialization]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1205</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Class Extension ProcessIoControl Handler]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1206</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Class Extension ProcessIoControl Handler]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1207</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Class Extension PostEvent Handler]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1208</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Class Extension PostEvent Handler]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1209</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Class Extension Client Information event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ConnectedClients" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SubscribedClients" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SilentClients" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientBitfield" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1301</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to fire ISensorEvents::OnDataUpdated event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1302</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to fire ISensorEvents::OnDataUpdated event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Timestamp" inType="win:SYSTEMTIME" outType="xs:dateTime"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1303</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to get sensor data report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1304</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to get sensor data report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1305</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to get a sensor property value]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1306</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to get a sensor property value]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1307</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to get sensor property values]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1308</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to get sensor property values]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1309</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to set sensor property values]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1310</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to set sensor property values]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1311</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to fire ISensorEvents::OnStateChanged event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1312</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor API call to fire ISensorEvents::OnStateChanged event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SensorState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection type missing in HID sensor feature report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Reporting state missing in HID sensor feature report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Report interval missing in HID sensor feature report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1504</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Change sensitivity missing in HID sensor feature report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1505</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Deprecated field used in HID sensor feature report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1506</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Redundant field used in HID sensor feature report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1507</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Deprecated field used in HID sensor input report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1508</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Redundant field used in HID sensor input report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1509</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to set HID sensor feature report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to get synchronous HID sensor input report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1511</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to process synchronous HID sensor input report]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1512</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SensorObjectId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="HRESULT" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Perf Markers for time between starting Location API and consent prompt appears]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Perf Markers for time between starting Location API and consent prompt appears]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Informational Perf Marker for use in outputting a generic message]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GenericMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sensor Platform Data Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SENSOR_ID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="MethodId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PerfTrack measurement of auto-rotation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PerfTrack measurement of auto-rotation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PerfTrack measurement of auto-rotation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EventId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QuadrantChangeInterval" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Angle" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

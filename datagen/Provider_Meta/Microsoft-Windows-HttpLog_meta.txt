@@ -1,0 +1,45 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-HttpLog</Name>
+        <Metadata>
+            <Guid>{C42A2738-2333-40A5-A32F-6ACC36449DCC}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\HTTP.SYS</ResourceFilePath>
+            <ParameterFilePath>C:\WINDOWS\system32\drivers\HTTP.SYS</ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\HTTP.SYS</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=HTTP.SYS&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-HttpLog</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>HTTP Log Channel</Message>
+                    <Path>Microsoft-Windows-HttpService/Log</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Flagged on all HTTP transactions</Message>
+                    <Name>HTTP_KEYWORD_LOG_RESPONSE</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Flagged on all HTTP events dealing with potential personally identifiable information</Message>
+                    <Name>HTTP_KEYWORD_LOG_PII_PRESENT</Name>
+                    <Value>2199023255552</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,131 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Photo-Image-Codec</Name>
+        <Metadata>
+            <Guid>{BE3A31EA-AA6C-4196-9DCC-9CA13A49E09F}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Ratio" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Orientation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ROIWidth" inType="win:Int32" outType="xs:int"/>
+  <data name="ROIHeight" inType="win:Int32" outType="xs:int"/>
+  <data name="ROIX" inType="win:Int32" outType="xs:int"/>
+  <data name="ROIY" inType="win:Int32" outType="xs:int"/>
+  <data name="OutWidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutHeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Orientation" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Subband" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="BitStreamFormat" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Orientation" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="IgnoreOverlap" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DiscardAlpha" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ROIWidth" inType="win:Int32" outType="xs:int"/>
+  <data name="ROIHeight" inType="win:Int32" outType="xs:int"/>
+  <data name="ROIX" inType="win:Int32" outType="xs:int"/>
+  <data name="ROIY" inType="win:Int32" outType="xs:int"/>
+  <data name="Subband" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="BitStreamFormat" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Orientation" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="IgnoreOverlap" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DiscardAlpha" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,3182 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MediaFoundation-Performance-Core</Name>
+        <Metadata>
+            <Guid>{B20E65AC-C905-4014-8F78-1B6A508142EB}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SetWorkQueue Object %1 WorkQueueId=%2 MultiThreaded=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="WorkQueueId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="IsMultithread" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_AudEngineStream Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_u32StreamingPeriodMS" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="m_u32RenderBufferPadFrames" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="m_u32RenderBufferMinFrames" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="m_ui64ClockTicksPerSecond" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_DelAudEngineStream Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_ReleaseStream Event]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_BeginStreamSwitch_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_BeginStreamSwitch_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_Flush_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_Flush_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_SetState_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SystemTime" inType="win:Int64" outType="xs:long"/>
+  <data name="mfsState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_SetState_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_GetPositionInternal_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_GetPositionInternal_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pullPlayPosition" inType="win:Int64" outType="xs:long"/>
+  <data name="pullRawPlayPosition" inType="win:Int64" outType="xs:long"/>
+  <data name="pullRawWritePosition" inType="win:Int64" outType="xs:long"/>
+  <data name="pullDevicePosition" inType="win:Int64" outType="xs:long"/>
+  <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_HandleStarvation_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwBytesWanted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="u32FramesToRender" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_HandleStarvation_ReadForStreamSwitch]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_HandleStarvation_Starved_Glitch]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwBytesWanted" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="m_bEOSReceived" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_HandleStarvation_ForceSilence]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwBytesWanted" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_HandleEOSBuffer_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ullEOSPosition" inType="win:Int64" outType="xs:long"/>
+  <data name="m_bIsEventDriven" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsOffloadedStream" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsOffloadedCompressedStream" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_HandleStarvation_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_HandleEOSBuffer_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_HandleEOSBuffer_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_ScheduleEOSTimer_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_ScheduleEOSTimer_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_FillRenderBuffer_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bFirstFill" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_FillRenderBuffer_BufferInfo]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="u32CurrentPadding" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="u32FramesToRender" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="u32TimeLeft" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_FillRenderBuffer_LastBufferFrameCount]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_FillRenderBuffer_NotEnoughData]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BytesInUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwBytesWanted" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_FillRenderBuffer_FillSilence_Glitch]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwBytesStillWanted" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_FillRenderBuffer_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_BeginEOS]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bEOS" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_InsertMarker_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_InsertMarker_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:Int32" outType="xs:int"/>
+  <data name="fInserted" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_FreeRenderContainer]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fFlushed" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_StartLocalGraph_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bEngineStarted" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_StartLocalGraph_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_StopLocalGraph_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bReset" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_StopLocalGraph_InvokeStreamSwitching]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_StopLocalGraph_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CMFPump_DoWork_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CMFPump_DoWork_States]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bEngineStarted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bIsEventDriven" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CMFPump_DoWork_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CheckForEOS_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CheckForEOS_PumpStopped]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CheckForEOS_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_RetryDoWork_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_RetryDoWork_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_DelayStart_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_DelayStart_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CMFPump_Start_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fFillBuffer" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bIsEventDriven" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CMFPump_Start_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CMFPump_Stop_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CMFPump_Stop_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_OnSessionDisconnected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DisconnectReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bReacquire" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_AudStreamSink]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ui32EndpointRole" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="eCategory" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bIsLowLatency" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bBufferDurationSpecified" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="hnsBufferDuration" inType="win:Int64" outType="xs:long"/>
+  <data name="bOnlyAudio" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bDisableOffload" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bNonSeekableStream" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DelAudStreamSink_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DelAudStreamSink_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InitializeMediaTypeHandlerList_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InitializeMediaTypeHandlerList_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_ShouldSampleBeDropped]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hnsSampleTime" inType="win:Int64" outType="xs:long"/>
+  <data name="hnsSampleDuration" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_ProcessSample_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_ProcessSample_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="mfRenderTime" inType="win:Int64" outType="xs:long"/>
+  <data name="fDiscontinuity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="mfAudioState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsRateZero" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_ProcessSample_SampleInfo]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hnsSampleTime" inType="win:Int64" outType="xs:long"/>
+  <data name="hnsSampleDuration" inType="win:Int64" outType="xs:long"/>
+  <data name="bPrerollSample" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bDelayedSample" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_ProcessSample_PrerollDone]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="scenario" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fSignalPrerolled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="m_cSamplesPrerolled" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="m_hnsPrerollDuration" inType="win:Int64" outType="xs:long"/>
+  <data name="m_u32CurrentPrerolledBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_ProcessSample_NeedMoreData]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hnsSampleDuration" inType="win:Int64" outType="xs:long"/>
+  <data name="m_hnsShortSampleTolerance" inType="win:Int64" outType="xs:long"/>
+  <data name="m_cMaxPendingRequestSample" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_ProcessSample_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_PlaceMarker_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MarkerType" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_PlaceMarker_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ControlPoint" inType="win:Int32" outType="xs:int"/>
+  <data name="Type" inType="win:Int32" outType="xs:int"/>
+  <data name="Value" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_PlaceMarker_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InternalFlush_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bFlushPreroll" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InternalFlush_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:Int32" outType="xs:int"/>
+  <data name="fDiscontinuity" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_Flush_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_Flush_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_StartPrerolling_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_StartPrerolling_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FlushMarkers_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_EOSMarkerFired]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RemoveFromSink_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RemoveFromSink_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>78</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SetMediaType_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>79</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SetMediaType_States]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IsUninitialized" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bInvalidatingStream" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="mfaOriginalState" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SetMediaType_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InternalGetTime_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InternalGetTime_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:Int32" outType="xs:int"/>
+  <data name="phnsTimeNow" inType="win:Int64" outType="xs:long"/>
+  <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_GetTime_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>84</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_GetTime_BadStreamTime]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="phnsTimeNow" inType="win:Int64" outType="xs:long"/>
+  <data name="m_mftMaxTimePriorToStreamSwitch" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>85</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InternalGetTime_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="phnsTimeNow" inType="win:Int64" outType="xs:long"/>
+  <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"/>
+  <data name="m_bInvalidatingStream" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>86</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_GetTime_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>87</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FinishOnClockStart_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hnsSystemTime" inType="win:Int64" outType="xs:long"/>
+  <data name="llClockStartOffset" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>88</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FinishOnClockStart_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>89</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_PostOnClockStart_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>90</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_PostOnClockStart_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>91</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_UpdateStartTime_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StartOffset" inType="win:Int64" outType="xs:long"/>
+  <data name="mftStartOffset" inType="win:Int64" outType="xs:long"/>
+  <data name="bResetGapAndStallHandling" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>92</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_UpdateStartTime_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:Int32" outType="xs:int"/>
+  <data name="StartOffset" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>93</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InternalOnClockStop_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>94</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InternalOnClockStop_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>95</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FinishOnClockStop_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hnsSystemTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>96</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FinishOnClockStop_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>97</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FinishOnClockPause_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hnsSystemTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>98</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FinishOnClockPause_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>99</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FinishOnClockSetRate_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hnsSystemTime" inType="win:Int64" outType="xs:long"/>
+  <data name="IsRateZero" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FinishOnClockSetRate_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_PostOnClockSetRate_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_PostOnClockSetRate_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_CreateAudioStreamInternal_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwFlags" inType="win:Int32" outType="xs:int"/>
+  <data name="bUseResampler" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bClockRateMatchEnabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="bUseLightWeightConverters" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_CreateAudioStreamInternal_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:Int32" outType="xs:int"/>
+  <data name="m_bIsOffloadStream" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_GetDevicePosition_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_GetDevicePosition_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:Int32" outType="xs:int"/>
+  <data name="pullBytePosition" inType="win:Int64" outType="xs:long"/>
+  <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"/>
+  <data name="m_bIsCompressedStream" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SubmitSilence_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwSamples" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SubmitSilence_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DispatchMarker_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MarkerType" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DispatchMarker_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnFreeRenderContainer_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnFreeRenderContainer_QueueNotEmpty]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnFreeRenderContainer_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnInvokeStreamSwitch_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnInvokeStreamSwitch_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_HandleScrubSample_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_HandleScrubSample_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SubmitData_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SubmitData_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_ComputeRenderPosition_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="mfRenderTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_ComputeRenderPosition_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:Int32" outType="xs:int"/>
+  <data name="pfDiscontinuity" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="pullRenderBytePosition" inType="win:Int64" outType="xs:long"/>
+  <data name="pdwBytesToStall" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_GetPresentationTime_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfDiscontinuity" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>123</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_GetPresentationTime_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:Int32" outType="xs:int"/>
+  <data name="pullRenderBytePosition" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>124</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RenderSample_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>125</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RenderSample_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>126</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_GetPositionWrapper_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bConvertToMFPos" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>127</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_GetPositionWrapper_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:Int32" outType="xs:int"/>
+  <data name="pullPlayPosition" inType="win:Int64" outType="xs:long"/>
+  <data name="pullWritePosition" inType="win:Int64" outType="xs:long"/>
+  <data name="pullDevicePlayPosition" inType="win:Int64" outType="xs:long"/>
+  <data name="phnsCorrelatedTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>128</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_TrimBuffer_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="mftTrimAmount" inType="win:Int64" outType="xs:long"/>
+  <data name="mftCutoff" inType="win:Int64" outType="xs:long"/>
+  <data name="bTrimFromFront" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>129</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_TrimBuffer_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_EnableSampleRequests]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bEnable" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RequestMoreSamples_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+  <data name="cMaxPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>132</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RequestMoreSamples_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+  <data name="cMaxPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>133</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoneWithReceivedSample_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+  <data name="cMaxPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>134</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoneWithReceivedSample_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+  <data name="cMaxPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>135</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_CheckAllocationLimits_Offload]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cMaxPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+  <data name="NumContainers" inType="win:Int32" outType="xs:int"/>
+  <data name="BytesInUse" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>136</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_CheckAllocationLimits_NeedMoreData]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MaxPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+  <data name="NumContainers" inType="win:Int32" outType="xs:int"/>
+  <data name="DurationInUse" inType="win:Int64" outType="xs:long"/>
+  <data name="hnsMinAllocation" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>137</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_CheckAllocationLimits_LowerMaxRequest]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cMaxPendingRequestSample" inType="win:Int32" outType="xs:int"/>
+  <data name="NumContainers" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>138</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_HandleDeviceRemoved_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>139</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_HandleDeviceRemoved_AlreadyInProgress]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>140</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_HandleDeviceRemoved_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>141</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnHandleDeviceRemovedWorker_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>142</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnHandleDeviceRemovedWorker_RenderContainerIsEmpty]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>143</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnHandleDeviceRemovedWorker_DeviceNotReadyTimeout]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TimeOutinMm" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>144</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnHandleDeviceRemovedWorker_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>145</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnSoundLevelChanged_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>146</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_OnSoundLevelChanged_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>147</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoInvalidateAudEngineStream_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bNeedFormatNegotiation" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>148</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoInvalidateAudEngineStream_ReleasePendingStream]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="mfaOriginalStreamState" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>149</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoInvalidateAudEngineStream_ReleaseResouce]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoInvalidateAudEngineStream_ReleaseStream]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>151</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoInvalidateAudEngineStream_TimeUpdate]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hnsStreamInvalidationEventTime" inType="win:Int64" outType="xs:long"/>
+  <data name="hnsLastCorrelatedTime" inType="win:Int64" outType="xs:long"/>
+  <data name="hnsTimeElapsed" inType="win:Int64" outType="xs:long"/>
+  <data name="hnsLastTime" inType="win:Int64" outType="xs:long"/>
+  <data name="hnsNewLastTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>152</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoInvalidateAudEngineStream_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>153</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InvokePipelineFormatChange_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bNeedFormatNegotiation" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>154</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InvokePipelineFormatChange_QueueMEStreamSinkFormatInvalidated]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>155</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InvokePipelineFormatChange_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>156</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RecreateAudioStream_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bDeviceChange" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="hnsNewStreamStartTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>157</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RecreateAudioStream_EngineStreamPending]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bStopped" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>158</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RecreateAudioStream_ReleaseStream]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>159</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RecreateAudioStream_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>160</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_QueueAudioSessionChangedEvent_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="eventType" inType="win:Int32" outType="xs:int"/>
+  <data name="bReacquireDevice" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>161</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_QueueAudioSessionChangedEvent_SignalDeviceReady]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>162</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_QueueAudioSessionChangedEvent_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>163</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InvalidateInternalStream_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="eventType" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>164</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InvalidateInternalStream_QueueCallback]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>165</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_InvalidateInternalStream_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>166</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDefaultDeviceChanged_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>167</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDefaultDeviceChanged_QueueEventToEngineStream]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>168</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDefaultDeviceChanged_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>169</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDeviceStateChanged_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwNewState" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>170</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDeviceStateChanged_QueueDeviceRemovedEvent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>171</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDeviceStateChanged_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>172</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDeviceAdded_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>173</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDeviceRemoved_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>174</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDeviceRemoved_QueueDeviceRemovedEvent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>175</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Notification_OnDeviceRemoved_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>176</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudioMediaSink_TestStreamInvalidation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>177</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_RenderContainer_FreeSample]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MFTimeOfLastRenderSample" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>178</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_FillRenderBuffer_FirstReleaseBuffer]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="u32FramesToRender" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>179</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudioMediaSink_GetCorrelatedTime]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ClockTime" inType="win:Int64" outType="xs:long"/>
+  <data name="CorrelatedTime" inType="win:Int64" outType="xs:long"/>
+  <data name="IsStreamInvalidating" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>180</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_CheckMediaType_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>181</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_CheckMediaType_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_pCurrentMediaType" inType="win:Int64" outType="xs:long"/>
+  <data name="IsStreamInvalidating" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="hrAEFormatQuery" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hFormatResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>182</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_WaveFormat]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="wFormatTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nChannels" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="nSamplesPerSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nAvgBytesPerSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nBlockAlign" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wBitsPerSample" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="cbSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>183</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_IsFormatSupported_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>184</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_IsFormatSupported_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="clientType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hFormatResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>185</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SetStreamInvalidating_On]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>186</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_SetStreamInvalidating_Off]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>187</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_IsFormatSupportedInternal_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>188</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_IsFormatSupportedInternal_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="clientType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hFormatResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>189</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DetermineAudioClientBufferDuration_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>190</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DetermineAudioClientBufferDuration_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bufferDuration" inType="win:Int64" outType="xs:long"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>191</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoLateBinding_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>192</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DoLateBinding_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>193</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudEngineStream_CMFPump_Schedule_RetryDoWork]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>194</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_DelayEOSMarker]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>195</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FillState_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>196</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_FillState_Leave]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>197</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_Timer_Start]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Key" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Delay" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>198</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_Timer_Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Key" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Delay" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>199</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_Dejitterer_Reset]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudStreamSink_Dejitterer_ClockSmooth]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ClockTime0_us" inType="win:Int64" outType="xs:long"/>
+  <data name="QPC0_us" inType="win:Int64" outType="xs:long"/>
+  <data name="SmoothedQPC0_us" inType="win:Int64" outType="xs:long"/>
+  <data name="QPCDelta_us" inType="win:Int64" outType="xs:long"/>
+  <data name="WindowCount" inType="win:Int32" outType="xs:int"/>
+  <data name="WindowWidth_us" inType="win:Int64" outType="xs:long"/>
+  <data name="Accepted" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_ReadCaptureBuffer]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="u32FramesRead" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="m_u64LastSampleTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="u64Duration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="dwFlagsForSample" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_QueueAudioSessionChangedEvent]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_pParent" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="eventType" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>502</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_UpdateStreamingCharacteristics]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_bAudioProcessingRaw" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="m_bIsEventDriven" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="m_bIsLowLatency" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="m_hnsBufferDuration" inType="win:Int64" outType="xs:long"/>
+  <data name="m_uiAudioCategory" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Shutdown_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_spAudioSessionControl" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_spAudioSessionEvents" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>504</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Shutdown_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>505</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Initialize_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="wstrEndpointId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="role" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>506</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Initialize_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>507</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_BindToMicrophone_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="wstrEndpointId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="role" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>508</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_BindToMicrophone_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="uFailedLineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>509</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_CreateAudioClient2_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>510</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_CreateAudioClient2_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AudioClientProperties_bIsOffload" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AudioClientProperties_eCategory" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AudioClientProperties_Options" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>511</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_CreateCaptureStream_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_spAudioClientForStreaming" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>512</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_CreateCaptureStream_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_u32BytesPerFrame" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="m_u32FramesPerSecond" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>513</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_ReadCaptureBuffer_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bFirstRead" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>514</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_ReadCaptureBuffer_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>515</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_FlushSamples_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>516</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_FlushSamples_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>517</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_StartStream_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_bEngineStarted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="m_bIsEventDriven" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>518</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_StartStream_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_bEngineStarted" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>519</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_StopStream_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bReset" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="m_bEngineStarted" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>520</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_StopStream_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>521</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Pump_Start_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>522</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Pump_Start_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>523</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Pump_Stop_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>524</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Pump_Stop_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>525</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Pump_DoWork_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_bEngineStarted" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>526</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Pump_DoWork_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>527</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudioCaptureSessionNotify_OnSessionDisconnected]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="DisconnectReason" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>528</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_ReadCaptureBuffer_GetBuffer]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="u32FramesRead" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="u32ActualFramesInCurrentPacket" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>529</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_SetMasterVolume]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="fLevel" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>530</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_SetMute]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="bMute" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>531</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Constructor_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pParentObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwWorkQueueId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="lWorkQueuePriority" inType="win:Int32" outType="xs:int"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>532</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Constructor_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>533</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Destructor_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>534</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_Destructor_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>535</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_DestroyCaptureStream_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_u32BufferFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="m_u32BytesPerFrame" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="m_u32FramesPerSecond" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>536</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_DestroyCaptureStream_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>537</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_CreateCaptureStream_WAVEFORMAT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="wFormatTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nChannels" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="nSamplesPerSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nAvgBytesPerSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nBlockAlign" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wBitsPerSample" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="cbSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>538</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_GetMediaType_WAVEFORMAT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="wFormatTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nChannels" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="nSamplesPerSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nAvgBytesPerSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nBlockAlign" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wBitsPerSample" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="cbSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>539</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_GetMediaType]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>540</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_GetCurrentMediaType]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>541</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_GetSample]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_ReadySampleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>542</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_AddSample]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_ReadySampleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>543</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_SetCurrentMediaType_Enter]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pMediaType" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_spCurrentMediaType" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>544</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_SetCurrentMediaType_Exit]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="m_spCurrentMediaType" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>545</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_SetMediaType_WAVEFORMAT]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="wFormatTag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nChannels" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="nSamplesPerSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nAvgBytesPerSec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="nBlockAlign" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="wBitsPerSample" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="cbSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>546</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_GetService]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="guidService" inType="win:GUID" outType="xs:GUID"/>
+  <data name="riid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="pvObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>547</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AudCaptureStream_ReadCaptureBuffer_CurrentPadding]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="u32CurrentPadding" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ulSamples" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>600</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+PresClock_SetState object=%1 state=%2 llClockOffset=%3 qpc=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="State" inType="win:Int32" outType="xs:int"/>
+  <data name="ClockOffset" inType="win:Int64" outType="xs:long"/>
+  <data name="QPC" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>650</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+QM_SampleLag object=%1 samplesReceived=%2 LateSamples=%3 totalLateTime_ms=%4 SampleLatency=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SrcObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplesReceived" inType="win:Int32" outType="xs:int"/>
+  <data name="LateSamples" inType="win:Int64" outType="xs:long"/>
+  <data name="TotalLateTime_ms" inType="win:Int64" outType="xs:long"/>
+  <data name="SampleLatency_hns" inType="win:Int64" outType="xs:long"/>
+  <data name="SampleTime_hns" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>651</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+QM_AdviseClientsOnBranch_Start object=%1 node=%2 output=%3 WorkdQueueID=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Node" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OutputIndex" inType="win:Int32" outType="xs:int"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>652</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+QM_AdviseClientsOnBranch_Stop object=%1 node=%2 output=%3 WorkdQueueID=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Node" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="OutputIndex" inType="win:Int32" outType="xs:int"/>
+  <data name="WorkQueueID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>700</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MPEG2Mux_ProcessInput object=%1 stream=%2 timeStamp=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Stream" inType="win:Int32" outType="xs:int"/>
+  <data name="SamplePtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TimeStamp" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>701</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MPEG2Mux_MuxSample object=%1 stream=%2 ES_Stream=%3 timeStamp=%4 PackSize=%5 LastPCR=%6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Stream" inType="win:Int32" outType="xs:int"/>
+  <data name="ES_Stream" inType="win:Int32" outType="xs:int"/>
+  <data name="TimeStamp" inType="win:Int64" outType="xs:long"/>
+  <data name="PackSize" inType="win:Int32" outType="xs:int"/>
+  <data name="LastPCR" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>702</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MPEG2Mux_UpdatePCR object=%1 PCR=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PCR" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

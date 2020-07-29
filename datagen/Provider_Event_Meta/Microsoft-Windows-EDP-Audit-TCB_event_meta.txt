@@ -1,0 +1,25 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EDP-Audit-TCB</Name>
+        <Metadata>
+            <Guid>{287D59B6-79BA-4741-A08B-2FEDEEDE6435}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Enterprise %4 tag has been removed (%2) from the file: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserId" inType="win:SID" outType="xs:string"/>
+  <data name="Policy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Justification" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousEnterpriseId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

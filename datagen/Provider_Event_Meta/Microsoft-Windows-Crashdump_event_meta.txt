@@ -1,0 +1,34 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Crashdump</Name>
+        <Metadata>
+            <Guid>{ECDAACFA-6FE9-477C-B5F0-85B76F8F50AA}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Resume capable]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResumeCapable" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ReasonCodes" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Transfer sizes]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Minimum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Maximum" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

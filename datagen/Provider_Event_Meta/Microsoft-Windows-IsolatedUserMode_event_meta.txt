@@ -1,0 +1,62 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IsolatedUserMode</Name>
+        <Metadata>
+            <Guid>{73A33AB2-1966-4999-8ADD-868C41415269}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Secure Trustlet %4 Id %1 and Pid %2 started with status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrustletIdentity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NormalProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Secure Trustlet Id %1 and Pid %2 stopped with status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrustletIdentity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NormalProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Secure Kernel started with status %1 and flags %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Secure Trustlet Id %1 and Pid %2 failed to start with status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TrustletIdentity" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="NormalProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

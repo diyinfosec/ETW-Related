@@ -1,0 +1,344 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Disk</Name>
+        <Metadata>
+            <Guid>{6B4DB0BC-9A3D-467D-81B9-A84C6F2F3D40}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Disk Cache Information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReadCacheEnabled" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="WriteCacheEnabled" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ReadRetentionPriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="WriteRetentionPriority" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="PrefetchScalar" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="DisablePrefetchTransferLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Minimum" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Maximum" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MaximumBlocks" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Request servicing time taken by lower driver stack(s).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestDuration" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Completing an IO (read/write) request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ScsiStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="SenseKey" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSense" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSenseQ" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Retrying an IO (read/write) request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="CurrentRetryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Flush request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Bus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Target" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LUN" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Flush request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ScsiStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="SenseKey" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSense" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSenseQ" inType="win:UInt8" outType="win:HexInt8"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching an IOCTL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MajorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Parameter" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a WMI request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MajorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Parameter" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Completing a non-read/write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a power request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="OldState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="NewState" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Action" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PowerStateContext" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Completing a power request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a PnP request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceObject" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Completing a PnP request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>219</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Completing a PnP enumeration request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NumberOfChildren" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Performing a queue-related operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="QueueTag" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Operation" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a PassThrough request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MajorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="MinorFunction" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Parameter" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

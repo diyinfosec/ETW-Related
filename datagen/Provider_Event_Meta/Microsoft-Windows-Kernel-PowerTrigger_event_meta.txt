@@ -1,0 +1,19 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-PowerTrigger</Name>
+        <Metadata>
+            <Guid>{AA1F73E8-15FD-45D2-ABFD-E7F64F78EB11}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AoAc" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

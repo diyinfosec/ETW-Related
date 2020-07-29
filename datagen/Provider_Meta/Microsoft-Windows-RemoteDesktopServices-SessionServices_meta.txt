@@ -1,0 +1,51 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RemoteDesktopServices-SessionServices</Name>
+        <Metadata>
+            <Guid>{F1394DE0-32C7-4A76-A6DE-B245E48F4615}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\Rdpclip.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\Rdpclip.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=Rdpclip.exe&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-RemoteDesktopServices-SessionServices/Operational</Message>
+                    <Path>Microsoft-Windows-RemoteDesktopServices-SessionServices/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Display control</Message>
+                    <Name>DisplayControl</Name>
+                    <Value>1</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Change session resolution</Message>
+                    <Name>ChangeSessionResolution</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

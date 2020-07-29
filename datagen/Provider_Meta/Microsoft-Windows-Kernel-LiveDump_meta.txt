@@ -1,0 +1,144 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-LiveDump</Name>
+        <Metadata>
+            <Guid>{BEF2AA8E-81CD-11E2-A7BB-5EAC6188709B}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Kernel-LiveDump</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Kernel-LiveDump/Analytic</Message>
+                    <Path>Microsoft-Windows-Kernel-LiveDump/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Live Dump Capture Dump Data API</Message>
+                    <Name>LIVEDUMP_TASK_CAPTURE_API</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Sizing Workflow</Message>
+                    <Name>LIVEDUMP_TASK_SIZING_WORKFLOW</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Capture Pages Workflow</Message>
+                    <Name>LIVEDUMP_TASK_CAPTURE_PAGES_WORKFLOW</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Live Dump Write Deferred Dump Data API</Message>
+                    <Name>LIVEDUMP_TASK_WRITE_DEFERRED_DATA_API</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Live Dump Discard Deferred Dump Data API</Message>
+                    <Name>LIVEDUMP_TASK_DISCARD_DEFERRED_DATA_API</Name>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>API Start</Message>
+                    <Name>APIStart</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>API End</Message>
+                    <Name>APIEnd</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dump File Write Start</Message>
+                    <Name>WriteDumpDataToFileStart</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Dump File Write End</Message>
+                    <Name>WriteDumpDataToFileEnd</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Mirroring Start</Message>
+                    <Name>MirroringStart</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Mirroring Phase 0 End</Message>
+                    <Name>MirroringPhase0End</Name>
+                    <Value>15</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Mirroring Phase 1 End</Message>
+                    <Name>MirroringPhase1End</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>System Quiesce Start</Message>
+                    <Name>SystemQuiesceStart</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>System Quiesce End</Message>
+                    <Name>SystemQuiesceEnd</Name>
+                    <Value>18</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Copying Memory Pages Start</Message>
+                    <Name>PageBufferingStart</Name>
+                    <Value>19</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Copying Memory Pages End</Message>
+                    <Name>PageBufferingEnd</Name>
+                    <Value>20</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Buffer Estimation Data</Message>
+                    <Name>BufferEstimation</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Buffer Allocation Data</Message>
+                    <Name>BufferAllocation</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Remove Pages Callbacks</Message>
+                    <Name>RemovePages</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

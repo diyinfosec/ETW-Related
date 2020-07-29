@@ -1,0 +1,118 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NFC-ClassExtension</Name>
+        <Metadata>
+            <Guid>{85C070E6-F9AE-481F-AACB-BC550BFD35A1}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\umdf\nfccx.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\umdf\nfccx.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=nfccx.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-NFC-ClassExtension</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Analytical</Message>
+                    <Path>Microsoft-Windows-NFC-Class-Extension/Analytical</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>IOCTL_NFP_GET_NEXT_SUBSCRIBED_MESSAGE</Message>
+                    <Name>GetNextSubscribedMsg</Name>
+                    <Guid>{E66270BC-281D-4537-BD75-91658E0CDB9C}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>IOCTL_NFP_GET_NEXT_TRANSMITTED_MESSAGE</Message>
+                    <Name>GetNextTransmittedMsg</Name>
+                    <Guid>{D2E06B55-67EA-4A4D-9022-E8E1F5F06809}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>RF interface initialization.</Message>
+                    <Name>RfInitialize</Name>
+                    <Guid>{E3026AC6-D84D-452F-9671-D568ECA8FE64}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>RF firmware download.</Message>
+                    <Name>RfFirmwareDownload</Name>
+                    <Guid>{EA8CD6A9-7B2A-4DF6-A233-C5F039AE29B6}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>RF NDEF tag read.</Message>
+                    <Name>RfNdefTagRead</Name>
+                    <Guid>{14E4F567-841F-4BE2-A851-F979A68F3FE7}</Guid>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>RF NDEF tag write.</Message>
+                    <Name>RfNdefTagWrite</Name>
+                    <Guid>{3853DB9C-84EB-4C95-AD41-67F60F0A7C14}</Guid>
+                    <Value>6</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Payload logging of different types of packets.</Message>
+                    <Name>Payload</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>NCI packet events.</Message>
+                    <Name>NCI</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>NFP interface events.</Message>
+                    <Name>NFP</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Power interface events.</Message>
+                    <Name>Power</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>RF interface events.</Message>
+                    <Name>RF</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>General device events.</Message>
+                    <Name>Device</Name>
+                    <Value>32</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

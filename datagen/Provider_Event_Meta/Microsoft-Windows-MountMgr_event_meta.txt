@@ -1,0 +1,21 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MountMgr</Name>
+        <Metadata>
+            <Guid>{E3BAC9F8-27BE-4823-8D7F-1CC320C05FA7}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CVEId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

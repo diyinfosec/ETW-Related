@@ -1,0 +1,5 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ScmDisk0101</Name>
+    </Provider>
+</Providers>

@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PerceptionSensorDataService</Name>
+        <Metadata>
+            <Guid>{85BE49EA-38F1-4547-A604-80060202FB27}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

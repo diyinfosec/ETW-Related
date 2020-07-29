@@ -1,0 +1,54 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-PnP-Rundown</Name>
+        <Metadata>
+            <Guid>{B3A0C2C8-83BB-4DDF-9F8D-4B22D3C38AD7}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResourceConsumerPdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ConnectionId" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="ResourceConsumerInstancePathLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ResourceConsumerInstancePath" inType="win:UnicodeString" outType="xs:string" length="ResourceConsumerInstancePathLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Pdo" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ParentPdo" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevNode" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ParentDevNode" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevNode" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="ParentDevNode" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InstancePathLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="InstancePath" inType="win:UnicodeString" outType="xs:string" length="InstancePathLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

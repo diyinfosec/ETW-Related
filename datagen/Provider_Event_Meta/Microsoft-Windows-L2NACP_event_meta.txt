@@ -1,0 +1,97 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-L2NACP</Name>
+        <Metadata>
+            <Guid>{85FE7609-FF4A-48E9-9D50-12918E43E1DA}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>13003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The pre-logon connection attempt is complete.
+
+Network connection attempt result: %1
+Reason: %2
+Interface GUID: %3
+Profile Name: %4
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The pre-logon connection attempt is complete.
+
+Windows authentication result: %1
+Interface GUID: %2
+Profile Name: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13023</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The pre-logon connection attempt is complete.
+
+Network connection attempt result: %1
+Reason: %2
+Interface GUID: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13024</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The pre-logon connection attempt is complete.
+
+Windows authentication result: %1
+Interface GUID: %2
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Plap Enabled = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Enabled" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Remote" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Dot3Allowed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="WlanAllowed" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="CredentialsFound" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

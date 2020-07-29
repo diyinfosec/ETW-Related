@@ -1,0 +1,16 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UserAccountControl</Name>
+        <Metadata>
+            <Guid>{2683B597-3CCA-410A-97FE-6F7EE3D09B94}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

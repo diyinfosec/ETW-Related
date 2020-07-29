@@ -1,0 +1,62 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-KnownFolders</Name>
+        <Metadata>
+            <Guid>{8939299F-2315-4C5C-9B91-ABB86AA0627D}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error %1 occurred while creating known folder %2 with path '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hrError" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FolderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error %1 occurred while initialising known folder %2 with ini file path '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hrError" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FolderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error %1 occurred while verifying known folder %2 with path '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hrError" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FolderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error %1 occurred while initialising known folder %2 with path '%3'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hrError" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FolderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Path" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

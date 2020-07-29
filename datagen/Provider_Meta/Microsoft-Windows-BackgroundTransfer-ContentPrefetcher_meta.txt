@@ -1,0 +1,66 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BackgroundTransfer-ContentPrefetcher</Name>
+        <Metadata>
+            <Guid>{648A0644-7D62-4FD3-8841-440064762F95}</Guid>
+            <ResourceFilePath>C:\WINDOWS\System32\Windows.Networking.BackgroundTransfer.ContentPrefetchTask.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\System32\Windows.Networking.BackgroundTransfer.ContentPrefetchTask.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=Windows.Networking.BackgroundTransfer.ContentPrefetchTask.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-BackgroundTransfer-ContentPrefetcher</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-BackgroundTransfer-ContentPrefetcher/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Prefetch Task Activity</Message>
+                    <Name>FreshAppsTaskActivity</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>URI Fetch</Message>
+                    <Name>FreshAppsTaskFetchUri</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Indirect Content URI</Message>
+                    <Name>FreshAppsTaskSourceUri</Name>
+                    <Value>102</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

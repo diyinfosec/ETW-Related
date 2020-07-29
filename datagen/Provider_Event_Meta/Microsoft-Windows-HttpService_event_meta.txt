@@ -1,0 +1,1335 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-HttpService</Name>
+        <Metadata>
+            <Guid>{DD5EF90A-6398-47A4-AD34-4DCECDEF795F}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request received (request ID %1) on connection (connection ID %2) from remote address %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="RemoteAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Parsed request (request pointer %1, method %2) with URI %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="HttpVerb" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Delivered request to server application (request pointer %1, request ID %2, site ID %3) from request queue %4 for URI %5 with status %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestQueueName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Server application passed response (request ID %1, connection ID %2, method %4, header length %5, number of entity chunks %6, cache policy %7) with status code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="StatusCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Verb" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntityChunkCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CachePolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Server application passed the last response (corresponding to request ID %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Server application passed entity body for request ID %1 (connection ID %2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Server application passed the last entity body for request ID %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Server application passed response (request ID %1, connection ID %2, method %4, header length %5, number of entity chunks %6, cache policy %7) with status code %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="StatusCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Verb" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntityChunkCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CachePolicy" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Server application passed the last response (corresponding to request ID %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Response ready for send (corresponding to request ID %1) with status code %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="HttpStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Cached the response (corresponding to request ID %1) with status code %2. Response to be sent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="HttpStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Queued last response (corresponding to request ID %1) for sending. Status code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="HttpStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Response sent (corresponding to request ID %1) with status code %2. If disconnect is required, a TCP FIN has been sent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="HttpStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error occurred while sending the last response (corresponding to request ID %1) with status code %2. A TCP Reset has been sent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="HttpStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error %3 occurred while sending (corresponding to request ID %1). A TCP Reset will be sent.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Response (request pointer %1, site ID %2, number of bytes %3) queued for sending from the cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Response (request pointer %1, corresponding to request ID %4, site ID %2, number of bytes %3, encoding %5) queued for sending from the cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Encoding" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Response (request pointer %1, site ID %2, number of bytes %3) queued for sending with status code 304 (cache not modified).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Response (request pointer %1, site ID %2, number of bytes %3, encoding %5) queued for sending with status code 304 (cache not modified).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesSent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Encoding" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempted to reserve URL (%1). Status %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReserveStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully read the IP listen list for IP address %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IpAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IpAddress" inType="win:Binary" outType="win:SocketAddress" length="IpAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SSL credentials for IP address and port %3 successfully created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EndpointConfigObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
+  <data name="CertHashLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CertHash" inType="win:Binary" outType="xs:hexBinary" length="CertHashLength"/>
+  <data name="CertStoreName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertCheckMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RevokeFreshnessTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RevokeRetrievalTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CtlId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CtlStoreName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+SSL credentials for endpoint %2 successfully created.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EndpointConfigObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Endpoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertHashLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CertHash" inType="win:Binary" outType="xs:hexBinary" length="CertHashLength"/>
+  <data name="CertStoreName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertCheckMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RevokeFreshnessTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RevokeRetrievalTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CtlId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CtlStoreName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertificateLoadTime(ms)" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+New connection created (local IP address %3 and remote address %5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="LocalAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="RemoteAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection ID (%2) assigned to connection and request (request ID %1) will be parsed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Client closed the connection (connection pointer %1). Status of whether closed by TCP Reset: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Abortive" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection (connection pointer %1) cleanup started due to either the sending of a TCP Reset, receiving of a TCP Reset, or after the mutual exchange of TCP Fins.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully added entry (URI %1) to cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Verb" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContentLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExpirationTime" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Successfully added entry (URI %1) to cache (Encoding %7).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Verb" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContentLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExpirationTime" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Encoding" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to add an entry (URI %1) to the cache. Status: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UrlBuffer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Failed to add an entry (URI %1) to the cache. Status: %2. Encoding: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UrlBuffer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Encoding" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Flushed entry (URI %1) from the cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Uri" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Verb" inType="win:AnsiString" outType="xs:string"/>
+  <data name="HeaderLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContentLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExpirationTime" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempted to set URL group property: %1. Status: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Property" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempted to set server session property: %1. Status: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Property" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempted to set request queue property: %1. Status: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Property" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempted to add URL (%2) to URL group (%1). Status: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UrlGroupId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Removed URL (%2) from URL group (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UrlGroupId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Removed all URLs from URL group %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UrlGroupId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Initiating SSL connection.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Initiating SSL handshake.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SSL handshake completed with status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Server application is attempting to receive the SSL client certificate, which will be provided if available. If the client certificate is not available, a renegotiation will be initiated.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempt by server application to receive client certificate failed with status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Raw SSL data is available for processing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Decrypted SSL data is available for processing.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Passed plaintext data for encryption.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempt (on connection ID %1) to authenticate client completed. Authentication type %2. Security status: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AuthType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SecStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="AuthStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Attempt (on connection ID %1) to authenticate client completed. Authentication type %2. Security status: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AuthType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SecStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="AuthStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ContextAttributes" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempted to add entry to the %2 authentication cache. Status: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AuthCacheType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AccessTokenOrHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Entry successfully removed from the authentication cache.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccessTokenOrHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully associated QoS flow with connection (connection ID %1). Bandwidth throttled to: %2 Bytes per second.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Bandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to configure the %2 logging (directory %4), Status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Group" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Software" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully configured %2 logging (directory %5).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Present" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Group" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Directory" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Software" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to create %2 log file %5. Status: %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Group" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Filename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully created new %2 log file %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Group" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Filename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Entry has been written to %3 log file.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Handle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Group" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Format" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SiteId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Parsing of request (request ID %2) failed due to reason: %3. Request may not be compliant with HTTP/1.1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HintData" inType="win:Binary" outType="xs:hexBinary" length="HintLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+HTTP timer %3 expired. The connection will be reset.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Timer" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to acquire handle for SSL credentials. Failure will be event logged. Security status: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EndpointConfigObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SecStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Detail" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SSL connection will be disconnected as initiated by the client.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SSL connection will be disconnected as initiated by the server application. Status: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempt to decrypt SSL data failed. Security status: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SecStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Query for SSL connection parameters failed. Security status: %2. Connection will be reset.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SecStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Detail" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Cannot find SSL endpoint for inbound connection for local IP address and port %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempt to perform SSL handshake failed. Security status: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SecStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Attempt to encrypt SSL data failed. Security status: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SecStatus" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request (request ID %1) rejected due to reason: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RequestQueueName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Server application canceled the processing of its request (request ID %1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+  <data name="RequestQueueName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Http.sys failed to process CPU hot-add. Processor number: %1, reason: %2, status: %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewProcNumber" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ReasonString" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>67</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Hot-add information: Current UxNumberOfProcessors: %1, comment: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NewProcNumber" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Comment" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>68</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Initialized QoS flow: FlowHandle %1, bandwidth %2, peak bandwidth %3, burst size %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Bandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BurstSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>69</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Initialized QoS flow: FlowHandle %1, bandwidth %2, peak bandwidth %3, burst size %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Bandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BurstSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+QoS flow initialization failed: bandwidth %1, peak bandwidth %2, burst size %3, status %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Bandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PeakBandwidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BurstSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Setting flow: Connection %1, FlowHandle %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FlowHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Assign to Configuration QoS Flow: FlowHandle %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FlowHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+[re]Setting QoS Flow failed: Connection %1, FlowHandle %2, status %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FlowHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Response range processing done. Req. %1, response content size %2, ranges %3 (%4-%5, %6-%7,...)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ContentBytes" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="NumberOfRanges" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Range1Start" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range1End" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range2Start" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range2End" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Begin building slices. Req. %1, slices %2 (%3,%4,...), ranges %5 (%6-%7, %8-%9,...)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="NumberOfSlices" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SliceIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SliceIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumberOfRanges" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Range1Start" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range1End" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range2Start" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range2End" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Send cached slices. Req. %1, CacheEntry %2, slices %3 (%4,%5,...), ranges %6 (%7-%8, %9-%10,...)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="CacheEntryPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NumberOfSlices" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SliceIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SliceIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumberOfRanges" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Range1Start" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range1End" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range2Start" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range2End" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Cached slices match content. Req. %1, CacheEntry %2, slices %3 (%4,%5,...), ranges %6 (%7-%8, %9-%10,...)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="CacheEntryPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NumberOfSlices" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SliceIndex1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SliceIndex2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumberOfRanges" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Range1Start" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range1End" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range2Start" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range2End" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>78</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Merge slices to cache. CacheEntry %1, slices to merge %2, slices to cache %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CacheEntryPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NofSlicesToMerge" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NofSlicesInCache" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>79</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Sending range from flat cache entry. CacheEntry %1, range %2-%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CacheEntryPtr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Range1Start" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Range1End" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>80</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Channel bind ASC parameters: connection %1, buffers %2, flags %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="NoBindBuffers" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SecFlags" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>81</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Service bind check done. Connection %1, Context %2-%3, status %4, target %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="SecContextL" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SecContextH" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SecStatus" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Target" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>82</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Captured channel bind config. Hardening %1, flags %2, service count %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hardening" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ServiceNameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>83</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Channel bind response config overwrites %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReplaceConfigOf" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>84</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Policy-Based QoS: Connection %1, FlowHandle %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Connection" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="FlowHandle" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>85</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Thread pool extension. Pool type: %1, active pools: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoolType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ActivePools" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>86</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Thread ready. Pool type: %1, active pools: %2, thread count: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoolType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ActivePools" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ThreadCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>87</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Thread pool trim. Pool type: %1, active pools: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoolType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ActivePools" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>88</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Thread gone. Pool type: %1, active pools: %2, thread count: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PoolType" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ActivePools" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ThreadCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>89</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SNI parsed for connection: %1 with status: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ConnectionObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SniLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SniHost" inType="win:Binary" outType="xs:hexBinary" length="SniLength"/>
+  <data name="NormalizedHost" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>90</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Request %1 has initated opaque mode]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RequestId" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>91</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Endpoint auto-generated for %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EndpointConfigObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EndpointName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>92</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Deleted auto-generated endpoint for %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EndpointConfigObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EndpointName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>93</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Inbound connection for IP: %3, SNI: %4. SSL endpoint found: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EndpointConfigObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IpAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IpAddress" inType="win:Binary" outType="win:SocketAddress" length="IpAddrLength"/>
+  <data name="SniHostname" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MatchingEndpointName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AutoGeneratedEndpoint" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>94</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SSL connection with local IP address and port %2 rejected due to configuration policy.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AddressLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Binary" outType="win:SocketAddress" length="AddressLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>95</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Parsing of response (response ID %2) failed due to reason: %3. Request may not be compliant with HTTP/1.1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ResponseId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Reason" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HintLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HintData" inType="win:Binary" outType="xs:hexBinary" length="HintLength"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

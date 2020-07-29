@@ -1,0 +1,119 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-IE-JSDumpHeap</Name>
+        <Metadata>
+            <Guid>{7F8E35CA-68E8-41B9-86FE-D6ADC5B327E7}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <struct name="Settings">
+    <data name="Version" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="MaxStringLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="IsTypeNamePrivate" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="IsEdgeStringValuePrivate" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="IsEdgeNumberValuePrivate" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="IsAttributeStringValuePrivate" inType="win:Boolean" outType="xs:boolean"/>
+    <data name="IsAttributeNumberValuePrivate" inType="win:Boolean" outType="xs:boolean"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <struct name="Summary">
+    <data name="HrResult" inType="win:HexInt32" outType="win:HexInt32"/>
+    <data name="NodeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="EdgeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="AttributeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="NumberCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="StringCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="RundownDurationMS" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="Id" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="TypeNameId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="AttributeCount" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="EdgeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="Type" inType="win:UInt16" outType="xs:unsignedShort"/>
+    <data name="Value" inType="win:Pointer" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="RelationshipType" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="TargetType" inType="win:UInt8" outType="xs:unsignedByte"/>
+    <data name="NameId" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Value" inType="win:Pointer" outType="win:HexInt64"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="StringEntry" inType="win:UnicodeString" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Count" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Values" count="Count">
+    <data name="DoubleEntry" inType="win:Double" outType="xs:double"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,1721 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-ESE</Name>
+        <Metadata>
+            <Guid>{478EA8A8-00BE-4BA6-8E75-8B9DC7DB9F78}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Trace]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE BF Trace]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Block Trace]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE NewPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LatchFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PageFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="dbtimeDirtied" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="itagMicFree" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="cbFree" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE ReadPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LatchFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PageFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="dbtimeDirtied" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="itagMicFree" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="cbFree" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE PrereadPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE WritePage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PageFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DirtyLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE EvictPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fCurrentVersion" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="errBF" inType="win:Int32" outType="xs:int"/>
+  <data name="bfef" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="pctPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE RequestPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bflf" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PageFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bflt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pctPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bfrtf" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE DirtyPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PageFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DirtyLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LgposModify" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE TransactionBegin Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionNumber" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransactionNumber" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransactionLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE TransactionCommit Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionNumber" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransactionNumber" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransactionLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE TransactionRollback Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionNumber" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransactionNumber" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="TransactionLevel" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE AllocExt Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgnoFDP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgnoFirst" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cpg" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objidFDP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE FreeExt Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgnoFDP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgnoFirst" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cpg" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objidFDP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE AllocPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgnoFDP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgnoAlloc" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objidFDP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE FreePage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgnoFDP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgnoFree" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objidFDP" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE IOREQHeapEnqueue Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="iFile" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ibOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="cbData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tidAlloc" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fHeapA" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fWrite" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EngineFileType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EngineFileId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="cusecEnqueueLatency" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE IOREQHeapDequeue Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="iFile" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ibOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="cbData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tidAlloc" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fHeapA" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fWrite" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Iorp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Iors" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Ioru" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Iorf" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="grbitQos" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="cmsecTimeInQueue" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="EngineFileType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EngineFileId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="cDispatchPass" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="cIorunCombined" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="cusecDequeueLatency" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE IOCompletion Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="iFile" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="fMultiIor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fWrite" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="UserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="OperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="CorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ParentObjectClass" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ibOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="cbTransfer" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="qosHighestFirst" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="cmsecIOElapsed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="dtickCompletionDelay" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tidAlloc" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EngineFileType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EngineFileId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="fmfFile" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Log Stall Trace]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE LogWrite Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="lgenData" inType="win:Int32" outType="xs:int"/>
+  <data name="ibLogData" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cbLogData" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>123</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE EventLog Information Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>124</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE EventLog Warning Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>125</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE EventLog Error Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>126</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Timer Queue Schedule Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pfnTask" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvTaskContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dtickDelay" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dtickPeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>127</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Timer Queue Run Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pfnTask" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvTaskContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cRuns" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>128</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Timer Queue Cancel Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pfnTask" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvTaskContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>129</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Timer Task Schedule Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="posttTimerHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfnTask" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvTaskGroupContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvRuntimeContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dtickMinDelay" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dtickSlopDelay" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Timer Task Run Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="posttTimerHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfnTask" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvTaskGroupContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvRuntimeContext" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="cRuns" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>131</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Timer Task Cancel Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="posttTimerHandle" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfnTask" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvTaskGroupContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>132</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Task Manager Post Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptm" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfnCompletion" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwCompletionKey1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCompletionKey2" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>133</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Task Manager Run Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ptm" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfnCompletion" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwCompletionKey1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwCompletionKey2" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="gle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwThreadContext" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>134</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE General Purpose Task Manager Post Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pgptm" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfnCompletion" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvParam" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pTaskInfo" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>135</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE General Purpose Task Manager Run Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="pgptm" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfnCompletion" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pvParam" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pTaskInfo" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>136</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Test Marker Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="qwMarkerID" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="szAnnotation" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>137</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Thread Create Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Thread" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfnStart" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwParam" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>138</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Thread Start Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Thread" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="pfnStart" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="dwParam" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>139</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE VersionPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>140</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE VersionCopyPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>141</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Cache Resize Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="cbfCacheAddressableInitial" inType="win:Int64" outType="xs:long"/>
+  <data name="cbfCacheSizeInitial" inType="win:Int64" outType="xs:long"/>
+  <data name="cbfCacheAddressableFinal" inType="win:Int64" outType="xs:long"/>
+  <data name="cbfCacheSizeFinal" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>142</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Cache Limit Resize Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="cacheSizeLimitInitial" inType="win:Int64" outType="xs:long"/>
+  <data name="cacheSizeLimitFinal" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>143</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Cache Scavenge Progress Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="iRun" inType="win:Int64" outType="xs:long"/>
+  <data name="cbfVisited" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfCacheSize" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfCacheTarget" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfCacheSizeStartShrink" inType="win:Int32" outType="xs:int"/>
+  <data name="dtickShrinkDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cbfAvail" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfAvailPoolLow" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfAvailPoolHigh" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfFlushPending" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfFlushPendingSlow" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfFlushPendingHung" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfOutOfMemory" inType="win:Int32" outType="xs:int"/>
+  <data name="cbfPermanentErrs" inType="win:Int32" outType="xs:int"/>
+  <data name="eStopReason" inType="win:Int32" outType="xs:int"/>
+  <data name="errRun" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>144</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Function Call Started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="opApi" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>145</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Function Call Complete]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="opApi" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="err" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>146</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE ResMgrInit Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="K" inType="win:Int32" outType="xs:int"/>
+  <data name="csecCorrelatedTouch" inType="win:Double" outType="xs:double"/>
+  <data name="csecTimeout" inType="win:Double" outType="xs:double"/>
+  <data name="csecUncertainty" inType="win:Double" outType="xs:double"/>
+  <data name="dblHashLoadFactor" inType="win:Double" outType="xs:double"/>
+  <data name="dblHashUniformity" inType="win:Double" outType="xs:double"/>
+  <data name="dblSpeedSizeTradeoff" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>147</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE ResMgrTerm Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>148</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE CachePage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bflf" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bflt" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pctPriority" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bfrtf" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>149</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE MarkPageAsSuperCold Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE CacheMissLatency Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwUserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bOperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bOperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bFlags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="dwCorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="usecsWait" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="bftcmr" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>151</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE BTreePrereadPageRequest Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwUserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bOperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bOperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bFlags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="dwCorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="fOpFlags" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>152</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE DiskFlushFileBuffers Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Disk" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="wszFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="iofr" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cioreqFileFlushing" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="usFfb" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>153</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE DiskFlushFileBuffersBegin Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwDisk" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hFile" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="iofr" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>154</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE CacheFirstDirtyPage Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tick" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pgno" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="objid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fFlags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bfdfNew" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="lgposModify" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="dwUserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bOperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bOperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bFlags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="dwCorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>155</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE SysStationId Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="dwImageVerMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwImageVerMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwImageBuildMajor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwImageBuildMinor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="wszDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>156</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE InstStationId Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iInstance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="perfstatusEvent" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="wszInstanceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="wszDisplayName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>157</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE FmpStationId Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="iInstance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dbid" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="wszDatabaseName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>158</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE DiskStationId Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="dwDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="wszDiskPathId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="szDiskModel" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szDiskFirmwareRev" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szDiskSerialNumber" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>159</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE FileStationId Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="hFile" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="dwDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwEngineFileType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="qwEngineFileId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="fmf" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cbFileSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="wszAbsPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>160</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE IsamDbfilehdrInfo Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ifmp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="filetype" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ulMagic" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ulChecksum" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="cbPageSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ulDbFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="psignDb" inType="win:Binary" outType="xs:hexBinary" length="28"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>161</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE DiskOsDiskCacheInfo Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="posdci" inType="win:Binary" outType="xs:hexBinary" length="24"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>162</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE DiskOsStorageWriteCacheProp Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="posswcp" inType="win:Binary" outType="xs:hexBinary" length="28"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>163</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE DiskOsDeviceSeekPenaltyDesc Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="tsidr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="posdspd" inType="win:Binary" outType="xs:hexBinary" length="12"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>165</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE IOCompletion2 Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="wszFilename" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="fMultiIor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="fWrite" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="dwUserId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="bOperationId" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bOperationType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bClientType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="bFlags" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="dwCorrelationId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="iorp" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iors" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iort" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ioru" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="iorf" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="szClientComponent" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szClientAction" inType="win:AnsiString" outType="xs:string"/>
+  <data name="szClientActionContext" inType="win:AnsiString" outType="xs:string"/>
+  <data name="guidActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ibOffset" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="cbTransfer" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="qosHighestFirst" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="cmsecIOElapsed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="dtickCompletionDelay" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="tidAlloc" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwEngineFileType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwEngineFileId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="fmfFile" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dwDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>166</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE FCBPurgeFailure Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="iInstance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="grbitPurgeFlags" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="fcbpfr" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="tce" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>167</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE IOLatencySpikeNotice Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="dwDiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dtickSpikeLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagNull Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagInformation Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagErrors Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagAsserts Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagAPI Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagInitTerm Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagBufferManager Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagBufferManagerHashedLatches Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagIO Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagMemory Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagVersionStore Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagVersionStoreOOM Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagVersionCleanup Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagCatalog Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagDDLRead Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagDDLWrite Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagDMLRead Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagDMLWrite Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagDMLConflicts Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>219</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagInstances Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagDatabases Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagSessions Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>222</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagCursors Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>223</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagCursorNavigation Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>224</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagCursorPageRefs Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>225</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagBtree Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>226</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagSpace Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>227</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagFCBs Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>228</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagTransactions Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>229</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagLogging Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>230</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagRecovery Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>231</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagBackup Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>232</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagRestore Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>233</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagOLD Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>234</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagEventlog Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>235</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagBufferManagerMaintTasks Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>236</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagSpaceManagement Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>237</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagSpaceInternal Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>238</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagIOQueue Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>239</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagDiskVolumeManagement Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>240</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagCallbacks Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>241</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagIOProblems Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>242</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagUpgrade Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>243</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagRecoveryValidation Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>244</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagBufferManagerBufferCacheState Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>245</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagBufferManagerBufferDirtyState Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>246</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagTimerQueue Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>247</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagSortPerf Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>248</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagOLDRegistration Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>249</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagOLDWork Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>250</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagSysInitTerm Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>251</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagVersionAndStagingChecks Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>252</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagFile Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>253</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagFlushFileBuffers Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>254</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE tagCheckpointUpdate Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="szTrace" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ESE Compression Experiment Trace]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TableClass" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="OrigSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="XpressSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Xpress9Size" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="usecXpressTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="usecXpress9Time" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ShannonEntropy" inType="win:Double" outType="xs:double"/>
+  <data name="ChiSquared" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

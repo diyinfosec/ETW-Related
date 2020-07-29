@@ -1,0 +1,349 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MediaFoundation-MSVProc</Name>
+        <Metadata>
+            <Guid>{A4112D1A-6DFA-476E-BB75-E350D24934E1}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CreateVideoProcessor Device %1, VP %2 , Rate Conversion Index %3, PastFrames %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VideoDevice" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VP" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RateConversionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PastFrames" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CreateView Sample %1, BufferIndex %2, hr %3, View %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="View" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CreateView Sample %1, BufferIndex %2, hr %3, View %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Sample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="BufferIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="View" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+VPBlt obj=%1 Start Input Sample %2, Input Index %3, Output Sample %4, FrameOrField %5, OutputIndex %6, OutputFrame %7, (%8x%9)..(%10x%11) Input DXGI format %12, Output DXGI format %13, rotation %14, mirrored %15]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Object" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InputSample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InputViewIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutputSample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="InputFrameOrField" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutputIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OutputFrame" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SrcWidth" inType="win:Int32" outType="xs:int"/>
+  <data name="SrcHeight" inType="win:Int32" outType="xs:int"/>
+  <data name="DestWidth" inType="win:Int32" outType="xs:int"/>
+  <data name="DestHeight" inType="win:Int32" outType="xs:int"/>
+  <data name="SourceFormat" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestFormat" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Rotation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Mirrored" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+VPBlt Stop Output Sample %1, hr %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OutputSample" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT_Start XVPMFT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+MFT_Stop XVPMFT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ProcessInput_Start XVPMFT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>108</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ProcessInput_Stop  XVPMFT = %1 hr = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>109</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ProcessOutput_Start XVPMFT = %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ProcessOutput_Stop  XVPMFT = %1 hr = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="hr" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>111</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ColorConv_Start fourCCSrc = %1, fourCCDst = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fourCCSrc" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="fourCCDst" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ColorConv_Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Resizer_Start fourCC = %1, srcWidth = %2, srcHeight = %3, dstWidth = %4, dstHeight = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fourCC" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="srcWidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="srcHeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dstWidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dstHeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>114</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Resizer_Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rotation_Start fourCC = %1, Rotation = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fourCC" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Rotation" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>116</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Rotation_Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>117</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Mirror_Start fourCC = %1, Mirror = %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fourCC" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Mirror" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>118</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Mirror_Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>119</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+D3DShader Start obj=%1 context=%2 input views=%3 output views=%4 width=%5 height=%6 offsetX=%7 offsetY=%8 input DXGI format=%9 output DXGI format=%10 shader=%11 lightLevelIn=%12 lightLevelOut=%13]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="uiInputViewCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="uiOutputViewCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="uiOutWidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="uiOutHeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="uiOffsetX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="uiOffsetY" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SourceFormat" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DestFormat" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Shader" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="lightLevelIn" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="lightLevelOut" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+D3DShader Stop obj=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ConfigureInputHDRMetadata obj=%1 red = (%2,%3) green = (%4,%5) blue = (%6,%7) white = (%8,%9) max = %10 min = %11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RedPrimaryX" inType="win:Float" outType="xs:float"/>
+  <data name="RedPrimaryY" inType="win:Float" outType="xs:float"/>
+  <data name="GreenPrimaryX" inType="win:Float" outType="xs:float"/>
+  <data name="GreenPrimaryY" inType="win:Float" outType="xs:float"/>
+  <data name="BluePrimaryX" inType="win:Float" outType="xs:float"/>
+  <data name="BluePrimaryY" inType="win:Float" outType="xs:float"/>
+  <data name="WhitePrimaryX" inType="win:Float" outType="xs:float"/>
+  <data name="WhitePrimaryY" inType="win:Float" outType="xs:float"/>
+  <data name="MaxLuminance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinLuminance" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>122</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ConfigureOutputHDRMetadata obj=%1 red = (%2,%3) green = (%4,%5) blue = (%6,%7) white = (%8,%9) max = %10 min = %11]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MSVProcObj" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RedPrimaryX" inType="win:Float" outType="xs:float"/>
+  <data name="RedPrimaryY" inType="win:Float" outType="xs:float"/>
+  <data name="GreenPrimaryX" inType="win:Float" outType="xs:float"/>
+  <data name="GreenPrimaryY" inType="win:Float" outType="xs:float"/>
+  <data name="BluePrimaryX" inType="win:Float" outType="xs:float"/>
+  <data name="BluePrimaryY" inType="win:Float" outType="xs:float"/>
+  <data name="WhitePrimaryX" inType="win:Float" outType="xs:float"/>
+  <data name="WhitePrimaryY" inType="win:Float" outType="xs:float"/>
+  <data name="MaxLuminance" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinLuminance" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>123</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Constriction_Resizer_Start fourCC = %1, srcWidth = %2, srcHeight = %3, dstWidth = %4, dstHeight = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fourCC" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="srcWidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="srcHeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dstWidth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="dstHeight" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>124</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Constriction_Resizer_Stop]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

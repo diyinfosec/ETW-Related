@@ -1,0 +1,411 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnostics-PerfTrack</Name>
+        <Metadata>
+            <Guid>{030F2F57-ABD0-4427-BCF1-3A3587D7DC7D}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>112</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>113</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StartTimeStamp" inType="win:Int64" outType="xs:long"/>
+  <data name="StartProviderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="StartEventId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StartEventVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="StopTimeStamp" inType="win:Int64" outType="xs:long"/>
+  <data name="StopProviderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="StopEventId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StopEventVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TriggerTimeStamp" inType="win:Int64" outType="xs:long"/>
+  <data name="TriggerProviderId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="TriggerEventId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="TriggerEventVersion" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RuleId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>500</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CanAddToScenarioStream" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScenarioId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScenarioDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScenarioPackedContext" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MoshTimeValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScenarioMetadata" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>800</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1100</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MostRecentPreviousBuild" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WhenUpgradedFrom" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1101</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MostRecentPreviousBuild" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WhenUpgradedFrom" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1102</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MostRecentPreviousBuild" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WhenUpgradedFrom" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1103</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1104</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1105</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumResources" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SliceDuration_msec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequiredIdleDuration_msec" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NumOverlaps" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaximumUsagePerSlice_Percent" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NormalizeTime" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1106</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResourceId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BusyPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastIdleTime" inType="win:Int64" outType="xs:long"/>
+  <data name="LastTotalTime" inType="win:Int64" outType="xs:long"/>
+  <data name="CurrentIdleTime" inType="win:Int64" outType="xs:long"/>
+  <data name="CurrentTotalTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1107</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HResult" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1108</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Resource" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CombinedBusyPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsIdle" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IdleTimeFound" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1109</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DevicePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1110</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AccumulatedIdleTime" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1111</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MostRecentPreviousBuild" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WhenUpgradedFrom" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1112</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MostRecentPreviousBuild" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="WhenUpgradedFrom" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1113</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1500</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MainPathHybridbootTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PostTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResumeTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdditionalMetadata" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1500</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MainPathHybridbootTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PostTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResumeTimeMs" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AdditionalMetadata" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReadyBootTrainingCountSinceLastServicing" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1501</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MatchKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScenarioName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1502</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MatchKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScenarioName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PRAID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword5" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1503</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MatchKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScenarioName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PRAID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1504</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScenarioId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScenarioName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PRAID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Dword1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword3" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword4" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Dword5" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="String1" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="String2" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1505</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScenarioId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScenarioName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PRAID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1506</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MatchKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivationKind" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1507</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MatchKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ActivationKind" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1508</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MatchKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1509</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MatchKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1510</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ViewId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResizeFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WindowSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1511</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ControlFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ViewId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PackageFullName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResizeFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="WindowSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

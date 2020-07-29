@@ -1,0 +1,50 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-BranchCacheEventProvider</Name>
+        <Metadata>
+            <Guid>{DD85457F-4E2D-44A5-A7A7-6253362E34DC}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CreateRequest]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SendRequest]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SendResponse]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+CloseRequest]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

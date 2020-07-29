@@ -1,0 +1,42 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-CandidateUI</Name>
+        <Metadata>
+            <Guid>{7C4117B1-ED82-4F47-B2CA-29E4E25719C7}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_CANDUI_OnKeyDownStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_CANDUI_OnKeyDownEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_CANDUI_MovePageStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>121</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_CANDUI_MovePageEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,423 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-AppV-Client</Name>
+        <Metadata>
+            <Guid>{E4F68870-5AE8-4E5B-9CE7-CA9ED75B0245}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\appvetwclientres.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\appvetwclientres.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=appvetwclientres.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Admin</Message>
+                    <Path>Microsoft-AppV-Client/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-AppV-Client/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Virtual Applications</Message>
+                    <Path>Microsoft-AppV-Client/Virtual Applications</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Client Startup</Message>
+                    <Name>ClientStartup</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Client Shutdown</Message>
+                    <Name>ClientShutdown</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>User Logon</Message>
+                    <Name>UserLogon</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>User Logoff</Message>
+                    <Name>UserLogoff</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Dynamic Configuration Change</Message>
+                    <Name>PolicyChange</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>API Request</Message>
+                    <Name>APIRequest</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Impersonation/Deimpersonation</Message>
+                    <Name>Impersonation</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Configure Package</Message>
+                    <Name>ConfigurePackage</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Publish Package</Message>
+                    <Name>PublishPackage</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Unpublish Package</Message>
+                    <Name>UnpublishPackage</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Remove Package</Message>
+                    <Name>RemovePackage</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Configure Virtual Application Connection Group</Message>
+                    <Name>ConfigurePackageGroup</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Publish Virtual Application Connection Group</Message>
+                    <Name>PublishPackageGroup</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>Unpublish Virtual Application Connection Group</Message>
+                    <Name>UnpublishPackageGroup</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>Remove Virtual Application Connection Group</Message>
+                    <Name>RemovePackageGroup</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Execute Embedded Scripts</Message>
+                    <Name>ExecuteScripts</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Virtual File System Redirection</Message>
+                    <Name>VFSRedirection</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>Configure Virtual Services</Message>
+                    <Name>ConfigureVirtualServices</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>Setting Changes</Message>
+                    <Name>SettingChanges</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>Parse Dynamic Configuration File</Message>
+                    <Name>ParseDynamicConfigurationFile</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>PowerShell Invoke</Message>
+                    <Name>PowerShellInvoke</Name>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>Subsystem Startup</Message>
+                    <Name>SubsystemStartup</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message>Application Launch</Message>
+                    <Name>ApplicationLaunch</Name>
+                    <Value>23</Value>
+                </Task>
+                <Task>
+                    <Message>Virtual Environment Start</Message>
+                    <Name>VirtualEnvironmentStart</Name>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message>User State Deletion</Message>
+                    <Name>DeleteUserState</Name>
+                    <Value>25</Value>
+                </Task>
+                <Task>
+                    <Message>Background Streaming</Message>
+                    <Name>BackgroundStreaming</Name>
+                    <Value>26</Value>
+                </Task>
+                <Task>
+                    <Message>PSObject Get Property Value</Message>
+                    <Name>PSObjectGetPropertyValue</Name>
+                    <Value>27</Value>
+                </Task>
+                <Task>
+                    <Message>PSObject Invoke Method</Message>
+                    <Name>PSObjectInvokeMethod</Name>
+                    <Value>28</Value>
+                </Task>
+                <Task>
+                    <Message>Connect to AppV Client Service</Message>
+                    <Name>ConnectToAppVClientService</Name>
+                    <Value>29</Value>
+                </Task>
+                <Task>
+                    <Message>Powershell Process</Message>
+                    <Name>PowershellProcess</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>Create Reporting Data</Message>
+                    <Name>CreateReportingData</Name>
+                    <Value>31</Value>
+                </Task>
+                <Task>
+                    <Message>Upload Reporting Data</Message>
+                    <Name>UploadReportingData</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>Streaming</Message>
+                    <Name>GeneralStreaming</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message>Repair Package</Message>
+                    <Name>RepairPackage</Name>
+                    <Value>34</Value>
+                </Task>
+                <Task>
+                    <Message>Repair Virtual Application Connection Group</Message>
+                    <Name>RepairPackageGroup</Name>
+                    <Value>35</Value>
+                </Task>
+                <Task>
+                    <Message>Publishing Refresh</Message>
+                    <Name>PublishingRefresh</Name>
+                    <Value>36</Value>
+                </Task>
+                <Task>
+                    <Message>Stop Package or Connection Group</Message>
+                    <Name>StopPackageOrGroup</Name>
+                    <Value>37</Value>
+                </Task>
+                <Task>
+                    <Message>Integration</Message>
+                    <Name>Integration</Name>
+                    <Value>38</Value>
+                </Task>
+                <Task>
+                    <Message>Side by Side</Message>
+                    <Name>SxS</Name>
+                    <Value>39</Value>
+                </Task>
+                <Task>
+                    <Message>Enable/Disable Appv</Message>
+                    <Name>EnableDisableAppV</Name>
+                    <Value>40</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Send</Message>
+                    <Name>win:Send</Name>
+                    <Value>9</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Startup</Message>
+                    <Name>Startup</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Shutdown</Message>
+                    <Name>Shutdown</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Logon</Message>
+                    <Name>Logon</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Logoff</Message>
+                    <Name>Logoff</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>API</Message>
+                    <Name>API</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Component Startup</Message>
+                    <Name>ComponentStartup</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Client Common</Message>
+                    <Name>Common</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Catalog</Message>
+                    <Name>Catalog</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Publishing</Message>
+                    <Name>Publishing</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Embedded Scripting</Message>
+                    <Name>EmbeddedScripting</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Virtual File System</Message>
+                    <Name>VFS</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Virtual Services</Message>
+                    <Name>VirtualServices</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Settings</Message>
+                    <Name>Settings</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Dynamic Configuration</Message>
+                    <Name>DynamicConfiguration</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Client Management</Message>
+                    <Name>ClientManagement</Name>
+                    <Value>16384</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Subsystems</Message>
+                    <Name>Subsystems</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Client Co-existence</Message>
+                    <Name>ClientCoExistence</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Virtual Registry</Message>
+                    <Name>VREG</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Streaming</Message>
+                    <Name>Streaming</Name>
+                    <Value>262144</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Client Streaming UX</Message>
+                    <Name>ClientStreamingUX</Name>
+                    <Value>524288</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Virtual Application Launch</Message>
+                    <Name>VirtualAppLaunch</Name>
+                    <Value>1048576</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Virtual Object</Message>
+                    <Name>VOBJ</Name>
+                    <Value>2097152</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Reporting</Message>
+                    <Name>Reporting</Name>
+                    <Value>4194304</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Publishing Refresh</Message>
+                    <Name>PublishingRefresh</Name>
+                    <Value>8388608</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Integration</Message>
+                    <Name>Integration</Name>
+                    <Value>16777216</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Side by Side</Message>
+                    <Name>SxS</Name>
+                    <Value>33554432</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>AppManagementConfiguration</Message>
+                    <Name>AppManagementConfiguration</Name>
+                    <Value>67108864</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

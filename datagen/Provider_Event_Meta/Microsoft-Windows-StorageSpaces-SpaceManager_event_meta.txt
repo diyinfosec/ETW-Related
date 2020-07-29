@@ -1,0 +1,36 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StorageSpaces-SpaceManager</Name>
+        <Metadata>
+            <Guid>{69C8CA7E-1ADF-472B-BA4C-A0485986B9F6}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+For internal use.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Tag" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KernelModeStatus" inType="win:UInt32" outType="win:NTStatus"/>
+  <data name="UserModeStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

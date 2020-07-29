@@ -1,0 +1,21 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Shell-ConnectedAccountState</Name>
+        <Metadata>
+            <Guid>{6DF57621-E7E4-410F-A7E9-E43EEB61B11F}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connected Account State]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

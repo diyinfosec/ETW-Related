@@ -1,0 +1,89 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-OOBE-FirstLogonAnim</Name>
+        <Metadata>
+            <Guid>{2D4C0C5E-6704-493A-A44B-F5ADD4FC9283}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fZDP" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5041</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fOOBE" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fExistingUser" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fZDP" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fExplorer" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5042</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5043</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5044</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5045</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5046</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5047</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fExistingUser" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fPostZDP" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5048</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fExistingUserOrPostZDP" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fZDP" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fTouchDevice" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="fMouseDevice" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

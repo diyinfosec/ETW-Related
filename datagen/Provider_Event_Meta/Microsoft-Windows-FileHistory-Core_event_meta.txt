@@ -1,0 +1,94 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-FileHistory-Core</Name>
+        <Metadata>
+            <Guid>{B447B4DB-7780-11E0-ADA3-18A90531A85A}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+File History operational state has changed]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProtectedUpToTime" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to start a backup cycle for configuration %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HighLevelHr" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LowLevelHr" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to scan user libraries for changes and perform backup of modified files for configuration %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unusual condition was encountered during scanning user libraries for changes and performing backup of modified files for configuration %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to finish a backup cycle for configuration %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unusual condition was encountered during finalization of a backup cycle for configuration %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Hr" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ConfigFilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Some files could not be restored. Please manually restore them using File History (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

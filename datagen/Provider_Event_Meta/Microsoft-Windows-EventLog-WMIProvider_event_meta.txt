@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EventLog-WMIProvider</Name>
+        <Metadata>
+            <Guid>{35AC6CE8-6104-411D-976C-877F183D2D32}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

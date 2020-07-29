@@ -1,0 +1,66 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Winsock-WS2HELP</Name>
+        <Metadata>
+            <Guid>{D5C25F9A-4D47-493E-9184-40DD397A004D}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+LSP %1 was installed in the %2-bit catalog by %3 (GUID=%4, Category ID=%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LSPName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Catalog" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Installer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+LSP %1 was removed from the %2-bit catalog by %3 (GUID=%4, Category ID=%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LSPName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Catalog" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Installer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+LSP %1 was disabled in the %2-bit catalog by %3 (GUID=%4, Category ID=%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LSPName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Catalog" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Installer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="GUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Category" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The %1-bit catalog was reset by the administrator]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Catalog" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

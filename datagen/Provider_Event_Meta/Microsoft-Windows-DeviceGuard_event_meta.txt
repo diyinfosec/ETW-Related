@@ -1,0 +1,97 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DeviceGuard</Name>
+        <Metadata>
+            <Guid>{F717D024-F5B4-4F03-9AB9-331B2DC38FFB}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>7000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device Guard successfully processed the Group Policy: Virtualization Based Security  = %1,  Secure Boot = %2, DMA Protection = %3,  Virtualization Based Code Integrity = %4, Credential Guard = %5, Reboot required = %6, Status = %7.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="VirtualizationBasedSecurity" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SecureBoot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DmaProtection" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HVCI" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LSA" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reboot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device Guard failed to process the Group Policy to enable Virtualization Based Security (Status = %1): %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device Guard failed to process the Group Policy to disable Virtualization Based Security (Status = %1): %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device Guard successfully processed the Group Policy: Configurable Code Integrity Policy = %1,  Policy file path = %2, Reboot required = %3, Status = %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SiPolicy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PolicyFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reboot" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device Guard failed to process the Group Policy to enable Configurable Code Integrity Policy (Status = %1): %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device Guard failed to process the Group Policy to disable Configurable Code Integrity Policy (Status = %1): %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device Guard is not available in this edition of Windows]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

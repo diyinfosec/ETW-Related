@@ -1,0 +1,290 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-StoreMgr</Name>
+        <Metadata>
+            <Guid>{A6AD76E3-867A-4635-91B3-4904BA6374D7}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataKey" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreOffset" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CompressedSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataKey" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreOffset" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>3</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreFileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UserDataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MetadataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SectorSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EncryptionStrength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StoreType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StoreId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BlocksStored" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegionsInUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalSpaceUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MetaRegionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MetaRegionsInUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MetaRegionsSpaceUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>3</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreFileKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="UserDataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="MetadataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BlockSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SectorSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EncryptionStrength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StoreType" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="StoreId" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BlocksStored" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RegionsInUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalSpaceUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MetaRegionCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MetaRegionsInUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MetaRegionsSpaceUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StoreTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+%5
+
+Virtual Address: %2
+Physical Address: %3
+Corruption Window Size: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VirtualAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="PhysicalAddress" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Size" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FileBacked" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="CorruptionType" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataKey" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="StoreOffset" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="CompressedSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Flags" inType="win:UInt16" outType="win:HexInt16"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+A ReadyBoost cache failed to persist across boot. This may happen if the cache device was modified on another computer or if this computer was booted into another operating system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FailReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ObjectPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ObjectPath" inType="win:UnicodeString" outType="xs:string" length="ObjectPathLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Size" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="Size"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Param" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DataMgr" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="RegionIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="SpaceUsed" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="LastAccessTime" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+%1
+
+Device name: %4
+Cache path: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="FailStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DeviceDescLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="DeviceDescription" inType="win:UnicodeString" outType="xs:string" length="DeviceDescLength"/>
+  <data name="ObjectPathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ObjectPath" inType="win:UnicodeString" outType="xs:string" length="ObjectPathLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmStreamRowLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="SqmStreamRow" count="SqmStreamRowLength">
+    <data name="SqmTypeEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmDWORDEntry" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="SqmStringEntry" inType="win:UnicodeString" outType="xs:string"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

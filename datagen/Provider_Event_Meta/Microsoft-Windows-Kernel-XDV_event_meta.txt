@@ -1,0 +1,56 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-XDV</Name>
+        <Metadata>
+            <Guid>{F029AC39-38F0-4A40-B7DE-404D244004CB}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+XDV driver loaded!]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+XDV driver unloaded!]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Event: entry function/DDI calls]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IRP_Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="IRP_Stack_Loc_Code" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="IRP_Parameters" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Module" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UInt32_Event_Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address_Stack" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A Driver Verifier rule violation has been detected by VerifierExt.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RuleId" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Module" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Irql" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

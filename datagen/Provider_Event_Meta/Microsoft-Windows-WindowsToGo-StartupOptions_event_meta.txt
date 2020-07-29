@@ -1,0 +1,42 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WindowsToGo-StartupOptions</Name>
+        <Metadata>
+            <Guid>{2E6CB42E-161D-413B-A6C1-84CA4C1E5890}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8193</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Windows To Go start-up options setting has been changed. Current setting: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8194</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There was an error changing the Windows To Go start-up options setting. Error: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:Win32Error"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8195</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Windows To Go start-up options setting could not be changed because the PC has multiple internal bootable disks.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

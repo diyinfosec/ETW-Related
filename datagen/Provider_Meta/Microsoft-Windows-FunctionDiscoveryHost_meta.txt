@@ -1,0 +1,46 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-FunctionDiscoveryHost</Name>
+        <Metadata>
+            <Guid>{538CBBAD-4877-4EB2-B26E-7CAEE8F0F8CB}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\fdphost.dll</ResourceFilePath>
+            <ParameterFilePath>C:\WINDOWS\system32\fdphost.dll</ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\fdphost.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=fdphost.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-FunctionDiscoveryHost</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>0</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Event originating from the fdphost service</Message>
+                    <Name>core</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

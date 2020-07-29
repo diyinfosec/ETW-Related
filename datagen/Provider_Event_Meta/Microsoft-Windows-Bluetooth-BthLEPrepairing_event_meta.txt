@@ -1,0 +1,21 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Bluetooth-BthLEPrepairing</Name>
+        <Metadata>
+            <Guid>{4AF188AC-E9C4-4C11-B07B-1FABC07DFEB2}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device successfully prepaired (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceID" inType="win:Binary" outType="xs:hexBinary" length="8"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

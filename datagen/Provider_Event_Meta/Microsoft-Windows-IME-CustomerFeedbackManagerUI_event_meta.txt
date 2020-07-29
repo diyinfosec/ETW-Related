@@ -1,0 +1,26 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-CustomerFeedbackManagerUI</Name>
+        <Metadata>
+            <Guid>{1B734B40-A458-4B81-954F-AD7C9461BED8}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SendReport Start]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+SendReport Stop]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

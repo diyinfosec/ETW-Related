@@ -1,0 +1,51 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnosis-WDI</Name>
+        <Metadata>
+            <Guid>{E01B1A7C-C5C9-4E67-99A9-5E85ACFB2E10}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>140</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Policy Service encountered an error in file %1, function %2, line %3: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Infrastructure just made a heap allocation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Infrastructure just freed a previously made heap allocation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

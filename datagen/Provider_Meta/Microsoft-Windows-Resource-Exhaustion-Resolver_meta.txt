@@ -1,0 +1,140 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Resource-Exhaustion-Resolver</Name>
+        <Metadata>
+            <Guid>{91F5FB12-FDEA-4095-85D5-614B495CD9DE}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\radarrs.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\radarrs.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=radarrs.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Resource-Exhaustion-Resolver</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Message>
+                    <Path>Microsoft-Windows-Resource-Exhaustion-Resolver/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Lifecycle Events</Message>
+                    <Name>RDR_RES_TASK_LIFECYCLE</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Resolution Events</Message>
+                    <Name>RDR_RES_TASK_RESOLUTION</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>UI Events</Message>
+                    <Name>RDR_RES_TASK_UI</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Leak Diagnosis Events</Message>
+                    <Name>RDR_RES_TASK_LEAK_DIAGNOSIS</Name>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Events logged when the resource exhaustion resolver is started.</Message>
+                    <Name>RDR_RES_OPCODE_LIFECYCLE_START</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when the resource exhaustion resolver is stopped.</Message>
+                    <Name>RDR_RES_OPCODE_LIFECYCLE_STOP</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after a memory allocation.</Message>
+                    <Name>RDR_RES_OPCODE_LIFECYCLE_ALLOC</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when diagnosis is started.</Message>
+                    <Name>RDR_RES_OPCODE_RESOLUTION_START</Name>
+                    <Value>21</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged when diagnosis is stopped.</Message>
+                    <Name>RDR_RES_OPCODE_RESOLUTION_STOP</Name>
+                    <Value>22</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged during resolution.</Message>
+                    <Name>RDR_RES_OPCODE_RESOLUTION_PROCESSING</Name>
+                    <Value>23</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after performing the resolution actions</Message>
+                    <Name>RDR_RES_OPCODE_RESOLUTION_RESULT</Name>
+                    <Value>24</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged before UI is launched.</Message>
+                    <Name>RDR_RES_OPCODE_UI_START</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after UI is launched or after an attempt to launch the UI is made.</Message>
+                    <Name>RDR_RES_OPCODE_UI_DISPLAY</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Events logged after an attempt to launch the leak diagnoser is made.</Message>
+                    <Name>RDR_RES_OPCODE_LEAK_DIAGNOSIS_START</Name>
+                    <Value>41</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Lifecycle</Message>
+                    <Name>RDR_RES_KEYWORD_LIFECYCLE</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>System Commit Limit (Virtual Memory) Exhaustion</Message>
+                    <Name>RDR_RES_KEYWORD_MEMORY_EXHAUSTION</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Memory leak diagnosis</Message>
+                    <Name>RDR_RES_KEYWORD_LEAK_DIAGNOSIS</Name>
+                    <Value>16384</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

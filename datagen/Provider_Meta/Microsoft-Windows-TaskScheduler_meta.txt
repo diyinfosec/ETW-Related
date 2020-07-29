@@ -1,0 +1,820 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TaskScheduler</Name>
+        <Metadata>
+            <Guid>{DE7B24EA-73C8-4A09-985D-5BDADCFA9017}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\schedsvc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\schedsvc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=schedsvc.dll&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-TaskScheduler</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-TaskScheduler/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>System</Message>
+                    <Path>System</Path>
+                    <Index>1</Index>
+                    <Id>8</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-TaskScheduler/Debug</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Diagnostic</Message>
+                    <Path>Microsoft-Windows-TaskScheduler/Diagnostic</Path>
+                    <Index>3</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Maintenance</Message>
+                    <Path>Microsoft-Windows-TaskScheduler/Maintenance</Path>
+                    <Index>4</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Task Started</Message>
+                    <Name>task:JobExecute</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>Task Start Failed</Message>
+                    <Name>task:TaskStartFail</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Task completed</Message>
+                    <Name>task:TaskCompleted</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>Action start failed</Message>
+                    <Name>task:TaskFailure</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>Log-on failure</Message>
+                    <Name>task:LogonFailure</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>Impersonation failure</Message>
+                    <Name>task:ImpersonationFailure</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>Task registered</Message>
+                    <Name>task:JobRegistered</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered on scheduler</Message>
+                    <Name>task:TimeTrigger</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered on event</Message>
+                    <Name>task:EventTrigger</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered by registration</Message>
+                    <Name>task:ImmediateTrigger</Name>
+                    <Value>109</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered by user</Message>
+                    <Name>task:Run</Name>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message>Task terminated</Message>
+                    <Name>task:TaskTerminated</Name>
+                    <Value>111</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met, network unavailable</Message>
+                    <Name>task:NoStartWithoutNetwork</Name>
+                    <Value>112</Value>
+                </Task>
+                <Task>
+                    <Message>Task registered without some triggers</Message>
+                    <Name>task:RegisteredWithoutSomeTriggers</Name>
+                    <Value>113</Value>
+                </Task>
+                <Task>
+                    <Message>Missed task started</Message>
+                    <Name>task:MissedTaskLaunched</Name>
+                    <Value>114</Value>
+                </Task>
+                <Task>
+                    <Message>Task update or deletion error</Message>
+                    <Name>task:TransactionRollbackFailure</Name>
+                    <Value>115</Value>
+                </Task>
+                <Task>
+                    <Message>Task registered without credentials</Message>
+                    <Name>task:TaskRegisteredWithoutCreds</Name>
+                    <Value>116</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered on Idle</Message>
+                    <Name>task:IdleTrigger</Name>
+                    <Value>117</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered by computer start-up</Message>
+                    <Name>task:BootTrigger</Name>
+                    <Value>118</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered on log-on</Message>
+                    <Name>task:LogonTrigger</Name>
+                    <Value>119</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered on local console connect</Message>
+                    <Name>task:ConsoleConnectTrigger</Name>
+                    <Value>120</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered on local console disconnect</Message>
+                    <Name>task:ConsoleDisconnectTrigger</Name>
+                    <Value>121</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered on remote console connect</Message>
+                    <Name>task:RemoteConnectTrigger</Name>
+                    <Value>122</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered on remote console disconnect</Message>
+                    <Name>task:RemoteDisconnectTrigger</Name>
+                    <Value>123</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered by locking the workstation</Message>
+                    <Name>task:SessionLockTrigger</Name>
+                    <Value>124</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered by unlocking the workstation</Message>
+                    <Name>task:SessionUnlockTrigger</Name>
+                    <Value>125</Value>
+                </Task>
+                <Task>
+                    <Message>Task restarted on failure</Message>
+                    <Name>task:FailedTaskRestart</Name>
+                    <Value>126</Value>
+                </Task>
+                <Task>
+                    <Message>Task restarted on failure</Message>
+                    <Name>task:RejectedTaskRestart</Name>
+                    <Value>127</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met, beyond end time</Message>
+                    <Name>task:IgnoredTaskRestart</Name>
+                    <Value>128</Value>
+                </Task>
+                <Task>
+                    <Message>Created Task Process</Message>
+                    <Name>task:CreatedTaskProcess</Name>
+                    <Value>129</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met, service busy</Message>
+                    <Name>task:TaskNotRunServiceBusy</Name>
+                    <Value>130</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met, quota exceeded</Message>
+                    <Name>task:TaskNotStartedTaskQuotaExceeded</Name>
+                    <Value>131</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition warning, quota approaching</Message>
+                    <Name>task:TaskQuotaApproaching</Name>
+                    <Value>132</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met, quota exceeded</Message>
+                    <Name>task:TaskNotStartedEngineQuotaExceeded</Name>
+                    <Value>133</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition warning, quota approaching</Message>
+                    <Name>task:EngineQuotaApproaching</Name>
+                    <Value>134</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met, machine not idle</Message>
+                    <Name>task:NoStartWithoutIdle</Name>
+                    <Value>135</Value>
+                </Task>
+                <Task>
+                    <Message>Task Completion Pending</Message>
+                    <Name>task:JobCompletionPending</Name>
+                    <Value>136</Value>
+                </Task>
+                <Task>
+                    <Message>Task registration updated</Message>
+                    <Name>task:TaskUpdated</Name>
+                    <Value>140</Value>
+                </Task>
+                <Task>
+                    <Message>Task registration deleted</Message>
+                    <Name>task:TaskDeleted</Name>
+                    <Value>141</Value>
+                </Task>
+                <Task>
+                    <Message>Task disabled</Message>
+                    <Name>task:TaskDisabled</Name>
+                    <Value>142</Value>
+                </Task>
+                <Task>
+                    <Message>Task triggered by coming out of suspend mode</Message>
+                    <Name>task:ComputerWakeupToStartTask</Name>
+                    <Value>145</Value>
+                </Task>
+                <Task>
+                    <Message>Task loading at service start-up failed</Message>
+                    <Name>task:TaskLoadFailed</Name>
+                    <Value>146</Value>
+                </Task>
+                <Task>
+                    <Message>Task image recovered after OS migration</Message>
+                    <Name>task:TaskImageRecoveredAfterMigration</Name>
+                    <Value>147</Value>
+                </Task>
+                <Task>
+                    <Message>Task image recovering failed after OS migration</Message>
+                    <Name>task:TaskImageRecoverFailedAfterMigration</Name>
+                    <Value>148</Value>
+                </Task>
+                <Task>
+                    <Message>Task is using a combination of properties that is incompatible with the scheduling engine</Message>
+                    <Name>task:TaskUbpmCompatibilityIssueDetected</Name>
+                    <Value>149</Value>
+                </Task>
+                <Task>
+                    <Message>Task registration on event failed</Message>
+                    <Name>task:TaskEventSubscriptionFailed</Name>
+                    <Value>150</Value>
+                </Task>
+                <Task>
+                    <Message>Task Scheduler failed to instantiate task at service start-up.</Message>
+                    <Name>task:TaskInstantiateFailed</Name>
+                    <Value>151</Value>
+                </Task>
+                <Task>
+                    <Message>Task was redirected to legacy engine</Message>
+                    <Name>task:TaskUbpmCompatibilityIssueResolved</Name>
+                    <Value>152</Value>
+                </Task>
+                <Task>
+                    <Message>Missed task start rejected</Message>
+                    <Name>task:MissedTaskRejected</Name>
+                    <Value>153</Value>
+                </Task>
+                <Task>
+                    <Message>Action started</Message>
+                    <Name>task:Action</Name>
+                    <Value>200</Value>
+                </Task>
+                <Task>
+                    <Message>Action completed</Message>
+                    <Name>task:ActionCompleted</Name>
+                    <Value>201</Value>
+                </Task>
+                <Task>
+                    <Message>Action failed</Message>
+                    <Name>task:ActionFailed</Name>
+                    <Value>202</Value>
+                </Task>
+                <Task>
+                    <Message>Action failed to start</Message>
+                    <Name>task:ActionFailedToStart</Name>
+                    <Value>203</Value>
+                </Task>
+                <Task>
+                    <Message>Task failed to start on event</Message>
+                    <Name>task:EventRenderFailed</Name>
+                    <Value>204</Value>
+                </Task>
+                <Task>
+                    <Message>Task failed to start on event pattern match</Message>
+                    <Name>task:EventAggregateFailed</Name>
+                    <Value>205</Value>
+                </Task>
+                <Task>
+                    <Message>Task engine launched</Message>
+                    <Name>task:Session</Name>
+                    <Value>300</Value>
+                </Task>
+                <Task>
+                    <Message>Task engine properly shut down</Message>
+                    <Name>task:TaskEngineExit</Name>
+                    <Value>301</Value>
+                </Task>
+                <Task>
+                    <Message>Task engine shut down due to error</Message>
+                    <Name>task:TaskEngineError</Name>
+                    <Value>303</Value>
+                </Task>
+                <Task>
+                    <Message>Task sent to engine</Message>
+                    <Name>task:SessionSentJob</Name>
+                    <Value>304</Value>
+                </Task>
+                <Task>
+                    <Message>Task failed to be sent to engine</Message>
+                    <Name>task:SessionSentJobFailed</Name>
+                    <Value>305</Value>
+                </Task>
+                <Task>
+                    <Message>Engine failed to receive the task</Message>
+                    <Name>task:SessionProcessMessage</Name>
+                    <Value>306</Value>
+                </Task>
+                <Task>
+                    <Message>Service Engine connection failure</Message>
+                    <Name>task:SessionManagerConnectFailed</Name>
+                    <Value>307</Value>
+                </Task>
+                <Task>
+                    <Message>Service Engine connected</Message>
+                    <Name>task:SessionManagerConnect</Name>
+                    <Value>308</Value>
+                </Task>
+                <Task>
+                    <Message>Engine orphaned</Message>
+                    <Name>task:SessionJobsOrphaned</Name>
+                    <Value>309</Value>
+                </Task>
+                <Task>
+                    <Message>Task Engine started</Message>
+                    <Name>task:SessionProcessStart</Name>
+                    <Value>310</Value>
+                </Task>
+                <Task>
+                    <Message>Task Engine failed to start</Message>
+                    <Name>task:SessionProcessStartFailed</Name>
+                    <Value>311</Value>
+                </Task>
+                <Task>
+                    <Message>Task Engine job object created</Message>
+                    <Name>task:SessionWin32ObjCreated</Name>
+                    <Value>312</Value>
+                </Task>
+                <Task>
+                    <Message>Service Engine channel ready</Message>
+                    <Name>task:SessionChannelReady</Name>
+                    <Value>313</Value>
+                </Task>
+                <Task>
+                    <Message>Task Engine idle</Message>
+                    <Name>task:SessionProcessIdle</Name>
+                    <Value>314</Value>
+                </Task>
+                <Task>
+                    <Message>Service Engine connection failure</Message>
+                    <Name>task:SessionProcessConnect</Name>
+                    <Value>315</Value>
+                </Task>
+                <Task>
+                    <Message>Engine failed to send message to service</Message>
+                    <Name>task:SessionMessageSend</Name>
+                    <Value>316</Value>
+                </Task>
+                <Task>
+                    <Message>Task Engine started</Message>
+                    <Name>task:SessionMain</Name>
+                    <Value>317</Value>
+                </Task>
+                <Task>
+                    <Message>Task engine properly shut down</Message>
+                    <Name>task:SessionMainShutdown</Name>
+                    <Value>318</Value>
+                </Task>
+                <Task>
+                    <Message>Task Engine received message to start task</Message>
+                    <Name>task:SessionJob</Name>
+                    <Value>319</Value>
+                </Task>
+                <Task>
+                    <Message>Task Engine received message to stop task</Message>
+                    <Name>task:SessionJobReceivedStop</Name>
+                    <Value>320</Value>
+                </Task>
+                <Task>
+                    <Message>Launch request ignored, instance already running</Message>
+                    <Name>task:NewInstanceIgnored</Name>
+                    <Value>322</Value>
+                </Task>
+                <Task>
+                    <Message>Launch request acknowledged, current instance stopped</Message>
+                    <Name>task:RunningInstanceStopped</Name>
+                    <Value>323</Value>
+                </Task>
+                <Task>
+                    <Message>Launch request queued, instance already running</Message>
+                    <Name>task:NewInstanceQueued</Name>
+                    <Value>324</Value>
+                </Task>
+                <Task>
+                    <Message>Launch request queued</Message>
+                    <Name>task:TaskInstanceQueued</Name>
+                    <Value>325</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met, computer on batteries</Message>
+                    <Name>task:NoStartOnBatteries</Name>
+                    <Value>326</Value>
+                </Task>
+                <Task>
+                    <Message>Task stopping due to switching to batteries</Message>
+                    <Name>task:StoppingOnBatteries</Name>
+                    <Value>327</Value>
+                </Task>
+                <Task>
+                    <Message>Task stopping due to computer not idle</Message>
+                    <Name>task:StoppingOffIdle</Name>
+                    <Value>328</Value>
+                </Task>
+                <Task>
+                    <Message>Task stopping due to timeout reached</Message>
+                    <Name>task:StoppingOnTimeout</Name>
+                    <Value>329</Value>
+                </Task>
+                <Task>
+                    <Message>Task stopping due to user request</Message>
+                    <Name>task:StoppingOnRequest</Name>
+                    <Value>330</Value>
+                </Task>
+                <Task>
+                    <Message>Task failed to stop on timeout</Message>
+                    <Name>task:TimeoutWontWork</Name>
+                    <Value>331</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met, user not logged-on</Message>
+                    <Name>task:NoStartUserNotLogged</Name>
+                    <Value>332</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met, session is RemoteApp Session</Message>
+                    <Name>task:NoStartOnRailSession</Name>
+                    <Value>333</Value>
+                </Task>
+                <Task>
+                    <Message>Launch condition not met – session is a Worker Session</Message>
+                    <Name>task:NoStartOnWorkerSession</Name>
+                    <Value>334</Value>
+                </Task>
+                <Task>
+                    <Message>Service started</Message>
+                    <Name>task:ServiceMain</Name>
+                    <Value>400</Value>
+                </Task>
+                <Task>
+                    <Message>Service failed to start</Message>
+                    <Name>task:ServiceStartFailed</Name>
+                    <Value>401</Value>
+                </Task>
+                <Task>
+                    <Message>Service is shutting down</Message>
+                    <Name>task:ServiceStop</Name>
+                    <Value>402</Value>
+                </Task>
+                <Task>
+                    <Message>Service critical error</Message>
+                    <Name>task:ServiceError</Name>
+                    <Value>403</Value>
+                </Task>
+                <Task>
+                    <Message>Service RPC error</Message>
+                    <Name>task:ServiceRPCInitError</Name>
+                    <Value>404</Value>
+                </Task>
+                <Task>
+                    <Message>Service COM error</Message>
+                    <Name>task:ServiceCOMInitError</Name>
+                    <Value>405</Value>
+                </Task>
+                <Task>
+                    <Message>Cred store initialisation error</Message>
+                    <Name>task:ServiceCredStoreInitFailed</Name>
+                    <Value>406</Value>
+                </Task>
+                <Task>
+                    <Message>LSA initialisation error</Message>
+                    <Name>task:ServiceLSAInitFailed</Name>
+                    <Value>407</Value>
+                </Task>
+                <Task>
+                    <Message>Idle detection error</Message>
+                    <Name>task:ServiceIdleInitFailed</Name>
+                    <Value>408</Value>
+                </Task>
+                <Task>
+                    <Message>Time change notification error</Message>
+                    <Name>task:ServiceTimeChangeInitFailed</Name>
+                    <Value>409</Value>
+                </Task>
+                <Task>
+                    <Message>Wake-up timer error</Message>
+                    <Name>task:ServiceSetWakeupTimerFailed</Name>
+                    <Value>410</Value>
+                </Task>
+                <Task>
+                    <Message>Service signalled time change</Message>
+                    <Name>task:ServiceTimeChangeSignaled</Name>
+                    <Value>411</Value>
+                </Task>
+                <Task>
+                    <Message>Task Misconfiguration</Message>
+                    <Name>task:TaskMisconfigured</Name>
+                    <Value>414</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Task Register</Message>
+                    <Name>task:IdleTaskRegister</Name>
+                    <Value>500</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Task Unregister</Message>
+                    <Name>task:IdleTaskUnregister</Name>
+                    <Value>501</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Task Execute</Message>
+                    <Name>task:IdleTaskExecute</Name>
+                    <Value>502</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Task Notify</Message>
+                    <Name>task:IdleTaskNotify</Name>
+                    <Value>504</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Task Explicit Processing</Message>
+                    <Name>task:IdleTaskExplicitProcessing</Name>
+                    <Value>506</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Task Explicit Processing Active</Message>
+                    <Name>task:IdleTaskExplicitProcessingActive</Name>
+                    <Value>508</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Task Power Notification Received</Message>
+                    <Name>task:IdleTaskPowerNotificationReceived</Name>
+                    <Value>509</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Task PerfTrack Resource Consumption</Message>
+                    <Name>task:ItSpEvt_PerfTrack_IdleEntryStats</Name>
+                    <Value>510</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Task PerfTrack Idle Exit</Message>
+                    <Name>task:ItSpEvt_PerfTrack_IdleExitStats</Name>
+                    <Value>511</Value>
+                </Task>
+                <Task>
+                    <Message>Idle Check Point</Message>
+                    <Name>task:IdleCheckPoint</Name>
+                    <Value>512</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module started</Message>
+                    <Name>task:CompatStart</Name>
+                    <Value>700</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module failed to start</Message>
+                    <Name>task:CompatStartFailed</Name>
+                    <Value>701</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module RPC failed</Message>
+                    <Name>task:CompatStartRPCFailed</Name>
+                    <Value>702</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module Net Schedule API failed</Message>
+                    <Name>task:CompatStartNetschedFailed</Name>
+                    <Value>703</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module LSA failed</Message>
+                    <Name>task:CompatStartLSAFailed</Name>
+                    <Value>704</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module directory monitoring failed</Message>
+                    <Name>task:CompatDirectoryMonitoringFailed</Name>
+                    <Value>705</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module task status update failed</Message>
+                    <Name>task:CompatTaskStatusUpdateFailed</Name>
+                    <Value>706</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module task deletion failed</Message>
+                    <Name>task:CompatTaskDeleteFailed</Name>
+                    <Value>707</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module security descriptor failed</Message>
+                    <Name>task:CompatTaskSetSDFailed</Name>
+                    <Value>708</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module task update failed</Message>
+                    <Name>task:CompatTaskUpdateFailed</Name>
+                    <Value>709</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module tasks upgrade failed</Message>
+                    <Name>task:CompatUpgradeFailed</Name>
+                    <Value>710</Value>
+                </Task>
+                <Task>
+                    <Message>Compatibility module tasks upgrade undetermined</Message>
+                    <Name>task:CompatUpgradeUndetermined</Name>
+                    <Value>711</Value>
+                </Task>
+                <Task>
+                    <Message>Credential store upgrade failed</Message>
+                    <Name>task:Beta2CredStoreUpgradeFailed</Name>
+                    <Value>712</Value>
+                </Task>
+                <Task>
+                    <Message>TaskScheduler Operational log was disabled</Message>
+                    <Name>task:OpChannelDisabled</Name>
+                    <Value>719</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance state has changed</Message>
+                    <Name>task:MaintenanceStateChanged</Name>
+                    <Value>800</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance launch failed</Message>
+                    <Name>task:MaintenanceLaunchError</Name>
+                    <Value>801</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance reconfiguration failed</Message>
+                    <Name>task:MaintenanceReconfigurationError</Name>
+                    <Value>802</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance Scheduler engine task error</Message>
+                    <Name>task:MaintenanceSchedulerTaskError</Name>
+                    <Value>803</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance task cycle dependency detected</Message>
+                    <Name>task:MaintenanceCycleDependencyError</Name>
+                    <Value>804</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance task is behind deadline</Message>
+                    <Name>task:MaintenanceTaskBehindDeadline</Name>
+                    <Value>805</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance task processing error</Message>
+                    <Name>task:MaintenanceTaskError</Name>
+                    <Value>806</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance complete</Message>
+                    <Name>task:MaintenanceComplete</Name>
+                    <Value>807</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance wake-up requested</Message>
+                    <Name>task:MaintenanceTaskWakeupRequested</Name>
+                    <Value>808</Value>
+                </Task>
+                <Task>
+                    <Message>Maintenance Scheduler configuration error</Message>
+                    <Name>task:MaintenanceKeysMalformed</Name>
+                    <Value>809</Value>
+                </Task>
+                <Task>
+                    <Message>Method Failure</Message>
+                    <Name>task:MethodFailure</Name>
+                    <Value>998</Value>
+                </Task>
+                <Task>
+                    <Message>Debug</Message>
+                    <Name>task:Debug</Name>
+                    <Value>999</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Launch Failure</Message>
+                    <Name>StartFailed</Name>
+                    <Value>101</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Run Failure</Message>
+                    <Name>ExecutionFailed</Name>
+                    <Value>102</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Termination</Message>
+                    <Name>ExecutionTerminated</Name>
+                    <Value>103</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Failure</Message>
+                    <Name>Failed</Name>
+                    <Value>104</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>ForcedIdleProcessing</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

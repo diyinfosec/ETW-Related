@@ -1,0 +1,196 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WinRM</Name>
+        <Metadata>
+            <Guid>{A7975C8F-AC13-49F1-87DA-5A984A4AB417}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\wsmres.dll</ResourceFilePath>
+            <ParameterFilePath>C:\WINDOWS\system32\wsmres.dll</ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\wsmres.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=wsmres.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Windows Remote Management</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WinRM/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-WinRM/Operational</Message>
+                    <Path>Microsoft-Windows-WinRM/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Microsoft-Windows-WinRM/Analytic</Message>
+                    <Path>Microsoft-Windows-WinRM/Analytic</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WSMan API Initialize</Message>
+                    <Name>Task.ApiInitialize</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>WSMan API Deinitialize</Message>
+                    <Name>Task.ApiDeinitialize</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>WSMan Session initialize</Message>
+                    <Name>Task.SessionInitialize</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>WSMan Session deinitialize</Message>
+                    <Name>Task.SessionDeinitialize</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>WSMan API call</Message>
+                    <Name>Task.ApiCall</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Auto-detecting proxy settings</Message>
+                    <Name>Task.Proxy</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>User authentication</Message>
+                    <Name>Task.Authentication</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>User authorization</Message>
+                    <Name>Task.Authorization</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Request handling</Message>
+                    <Name>Task.RequestHandling</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Response handling</Message>
+                    <Name>Task.ResponseHandling</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>Winrm service start/stop</Message>
+                    <Name>Task.ServiceMain</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Winrm configuration</Message>
+                    <Name>Task.Config</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Winrm Operation</Message>
+                    <Name>Task.Operation</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>WinRM MI Protocol Handler</Message>
+                    <Name>Task.WinRM_Application</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>WinRM MI Session</Message>
+                    <Name>Task.WinRM_Session</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>WinRM MI Operation</Message>
+                    <Name>Task.WinRM_Operation</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Winrm Verbose Message</Message>
+                    <Name>Task.Verbose_Message</Name>
+                    <Value>17</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Soap Trace</Message>
+                    <Name>Keyword.SoapTrace</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Client</Message>
+                    <Name>Keyword.Client</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Server</Message>
+                    <Name>Keyword.Server</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Security</Message>
+                    <Name>Keyword.Security</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>QuotaViolation</Message>
+                    <Name>Keyword.QuotaViolation</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Activity Transfer</Message>
+                    <Name>Keyword.Transfer</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Error</Message>
+                    <Name>Keyword.Error</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,31 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StorageManagement-WSP-Host</Name>
+        <Metadata>
+            <Guid>{595F33EA-D4AF-4F4D-B4DD-9DACDD17FC6E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A Windows Storage Provider failed to load.
+
+Provider:		%1
+Provider DLL:	%2
+Error Code:	%3
+Load Phase:	%4
+
+This failure is indicative of a bad installation, or a missing or corrupt DLL.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProviderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProviderDLL" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LoadPhase" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,40 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SmartCard-Audit</Name>
+        <Metadata>
+            <Guid>{09AC07B9-6AC9-43BC-A50F-58419A797C69}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A smart card holder verification (CHV) attempt failed.
+
+Process image: %1
+PID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A smart card holder verification (CHV) attempt succeeded.
+
+Process image: %1
+PID: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

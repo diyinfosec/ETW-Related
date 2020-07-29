@@ -1,0 +1,34 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SCPNP</Name>
+        <Metadata>
+            <Guid>{9F650C63-9409-453C-A652-83D7185A2E83}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not get device ID for smart card in reader %1. The return code is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReaderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Software successfully installed for smart card in reader %1. The smart card name is %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ReaderName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FriendlyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,66 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Services</Name>
+        <Metadata>
+            <Guid>{0063715B-EEDA-4007-9429-AD526F62696E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>103</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GroupName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>104</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="GroupName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ExecutionPhase" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CurrentState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StartType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ImageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>106</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>107</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

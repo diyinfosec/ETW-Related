@@ -1,0 +1,45 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PrintService-USBMon</Name>
+        <Metadata>
+            <Guid>{7F812073-B28D-4AFC-9CED-B8010F914EF6}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\USBMon.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\USBMon.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=USBMon.dll&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-PrintService-USBMon</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-PrintService-USBMon/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Loading a Bidirectional Communication Schema extension file into the USB Port Monitor</Message>
+                    <Name>USBMon_Task_ExtensionFile_Load</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Executing a JavaScript Extension function within the USB Port Monitor</Message>
+                    <Name>USBMon_Task_JavaScript_Execution</Name>
+                    <Value>2</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-LanguageProfile</Name>
+        <Metadata>
+            <Guid>{F91577C6-A704-4A0A-A8F5-7D10DFC761DF}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

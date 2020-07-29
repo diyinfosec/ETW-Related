@@ -1,0 +1,59 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PrintService-USBMon</Name>
+        <Metadata>
+            <Guid>{7F812073-B28D-4AFC-9CED-B8010F914EF6}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The USB Port Monitor encountered an error when trying to load/validate the Bidirectional Communication Schema XML extension file. PrinterName: %1, XML Extension FIle Name: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The USB Port Monitor encountered an error when trying to load/validate the Bidirectional Communication Schema JavaScript extension file. PrinterName: %1, JavaScript Extension FIle Name: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PrinterName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FilePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The USB Port Monitor encountered an error when executing a function call within the Bidirectional Communication Schema JavaScript extension file. Execution Error code: %1, Error text: %2, Error line#: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorText" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FailingLine" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The USB Port Monitor encountered an error when executing a function call within the Bidirectional Communication Schema JavaScript extension file and the function terminated unexpectedly. Execution Error code: %1, Error text: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorText" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

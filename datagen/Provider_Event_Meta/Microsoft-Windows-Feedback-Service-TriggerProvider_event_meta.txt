@@ -1,0 +1,20 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Feedback-Service-TriggerProvider</Name>
+        <Metadata>
+            <Guid>{E46EEAD8-0C54-4489-9898-8FA79D059E0E}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Windows Error Reporting service has been triggered.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

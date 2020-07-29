@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft.Windows.ResourceManager</Name>
+        <Metadata>
+            <Guid>{4180C4F7-E238-5519-338F-EC214F0B49AA}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

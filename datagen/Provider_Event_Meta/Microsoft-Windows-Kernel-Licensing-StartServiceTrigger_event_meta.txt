@@ -1,0 +1,16 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Licensing-StartServiceTrigger</Name>
+        <Metadata>
+            <Guid>{F5528ADA-BE5F-4F14-8AEF-A95DE7281161}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

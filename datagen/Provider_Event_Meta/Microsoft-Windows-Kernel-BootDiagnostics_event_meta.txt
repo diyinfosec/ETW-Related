@@ -1,0 +1,16 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-BootDiagnostics</Name>
+        <Metadata>
+            <Guid>{96AC7637-5950-4A30-B8F7-E07E8E5734C1}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>501</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

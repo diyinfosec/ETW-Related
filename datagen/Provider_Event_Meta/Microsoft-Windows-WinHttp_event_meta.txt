@@ -1,0 +1,843 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WinHttp</Name>
+        <Metadata>
+            <Guid>{7D44233D-3055-4B9C-BA64-0D47CA40A232}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="load/unload info" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%2(%1) API called.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Api" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%2(%1) API returned successfully.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Api" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%2(%1) API failed with an error = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Api" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%2(%1) API pending completion.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Api" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%2(%1) API completed.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Api" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%2(%1) API completed with an error = %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ApiHandle" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Api" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Result" inType="win:UInt32" outType="win:ErrorCode"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: WinHttpSetCredentials Details: Target (%2) Schemes (%3) UserName (%4) Password (%5)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hRequest" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AuthTargets" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AuthScheme" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Password" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>801</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Client begins attempts to locate the WPAD configuration file: ConnectionName=%2, DetectFlags=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConnectionNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConnectionName" inType="win:AnsiString" outType="xs:string" length="_ConnectionNameLength"/>
+  <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>801</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Client begins attempts to locate the WPAD configuration file: ConnectionName=%2, DetectFlags=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConnectionNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConnectionName" inType="win:UnicodeString" outType="xs:string" length="_ConnectionNameLength"/>
+  <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Begin search for configuration file using DHCP: Interface=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Interface" inType="win:AnsiString" outType="xs:string" length="_InterfaceLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>802</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Begin search for configuration file using DHCP: Interface=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string" length="_InterfaceLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>803</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WPAD configuration file found using DHCP: Interface=%2, ConfigurationURL=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Interface" inType="win:AnsiString" outType="xs:string" length="_InterfaceLength"/>
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>803</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+WPAD configuration file found using DHCP: Interface=%2, ConfigurationURL=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string" length="_InterfaceLength"/>
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>804</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Search for WPAD configuration file using DHCP failed: Interface=%2, ConfigurationURL=%4, Error=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Interface" inType="win:AnsiString" outType="xs:string" length="_InterfaceLength"/>
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>804</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Search for WPAD configuration file using DHCP failed: Interface=%2, ConfigurationURL=%4, Error=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_InterfaceLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Interface" inType="win:UnicodeString" outType="xs:string" length="_InterfaceLength"/>
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>805</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Begin search for configuration file using DNS: DetectFlags=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>806</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WPAD configuration file found using DNS: ConfigurationURL=%2, DetectFlags=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength"/>
+  <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>806</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+WPAD configuration file found using DNS: ConfigurationURL=%2, DetectFlags=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength"/>
+  <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>807</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Search for WPAD configuration file using DNS failed: DetectFlags=%1, Error=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DetectFlags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>808</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Search for WPAD configruation file failed: Error=%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>809</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Begin downloading the configuration file from the configuration URL: ConfigurationURL=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>809</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Begin downloading the configuration file from the configuration URL: ConfigurationURL=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>810</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Client successfully downloaded the configuration file from the configuration URL: ConfigurationURL=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>810</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Client successfully downloaded the configuration file from the configuration URL: ConfigurationURL=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>811</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Downloading the configuration file from the configuration URL failed: ConfigurationURL=%2, Error=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>811</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Downloading the configuration file from the configuration URL failed: ConfigurationURL=%2, Error=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>812</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The downloaded configuration file could not be used: ConfigurationURL=%2, MIMEType=%4, Error=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:AnsiString" outType="xs:string" length="_ConfigurationURLLength"/>
+  <data name="_MIMETypeLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MIMEType" inType="win:AnsiString" outType="xs:string" length="_MIMETypeLength"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>812</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+The downloaded configuration file could not be used: ConfigurationURL=%2, MIMEType=%4, Error=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_ConfigurationURLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ConfigurationURL" inType="win:UnicodeString" outType="xs:string" length="_ConfigurationURLLength"/>
+  <data name="_MIMETypeLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="MIMEType" inType="win:UnicodeString" outType="xs:string" length="_MIMETypeLength"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>813</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Searching for Proxy Information for the URL: URL=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="URL" inType="win:AnsiString" outType="xs:string" length="_URLLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>813</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Searching for Proxy Information for the URL: URL=%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string" length="_URLLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>814</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Client has successfully retrieved proxy data for accessing a specified resource: URL=%2, ProxyString=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="URL" inType="win:AnsiString" outType="xs:string" length="_URLLength"/>
+  <data name="_ProxyStringLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProxyString" inType="win:AnsiString" outType="xs:string" length="_ProxyStringLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>814</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Client has successfully retrieved proxy data for accessing a specified resource: URL=%2, ProxyString=%4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string" length="_URLLength"/>
+  <data name="_ProxyStringLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProxyString" inType="win:UnicodeString" outType="xs:string" length="_ProxyStringLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>815</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Error locating proxy information for the URL: URL=%2, Error=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="URL" inType="win:AnsiString" outType="xs:string" length="_URLLength"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>815</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Error locating proxy information for the URL: URL=%2, Error=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_URLLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="URL" inType="win:UnicodeString" outType="xs:string" length="_URLLength"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>816</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Blocking autoproxy determination started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>817</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Blocking autoproxy determination stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>818</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+WinHTTP Activity Transfer Event]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>819</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AutoProxy SWPAD Decision (%1) NumConnections (%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WPADNetworkDecision" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="NetworkCount" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>820</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy host IP lookup started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>821</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy host IP lookup stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>822</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy SWPAD lookup started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>823</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy SWPAD lookup stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>824</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy Detection with SWPAD ON started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>825</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy Detection with SWPAD ON stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>826</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy Detection with SWPAD UNKNOWN started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>827</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy Detection with SWPAD UNKNOWN stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>828</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy Script Download Started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>829</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy Script Download Stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>834</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy full scenario started]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>835</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Autoproxy full scenario stopped]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UniqueId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="AddressName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="error" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="AddressName" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12501</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service detected an internal data corruption.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12503</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service has been idle for %1 minutes, it will be shut down.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="IdleTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12506</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service encountered a system error from %1: (Error Code = %3) %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Function name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error text" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Error code" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12507</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service failed to allocate a critical resource. The system may be running low on physical memory.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12509</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service detected a non- local RPC request (Transport Type = %1); Access Denied. There may have been an rogue attempt to gain access to the service through the network.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Transport type" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12511</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service failed to abort all pending requests in %1 seconds.  The system WinHTTP Services may have been under stress and slow to respond to cancel requests.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="param1" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12512</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service failed parameter validation of a client request.  This may be due to an unexpected error from the system WinHTTP Services.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12513</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service is shutting down and not accepting client requests.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12514</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service detected an unexpected exception from the system WinHTTP Services. (Exception Code = %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Exception code" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12516</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service discarded and is re-attempting a request after a critical power event.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12517</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service suspended operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12518</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The WinHTTP Web Proxy Auto-Discovery Service resumed operation.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58999</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59995</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Canceling %2 Thread Action (Context: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EtwQueueActionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59996</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Queue %2 Thread Action (Context: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EtwQueueActionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59997</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stopping %2 Thread Action (Context: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EtwQueueActionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59998</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Starting %2 Thread Action (Context: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="EtwQueueActionType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>59999</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+(%1:%2) %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Length" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Message" inType="win:AnsiString" outType="xs:string" length="Length"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

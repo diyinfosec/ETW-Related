@@ -1,0 +1,79 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SystemEventsBroker</Name>
+        <Metadata>
+            <Guid>{B6BFCC79-A3AF-4089-8D4D-0EECB1B80779}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>15</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+SystemEventsBroker CreateEvent called for Event ID %1, UserSID: %2 with Event Type %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+  <data name="EventType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+SystemEventsBroker DeleteEvent called for Event ID %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+SystemEventsBroker SignalEvent for Event ID %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+SystemEventsBroker DropEvent for Event ID %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrokeredEventId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+SystemEventsBroker SessionConnectedEvent, SessionID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="UserSID" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>2</Version>
+                <Message><![CDATA[
+SystemEventsBroker SessionConnectedEvent, SessionID: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionID" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

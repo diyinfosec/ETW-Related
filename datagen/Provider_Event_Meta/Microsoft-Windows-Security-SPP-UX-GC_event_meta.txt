@@ -1,0 +1,22 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Security-SPP-UX-GC</Name>
+        <Metadata>
+            <Guid>{BBBDD6A3-F35E-449B-A471-4D830C8EDA1F}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

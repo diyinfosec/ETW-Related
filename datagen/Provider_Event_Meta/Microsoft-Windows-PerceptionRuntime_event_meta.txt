@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PerceptionRuntime</Name>
+        <Metadata>
+            <Guid>{ADD0DE40-32B0-4B58-9D5E-938B2F5C1D1F}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,462 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkProvisioning</Name>
+        <Metadata>
+            <Guid>{93A19AB3-FB2C-46EB-91EF-56B0A318B983}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Creating provisioning document (%1 bytes)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SizeOfXMLInBytes" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Finished creating provisioning document (Result=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+XML parsing completed (Result=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+XML schema validation completed (Result=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+XML signature verification completed (Result=%1)
+
+[Details]
+Carrier Id: %2
+Subscriber Id: %3
+DeviceId: %4
+Signer: %5
+CertificateIssuer: %6
+CertificateSubject: %7]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="CarrierId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubscriberId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Signer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertificateIssuer" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CertificateSubject" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+XML stream rejected because the size exceeded the limit (%1 > %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StreamSize" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="StreamSizeLimit" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+XML stream rejected because of a parse error
+
+[Details]
+Error code: %1
+Error Message: %2
+Description: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Description" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+XML stream rejected because schema validation failed
+
+[Details]
+Error code: %1
+Line: %2
+Line Pos: %3
+Reason: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Line" inType="win:Int32" outType="xs:int"/>
+  <data name="LinePos" inType="win:Int32" outType="xs:int"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+XML stream rejected because signature verification failed (%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Provisioning document started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Finished provisioning document (Result=%1 ErrorOccured=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ErrorOccurred" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Certificate verification completed (bool=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BoolResult" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Trigger to refresh task completed (Result=%1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Activation method %1 has been started
+
+[Details]
+Carrier Id: %2
+Subscriber Id: %3
+Params: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActivationMethod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CarrierId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubscriberId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Params" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Activation method %1 has finished 
+
+[Details]
+ICarrier Id: %2
+Subscriber Id: %3
+Params: %4
+Result: %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActivationMethod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CarrierId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubscriberId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Params" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The radio is already off on interface %1; assuming the user has switched it off; aborting activation method]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to turn the radio %2 on interface %1 (error=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RadioState" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Interface %1 is not registered to the home network; aborting connection attempt (register state = %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RegisterState" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Cannot locate the %2 profile on interface %1 (error=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection to profile %2 failed on interface %1 (error=%3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unable to disconnect interface %1 from network (error=%2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Purge task has been started]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Purge task has finished
+
+Result: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Calling Purge
+
+[Details]
+Carrier Id: %1
+Subscriber Id: %2
+AppId: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CarrierId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SubscriberId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Handler %1: provision (start)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Handler %1: provision (stop) [result: %2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="HasResults" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Handler %1: purge (start)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Handler %1: purge (stop)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HandlerName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to connect to the %1: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to set WLAN profile %2 on interface %1 with error code %3 (reason=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ReasonCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to set WWAN profile %2 on interface %1 with error code %3 (reason=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ReasonCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to apply metadata to profile %2 on interface %1 with error code %3 (param=%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InterfaceGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ProfileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+  <data name="Parameter" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The message rule at position %1 failed validation.
+Xml:%2
+Reason:%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Position" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="RulesXml" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Provisioning results for caller application (AppId %1): [%2]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CallerAppId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,30 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Processor-Aggregator</Name>
+        <Metadata>
+            <Guid>{CBA16CF2-2FAB-49F8-89AE-894E718649E7}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NumProcessors" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Requested" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Acknowledged" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsSuccess" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

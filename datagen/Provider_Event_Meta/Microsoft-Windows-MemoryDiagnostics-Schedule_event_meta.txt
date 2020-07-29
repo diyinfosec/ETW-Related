@@ -1,0 +1,47 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MemoryDiagnostics-Schedule</Name>
+        <Metadata>
+            <Guid>{73E9C9DE-A148-41F7-B1DB-4DA051FDC327}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Windows Memory Diagnostic scheduled the testing of the computer's memory to run immediately]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LaunchType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScheduleType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Windows Memory Diagnostic scheduled the testing of the computer's memory to run the next time the computer starts]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LaunchType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScheduleType" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Windows Memory Diagnostic could not schedule the testing of the computer's memory]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="LaunchType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ScheduleType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

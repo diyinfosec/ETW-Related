@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-StackDB</Name>
+        <Metadata>
+            <Guid>{BF47012D-4413-4285-ACD3-278DF0342947}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

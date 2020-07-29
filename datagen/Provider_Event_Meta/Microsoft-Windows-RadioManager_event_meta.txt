@@ -1,0 +1,22 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RadioManager</Name>
+        <Metadata>
+            <Guid>{92061E3D-21CD-45BC-A3DF-0E8AE5E8580A}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8002</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

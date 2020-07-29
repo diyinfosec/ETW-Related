@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Tcpip-SQM-Provider</Name>
+        <Metadata>
+            <Guid>{C8F7689F-3692-4D66-B0C0-9536D21082C9}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,45 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-OOBE-Machine-Core</Name>
+        <Metadata>
+            <Guid>{EC276CDE-2A17-473C-A010-2FF78D5426D2}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5004</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Service" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DWORD" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Started" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5041</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5042</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5043</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5044</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

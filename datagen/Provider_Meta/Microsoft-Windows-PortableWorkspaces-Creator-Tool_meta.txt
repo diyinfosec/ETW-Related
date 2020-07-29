@@ -1,0 +1,75 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PortableWorkspaces-Creator-Tool</Name>
+        <Metadata>
+            <Guid>{42D5F8CB-0D2B-4522-8059-C35A37C94A77}</Guid>
+            <ResourceFilePath>C:\WINDOWS\System32\pwcreator.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\System32\pwcreator.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=pwcreator.exe&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Portable Workspaces Creator Tool</PublisherMessage>
+            <Channels>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Navigation from Welcome Page to the Device Page.</Message>
+                    <Name>WelcomePageToDevicePage</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Navigation from Device Page to the Install Source Page.</Message>
+                    <Name>DevicePageToInstallSourcePage</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Navigation from Install Source Page to the Ready to Create Page.</Message>
+                    <Name>InstallSourcePageToReadyToCreatePage</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>User pressed Create Workspace to provisioning progress bar is moving.</Message>
+                    <Name>StartProvisioning</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>User pressed select folder to Next Button is updated, either enabled or disabled.</Message>
+                    <Name>WindowsImageValidation</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>The list of drives is populated and responsive to selection.</Message>
+                    <Name>DriveListPopulation</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Provisioning of a portable workspace.</Message>
+                    <Name>Provision</Name>
+                    <Value>7</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

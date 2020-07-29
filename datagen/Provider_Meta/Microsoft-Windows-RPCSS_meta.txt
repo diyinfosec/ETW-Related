@@ -1,0 +1,55 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RPCSS</Name>
+        <Metadata>
+            <Guid>{D8975F88-7DDB-4ED0-91BF-3ADF48C48E0C}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\RpcEpMap.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\RpcEpMap.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=RpcEpMap.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Rpc-EndpointMapper</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>EndpointMapper</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Debug</Message>
+                    <Name>EpmapDebug</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Interface register</Message>
+                    <Name>EpmapInterfaceRegister</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Interface unregister</Message>
+                    <Name>EpmapInterfaceUnregister</Name>
+                    <Value>1024</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

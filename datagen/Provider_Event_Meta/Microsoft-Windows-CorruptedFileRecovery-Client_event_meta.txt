@@ -1,0 +1,47 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-CorruptedFileRecovery-Client</Name>
+        <Metadata>
+            <Guid>{BA093605-3909-4345-990B-26B746ADEE0A}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The system file %1 may be corrupted, which may have caused the application %2 to stop working. Windows could not repair this file automatically (error code %3). Run the command "sfc /scannow" at an administrative command prompt to check for errors and to repair the file if necessary.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The system file %1 may be corrupted, which may have caused the application %2 to stop working. Windows attempted to repair the file, but the operation was disabled by group policy.  Run the command "sfc /scannow" at an administrative command prompt to check for errors and to repair the file if necessary.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The system file %1 is corrupted, which may have caused the application %2 to stop working. Windows could not attempt to repair %1 because the operation was disabled by group policy.  Run the command "sfc /scannow" at an administrative command prompt to check for errors and to repair the file if necessary.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

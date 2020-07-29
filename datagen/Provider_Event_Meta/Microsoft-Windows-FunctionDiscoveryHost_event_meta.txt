@@ -1,0 +1,24 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-FunctionDiscoveryHost</Name>
+        <Metadata>
+            <Guid>{538CBBAD-4877-4EB2-B26E-7CAEE8F0F8CB}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Registration of the provider %1 failed with the following error: %2.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="String" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Filename" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

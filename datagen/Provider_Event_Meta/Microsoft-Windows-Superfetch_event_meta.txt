@@ -1,0 +1,588 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Superfetch</Name>
+        <Metadata>
+            <Guid>{99806515-9F51-4C2F-B918-1EAE407AA8CB}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreBitmap" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1001</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreBitmap" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreId" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreId" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreId" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreId" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PageCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScoreLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1007</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreId" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="PageCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ScoreLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1008</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContainerKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VirtualAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="InterpretedPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1009</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ContainerKey" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="VirtualAddress" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="InterpretedPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1010</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1011</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreBitmap" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1012</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StoreBitmap" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1013</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Private" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalPrivate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Total" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1014</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AllocPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AllocCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FreeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Tag" inType="win:AnsiString" outType="xs:string" length="4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1015</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AllocPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AllocCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FreeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Tag" inType="win:AnsiString" outType="xs:string" length="4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1016</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="InUse" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Free" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Available" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Cached" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PagedPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NonPagedPool" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Commit" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommitLimit" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1017</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AllocPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AllocCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FreeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Tag" inType="win:AnsiString" outType="xs:string" length="4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1018</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AllocPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AllocCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FreeCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Tag" inType="win:AnsiString" outType="xs:string" length="4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1019</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Fragmentation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AllocPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommitPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActivePages" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1020</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Fragmentation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AllocPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommitPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActivePages" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1021</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Fragmentation" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AllocPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CommitPages" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActivePages" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1038</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Processes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Handles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Objects" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Threads" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1039</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="PredictionPurpose" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Probability" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1040</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1041</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1042</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1043</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1044</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HResult" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1045</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1046</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SecondsSpentInQueue" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1047</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1048</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1049</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CommandCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1050</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="CPUUtilization" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiskUtilization" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GPUUtilization" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AvailableMemory" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ModifiedMemory" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OkToPrelaunch" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1051</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PrivateWS" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalPrivate" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TotalWS" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessAgeMHiandAppStateLo" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ProcessName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BgTaskCountUnrestricted" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="BgTaskCountACOnly" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1052</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1053</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Result" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1054</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FullPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LongLookahead" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="BenefitScore" inType="win:Int16" outType="xs:short"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1055</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FullPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UsedConditions" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1055</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FullPackageName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1056</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppNameKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NewFailCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="LaunchResult" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Requeue" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="AppStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1057</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppNameKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppSkipReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1058</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FullPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="TimeFromPrefetchToSwitchInMS" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewBenefitScore" inType="win:Int16" outType="xs:short"/>
+  <data name="NewAggregateBenefitScore" inType="win:Int16" outType="xs:short"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1059</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FullPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ReasonsNotToPrefetch" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1060</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FullPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AC Powered" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="Threshold" inType="win:Double" outType="xs:double"/>
+  <data name="Probability" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1061</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FullPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PreviousPrefetchTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="PrefetchCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1062</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Command" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AppType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1063</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FullPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Command" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1064</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="FullPackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PID" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1065</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppKey" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="AUMID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1066</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1067</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PagesCombined" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

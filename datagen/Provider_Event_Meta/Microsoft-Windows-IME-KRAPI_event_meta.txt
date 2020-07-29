@@ -1,0 +1,74 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-KRAPI</Name>
+        <Metadata>
+            <Guid>{7562948E-2671-4DDA-8F8F-BF945EF984A1}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>70</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_HanjaGetCandListStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>71</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_HanjaGetCandListEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>72</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_HanjaDictLoadStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>73</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_HanjaDictLoadEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>74</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_HanjaFinalizeCandStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>75</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_HanjaFinalizeCandEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>76</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_HanjaConvStart]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>77</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_HanjaConvEnd]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

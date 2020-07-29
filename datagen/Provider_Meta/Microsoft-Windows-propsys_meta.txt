@@ -1,0 +1,35 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-propsys</Name>
+        <Metadata>
+            <Guid>{9485FA1E-23CD-49A1-84E3-11D8BC550CB7}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\propsys.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\propsys.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Windows%c2%ae%20Search&amp;ProdVer=7.0.17134.1246&amp;FileName=propsys.dll&amp;FileVer=7.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-Property System</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>4294967295</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Classic</Message>
+                    <Name>win:EventlogClassic</Name>
+                    <Value>36028797018963968</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

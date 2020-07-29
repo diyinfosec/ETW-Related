@@ -1,0 +1,34 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PNRPSvc</Name>
+        <Metadata>
+            <Guid>{BBE94F36-F8DC-4C33-8227-81602B7A3D53}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>3221225572</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Peer Name Resolution Protocol Service did not start because IPv6 is not enabled on the system.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225573</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Peer Name Resolution Protocol Service service did not start because the receive message entry point (WSARecvMsg) is not defined.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3221225574</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Peer Name Resolution Protocol cloud did not start because the creation of the default identity failed with error code: %1.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

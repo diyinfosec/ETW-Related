@@ -1,0 +1,208 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-Guest-Drivers-IcSvc</Name>
+        <Metadata>
+            <Guid>{C18672D1-DC18-4DFD-91E4-170CF37160CF}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to initialize the backup components metadata in preparation for backup, status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to set context for shadow copy operations, status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to define overall configuration for a backup operation, status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to detect presence or absence of directly mapped disks like ISCSI and Fibre Channel disks in the system, status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not find a matching original volume for shadow volume %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Volume" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Some of the shadow Luns are not surfaced in the guest operating system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Not all of the shadow volumes arrived in the guest operating system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Hot backup is not supported on this version of the guest operating system, status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The selected writer %1 is in a failed state, status %2, %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Writer status" inType="win:Int32" outType="xs:int"/>
+  <data name="Status" inType="win:Int32" outType="win:Hresult"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The cluster disk with disk number %1 is not currently owned by this VM and hence cannot be snapshotted by this VM.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiskNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3584</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+[VMID %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3585</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+[VMID %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3586</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+[VMID %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3587</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+[VMID %3] %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TraceData" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="VmId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StackFrameCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StackFrame" inType="win:Pointer" outType="win:HexInt64" count="StackFrameCount"/>
+  <data name="ModuleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="Module" count="ModuleCount">
+    <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+    <data name="BaseAddress" inType="win:Pointer" outType="win:HexInt64"/>
+    <data name="SizeOfImage" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="TimeDateStamp" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

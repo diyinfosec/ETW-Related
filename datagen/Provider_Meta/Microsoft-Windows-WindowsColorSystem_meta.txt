@@ -1,0 +1,83 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WindowsColorSystem</Name>
+        <Metadata>
+            <Guid>{D53270E3-C8CF-4707-958A-DAD20C90073C}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\mscms.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\mscms.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=mscms.dll&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-WindowsColorSystem</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WindowsColorSystem/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-WindowsColorSystem/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Profile Management</Message>
+                    <Name>PROFILE_MANAGEMENT</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Transform Creation</Message>
+                    <Name>TRANSFORM_CREATION</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Colour Translation</Message>
+                    <Name>COLOR_TRANSLATION</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Colour Calibration</Message>
+                    <Name>COLOR_CALIBRATION</Name>
+                    <Value>4</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>CMM for ICC profiles</Message>
+                    <Name>wcse:Lino</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>CMM for WCS profiles</Message>
+                    <Name>wcse:Cite</Name>
+                    <Value>2</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

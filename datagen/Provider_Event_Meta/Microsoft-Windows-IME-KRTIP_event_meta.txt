@@ -1,0 +1,22 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-IME-KRTIP</Name>
+        <Metadata>
+            <Guid>{E013E74B-97F4-4E1C-A120-596E5629ECFE}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EAIME_IME_KOR_HWKBD_CandUIProcess_Info]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Duration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IMEType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

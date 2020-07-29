@@ -1,0 +1,22 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-LicensingSqm</Name>
+        <Metadata>
+            <Guid>{A0AF438F-4431-41CB-A675-A265050EE947}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SqmType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmSessionGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SqmID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SqmDWORDDatapointValue" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

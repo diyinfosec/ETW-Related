@@ -1,0 +1,10 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UI-Shell</Name>
+        <Metadata>
+            <Guid>{E3EE1525-8742-4E05-871B-DD2A60330C53}</Guid>
+        </Metadata>
+        <EventMetadata>
+        </EventMetadata>
+    </Provider>
+</Providers>

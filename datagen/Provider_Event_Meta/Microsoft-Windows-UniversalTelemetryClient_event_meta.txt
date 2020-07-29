@@ -1,0 +1,314 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UniversalTelemetryClient</Name>
+        <Metadata>
+            <Guid>{6489B27F-7C43-5886-1D00-0A61BB2A375B}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Tenant %2 has been registered for telemetry usage.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiskSizeInBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DailyUploadQuotaInBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Tenant %2 has been unregistered for telemetry usage.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The daily upload quota for %2 has been updated to %3 bytes.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IKey" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DailyUploadQuotaInBytes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The upload URL has changed to %2 .]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Url" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Upload failed with the following HRESULT: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HRESULT" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The daily upload quota for SENSE has crossed into a new tier.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="BytesUploadedSoFar" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesAllowed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="PercentageUsed" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewTier" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldTier" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Storage capacity for the SENSE tenant has changed to a new tier.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PercentageFullInEachRingBuffer" inType="win:UInt32" outType="xs:unsignedInt" count="4"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An unknown and unconfigured dynamic Vortex region %2 was attempted to be set.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Region" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The event storage for SENSE has been throttled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UploadQuota" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PercentageQuotaUsed" inType="win:Double" outType="xs:double"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The upload for SENSE has been throttled.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UploadQuota" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection state - All connections have succeeded since the previous period.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventsUploaded" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventsDropped" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastEventlogWrittenTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection state - Some connections have failed since the previous period.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventsUploaded" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventsDropped" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastEventlogWrittenTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SuccessfulConnections" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FailedConnections" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastHttpError" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Connection state - Some connections have failed since the previous period.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventsUploaded" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EventsDropped" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastEventlogWrittenTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="FailedConnections" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastHttpError" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProxySettingDetected" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SslCertValidationFailures" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastSslCertFailure" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The service has been started to the following state: %2 .]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Status" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Is the Internet available: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Is a free network available: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>60</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Is device on battery power: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>61</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Is the Battery Saver state enabled: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>62</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Is the device in connected standby: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>63</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Has the service used more power than considered reasonable: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="State" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>64</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic Data Collection Level]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="OldInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewInfo" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SettingAuthority" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>65</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The agent has transitioned to or from an idle state.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Environment" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AgentId" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="IsIdle" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IdleDurationMillis" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>66</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OldLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewLevel" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Source" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,113 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AssignedAccess</Name>
+        <Metadata>
+            <Guid>{8530DB6E-51C0-43D6-9D02-A8C2088526CD}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>10001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not configure user. The specified SID was not found on this system.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not configure user. The specified SID is an administrator on this system. Locking down administrator users could lead to unconfigurable devices.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not configure user. The specified SID is a domain account.  Only local accounts can be used.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not configure application. The specified AppID may be invalid, or is not installed on this system. The specified user may need to log in and download this application first.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not configure application launching.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Could not configure keyboard filtering.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Assigned Access is enabled. For settings to take effect, log off and log back in as this user.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="AppName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Assigned Access is disabled.  System will return to original settings.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1(%2), hr = %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:AnsiString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,519 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PrintService</Name>
+        <Metadata>
+            <Guid>{747EF6FD-E535-4D16-B510-42C90F6873A1}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\ntprint.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\ntprint.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1246&amp;FileName=ntprint.dll&amp;FileVer=10.0.17134.1246</HelpLink>
+            <PublisherMessage>Microsoft-Windows-PrintService</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Admin</Message>
+                    <Path>Microsoft-Windows-PrintService/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Operational</Message>
+                    <Path>Microsoft-Windows-PrintService/Operational</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>Debug</Message>
+                    <Path>Microsoft-Windows-PrintService/Debug</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Initialising a print provider</Message>
+                    <Name>SPOOLER_TASK_INITIALIZEPRINTPROVIDOR</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Opening a printer handle</Message>
+                    <Name>SPOOLER_TASK_OPENPRINTER</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Closing a printer handle</Message>
+                    <Name>SPOOLER_TASK_CLOSEPRINTER</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Adding a printer</Message>
+                    <Name>SPOOLER_TASK_ADDPRINTER</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Deleting a printer</Message>
+                    <Name>SPOOLER_TASK_DELETEPRINTER</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>Adding a printer connection</Message>
+                    <Name>SPOOLER_TASK_ADDCONNECTION</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Deleting a printer connection</Message>
+                    <Name>SPOOLER_TASK_DELETECONNECTION</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Adding a printer driver</Message>
+                    <Name>SPOOLER_TASK_ADDDRIVER</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Deleting a printer driver</Message>
+                    <Name>SPOOLER_TASK_DELETEDRIVER</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>Starting a document print job</Message>
+                    <Name>SPOOLER_TASK_STARTDOCPRINTER</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>Ending a document print job</Message>
+                    <Name>SPOOLER_TASK_ENDDOCPRINTER</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>Starting a new document page</Message>
+                    <Name>SPOOLER_TASK_STARTPAGE</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>Ending a document page</Message>
+                    <Name>SPOOLER_TASK_ENDPAGE</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>Seeking in the spool file</Message>
+                    <Name>SPOOLER_TASK_SEEKPRINTER</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>Setting printer configuration</Message>
+                    <Name>SPOOLER_TASK_SETPRINTER</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>Parsing a printer driver inf</Message>
+                    <Name>SPOOLER_TASK_PARSEINF</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>Installing a printer driver</Message>
+                    <Name>SPOOLER_TASK_INSTALL_PRINTER_DRIVER</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>Copying a printer driver package</Message>
+                    <Name>SPOOLER_TASK_COPY_PRINTER_DRIVER_PACKAGE</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>Enumerating printers</Message>
+                    <Name>SPOOLER_TASK_ENUMPRINTERS</Name>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>Tracing a spooler message</Message>
+                    <Name>SPOOLER_TASK_TRACE</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message>Pausing a printer</Message>
+                    <Name>SPOOLER_TASK_PAUSE_PRINTER</Name>
+                    <Value>23</Value>
+                </Task>
+                <Task>
+                    <Message>Resuming a printer</Message>
+                    <Name>SPOOLER_TASK_UNPAUSE_PRINTER</Name>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message>Purging jobs from printer queue</Message>
+                    <Name>SPOOLER_TASK_PURGE_PRINTER</Name>
+                    <Value>25</Value>
+                </Task>
+                <Task>
+                    <Message>Printing a document</Message>
+                    <Name>SPOOLER_TASK_PRINT_DOCUMENT</Name>
+                    <Value>26</Value>
+                </Task>
+                <Task>
+                    <Message>Deleting a document</Message>
+                    <Name>SPOOLER_TASK_DELETE_DOCUMENT</Name>
+                    <Value>27</Value>
+                </Task>
+                <Task>
+                    <Message>Adding a print form</Message>
+                    <Name>SPOOLER_TASK_ADD_FORM</Name>
+                    <Value>28</Value>
+                </Task>
+                <Task>
+                    <Message>Deleting a print form</Message>
+                    <Name>SPOOLER_TASK_DELETE_FORM</Name>
+                    <Value>29</Value>
+                </Task>
+                <Task>
+                    <Message>Sharing a printer</Message>
+                    <Name>SPOOLER_TASK_SHARE_PRINTER</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>Unsharing a printer</Message>
+                    <Name>SPOOLER_TASK_UNSHARE_PRINTER</Name>
+                    <Value>31</Value>
+                </Task>
+                <Task>
+                    <Message>Initialising the print spooler</Message>
+                    <Name>SPOOLER_TASK_INITIALIZE</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>Publishing a printer in the Active Directory</Message>
+                    <Name>SPOOLER_TASK_PUBLISH_PRINTER</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message>Removing a printer from the Active Directory</Message>
+                    <Name>SPOOLER_TASK_UNPUBLISH_PRINTER</Name>
+                    <Value>34</Value>
+                </Task>
+                <Task>
+                    <Message>Pruning a printer</Message>
+                    <Name>SPOOLER_TASK_PRUNE_PRINTER</Name>
+                    <Value>35</Value>
+                </Task>
+                <Task>
+                    <Message>Initialising</Message>
+                    <Name>SPOOLER_TASK_INITIALIZE_OBJECT</Name>
+                    <Value>36</Value>
+                </Task>
+                <Task>
+                    <Message>Initialising a print processor</Message>
+                    <Name>SPOOLER_TASK_INITIALIZE_PRINT_PROCESSOR</Name>
+                    <Value>37</Value>
+                </Task>
+                <Task>
+                    <Message>Verifying or regenerating a print driver package</Message>
+                    <Name>SPOOLER_TASK_VERIFY_REGENERATE_DRIVER_PACKAGE</Name>
+                    <Value>38</Value>
+                </Task>
+                <Task>
+                    <Message>Routing print spooler command(s)</Message>
+                    <Name>SPOOLER_TASK_ROUTE_COMMANDS</Name>
+                    <Value>39</Value>
+                </Task>
+                <Task>
+                    <Message>Client-side rendering</Message>
+                    <Name>SPOOLER_TASK_CSR</Name>
+                    <Value>41</Value>
+                </Task>
+                <Task>
+                    <Message>Executing print filters in the spooler pipeline</Message>
+                    <Name>SPOOLER_TASK_PIPELINE</Name>
+                    <Value>42</Value>
+                </Task>
+                <Task>
+                    <Message>Print job diagnostics</Message>
+                    <Name>SPOOLER_TASK_JOB_DIAGNOSTICS</Name>
+                    <Value>43</Value>
+                </Task>
+                <Task>
+                    <Message>Process termination due to critical failure</Message>
+                    <Name>SPOOLER_TASK_UNEXPECTED_SHUTDOWN</Name>
+                    <Value>44</Value>
+                </Task>
+                <Task>
+                    <Message>Deleting a directory</Message>
+                    <Name>SPOOLER_TASK_DELETE_DIR</Name>
+                    <Value>45</Value>
+                </Task>
+                <Task>
+                    <Message>Executing a file operation</Message>
+                    <Name>SPOOLER_TASK_FILE_OP</Name>
+                    <Value>46</Value>
+                </Task>
+                <Task>
+                    <Message>Enabling spooler RPC endpoints</Message>
+                    <Name>SPOOLER_TASK_ENABLE_RPC_ENDPOINTS</Name>
+                    <Value>47</Value>
+                </Task>
+                <Task>
+                    <Message>Client Side Rendering reverting to Server Side Rendering</Message>
+                    <Name>SPOOLER_TASK_CSR_REVERTING_TO_SSR</Name>
+                    <Value>48</Value>
+                </Task>
+                <Task>
+                    <Message>Changing the default printer</Message>
+                    <Name>SPOOLER_TASK_CHANGING_DEFAULT_PRINTER</Name>
+                    <Value>49</Value>
+                </Task>
+                <Task>
+                    <Message>Isolating printer drivers and other plug-ins</Message>
+                    <Name>SPOOLER_TASK_PRINT_DRIVER_SANDBOX</Name>
+                    <Value>50</Value>
+                </Task>
+                <Task>
+                    <Message>Executing XPS Print API calls</Message>
+                    <Name>XPS_PRINT_API_TASK</Name>
+                    <Value>51</Value>
+                </Task>
+                <Task>
+                    <Message>XPS Print API performance tracking</Message>
+                    <Name>XPS_PRINT_API_TASK_PERFORMANCE</Name>
+                    <Value>52</Value>
+                </Task>
+                <Task>
+                    <Message>General print spooler performance tracking</Message>
+                    <Name>SPOOLER_TASK_PERFORMANCE</Name>
+                    <Value>53</Value>
+                </Task>
+                <Task>
+                    <Message>Print driver operation</Message>
+                    <Name>SPOOLER_TASK_DRIVER_MONITORING</Name>
+                    <Value>54</Value>
+                </Task>
+                <Task>
+                    <Message>Connection reconfigured</Message>
+                    <Name>SPOOLER_TASK_CONNECTION_RECONFIGURED</Name>
+                    <Value>55</Value>
+                </Task>
+                <Task>
+                    <Message>Servicing Windows Fax and Scan</Message>
+                    <Name>SPOOLER_TASK_SETUP_WFS</Name>
+                    <Value>56</Value>
+                </Task>
+                <Task>
+                    <Message>Creating a Plug and Play device object instance for a printer</Message>
+                    <Name>SPOOLER_TASK_CREATE_PRINT_DEVNODE</Name>
+                    <Value>57</Value>
+                </Task>
+                <Task>
+                    <Message>Initialising the WS-Print Port Monitor</Message>
+                    <Name>SPOOLER_TASK_WSDMON_INITIALIZATION</Name>
+                    <Value>58</Value>
+                </Task>
+                <Task>
+                    <Message>BOP Event Offline Archive Full</Message>
+                    <Name>SPOOLER_TASK_BOP_OFFLINE_LOG_ARCHIVE_FULL</Name>
+                    <Value>59</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Spooler Operation Started</Message>
+                    <Name>SPOOLER_OPCODE_PENDING</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Spooler Operation Succeeded</Message>
+                    <Name>SPOOLER_OPCODE_SUCCEEDED</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Spooler Operation Failed</Message>
+                    <Name>SPOOLER_OPCODE_FAILED</Name>
+                    <Value>12</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Spooler Warning</Message>
+                    <Name>SPOOLER_OPCODE_WARNING</Name>
+                    <Value>13</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Spooler Trace</Message>
+                    <Name>SPOOLER_OPCODE_TRACE</Name>
+                    <Value>14</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Unexpected process termination</Message>
+                    <Name>SPOOLER_OPCODE_UNEXPECTED_SHUTDOWN</Name>
+                    <Value>16</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>XPS Print API failure</Message>
+                    <Name>XPS_PRINT_API_OPCODE_FAILED</Name>
+                    <Value>17</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Local Spooler</Message>
+                    <Name>SPOOLER_KEYWORD_LOCALSPL</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Remote Spooler</Message>
+                    <Name>SPOOLER_KEYWORD_WIN32SPL</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Printer</Message>
+                    <Name>SPOOLER_KEYWORD_PRINTER</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Document Print Job</Message>
+                    <Name>SPOOLER_KEYWORD_JOB</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Spooler Connection</Message>
+                    <Name>SPOOLER_KEYWORD_CONNECTION</Name>
+                    <Value>128</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Print Driver</Message>
+                    <Name>SPOOLER_KEYWORD_DRIVER</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Printer Setup</Message>
+                    <Name>SPOOLER_KEYWORD_SETUP</Name>
+                    <Value>512</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Spooler Trace</Message>
+                    <Name>SPOOLER_KEYWORD_TRACE</Name>
+                    <Value>1024</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Classic Spooler Event</Message>
+                    <Name>SPOOLER_KEYWORD_CLASSIC</Name>
+                    <Value>2048</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Active Directory</Message>
+                    <Name>SPOOLER_KEYWORD_ACTIVE_DIR</Name>
+                    <Value>4096</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Router</Message>
+                    <Name>SPOOLER_KEYWORD_ROUTER</Name>
+                    <Value>8192</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Client Side Rendering (CSR)</Message>
+                    <Name>SPOOLER_KEYWORD_CSR</Name>
+                    <Value>32768</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Print Filter Pipeline</Message>
+                    <Name>SPOOLER_KEYWORD_PIPELINE</Name>
+                    <Value>65536</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Print Spooler</Message>
+                    <Name>SPOOLER_KEYWORD</Name>
+                    <Value>131072</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Print Driver Sandbox</Message>
+                    <Name>SPOOLER_KEYWORD_PRINT_DRIVER_SANDBOX</Name>
+                    <Value>262144</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>XPS Print API</Message>
+                    <Name>XPS_PRINT_API_KEYWORD</Name>
+                    <Value>524288</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>XPS Print API performance</Message>
+                    <Name>XPS_PRINT_API_KEYWORD_PERFORMANCE</Name>
+                    <Value>1048576</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Branch Office Printing</Message>
+                    <Name>SPOOLER_KEYWORD_BRANCH_OFFICE_PRINTING</Name>
+                    <Value>2097152</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Service Windows Fax and Scan</Message>
+                    <Name>SETUP_WFS_KEYWORD</Name>
+                    <Value>4194304</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>WS-Print Port Monitor</Message>
+                    <Name>SPOOLER_KEYWORD_WSDMON</Name>
+                    <Value>8388608</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Response Time</Message>
+                    <Name>win:ResponseTime</Name>
+                    <Value>281474976710656</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>WDI Diag</Message>
+                    <Name>win:WDIDiag</Name>
+                    <Value>1125899906842624</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

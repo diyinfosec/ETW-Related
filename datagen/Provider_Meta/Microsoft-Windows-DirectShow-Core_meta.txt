@@ -1,0 +1,147 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DirectShow-Core</Name>
+        <Metadata>
+            <Guid>{968F313B-097F-4E09-9CDD-BC62692D138B}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\quartz.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\quartz.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=quartz.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-DirectShow</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Application</Message>
+                    <Path>Application</Path>
+                    <Index>0</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>DirectShowPluginControl</Path>
+                    <Index>1</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>DirectShow FilterGraph</Message>
+                    <Path>DirectShowFilterGraph</Path>
+                    <Index>2</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Plug-in Manager</Message>
+                    <Name>PluginTask</Name>
+                    <Value>42</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph RenderFile</Message>
+                    <Name>RenderFileTask</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Connect</Message>
+                    <Name>ConnectTask</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph RenderPin</Message>
+                    <Name>RenderPinTask</Name>
+                    <Value>102</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph AddFilter</Message>
+                    <Name>AddFilterTask</Name>
+                    <Value>103</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph AddSourceFilter</Message>
+                    <Name>AddSourceFilterTask</Name>
+                    <Value>104</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph NotifyEvent</Message>
+                    <Name>NotifyEventTask</Name>
+                    <Value>105</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Pause</Message>
+                    <Name>PauseTask</Name>
+                    <Value>106</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Stop</Message>
+                    <Name>StopTask</Name>
+                    <Value>107</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Run</Message>
+                    <Name>RunTask</Name>
+                    <Value>108</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph ConnectDirect</Message>
+                    <Name>ConnectDirectTask</Name>
+                    <Value>109</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph Disconnect</Message>
+                    <Name>DisconnectTask</Name>
+                    <Value>110</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph GetState</Message>
+                    <Name>GetStateTask</Name>
+                    <Value>111</Value>
+                </Task>
+                <Task>
+                    <Message>DirectShow FilterGraph RemoveFilter</Message>
+                    <Name>RemoveFilterTask</Name>
+                    <Value>112</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

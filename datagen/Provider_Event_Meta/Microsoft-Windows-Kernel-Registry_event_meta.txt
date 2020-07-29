@@ -1,0 +1,456 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Kernel-Registry</Name>
+        <Metadata>
+            <Guid>{70EB4F03-C1DE-4F73-A051-33D13D5413BD}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BaseObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Disposition" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BaseName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelativeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BaseObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Disposition" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BaseName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RelativeName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValueName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize"/>
+  <data name="PreviousDataType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousDataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PreviousDataCapturedSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PreviousData" inType="win:Binary" outType="xs:hexBinary" length="PreviousDataCapturedSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValueName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ValueName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Index" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="EntryCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="InfoClass" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="CapturedDataSize" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="CapturedData" inType="win:Binary" outType="xs:hexBinary" length="CapturedDataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="KeyObject" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Status" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="KeyName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HiveFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FileSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TotalEntrySize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesRecovered" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HiveFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HiveMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HiveFilePath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="HiveMountPoint" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FlushFlags" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BytesGathered" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BytesGathered" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WritesIssued" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesWritten" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="WritesIssued" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BytesWritten" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Flags" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceFile" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Flags" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SourceKeyPath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="StatusCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

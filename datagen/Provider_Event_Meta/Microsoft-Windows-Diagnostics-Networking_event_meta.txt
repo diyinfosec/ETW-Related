@@ -1,0 +1,578 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnostics-Networking</Name>
+        <Metadata>
+            <Guid>{36C23E18-0E66-11D9-BBEB-505054503030}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Diagnostics Framework started because the user requested a diagnostics session. 
+
+Helper Class Name: %1 
+
+Number of parameters: %2 
+
+Attributes passed to helper class: 
+%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NumberOfAttributes" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassAttributes" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Success, no problems found. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Success, problems repaired. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Failed during diagnosis. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2300</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Failed during repair. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2400</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Cancelled during diagnosis. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2500</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Diagnostics Framework stopped because it completed the user initiated diagnostics session. 
+
+Result: Cancelled during repair. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred. The Network Diagnostics Framework failed to complete operation. A Windows Error Report was generated. [%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred. The Network Diagnostics Framework failed to complete operation. A Windows Error Report was generated. [%1].]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This event is not emitted, it remains manifested for AppCompat]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4000</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+The Network Diagnostics Framework has completed the diagnosis phase of operation. The following repair option was offered: 
+
+Helper Class Name: %7
+
+Root Cause: %1 
+
+Root Cause Guid: %2 
+
+Repair option: %3 
+
+RepairGuid: %4 
+
+Seconds required for repair: %5 
+
+Security context required for repair: %6
+
+Interface: %8 (%9)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCause" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RootCauseGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceDesc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Network Diagnostics Framework has completed the diagnosis phase of operation, but no network problem was identified.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred. The Network Diagnostics Framework failed to complete the diagnosis phase of operation. A Windows Error Report was generated. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This event is not emitted, it remains manifested for AppCompat]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5000</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+The Network Diagnostics Framework has completed the repair phase of operation. The following repair option or work-around was executed: 
+
+Helper Class Name: %7 
+
+Repair option: %3 
+
+RepairGuid: %4 
+
+The repair option appears to have successfully fixed the diagnosed problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCause" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RootCauseGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceDesc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This event is not emitted, it remains manifested for AppCompat]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5100</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+The Network Diagnostics Framework (NDF) has completed the repair phase of operation. The following repair option or work-around was executed: 
+
+Helper Class Name: %7 
+
+Repair option: %3 
+
+RepairGuid: %4 
+
+The repair option appears to have successfully fixed the diagnosed problem. But NDF has detected the existence of other network problems. NDF should be re-run to diagnose these problems.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCause" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RootCauseGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceDesc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This event is not emitted, it remains manifested for AppCompat]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5200</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+The Network Diagnostics Framework failed to execute the following repair: 
+
+Repair option: %3 
+
+RepairGuid: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RootCause" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RootCauseGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RepairOption" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="RepairGUID" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SecondsRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SIDTypeRequired" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceDesc" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="InterfaceGUID" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5300</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An error occurred. The Network Diagnostics Framework failed to complete the repair phase of operation. A Windows Error Report was generated. [%1]]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ResultHR" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Details about %1 diagnosis: 
+
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventVerbosity" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Details about %1 diagnosis: 
+
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventVerbosity" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Details about %1 diagnosis: 
+
+%2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventDescription" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="EventVerbosity" inType="win:UInt16" outType="xs:unsignedShort"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7020</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7030</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7040</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7050</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DebugMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start NDF Incident]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stop NDF Incident]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start NDF Diagnose]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stop NDF Diagnose]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start NDF Repair]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stop NDF Repair]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start NDF Validate]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stop NDF Validate]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start NDF Reproduce Failure]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stop NDF Reproduce Failure]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8103</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start NDF Helper Class '%1' Diagnose]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8104</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stop NDF Helper Class '%1' Diagnose]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8107</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start NDF Helper Class '%1' Validate]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8108</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stop NDF Helper Class '%1' Validate]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="HelperClassName" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

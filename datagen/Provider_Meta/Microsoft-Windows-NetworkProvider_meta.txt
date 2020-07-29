@@ -1,0 +1,86 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkProvider</Name>
+        <Metadata>
+            <Guid>{1E9A4978-78C2-441E-8858-75B5D1326BC5}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\mup.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\mup.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=mup.sys&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-NetworkProvider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-NetworkProvider/Operational</Message>
+                    <Path>Microsoft-Windows-NetworkProvider/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>UNC Hardening Configuration</Message>
+                    <Name>UncHardeningConfiguration</Name>
+                    <Value>11</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Unsupported Registry Value Type</Message>
+                    <Name>UnsupportedRegistryValueType</Name>
+                    <Value>11</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Invalid UNC Path</Message>
+                    <Name>InvalidUncPath</Name>
+                    <Value>12</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Unsupported UNC Path</Message>
+                    <Name>UnsupportedUncPath</Name>
+                    <Value>13</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Invalid Syntax</Message>
+                    <Name>InvalidSyntax</Name>
+                    <Value>14</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Unsupported Property Name</Message>
+                    <Name>UnsupportedPropertyName</Name>
+                    <Value>15</Value>
+                    <Task>11</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Unsupported Property Value</Message>
+                    <Name>UnsupportedPropertyValue</Name>
+                    <Value>16</Value>
+                    <Task>11</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>UNC Hardening</Message>
+                    <Name>UncHardening</Name>
+                    <Value>256</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

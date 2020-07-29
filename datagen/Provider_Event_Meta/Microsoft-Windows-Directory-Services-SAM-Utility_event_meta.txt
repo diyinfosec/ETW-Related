@@ -1,0 +1,18 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Directory-Services-SAM-Utility</Name>
+        <Metadata>
+            <Guid>{BD8FEA17-5549-4B49-AA03-1981D16396A9}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,319 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Runtime-Media</Name>
+        <Metadata>
+            <Guid>{8F0DB3A8-299B-4D64-A4ED-907B409D4584}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\Windows.Media.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\Windows.Media.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=Windows.Media.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft Windows Runtime Media ETW Provider</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Runtime-Windows-Media/WinRTCaptureEngine</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Runtime-Windows-Media/WinRTTranscode</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Runtime-Windows-Media/WinRTMediaStreamSource</Path>
+                    <Index>2</Index>
+                    <Id>18</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Runtime-Windows-Media/WinRTAdaptiveMediaSource</Path>
+                    <Index>3</Index>
+                    <Id>19</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Microsoft Windows Runtime Capture Engine ETW event</Message>
+                    <Name>WinRTCaptureEngine-Task</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Microsoft Windows Runtime Capture Engine Initialization Task</Message>
+                    <Name>WinRTCaptureEngine-Initialization-Task</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Microsoft Windows Runtime Capture Engine TakePhoto Task</Message>
+                    <Name>WinRTCaptureEngine-TakePhoto-Task</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>Microsoft Windows Runtime Capture Engine Start Preview Task</Message>
+                    <Name>WinRTCaptureEngine-StartPreview-Task</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>Microsoft Windows Runtime Capture Engine Start Record Task</Message>
+                    <Name>WinRTCaptureEngine-StartRecord-Task</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WinRTTranscode-Task</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>Microsoft Windows Runtime Preview Source Dispatch Sample</Message>
+                    <Name>WinRTCaptureEngine-PreviewSourceDispatchSample-Task</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Microsoft Windows Runtime Capture Engine Stop Preview Task</Message>
+                    <Name>WinRTCaptureEngine-StopPreview-Task</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Microsoft Windows Runtime Capture Engine Stop Record Task</Message>
+                    <Name>WinRTCaptureEngine-StopRecord-Task</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WinRTTranscode-Stage1-Task</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WinRTTranscode-Stage2-Task</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WinRTTranscode-Stage3-Task</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message></Message>
+                    <Name>WinRTTranscode-PrepareTranscode-Task</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>WinRTCaptureEngine SetStreamMediaTypeAsync Task</Message>
+                    <Name>WinRTCaptureEngine-SetStreamMediaTypeAsync-Task</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture PhotoSequence Prepare operation</Message>
+                    <Name>WinRTCaptureEngine-PhotoSequence-Prepare-Task</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture PhotoSequence Start operation</Message>
+                    <Name>WinRTCaptureEngine-PhotoSequence-Start-Task</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture PhotoSequence Stop operation</Message>
+                    <Name>WinRTCaptureEngine-PhotoSequence-Stop-Task</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture PhotoSequence Finish operation</Message>
+                    <Name>WinRTCaptureEngine-PhotoSequence-Finish-Task</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture PhotoSequence photo available</Message>
+                    <Name>WinRTCaptureEngine-PhotoSequence-Photo-Available-Task</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture TrySetEncodingProperties operation</Message>
+                    <Name>WinRTCaptureEngine-TrySetEncodingProperties-Task</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture LowLagPhoto Prepare operation</Message>
+                    <Name>WinRTCaptureEngine-LowLagPhoto-Prepare-Task</Name>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture LowLagPhoto Capture operation</Message>
+                    <Name>WinRTCaptureEngine-LowLagPhoto-Capture-Task</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture LowLagPhoto Finish operation</Message>
+                    <Name>WinRTCaptureEngine-LowLagPhoto-Finish-Task</Name>
+                    <Value>23</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture SetRegionsAsync operation</Message>
+                    <Name>WinRTCaptureEngine-SetRegionsAsync-Task</Name>
+                    <Value>24</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture ClearRegionsAsync operation</Message>
+                    <Name>WinRTCaptureEngine-ClearRegionsAsync-Task</Name>
+                    <Value>25</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture LowLagRecord Prepare operation</Message>
+                    <Name>WinRTCaptureEngine-LowLagRecord-Prepare-Task</Name>
+                    <Value>26</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture LowLagRecord Start operation</Message>
+                    <Name>WinRTCaptureEngine-LowLagRecord-Start-Task</Name>
+                    <Value>27</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture LowLagRecord Stop operation</Message>
+                    <Name>WinRTCaptureEngine-LowLagRecord-Stop-Task</Name>
+                    <Value>28</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture LowLagRecord Finish operation</Message>
+                    <Name>WinRTCaptureEngine-LowLagRecord-Finish-Task</Name>
+                    <Value>29</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture Lifetime</Message>
+                    <Name>WinRTCaptureEngine-Lifetime-Task</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>WinRTMediaStreamSource Event Task</Message>
+                    <Name>WinRTMediaStreamSource-Event-Task</Name>
+                    <Value>31</Value>
+                </Task>
+                <Task>
+                    <Message>WinRTMediaStreamSource SampleRequest Task</Message>
+                    <Name>WinRTMediaStreamSource-SampleRequest-Task</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture PhotoConfirmation</Message>
+                    <Name>WinRTCaptureEngine-PhotoConfirmation-Task</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture FocusChanged</Message>
+                    <Name>WinRTCaptureEngine-FocusChanged-Task</Name>
+                    <Value>34</Value>
+                </Task>
+                <Task>
+                    <Message>WindowsMediaCapture Device Thermal status changed event task completed</Message>
+                    <Name>WinRTCaptureEngine-ThermalStatusChanged-Task</Name>
+                    <Value>35</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture AdvancedPhoto Prepare operation</Message>
+                    <Name>WinRTCaptureEngine-AdvancedPhoto-Prepare-Task</Name>
+                    <Value>36</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture AdvancedPhoto Capture operation</Message>
+                    <Name>WinRTCaptureEngine-AdvancedPhoto-Capture-Task</Name>
+                    <Value>37</Value>
+                </Task>
+                <Task>
+                    <Message>MediaCapture AdvancedPhoto Finish operation</Message>
+                    <Name>WinRTCaptureEngine-AdvancedPhoto-Finish-Task</Name>
+                    <Value>38</Value>
+                </Task>
+                <Task>
+                    <Message>AdaptiveMediaSource buffer fill task</Message>
+                    <Name>WinRTAdaptiveMediaSource-Filling-Task</Name>
+                    <Value>39</Value>
+                </Task>
+                <Task>
+                    <Message>AdaptiveMediaSource buffer drain task</Message>
+                    <Name>WinRTAdaptiveMediaSource-Draining-Task</Name>
+                    <Value>40</Value>
+                </Task>
+                <Task>
+                    <Message>AdaptiveMediaSource buffer level changed</Message>
+                    <Name>WinRTAdaptiveMediaSource-BufferLevel-Changed-Task</Name>
+                    <Value>41</Value>
+                </Task>
+                <Task>
+                    <Message>AdaptiveMediaSource HTTP Request</Message>
+                    <Name>WinRTAdaptiveMediaSource-HTTP_Request</Name>
+                    <Value>42</Value>
+                </Task>
+                <Task>
+                    <Message>AdaptiveMediaSource HTTP Request Header</Message>
+                    <Name>WinRTAdaptiveMediaSource-HTTP_Request_Header</Name>
+                    <Value>43</Value>
+                </Task>
+                <Task>
+                    <Message>AdaptiveMediaSource Download</Message>
+                    <Name>WinRTAdaptiveMediaSource-Download</Name>
+                    <Value>44</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WinRTAdaptiveMediaSource</Name>
+                    <Value>17592186044416</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WinRTMediaStreamSource</Name>
+                    <Value>35184372088832</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WinRTTranscode</Name>
+                    <Value>70368744177664</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>WinRTCaptureEngine</Name>
+                    <Value>140737488355328</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

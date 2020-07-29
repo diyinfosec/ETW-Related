@@ -1,0 +1,604 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DirectComposition</Name>
+        <Metadata>
+            <Guid>{C44219D0-F344-11DF-A5E2-B307DFD72085}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="left" inType="win:Int32" outType="xs:int"/>
+  <data name="top" inType="win:Int32" outType="xs:int"/>
+  <data name="right" inType="win:Int32" outType="xs:int"/>
+  <data name="bottom" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BitDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="IsTexturingAtlas" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="ChannelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PixelFormat" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AtlasId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="X" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Y" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntryId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AtlasId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="X" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Y" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntryId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BitDepth" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PercentUsed" inType="win:Float" outType="xs:float"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>21</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ChannelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="ChannelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelHandle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LastCommittedBatchId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastConfirmedBatchId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Owner" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UseType" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="XData" inType="win:Int32" outType="xs:int"/>
+  <data name="YData" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AtlasId" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="X" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Y" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EntryId" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourcePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clumpPointer" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="virtualSurfacePointer" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="left" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="top" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="right" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="bottom" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="clumpPointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="surfacePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="surfacePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="surfacePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="surfacePointer" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="percentValidTiles" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="pixelsPerClump" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChannelHandle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="LastCommittedBatchId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="largeSurfacesTotalAllocated" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="largeSurfacesInUseAllocated" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="largeSurfacesInUseActual" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="largeSurfacesPeakInUseActual" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="largeSurfacesAllowed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="poolsTotalAllocated" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="poolsInUseAllocated" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="poolsInUseActual" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="poolsPeakInUseActual" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="poolsAllowed" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="largeSurfacesPendingRelease" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="poolsPendingRelease" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="largeSurfacesMaxStructuralWaste" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="poolsMaxStructuralWaste" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="Width" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Height" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="PixelsDiscarded" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SurfaceInvalid" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="section" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="section" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="size" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="section" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="allocationSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="sectionSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="heap" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="deviceId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="channelHandle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="version" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="scenarioPriority" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="flags" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="qpcInitiate" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="qpcInput" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="msIntendedDuration" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="scenarioGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="scenarioName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="scenarioDetails" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="deviceId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="channelHandle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="scenarioGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="uniqueKey" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="deviceId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="channelHandle" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="scenarioGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="uniqueKey" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="channelHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="resourceHandle" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="batchCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="totalPrimitiveCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="boundsLeft" inType="win:Float" outType="xs:float"/>
+  <data name="boundsTop" inType="win:Float" outType="xs:float"/>
+  <data name="boundsRight" inType="win:Float" outType="xs:float"/>
+  <data name="boundsBottom" inType="win:Float" outType="xs:float"/>
+  <data name="singlePrimitiveInfoLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="surfaceInfoLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="surfaceInfo" inType="win:Binary" outType="xs:hexBinary" length="surfaceInfoLength"/>
+  <data name="primitivesLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="primitives" inType="win:Binary" outType="xs:hexBinary" length="primitivesLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TargetX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="TargetY" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinY" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MaxY" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RequestY" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ShrinkX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ShrinkY" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GrowX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GrowY" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AtlasX" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="AtlasY" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

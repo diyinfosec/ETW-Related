@@ -1,0 +1,725 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-EnhancedStorage-EhStorTcgDrv</Name>
+        <Metadata>
+            <Guid>{AA3AA23B-BB6D-425A-B58C-1D7E37F5D02A}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An operation has failed (%3, %4, %5, %6).
+%1
+HResult: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="hr" inType="win:Int32" outType="win:Hresult"/>
+  <data name="ErrorParam1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorParam2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorParam3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorParam4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An operation has failed (%3, %4, %5, %6).
+%1
+Win32Error: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Win32Err" inType="win:UInt32" outType="win:Win32Error"/>
+  <data name="ErrorParam1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorParam2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorParam3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorParam4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+An operation has failed (%3, %4, %5, %6).
+%1
+NTStatus: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="ErrorParam1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorParam2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorParam3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="ErrorParam4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Failed to allocate object.
+Object: %1
+Size: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ObjectName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ObjectSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Unexpected size.
+Object: %1
+Expected Size: %2
+Actual Size: %3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ExpectedSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ActualSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>6</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Invalid data.
+Name: %1
+Value: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Device responded with an error status.
+Status: %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Value" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Bad device.
+Device: %1
+Reason: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="String" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The function is not supported.
+Function: %1
+Context: %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="String" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A TCG Command has returned an error.
+Desc: %1
+Param1: %2
+Param2: %3
+Param3: %4
+Param4: %5
+Status: %6]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Description" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="CmdStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A TCG Silo Command has returned an error.
+%1
+SiloCommand=%2, SiloStatus=%3
+InvokingID=%4, MethodID=%5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Description" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SiloCommand" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="SiloStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="TCGInvokingID" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TCGMethodID" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A TCG Silo has returned the capabilities value of %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Capabilities" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="KeyProtectionMechanism" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="MaxBandCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BandMetadataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The system has performed an authentication operation on an Enhanced Storage device.
+BandID=%1
+Authorize=%2
+Status=%3]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BandID" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Authorize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The following informational event has occurred (%2, %3, %4, %5).
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Param3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Param4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>101</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The following warning event has occurred (%2, %3, %4, %5).
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Param3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Param4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>102</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The following error event has occurred (%2, %3, %4, %5).
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Param2" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Param3" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Param4" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>200</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Get silo capabilities (SiloCmd=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>201</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Get silo capabilities returned (SiloCmd=%2, Status=%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Execute silo command (SiloCmd=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SiloCmd" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TcgCmd" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Excute silo command returned (SiloCmd=%2, Status=%3).
+InvokingId = %4
+MethodId = %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="SiloCmd" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="TcgCmd" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Status" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>204</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Silo reset (SiloCmd=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>205</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Silo reset returned (SiloCmd=%2, Status=%3).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>206</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: QueryCapabilities]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>207</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: QueryCapabilities returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: Activate]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>209</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: Activate returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>210</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: Revert]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>211</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: Revert returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>212</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: EnumBands]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>213</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: EnumBands returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>214</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: CreateBand]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>215</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: CreateBand returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>216</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: SetBandLocation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>217</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: SetBandLocation returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>218</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: SetBandSecurity]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>219</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: SetBandSecurity returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>220</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: DeleteBand]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>221</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: DeleteBand returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>222</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: EraseBand]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>223</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: EraseBand returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>224</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: GetBandMetadata]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>225</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: GetBandMetadata returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>226</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: SetBandMetadata]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>227</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: SetBandMetadata returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>228</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: RelinquishSilo]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>229</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Ioctl: RelinquishSilo returned (Status=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Context" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Param1" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param2" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param3" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="Param4" inType="win:HexInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

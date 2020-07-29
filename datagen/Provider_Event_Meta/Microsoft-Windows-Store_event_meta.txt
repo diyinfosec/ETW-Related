@@ -1,0 +1,146 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Store</Name>
+        <Metadata>
+            <Guid>{9C2A37F3-E5FD-5CAE-BCD1-43DAFEEE1FF0}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>8000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Process Name: %1
+Module Name: %2
+Build: %3
+]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Process Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Module Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Build Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1
+Function: %2
+Source: %3 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1
+Function: %2
+Source: %3 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1
+Function: %2
+Source: %3 (%4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Function" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Source" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line Number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: %2: %3: Enqueue: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State Machine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Thread ID" inType="win:UInt32" outType="win:TID"/>
+  <data name="State Machine Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event Name" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8011</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: %2: %3: Dispatch: %4 => %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State Machine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Thread ID" inType="win:UInt32" outType="win:TID"/>
+  <data name="State Machine Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Event Name" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Current State" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8012</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: %2: %3 Change: %4 => %5]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State Machine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Thread ID" inType="win:UInt32" outType="win:TID"/>
+  <data name="State Machine Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Current State" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="New State" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8013</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: %2: %3 Pumping: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State Machine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Thread ID" inType="win:UInt32" outType="win:TID"/>
+  <data name="State Machine Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Current State" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8014</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1: %2: %3: Done: %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State Machine" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Thread ID" inType="win:UInt32" outType="win:TID"/>
+  <data name="State Machine Name" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Current State" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

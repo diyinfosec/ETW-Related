@@ -1,0 +1,135 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-MediaFoundation-MSVProc</Name>
+        <Metadata>
+            <Guid>{A4112D1A-6DFA-476E-BB75-E350D24934E1}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\msvproc.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\msvproc.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=msvproc.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-MediaFoundation-MSVProc</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>MS Video Processor MFT</Message>
+                    <Path>MedaFoundationVideoProc</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>MS Video Processor MFT (D3D11)</Message>
+                    <Path>MedaFoundationVideoProcD3D</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>MS Video Processoft MFT (D3D11) - Create Video Processor</Message>
+                    <Name>D3DCreateVideoProcessor</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT (D3D11) - Create Input View</Message>
+                    <Name>D3DCreateVPInputView</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT (D3D11) - Create Output View</Message>
+                    <Name>D3DCreateVPOutputView</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT (D3D11) - VideoProcessorBlt</Message>
+                    <Name>D3DVideoProcessorBlt</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT - Create/Destroy MFT</Message>
+                    <Name>MFT</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT - ProcessInput</Message>
+                    <Name>ProcessInput</Name>
+                    <Value>15</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT - ProcessOutput</Message>
+                    <Name>ProcessOutput</Name>
+                    <Value>16</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT - ColorConv</Message>
+                    <Name>ColorConv</Name>
+                    <Value>17</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT - Resizer</Message>
+                    <Name>Resizer</Name>
+                    <Value>18</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT - Rotation</Message>
+                    <Name>Rotation</Name>
+                    <Value>19</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT - Mirror</Message>
+                    <Name>Mirror</Name>
+                    <Value>20</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT (D3D11) - Shader Fallback Pass</Message>
+                    <Name>D3DShaderFallback</Name>
+                    <Value>21</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT - ConfigureInputHDRMetadata</Message>
+                    <Name>ConfigureInputHDRMetadata</Name>
+                    <Value>22</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processoft MFT - ConfigureOutputHDRMetadata</Message>
+                    <Name>ConfigureOutputHDRMetadata</Name>
+                    <Value>23</Value>
+                </Task>
+                <Task>
+                    <Message>MS Video Processor MFT - Constriction Resizer</Message>
+                    <Name>ConstrictionResizer</Name>
+                    <Value>24</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

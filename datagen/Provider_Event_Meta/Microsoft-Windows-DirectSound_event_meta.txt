@@ -1,0 +1,32 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-DirectSound</Name>
+        <Metadata>
+            <Guid>{8A93B54B-C75A-49B5-A5BE-9060715B1A33}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>0</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A DirectSound Stream Switch has started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A DirectSound Stream Switch has completed with status %1 (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hr" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="hrString" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,175 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Sdbus</Name>
+        <Metadata>
+            <Guid>{FE28004E-B08F-4407-92B3-BAD3A2C51708}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\sdbus.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\sdbus.sys</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=sdbus.sys&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Sdbus/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-Sdbus/Debug</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Interrupt</Message>
+                    <Name>Task.Interrupt</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Callback Routine</Message>
+                    <Name>Task.CallbackRoutine</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>Retune</Message>
+                    <Name>Task.Retune</Name>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message> Error</Message>
+                    <Name>Task.Error</Name>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>HPI IO</Message>
+                    <Name>Task.HpiIo</Name>
+                    <Value>5</Value>
+                </Task>
+                <Task>
+                    <Message>P-State Request</Message>
+                    <Name>Task.PStateRequest</Name>
+                    <Value>6</Value>
+                </Task>
+                <Task>
+                    <Message>P-State Completion</Message>
+                    <Name>Task.PStateCompletion</Name>
+                    <Value>7</Value>
+                </Task>
+                <Task>
+                    <Message>Command Issued</Message>
+                    <Name>Task.CommandIssued</Name>
+                    <Value>8</Value>
+                </Task>
+                <Task>
+                    <Message>Command Completed</Message>
+                    <Name>Task.CommandCompleted</Name>
+                    <Value>9</Value>
+                </Task>
+                <Task>
+                    <Message>HPI CMD Issued</Message>
+                    <Name>Task.HpiCmdIssue</Name>
+                    <Value>10</Value>
+                </Task>
+                <Task>
+                    <Message>HPI CMD Accepted</Message>
+                    <Name>Task.HpiCmdAccepted</Name>
+                    <Value>11</Value>
+                </Task>
+                <Task>
+                    <Message>HPI Worker Process</Message>
+                    <Name>Task.HpiCmdWorker</Name>
+                    <Value>12</Value>
+                </Task>
+                <Task>
+                    <Message>P-State Utilization</Message>
+                    <Name>Task.PStateUtilization</Name>
+                    <Value>13</Value>
+                </Task>
+                <Task>
+                    <Message>SdbusWorkerDpc</Message>
+                    <Name>Task.SdbusWorkerDpc</Name>
+                    <Value>14</Value>
+                </Task>
+                <Task>
+                    <Message>SdbusRequest</Message>
+                    <Name>Task.SdbusRequest</Name>
+                    <Value>15</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Interrupt handling</Message>
+                    <Name>Interrupt</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>eMMC specific processing</Message>
+                    <Name>Emmc</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SDIO specific processing</Message>
+                    <Name>Sdio</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SD specific processing</Message>
+                    <Name>Sd</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Sdbus P-state frequency scaling</Message>
+                    <Name>Perf</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SD bus errors</Message>
+                    <Name>Error</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SD bus DPC</Message>
+                    <Name>Dpc</Name>
+                    <Value>64</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>SD bus request</Message>
+                    <Name>Request</Name>
+                    <Value>128</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

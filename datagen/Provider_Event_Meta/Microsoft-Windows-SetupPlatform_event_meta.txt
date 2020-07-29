@@ -1,0 +1,90 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-SetupPlatform</Name>
+        <Metadata>
+            <Guid>{530FB9B9-C515-4472-9313-FB346F9255E3}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start operation: %1, %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Stop operation: %1, %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Operation" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Online gather starts: %1, %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OfflineWinDir" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MachineSpecific" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Online gather stops: %1, %2]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OfflineWinDir" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="MachineSpecific" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Offline gather starts]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>1006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Offline gather stops]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+New Setup information]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Installation choice" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Major version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Minor version" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Build number" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Service pack major number" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Host OS Service pack minor number" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

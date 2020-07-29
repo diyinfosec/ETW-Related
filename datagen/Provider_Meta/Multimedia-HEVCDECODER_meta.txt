@@ -1,0 +1,5 @@
+<Providers>
+    <Provider>
+        <Name>Multimedia-HEVCDECODER</Name>
+    </Provider>
+</Providers>

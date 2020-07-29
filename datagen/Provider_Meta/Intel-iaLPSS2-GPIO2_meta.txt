@@ -1,0 +1,105 @@
+<Providers>
+    <Provider>
+        <Name>Intel-iaLPSS2-GPIO2</Name>
+        <Metadata>
+            <Guid>{63848CFF-3EC7-4DDF-8072-5F95E8C8EB98}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\drivers\iaLPSS2i_GPIO2.sys</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\drivers\iaLPSS2i_GPIO2.sys</MessageFilePath>
+            <HelpLink></HelpLink>
+            <PublisherMessage>Intel-iaLPSS2-GPIO2</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>iaLPSS_GPIO2 Debug channel</Message>
+                    <Path>Intel-iaLPSS2-GPIO2/Debug</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+                <Channel>
+                    <Message>iaLPSS_GPIO2 Performance channel</Message>
+                    <Path>Intel-iaLPSS2-GPIO2/Performance</Path>
+                    <Index>1</Index>
+                    <Id>17</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>iaLPSS_GPIO2 Driver routines</Message>
+                    <Name>iaLPSS2_GPIO2_Driver</Name>
+                    <Guid>{33CFE465-3945-4FDF-90EB-ED95B7135E06}</Guid>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS_GPIO2 GpioCx DDI calls</Message>
+                    <Name>iaLPSS2_GPIO2_GpioCxDDI</Name>
+                    <Guid>{6FEE0BF2-062E-48FE-B821-1227100740C3}</Guid>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS_GPIO2 Controller routines</Message>
+                    <Name>iaLPSS2_GPIO2_GpioCtrl</Name>
+                    <Guid>{69B29770-6279-4A94-B42D-E275B3FD30AB}</Guid>
+                    <Value>3</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS_GPIO2 GpioInt routines</Message>
+                    <Name>iaLPSS2_GPIO2_GpioInt</Name>
+                    <Guid>{A6546BD3-6D62-4607-ADA2-DF53F27C0B1C}</Guid>
+                    <Value>4</Value>
+                </Task>
+                <Task>
+                    <Message>iaLPSS_GPIO2 GpioIo routines</Message>
+                    <Name>iaLPSS2_GPIO2_GpioIo</Name>
+                    <Guid>{6EE92CDF-2C9D-49F0-9340-5F3C38F93F0A}</Guid>
+                    <Value>5</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

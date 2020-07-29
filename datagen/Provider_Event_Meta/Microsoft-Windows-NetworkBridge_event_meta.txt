@@ -1,0 +1,29 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-NetworkBridge</Name>
+        <Metadata>
+            <Guid>{A67075C2-3E39-4109-B6CD-6D750058A731}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>2001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="_DebugString" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Network Bridge:  Detected a router that is not DHCP compliant. This can cause connectivity issues on the machine. If the problem persists, please replace the router or configure static IP addresses]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

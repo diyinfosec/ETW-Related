@@ -1,0 +1,114 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-Guest-Drivers-Storage-Filter</Name>
+        <Metadata>
+            <Guid>{0B9FDCCC-451C-449C-9BD8-6756FCC6091A}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Virtual Storage Filter Driver failed to initialize (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Virtual Storage Filter Driver failed to intialize disk (%1).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Virtual Storage Filter Driver is active for disk at location %1 (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Virtual Storage Filter Driver is inactive for disk at location %1 (%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Location" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Virtual Storage Filter Driver is disabled through the registry. It is inactive for all disk drives.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>202</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a read request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer (in blocks)" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>203</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Dispatching a write request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Command" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="LengthOfTransfer (in blocks)" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="LBA" inType="win:HexInt64" outType="win:HexInt64"/>
+  <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>208</Id>
+                <Version>1</Version>
+                <Message><![CDATA[
+Completing an IO (read/write) request.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Irp" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="NTStatus" inType="win:HexInt32" outType="win:NTStatus"/>
+  <data name="SrbStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="ScsiStatus" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="SenseKey" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSense" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="AddSenseQ" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="OriginalIrp" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

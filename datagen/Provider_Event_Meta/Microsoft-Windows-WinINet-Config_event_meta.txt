@@ -1,0 +1,22 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-WinINet-Config</Name>
+        <Metadata>
+            <Guid>{5402E5EA-1BDD-4390-82BE-E108F1E634F5}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>5600</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="fAutoDetect" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="pwszAutoConfigUrl" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="pwszProxy" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="pwszProxyBypass" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

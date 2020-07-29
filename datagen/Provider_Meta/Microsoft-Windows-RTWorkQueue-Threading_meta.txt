@@ -1,0 +1,218 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-RTWorkQueue-Threading</Name>
+        <Metadata>
+            <Guid>{E18D0FC9-9515-4232-98E4-89E456D8551B}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\rtworkq.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\rtworkq.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.619&amp;FileName=rtworkq.dll&amp;FileVer=10.0.17134.619</HelpLink>
+            <PublisherMessage>Microsoft-Windows-RTWorkQueue-Threading</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>RTWorkQueue Threading</Message>
+                    <Path>RTWorkQueueTheading</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>WorkQueue: Execute</Message>
+                    <Name>WorkQueue_Execute</Name>
+                    <Value>583</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Queue</Message>
+                    <Name>WorkQueue_Queue</Name>
+                    <Value>584</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Thread</Message>
+                    <Name>WorkQueue_Thread</Name>
+                    <Value>588</Value>
+                </Task>
+                <Task>
+                    <Message>MMCSS Registration</Message>
+                    <Name>MMCSS_Registration</Name>
+                    <Value>595</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Queue_Create</Message>
+                    <Name>WorkQueue_Queue_Create</Name>
+                    <Value>602</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Execute callback</Message>
+                    <Name>WorkQueue_Execute_Callback</Name>
+                    <Value>603</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: MMCSS Transition</Message>
+                    <Name>WorkQueue_MMCSS</Name>
+                    <Value>604</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: UpdateDeadlines</Message>
+                    <Name>WorkQueue_UpdateDeadlines</Name>
+                    <Value>605</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: AddDeadline</Message>
+                    <Name>WorkQueue_AddDeadline</Name>
+                    <Value>606</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: AddImmediateDeadline</Message>
+                    <Name>WorkQueue_AddImmediateDeadline</Name>
+                    <Value>607</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: DeadlineYield</Message>
+                    <Name>WorkQueue_DeadlineYield</Name>
+                    <Value>608</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: UpdateDeadlineQueue</Message>
+                    <Name>WorkQueue_DeadlineQueue</Name>
+                    <Value>609</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: LongRunning</Message>
+                    <Name>WorkQueue_LongRunning</Name>
+                    <Value>610</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: StartTimer</Message>
+                    <Name>WorkQueue_StartTimer</Name>
+                    <Value>611</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: ExecuteTimer</Message>
+                    <Name>WorkQueue_ExecuteTimer</Name>
+                    <Value>612</Value>
+                </Task>
+                <Task>
+                    <Message>Update Select WorkQueues CpuGroupMask</Message>
+                    <Name>UpdateSelectWorkQueuesCpuGroupMask</Name>
+                    <Value>614</Value>
+                </Task>
+                <Task>
+                    <Message>SubscribeCpuGroupMaskChangeWNF</Message>
+                    <Name>SubscribeCpuGroupMaskChangeWNF</Name>
+                    <Value>615</Value>
+                </Task>
+                <Task>
+                    <Message>UpdateWorkqueueCpuGroupMask</Message>
+                    <Name>UpdateWorkqueueCpuGroupMask</Name>
+                    <Value>616</Value>
+                </Task>
+                <Task>
+                    <Message>CpuGroupMaskChangeWnfCallback</Message>
+                    <Name>CpuGroupMaskChangeWnfCallback</Name>
+                    <Value>617</Value>
+                </Task>
+                <Task>
+                    <Message>SetThreadCpuGroupMask</Message>
+                    <Name>SetThreadCpuGroupMask</Name>
+                    <Value>618</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Debounce</Message>
+                    <Name>WorkQueue_Debounce</Name>
+                    <Value>619</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Buffering</Message>
+                    <Name>WorkQueue_Buffering</Name>
+                    <Value>620</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: Notification</Message>
+                    <Name>WorkQueue_Notification</Name>
+                    <Value>621</Value>
+                </Task>
+                <Task>
+                    <Message>Platform: AllocIndex</Message>
+                    <Name>Platform_AllocIndex</Name>
+                    <Value>622</Value>
+                </Task>
+                <Task>
+                    <Message>Platform: Init</Message>
+                    <Name>Platform_Init</Name>
+                    <Value>623</Value>
+                </Task>
+                <Task>
+                    <Message>Platform: Shutdown</Message>
+                    <Name>Platform_Shutdown</Name>
+                    <Value>624</Value>
+                </Task>
+                <Task>
+                    <Message>Platform: Shutdown_WorkQueue</Message>
+                    <Name>Platform_Shutdown_WorkQueue</Name>
+                    <Value>625</Value>
+                </Task>
+                <Task>
+                    <Message>WorkQueue: RunLimit</Message>
+                    <Name>WorkQueue_RunLimit</Name>
+                    <Value>626</Value>
+                </Task>
+                <Task>
+                    <Message>TaskGroup</Message>
+                    <Name>TaskGroup</Name>
+                    <Value>627</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Start</Message>
+                    <Name>win:Start</Name>
+                    <Value>1</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Stop</Message>
+                    <Name>win:Stop</Name>
+                    <Value>2</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message></Message>
+                    <Name>Telemetry</Name>
+                    <Value>256</Value>
+                </Keyword>
+                <Keyword>
+                    <Message></Message>
+                    <Name>DiagTrack</Name>
+                    <Value>512</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

@@ -1,0 +1,20 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Hyper-V-Guest-Drivers-Vmbus</Name>
+        <Metadata>
+            <Guid>{F2E2CE31-0E8A-4E46-A03B-2E0FE97E93C2}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Hyper-V is running a different version of VMBus. Update the guest operating system to fix this problem.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

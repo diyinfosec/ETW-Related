@@ -1,0 +1,681 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UserPnp</Name>
+        <Metadata>
+            <Guid>{96F4A050-7E31-453C-88BE-9634F4E02139}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>7550</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+New device queued up for install.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7551</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Plug and Play install scheduler has started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7552</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Plug and Play install scheduler has exited.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7553</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Plug and Play install worker thread has started.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7554</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Plug and Play install worker thread has exited.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ThreadId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7555</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Parent of current device is already ahead in the install queue.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ChildDevice" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ParentDevice" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7556</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Current device is a volume snapshot device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7700</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Start processing '%1'.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DIF_CODE" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7701</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Finished processing '%1' (Err=%2).]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DIF_CODE" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7702</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+START: Core device install operations.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7703</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+END: Core device install operations.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7704</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ENTER: Synchronization wait for core device install.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7705</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EXIT: Synchronization wait for core device install.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7708</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ENTER: Stage driver package]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7709</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EXIT: Stage driver package]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7718</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ENTER: Device installation restrictions policy check.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7719</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EXIT: Device installation restrictions policy check.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7720</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ENTER: Build driver info list.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7721</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EXIT: Build driver info list.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7722</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ENTER: Build driver info list - search published INFs.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7723</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EXIT: Build driver info list - search published INFs.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7724</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ENTER: Build driver info list - search Device Path.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7725</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EXIT: Build driver info list - search Device Path.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7728</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ENTER: Build driver info list - search caller specified folder.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7729</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EXIT: Build driver info list - search caller specified folder.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7730</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+ENTER: PnpInstallDevice - install device instance.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7731</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+EXIT: PnpInstallDevice - install device instance.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7800</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+START: Searching WMIS for metadata package]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7801</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+STOP: Searching WMIS for metadata package]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7802</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+START: Downloading metadata package from WMIS]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7803</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+STOP: Downloading metadata package from WMIS]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7804</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+START: Searching local index for metadata package]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7805</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+STOP: Searching local index for metadata package]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7806</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+START: Unpacking metadata package into cache]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7807</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+STOP: Unpacking metadata package into cache]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7808</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+START: Parsing packageinfo.xml for metadata properties]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7809</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+STOP: Parsing packageinfo.xml for metadata properties]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7810</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+START: Scanning local store for new metadata packages]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7811</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+STOP: Scanning local store for new metadata packages]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7812</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+START: Initializing DMRC]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7813</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+STOP: Initializing DMRC]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7814</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+START: Uninitialize DMRC]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7815</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+STOP: Uninitializing DMRC]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7900</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 (Package: %2 Error Code = %3, Win32 Error Code = %4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Package" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Win32ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7901</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A new device metadata package was downloaded from WMIS. (Path: %1)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackagePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7902</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 (Package: %2 Error Code = %3, Win32 Error Code = %4)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Package" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="Win32ErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7903</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Successfully parsed device metadata file. (File: %1, Language: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="File" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Language" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7950</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A new device metadata package was discovered. (Package Name: %1, Path: %2)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PackageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PackagePath" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7951</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+DMRC was queried for type '%1' with lookup key '%2']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="QueryType" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LookupKey" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7952</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+%1 (Error Code = %2, Last Http Status Code = %3)]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Message" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="NetworkErrorCode" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="HttpStatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8000</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A reboot is required to complete device installation of device '%1']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DeviceInstall service has started.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DeviceInstall service is stopping (idle).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DeviceInstall service is stopping (stop control).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DeviceInstall service is stopping (shutdown).]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The DeviceInstall service has stopped.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+There are pending driver updates to install.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+A timeout was detected during the installation of device '%1']]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8010</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Finish install operation state changed to %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="hc_stateid" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Management concluded the process to install driver %1 for Device Instance ID %4 with the following status: %9.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceInstanceID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetupClass" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RebootOption" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="UpgradeDevice" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsDriverOEM" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="InstallStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DriverDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Management concluded the process to remove driver %1 from Device Instance ID %4 with the following status: %9.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DriverName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverVersion" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverProvider" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceInstanceID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="SetupClass" inType="win:GUID" outType="xs:GUID"/>
+  <data name="RebootOption" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="UpgradeDevice" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="IsDriverOEM" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="InstallStatus" inType="win:HexInt32" outType="win:HexInt32"/>
+  <data name="DriverDescription" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Management has concluded the process to add Service %1 for Device Instance ID %3 with the following status: %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceInstanceID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrimaryService" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="UpdateService" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AddServiceStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Management has concluded the process to remove Service %1 for Device Instance ID %3 with the following status: %6.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServiceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DriverFileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DeviceInstanceID" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="PrimaryService" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="UpdateService" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="AddServiceStatus" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Management has restricted the installation of Device Instance ID %1 because of a Device Installation Restriction policy setting.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Management has deferred the process to install Device Instance ID %1 until a driver has been selected because of a Device Installation Restriction policy setting.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Management has removed Device Instance ID %1 because of a Device Installation Restriction policy setting.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20008</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Management has not removed Device Instance ID %1 with matching policy restriction because it is a required system device.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>20009</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Driver Management will reboot the system in %1 seconds to enforce a Device Installation Restriction policy setting.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="RebootTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

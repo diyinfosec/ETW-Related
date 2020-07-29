@@ -1,0 +1,66 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-TerminalServices-MediaRedirection</Name>
+        <Metadata>
+            <Guid>{3F7B2F99-B863-4045-AD05-F6AFB62E7AF1}</Guid>
+            <ResourceFilePath>C:\WINDOWS\System32\tsmf.dll</ResourceFilePath>
+            <ParameterFilePath>C:\WINDOWS\system32\tsmf.dll</ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\System32\tsmf.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=tsmf.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>TS MF</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Microsoft-Windows-TerminalServices-MediaRedirection/Analytic</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Format Check</Message>
+                    <Name>TsmfTaskFormatCheck</Name>
+                    <Value>100</Value>
+                </Task>
+                <Task>
+                    <Message>Settings Check</Message>
+                    <Name>TsmfTaskSettingsCheck</Name>
+                    <Value>101</Value>
+                </Task>
+                <Task>
+                    <Message>Stream Setup</Message>
+                    <Name>TsmfTaskStreamSetup</Name>
+                    <Value>102</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Info</Message>
+                    <Name>win:Info</Name>
+                    <Value>0</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

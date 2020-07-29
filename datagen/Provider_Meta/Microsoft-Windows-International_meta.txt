@@ -1,0 +1,110 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-International</Name>
+        <Metadata>
+            <Guid>{3AA52B8B-6357-4C18-A92E-B53FB177853B}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\Microsoft-Windows-System-Events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\Microsoft-Windows-System-Events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=Microsoft-Windows-System-Events.dll&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-International</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Microsoft-Windows-International/Operational</Message>
+                    <Path>Microsoft-Windows-International/Operational</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Critical</Message>
+                    <Name>win:Critical</Name>
+                    <Value>1</Value>
+                </Level>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+                <Level>
+                    <Message>Verbose</Message>
+                    <Name>win:Verbose</Name>
+                    <Value>5</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>NLS code page functions</Message>
+                    <Name>CharacterEncoding</Name>
+                    <Value>30</Value>
+                </Task>
+                <Task>
+                    <Message>NLS date/time functions</Message>
+                    <Name>DateTimeCalendar</Name>
+                    <Value>32</Value>
+                </Task>
+                <Task>
+                    <Message>NLS Unattended Regional and Language Options</Message>
+                    <Name>CME</Name>
+                    <Value>33</Value>
+                </Task>
+                <Task>
+                    <Message>NLS group policy</Message>
+                    <Name>GroupPolicy</Name>
+                    <Value>34</Value>
+                </Task>
+                <Task>
+                    <Message>NLS locale functions</Message>
+                    <Name>Locale</Name>
+                    <Value>35</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>NLS data table operations</Message>
+                    <Name>DataTable</Name>
+                    <Value>30</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NLS initialization</Message>
+                    <Name>Initialize</Name>
+                    <Value>31</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NLS configuration changes</Message>
+                    <Name>ConfigurationChange</Name>
+                    <Value>32</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NLS operations</Message>
+                    <Name>Operation</Name>
+                    <Value>33</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>NLS clean-up operations</Message>
+                    <Name>Cleanup</Name>
+                    <Value>34</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

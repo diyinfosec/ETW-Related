@@ -1,0 +1,107 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PrintBRM</Name>
+        <Metadata>
+            <Guid>{CF3F502E-B40D-4071-996F-00981EDF938E}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\spool\tools\printbrmengine.exe</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\spool\tools\printbrmengine.exe</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=printbrmengine.exe&amp;FileVer=10.0.17134.1</HelpLink>
+            <PublisherMessage>Microsoft-Windows-PrintBRM</PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message>Admin</Message>
+                    <Path>Microsoft-Windows-PrintBRM/Admin</Path>
+                    <Index>0</Index>
+                    <Id>16</Id>
+                    <Imported>false</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+                <Level>
+                    <Message>Error</Message>
+                    <Name>win:Error</Name>
+                    <Value>2</Value>
+                </Level>
+                <Level>
+                    <Message>Warning</Message>
+                    <Name>win:Warning</Name>
+                    <Value>3</Value>
+                </Level>
+                <Level>
+                    <Message>Information</Message>
+                    <Name>win:Informational</Name>
+                    <Value>4</Value>
+                </Level>
+            </Levels>
+            <Tasks>
+                <Task>
+                    <Message>Backup</Message>
+                    <Name>PRINT_BRM_TASK_BACKUP</Name>
+                    <Value>1</Value>
+                </Task>
+                <Task>
+                    <Message>Restore</Message>
+                    <Name>PRINT_BRM_TASK_RESTORE</Name>
+                    <Value>2</Value>
+                </Task>
+                <Task>
+                    <Message>General operation</Message>
+                    <Name>PRINT_BRM_TASK_GENERAL_OPERATION</Name>
+                    <Value>3</Value>
+                </Task>
+            </Tasks>
+            <Opcodes>
+                <Opcode>
+                    <Message>Print BRM operation success</Message>
+                    <Name>PRINT_BRM_OPCODE_SUCCEEDED</Name>
+                    <Value>10</Value>
+                    <Task>0</Task>
+                </Opcode>
+                <Opcode>
+                    <Message>Print BRM operation failure</Message>
+                    <Name>PRINT_BRM_OPCODE_FAILED</Name>
+                    <Value>11</Value>
+                    <Task>0</Task>
+                </Opcode>
+            </Opcodes>
+            <Keywords>
+                <Keyword>
+                    <Message>Print BRM</Message>
+                    <Name>PRINT_BRM_KEYWORD</Name>
+                    <Value>1</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Print Queue</Message>
+                    <Name>PRINT_QUEUE_KEYWORD</Name>
+                    <Value>2</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Print Driver</Message>
+                    <Name>PRINT_DRIVER_KEYWORD</Name>
+                    <Value>4</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Print Processor</Message>
+                    <Name>PRINT_PROC_KEYWORD</Name>
+                    <Value>8</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Printer Language Monitor</Message>
+                    <Name>PRINT_LANG_MON_KEYWORD</Name>
+                    <Value>16</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Print Form</Message>
+                    <Name>PRINT_FORM_KEYWORD</Name>
+                    <Value>32</Value>
+                </Keyword>
+                <Keyword>
+                    <Message>Printer Port</Message>
+                    <Name>PRINT_PORT_KEYWORD</Name>
+                    <Value>64</Value>
+                </Keyword>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

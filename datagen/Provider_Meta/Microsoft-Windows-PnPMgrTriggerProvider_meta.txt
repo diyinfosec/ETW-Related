@@ -1,0 +1,12 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-PnPMgrTriggerProvider</Name>
+        <Metadata>
+            <Guid>{84051B98-F508-4E54-82FA-8865C697C3B1}</Guid>
+            <ResourceFilePath>C:\WINDOWS\system32\microsoft-windows-kernel-pnp-events.dll</ResourceFilePath>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\WINDOWS\system32\microsoft-windows-kernel-pnp-events.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Microsoft%c2%ae%20Windows%c2%ae%20Operating%20System&amp;ProdVer=10.0.17134.1&amp;FileName=microsoft-windows-kernel-pnp-events.dll&amp;FileVer=10.0.17134.1</HelpLink>
+        </Metadata>
+    </Provider>
+</Providers>

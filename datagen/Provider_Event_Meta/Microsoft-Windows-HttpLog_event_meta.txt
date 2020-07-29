@@ -1,0 +1,46 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-HttpLog</Name>
+        <Metadata>
+            <Guid>{C42A2738-2333-40A5-A32F-6ACC36449DCC}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+HTTP transaction log]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ServerSessionId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UrlGroupId" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="UrlContext" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="DateTime" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="RemoteAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemoteAddr" inType="win:Binary" outType="win:SocketAddress" length="RemoteAddrLength"/>
+  <data name="LocalAddrLength" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LocalAddr" inType="win:Binary" outType="win:SocketAddress" length="LocalAddrLength"/>
+  <data name="KernelCached" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="HttpMajorVer" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="HttpMinorVer" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="BytesSent" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="BytesReceived" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="TimeTaken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="UserName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Method" inType="win:AnsiString" outType="xs:string"/>
+  <data name="UriStem" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="UriQuery" inType="win:AnsiString" outType="xs:string"/>
+  <data name="ProtocolStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="ProtocolSubStatus" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="Win32Status" inType="win:UInt32" outType="win:Win32Error"/>
+  <data name="Host" inType="win:AnsiString" outType="xs:string"/>
+  <data name="UserAgent" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Cookie" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Referer" inType="win:AnsiString" outType="xs:string"/>
+  <data name="AppContext" inType="win:AnsiString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

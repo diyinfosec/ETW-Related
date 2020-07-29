@@ -1,0 +1,323 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-Diagnosis-DPS</Name>
+        <Metadata>
+            <Guid>{6BBA3851-2C7E-4DEA-8F54-31E5AFD029E3}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Policy Service started.  This event signals diagnostic modules for delayed processing after the service is initialized.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Policy Service started.  This event signals diagnostic modules for immediate processing after the service is initialized.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The scenario %1 has a configuration error or has been explicitly disabled in the WDI registry namespace.  The Diagnostic Policy Service will ignore the scenario.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>100</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %5 (%4) detected a problem for scenario %1, instance %2, original activity ID %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>105</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %5 (%4) started troubleshooting scenario %1, instance %2, original activity ID %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>110</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %5 (%4) finished troubleshooting scenario %1, instance %2, original activity ID %3.  No resolution was set by the diagnostic module.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>115</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %9 (%4) finished troubleshooting scenario %1, instance %2, original activity ID %3.  It set resolution %5 for user %6 in session %7 with expiration date %8.  The resolution will be started immediately.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResolutionId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ResolutionSID" inType="win:SID" outType="xs:string"/>
+  <data name="ResolutionSessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResolutionExpirationDate" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>120</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %9 (%4) finished troubleshooting scenario %1, instance %2, original activity ID %3.  It set resolution %5 for user %6 in session %7 with expiration date %8.  The resolution was queued to start later.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ResolutionId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ResolutionSID" inType="win:SID" outType="xs:string"/>
+  <data name="ResolutionSessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ResolutionExpirationDate" inType="win:FILETIME" outType="xs:dateTime"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>125</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %5 (%4) started resolving scenario %1, instance %2, original activity ID %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>126</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %5 (%4) was queued to start later for scenario %1, instance %2, original activity ID %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>130</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %5 (%4) finished resolving scenario %1, instance %2, original activity ID %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>135</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Policy Service could not create a diagnostic module host instance for diagnostic module %6 (%5).  The error code was %4.  The scenario %1, instance %2, original activity ID %3 will be discarded.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>140</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Policy Service encountered an error in file %1, function %2, line %3: %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="FunctionName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="LineNumber" inType="win:Int32" outType="xs:int"/>
+  <data name="ErrorMessage" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>145</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This event is raised when the SCM loads the service DLL]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>150</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This event is raised when the service enters a SERVICE_RUNNING state]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>155</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This event is raised when the SCM signals the service to shut down.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>160</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+This event is raised when the service is successfully stopped]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>165</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Policy Service encountered an error while handling scenario %1 with diagnostic module %6 (%5), instance %2, original activity ID %3. The error code was %4.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="StatusCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>170</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %6 (%4) encountered an error while handling scenario %1, instance %2, original activity ID %3.  The error code was %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:Int32" outType="xs:int"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>175</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Scenario %1, instance %2, original activity ID %3 was dropped by diagnostic module %6 (%4). The error code was %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ScenarioId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="InstanceId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="OriginalActivityId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="StatusCode" inType="win:Int32" outType="xs:int"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>180</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Policy Service just refreshed the Group Policy. This event notifies the diagnostic modules about the Group Policy changes.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>185</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Diagnostic module %2 (%1) was moved into a broken state. The error code was %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DiagnosticModuleImageName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="DiagnosticModuleId" inType="win:GUID" outType="xs:GUID"/>
+  <data name="StatusCode" inType="win:Int32" outType="xs:int"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5016</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Policy Service just made a heap allocation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="Size" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5017</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+The Diagnostic Policy Service just freed a previously made heap allocation]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FileName" inType="win:AnsiString" outType="xs:string"/>
+  <data name="Line" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Address" inType="win:Pointer" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

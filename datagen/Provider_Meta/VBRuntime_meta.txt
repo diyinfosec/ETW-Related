@@ -1,0 +1,29 @@
+<Providers>
+    <Provider>
+        <Name>VBRuntime</Name>
+        <Metadata>
+            <Guid>{00000000-0000-0000-0000-000000000000}</Guid>
+            <ParameterFilePath></ParameterFilePath>
+            <MessageFilePath>C:\Windows\SysWOW64\msvbvm60.dll</MessageFilePath>
+            <HelpLink>https://go.microsoft.com/fwlink/events.asp?CoName=Microsoft%20Corporation&amp;ProdName=Visual%20Basic&amp;ProdVer=6.0.98.15&amp;FileName=msvbvm60.dll&amp;FileVer=6.0.98.15</HelpLink>
+            <PublisherMessage></PublisherMessage>
+            <Channels>
+                <Channel>
+                    <Message></Message>
+                    <Path>Application</Path>
+                    <Index>4294967295</Index>
+                    <Id>9</Id>
+                    <Imported>true</Imported>
+                </Channel>
+            </Channels>
+            <Levels>
+            </Levels>
+            <Tasks>
+            </Tasks>
+            <Opcodes>
+            </Opcodes>
+            <Keywords>
+            </Keywords>
+        </Metadata>
+    </Provider>
+</Providers>

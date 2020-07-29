@@ -1,0 +1,90 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-AppID</Name>
+        <Metadata>
+            <Guid>{3CB2A168-FE19-4A4E-BDAD-DCF422F13473}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>4001</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AppID failed to compute %2 process attributes. Status %3.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4002</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AppID Driver failed to start. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4003</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AppID Service failed to start. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4004</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AppID Service is called to verify %2 signature. Status %5.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="FilePathLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="FilePathBuffer" inType="win:UnicodeString" outType="xs:string" length="FilePathLength"/>
+  <data name="PublisherNameLength" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="PublisherNameBuffer" inType="win:UnicodeString" outType="xs:string" length="PublisherNameLength"/>
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4005</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AppID certificate store verification failed. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4006</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AppID certificate store is verified.]]></Message>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4007</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+AppID encountered a failure from discache.sys. Status %1.]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Status" inType="win:HexInt32" outType="win:NTStatus"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>

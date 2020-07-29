@@ -1,0 +1,771 @@
+<Providers>
+    <Provider>
+        <Name>Microsoft-Windows-UserModePowerService</Name>
+        <Metadata>
+            <Guid>{CE8DEE0B-D539-4000-B0F8-77BED049C590}</Guid>
+        </Metadata>
+        <EventMetadata>
+            <Event>
+                <Id>1</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="PlatformRole" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>2</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>3</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SubgroupGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SettingGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ValueIndex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>4</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SubgroupGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SettingGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="ValueIndex" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Type" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>5</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Timeout" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>7</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Name" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>8</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="DeviceName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ManufacturerName" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ManufactureDay" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ManufactureMonth" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="ManufactureYear" inType="win:UInt16" outType="xs:unsignedShort"/>
+  <data name="SerialNumber" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="Capabilities" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Technology" inType="win:UInt8" outType="win:HexInt8"/>
+  <data name="Pad" inType="win:Binary" outType="xs:hexBinary" length="3"/>
+  <data name="Chemistry" inType="win:AnsiString" outType="xs:string" length="4"/>
+  <data name="DesignCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="FullChargeCapacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DefaultAlert1" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DefaultAlert2" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CriticalBias" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="CycleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GranularityScaleCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="GranularityScale" count="GranularityScaleCount">
+    <data name="Granularity" inType="win:UInt32" outType="xs:unsignedInt"/>
+    <data name="Capacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  </struct>
+  <data name="UniqueId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>9</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="State" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Capacity" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Voltage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Rate" inType="win:Int32" outType="xs:int"/>
+  <data name="EstimatedRuntime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UniqueId" inType="win:UnicodeString" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>10</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="BrightnessCapable" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>11</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="AcOnline" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>12</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Process %1 (process ID:%2) reset policy scheme from %3 to %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NewSchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>13</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="value" inType="win:UInt32" outType="win:HexInt32"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>14</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplingPeriod" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="MeterNameLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MeterName" inType="win:UnicodeString" outType="xs:string" length="MeterNameLength"/>
+  <data name="MeteredHardwareCount" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="MeteredHardwareName" inType="win:UnicodeString" outType="xs:string" count="MeteredHardwareCount"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>15</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ProcessorVendor" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ProcessorType" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SubgroupGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SettingGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>16</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SubgroupGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SettingGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataSize"/>
+  <data name="ProfileGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>17</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProfileGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SubgroupGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SettingGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SchemePersonalityGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ValueIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>18</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="AbsoluteEnergy" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="AbsoluteTime" inType="win:UInt64" outType="win:HexInt64"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>19</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="MeterId" inType="win:Pointer" outType="win:HexInt64"/>
+  <data name="SamplingPeriod" inType="win:UInt64" outType="win:HexInt64"/>
+  <data name="ChannelNameLength" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ChannelName" inType="win:UnicodeString" outType="xs:string" length="ChannelNameLength"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>22</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Reapply power settings upon completion of the provisioning engine's turn %1]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Turn" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>23</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>24</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>25</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserContextToken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>26</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Event" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserContextToken" inType="win:UInt64" outType="xs:unsignedLong"/>
+  <data name="SessionId" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>27</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Supported" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="GlobalUserPresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="UserPredictionMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="MinConfidence" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="SuspendCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="LastUserAwayEndSystemTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="IntervalCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="AwayIntervals" count="IntervalCount">
+    <data name="WeeklyStartOffsetInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="WeeklyEndOffsetInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="Confidence" inType="win:UInt8" outType="xs:unsignedByte"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>28</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="IntervalCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="AwayIntervals" count="IntervalCount">
+    <data name="WeeklyStartOffsetInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="WeeklyEndOffsetInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="Confidence" inType="win:UInt8" outType="xs:unsignedByte"/>
+  </struct>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="IntervalCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="AwayIntervals" count="IntervalCount">
+    <data name="WeeklyStartOffsetInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="WeeklyEndOffsetInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="Confidence" inType="win:UInt8" outType="xs:unsignedByte"/>
+  </struct>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>29</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+  <data name="IntervalCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <struct name="AwayIntervals" count="IntervalCount">
+    <data name="WeeklyStartOffsetInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="WeeklyEndOffsetInUs" inType="win:UInt64" outType="xs:unsignedLong"/>
+    <data name="Confidence" inType="win:UInt8" outType="xs:unsignedByte"/>
+  </struct>
+  <data name="Flags" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>30</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserSid" inType="win:SID" outType="xs:string"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>31</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="UserAwayEndSystemTime" inType="win:UInt64" outType="xs:unsignedLong"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>32</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Suspend" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="SuspendCount" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GlobalUserPresent" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="UserPredictionMode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>33</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SystemTimeShift" inType="win:Int64" outType="xs:long"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>34</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>35</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>36</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>37</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>38</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>39</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>40</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>41</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>42</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Id" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ErrorCode" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>43</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="EffectiveBrightnessPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="EffectiveBrightnessMillinits" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewBrightnessTransitionTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DimmingTransitionTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DimmedBrightnessPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DimmedBrightnessMillinits" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="NewDimmedTransitionTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="UnDimmingTransitionTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeInStandby" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReserveBatteryTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExecuteAction" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RejectReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeInStandby" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GracePeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReserveBatteryTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExecuteAction" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RejectReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>44</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeInStandby" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GracePeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ReserveBatteryTime" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExecuteAction" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RejectReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSources" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeInStandby" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StandbyBatteryDrainPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BatteryDrainPercentageThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExecuteAction" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RejectReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeInStandby" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GracePeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StandbyBatteryDrainPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BatteryDrainPercentageThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExecuteAction" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RejectReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>45</Id>
+                <Version>2</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="TimeInStandby" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="GracePeriod" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="StandbyBatteryDrainPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="BatteryDrainPercentageThreshold" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="ExecuteAction" inType="win:Boolean" outType="xs:boolean"/>
+  <data name="RejectReason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSources" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>46</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ActualTimeRange" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="RemainingBatteryPercentage" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>47</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Action" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Error" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>48</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Id" inType="win:UInt8" outType="xs:unsignedByte"/>
+  <data name="GpuCount" inType="win:UInt8" outType="xs:unsignedByte"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>49</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="OverlaySchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SubgroupGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SettingGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="ValueIndex" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Type" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="DataSize" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataSize"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>50</Id>
+                <Version>1</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="AcOverlay" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>51</Id>
+                <Version>0</Version>
+                <Message><![CDATA[
+Process %1 (process ID:%2) reset overlay policy scheme from %3 to %4]]></Message>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="ProcessPath" inType="win:UnicodeString" outType="xs:string"/>
+  <data name="ProcessPid" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="OldSchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="NewSchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>52</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>53</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>54</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+  <data name="Suspend" inType="win:Boolean" outType="xs:boolean"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>55</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+]]></Template>
+            </Event>
+            <Event>
+                <Id>56</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="SchemeGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SubgroupGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="SettingGuid" inType="win:GUID" outType="xs:GUID"/>
+  <data name="Flags" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataType" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="DataSize" inType="win:UInt32" outType="win:HexInt32"/>
+  <data name="Data" inType="win:Binary" outType="xs:hexBinary" length="DataSize"/>
+  <data name="ProfileGuid" inType="win:GUID" outType="xs:GUID"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>57</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+            <Event>
+                <Id>58</Id>
+                <Version>0</Version>
+                <Template><![CDATA[
+<template xmlns="http://schemas.microsoft.com/win/2004/08/events">
+  <data name="Reason" inType="win:UInt32" outType="xs:unsignedInt"/>
+</template>
+]]></Template>
+            </Event>
+        </EventMetadata>
+    </Provider>
+</Providers>
